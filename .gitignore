@@ -5,3 +5,7 @@ primechai/resume_Gstoettner_J_2026.pdf
 Thumbs.db
 desktop.ini
 .DS_Store
+# Confidential Hivebotics fundraising zip (deck, model, videos) — keep local only
+hivebotics/Series A Fundraising/
+# Full page renders of the Hivebotics deck — keep local (only cropped figures are pushed)
+hivebotics/deck_pages/

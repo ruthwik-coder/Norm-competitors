@@ -43,7 +43,8 @@
 | [RIFE Technologies](rife-technologies/rife-technologies.md) | 🇮🇳 | "Washroom Cleaning Robot" | Unknown | Claimed deployments `[UNV]` | 🟠 Verify: possible reseller | [rife-technologies/](rife-technologies/) |
 | [Genrobotics](genrobotics/genrobotics.md) | 🇮🇳 Kerala | Sewer/manhole robots | Adjacent | Commercial | ⚪ Adjacent | [genrobotics/](genrobotics/) |
 | [Solinas](solinas/solinas.md) | 🇮🇳 Chennai (IITM incubator) | Septic-tank cleaning robot | Adjacent | Commercial | ⚪ Adjacent | [solinas/](solinas/) |
-| [Hivebotics](hivebotics/hivebotics.md) | 🇸🇬 Singapore (NUS spin-out, 2021) | Abluo (Mark 1 / Mark II) | Mobile manipulator, **contactless** | US$6M Series A (Sep 2026: Vertex, Farglory, Rigel); ~10,000 h, 20+ sites | 🔴 **Main benchmark**; claims scored before/after verification | [hivebotics/](hivebotics/) |
+| [Hivebotics](hivebotics/hivebotics.md) | 🇸🇬 Singapore (NUS spin-out, 2021) | Abluo (Mark 1 / Mark II) | Mobile manipulator, **contactless** | **~US$8.3M raised**: pre-seed $1.3M (2023), seed $1M (2025), **Series A $6M** (Sep 2026: Vertex, Farglory, Rigel) `[3P][S073]`; ~10,000 h, 20+ sites | 🔴 **Main benchmark**; claims scored before/after verification | [hivebotics/](hivebotics/) |
+| [Somatic](somatic/somatic.md) | 🇺🇸 USA | Commercial restroom-cleaning robot ("BCR-01"?) | Mobile manipulator; jet + vacuum + blower | Series A US$7.16M (Mar 2022); 10+ pilots; **RaaS ~US$4.5K/month** (per Hivebotics deck) `[3P][S075]` | 🟠 Benchmark (US) | [somatic/](somatic/) |
 | [Eternia Robotics / Cleaning Robotics](eternia-robotics/eternia-robotics.md) | 🇸🇬 Singapore | TCR-H | Mobile | Being productised | 🔴 Benchmark | [eternia-robotics/](eternia-robotics/) |
 | [Primech AI](primechai/primechai.md) | 🇸🇬 Singapore / US-listed parent | HYTRON | Mobile manipulator | Early commercial: US$12k robot revenue FY26; **suing ex-CTO over HYTRON development** | 🟠 Benchmark; delivery doubtful `[INF]` | [primechai/](primechai/) |
 | [Fonda Global + A*STAR](fonda-global-alac/fonda-global-alac.md) | 🇸🇬 Singapore | ALAC | Hybrid / semi-autonomous | Unknown | 🟡 Benchmark | [fonda-global-alac/](fonda-global-alac/) |
@@ -66,7 +67,7 @@ Each company has its own file with its full profile, its people and its open que
 | [IIT Madras](iit-madras/iit-madras.md) | [Fonda Global + A*STAR: ALAC](fonda-global-alac/fonda-global-alac.md) |
 | [IIT Palakkad](iit-palakkad/iit-palakkad.md) | [ZeeqClean](zeeqclean/zeeqclean.md) |
 | [Hachimichi](hachimichi/hachimichi.md) | [Senxeed Robotics](senxeed-robotics/senxeed-robotics.md) |
-| [ATSC / i-Hub Gujarat](atsc-ihub-gujarat/atsc-ihub-gujarat.md) | |
+| [ATSC / i-Hub Gujarat](atsc-ihub-gujarat/atsc-ihub-gujarat.md) | [Somatic](somatic/somatic.md) |
 | [VAATA](vaata/vaata.md) | |
 | [RIFE Technologies](rife-technologies/rife-technologies.md) | |
 | [Genrobotics](genrobotics/genrobotics.md) | |
@@ -90,10 +91,10 @@ Each company has its own file with its full profile, its people and its open que
 | Floor | ✓ | — | ✗ | — | ✓ | ✓ | ✓ mopping + blower drying | ✓ | — |
 | **Squat (Indian/Asian) toilet** | — | — | — | — | not listed in Mk2 brochure `[S061]`; no evidence | — | **✓ claimed (S042)** | — | — |
 | Mirror | — | — | — | — | ✓ "sinks & mirrors" `[S061]` | — | ✓ wiping | — | — |
-| Doors / elevators | — | — | ✗ | — | **same floor only** (no lift claim) `[S061]` | — | ✓ both claimed | — | — |
-| Fixture recognition | ✓ VLM | ✓ | ✗ | — | AI vision | ✓ | ✓ camera (patent) | lid detection | — |
-| **Stain / dirt detection** | — | **✓** | ✗ | intended | fixture ID by vision; stain-specific not stated | — | "may" (patent); "UV bacteria detection" listed for Mark 2 (deck) | — | stain *removal* |
-| Cleanliness verification | — | **✓** | — | — | **✓ "scored before-and-after check" every job** (S056) | — | "may" (patent) | — | QR-tracked cleaning status per bowl (ALAC 2.0) `[S070]` |
+| Doors / elevators | — | — | ✗ | — | **same floor only** (no lift claim) `[S061]`; door opening + lift on roadmap, elevator co-development sought `[S075]` | — | ✓ both claimed | — | — |
+| Fixture recognition | ✓ VLM | ✓ | ✗ | — | **Mask R-CNN** segmentation `[S075]` | ✓ | ✓ camera (patent) | lid detection | — |
+| **Stain / dirt detection** | — | **✓** | ✗ | intended | **✓ stain-pixel highlighting in segmented bowl** (deck screenshot); "multi-surface stain detection" claimed `[S075]` | — | "may" (patent); "UV bacteria detection" listed for Mark 2 (deck) | — | stain *removal* |
+| Cleanliness verification | — | **✓** | — | — | **✓ "scored before-and-after check" every job** (S056); shown as one "Improvement Score" + re-clean if needed `[S075]` | — | "may" (patent) | — | QR-tracked cleaning status per bowl (ALAC 2.0) `[S070]` |
 | Lid / seat lifting | — | — | — | — | — | ✓ | — | ✓ | ✓ |
 | Steam | — | — | ✗ | — | ✓ **173 °C**, 3/5/8 bar, 75 g/min (7 min start-up) `[S061]` | — | — | — | — |
 | Jet / spray | spray | spray | spray | — | **contactless:** high-pressure steam + chemical jet + vacuum + blow-dry; **no brushes** | — | e-water (electrolysed/ozone) jetting + detergent; "high-pressure" unconfirmed | pressurised | — |
@@ -104,7 +105,7 @@ Each company has its own file with its full profile, its people and its open que
 | Commercial deployments | none found | none found | pilots (claimed) | ✗ | ✓ ~10,000 h, 20+ sites, 4 continents (S056) | pilot history | early: army-camp lease, SG hospital; US$12k lease revenue FY26 | — | — |
 
 ### What stands out `[INF]`
-- **⚠️ Updated 2026-10-06: post-clean verification is no longer unclaimed.** **Hivebotics** says "every job ends with a scored before-and-after check, so cleaning outcomes can be audited" (S056), and Amrita Sudha claims cleanliness monitoring. **The differentiator for Ubanthu must now be the *quality* of contamination detection** (what is detected, how accurately, what evidence), not merely having verification. How Hivebotics scores is unknown.
+- **⚠️ Updated 2026-10-06: post-clean verification is no longer unclaimed.** **Hivebotics** says "every job ends with a scored before-and-after check, so cleaning outcomes can be audited" (S056), and Amrita Sudha claims cleanliness monitoring. **The differentiator for Ubanthu must now be the *quality* of contamination detection** (what is detected, how accurately, what evidence), not merely having verification. **Update 2026-10-10:** Hivebotics' deck shows the method. It segments the bowl, highlights stain pixels before and after, and outputs **one "Improvement Score"** (e.g. 0.0538), re-cleaning if needed. It looks **prototype-grade: RGB, area-based, with a water/drain false positive visible** `[INF][S075]`. That leaves Ubanthu room on contamination *type*, robustness and audit-grade evidence.
 - **Indian (squat) toilets:** **Primech HYTRON is the only competitor on file that claims squat-toilet support** `[CC][S042]`. No Indian player claims it. Unverified: we have no demo.
 - **Fleet dashboards:** Primech's reports task status only `[CC][S042]`; **Hivebotics claims audited cleaning outcomes** via HiveIntelligence `[CC][S056]`.
 
@@ -121,14 +122,24 @@ Each company has its own file with its full profile, its people and its open que
 | **3D LiDAR** | **Candidate:** Hesai (model unknown), from an engineer's driver work; not tied to HYTRON `[S048]` | **Identified (high confidence): Livox Mid-360**. All 6 brochure specs match, incl. distinctive 360°×59° FOV `[S061][S063]` | — | — |
 | **Force/torque sensor** | **Candidate:** KWR75 (believed Kunwei, China), from an engineer's driver work `[S048]` | Likely **UFACTORY 6-axis F/T sensor** (UFACTORY FT API enabled for real hardware, Aug 2026) `[INF][S071]` | — | — |
 | **Camera** | Wrist camera on arm; brand unknown `[V][S041][S054]` | **Confirmed: Luxonis OAK-D S2 PoE** (brochure depth+RGB; code + exact spec match) `[V][S071][S072]` · **Orbbec Gemini 335Le** (Jul 2026, code) `[V][S071]` · RealSense D435i wrist (robot model/sim) `[S071]` | VLM perception claimed; camera unknown | — |
-| **Fleet software** | Open-RMF (from engineer's résumé) `[S049]`; own task-management dashboard `[CC][S042]` | Own: **HiveOS** (brochure) / **HiveIntelligence** (Vertex release) `[CC][S061][S056]` | — | — |
+| **Fleet software** | Open-RMF (from engineer's résumé) `[S049]`; own task-management dashboard `[CC][S042]` | Own: **HiveOS** (brochure) / **HiveIntelligence** (Vertex release) `[CC][S061][S056]`; **Named: Formant** for fleet management `[CC][S075]` | — | — |
+| **Cleaning tools / consumables** | Own brush/ozone system (patents) `[S041][S054]` | **Named: Kärcher** (MOU; steam, vacuum, floor tools) `[CC][S075]` | — | — |
+| **Motion-planning software** | — | **Named: PickNik MoveIt Pro** (R&D partner; UI shown in deck) `[V][S075][S071]` | — | — |
+| **Perception model** | — | **Mask R-CNN** fixture segmentation (topic in deck screenshot) `[V][S075]` | VLM claimed | — |
 
 **Legend addition:** **Identified** = the model is pinned down by matching published specs (the company didn't name it).
 
-**Pattern so far** `[INF]`: **Hivebotics' hardware is now fully mapped from public code + brochure: UFACTORY 850 + Livox Mid-360 + Luxonis OAK-D S2 / Orbbec Gemini 335Le + AMD/NVIDIA compute + custom mecanum base.** **Both leading competitors build on Chinese off-the-shelf cobot arms and LiDARs**: Primech (Elite Robots arm named; Hesai candidate; SEER candidate) and Hivebotics (**UFACTORY 850 + Livox Mid-360**). Compute differs: Primech = NVIDIA Jetson Orin; Hivebotics = **x86 AMD Ryzen + NVIDIA RTX A400 GPU**. **Arm + LiDAR + compute is commodity hardware, roughly US$10–15k of bill of materials** (general-knowledge price estimate, unverified). **Differentiation is in the end-effector/cleaning system and software**, which is where Ubanthu competes.
+**Pattern so far** `[INF]`: **Hivebotics' hardware is now fully mapped from public code + brochure + deck: UFACTORY 850 + Livox Mid-360 + Luxonis OAK-D S2 / Orbbec Gemini 335Le + AMD/NVIDIA compute + custom mecanum base + Kärcher cleaning tools, on PickNik MoveIt Pro and Formant.** Their own unit cost was **US$53.75k (2024)**, targeting ~US$24k at scale `[S076]`. **Both leading competitors build on Chinese off-the-shelf cobot arms and LiDARs**: Primech (Elite Robots arm named; Hesai candidate; SEER candidate) and Hivebotics (**UFACTORY 850 + Livox Mid-360**). Compute differs: Primech = NVIDIA Jetson Orin; Hivebotics = **x86 AMD Ryzen + NVIDIA RTX A400 GPU**. **Arm + LiDAR + compute is commodity hardware, roughly US$10–15k of bill of materials** (general-knowledge price estimate, unverified). **Differentiation is in the end-effector/cleaning system and software**, which is where Ubanthu competes.
 
 ### Pricing
-_No pricing data yet for any competitor._
+
+| Company | Purchase | RaaS / month | Unit cost | Source |
+|---|---|---|---|---|
+| **Hivebotics** | ~US$50–55k (model: $65k yr 1 → $55k yr 5) | **~US$2,000** (Rome €1,250; SG S$2,000) | **US$53.75k (2024)** → ~US$24.4k target | `[CC][S075][S076]` |
+| **Somatic** | — | **~US$4,500** | — | per Hivebotics deck `[3P][S075]` |
+| **Primech HYTRON** | — | **~US$1,800** | — | per Hivebotics deck `[3P][S075]` |
+
+**Analysis** `[INF]`: all three price for **high-wage markets** (cleaner ≥ US$1.5–3.5k/month). At Indian wages (~US$150–250/month, general knowledge), none of these price points pays back. An India-priced robot is an open gap.
 
 ### Target markets
 - Airports and hospitals: Hivebotics `[CC]`; airports, malls, hospitals, corporate campuses: RIFE `[UNV]`
@@ -159,20 +170,22 @@ Each company file has its own **People Directory**. There is no combined list.
 |---|---|
 | [Sketch Robotics](sketch-robotics/sketch-robotics.md#people-directory) | 11 (3 founders, 6 team, 2 mentors) |
 | [HapiHygi](hapihygi/hapihygi.md#people-directory) | 2 |
-| [Hivebotics](hivebotics/hivebotics.md#people-directory) | 20 (8 current named staff on LinkedIn + 5 GitHub-only engineers; 2 advisors; 5 former/early; 9 photos) |
+| [Hivebotics](hivebotics/hivebotics.md#people-directory) | 24 (8 current named staff on LinkedIn + 5 GitHub-only engineers; **6 advisors** incl. 2 angel investors; 5 former/early; 15 photos) |
+| [Somatic](somatic/somatic.md#people-directory) | 0 |
 | [IIT Madras](iit-madras/iit-madras.md#people-directory) | 1 |
 | [Primech AI](primechai/primechai.md#people-directory) | 10 (CEO, Primech AI COO, ex-CTO, 3 execs, 4 technical hires from Mar–Jul 2026) |
 
 ## Important Findings
 
-1. **Hivebotics raised a US$6M Series A (4 Sep 2026)** led by Vertex (remit covers SEA *and India*), with strategic co-investors **Rigel** (restroom-fixture maker) and **Farglory** (property) `[V][S056]`. It claims ~10,000 operating hours at 20+ sites and **scored before/after verification of every job**, so it is **the most direct threat to Ubanthu's contamination-verification positioning**. Most likely foreign entrant into India.
+1. **Hivebotics raised a US$6M Series A (4 Sep 2026)** led by Vertex (remit covers SEA *and India*), with strategic co-investors **Rigel** (restroom-fixture maker) and **Farglory** (property) `[V][S056]`. Earlier: US$1.3M pre-seed (Nov 2023, Feedback Ventures) and US$1M seed (Oct 2025, K2 Holdings), so **~US$8.3M in total**. Crunchbase's "$14.3M" double-counts the Series A `[3P][INF][S073]`. It claims ~10,000 operating hours at 20+ sites and **scored before/after verification of every job**, so it is **the most direct threat to Ubanthu's contamination-verification positioning**. Most likely foreign entrant into India.
 2. **The only Indian startup building a mobile restroom manipulator is Sketch Robotics**, incorporated May 2025 `[3P]`. But it is a 9-person team fresh out of CUSAT with no visible prototype and an estimated ₹10–15 lakh of KSM funding `[INT][S040]`. It is a watch-list item, not an imminent threat.
-3. **Contamination detection and cleaning verification are thinly claimed across the field** `[INF]`. This is a possible positioning angle for Ubanthu.
+3. **(Updated 2026-10-10) Hivebotics' verification is real but basic** `[V][S075]`: segmented bowl, stain-pixel highlight, one "Improvement Score", re-clean loop; prototype-grade (RGB, area-based, with a visible water false positive). Its investor deck also shows **pricing (~US$2k/month RaaS, ~US$50–55k purchase), unit cost (US$53.75k in 2024), "$150M LOIs" with inconsistent unit counts, and distributors in HK, the Middle East, the US, Canada and the Nordics**. [Details](hivebotics/hivebotics-series-a-deck.md).
+3b. **Contamination detection and cleaning verification are thinly claimed across the field** `[INF]`. This is a possible positioning angle for Ubanthu.
 4. **Primech's patent (WO 2025/259178) centres on ozone water, not perception.** It shows an arm with a tool changer and a fixture-recognition camera. Stain detection and cleaning verification are only mentioned as possibilities and are not claimed. The core claims already face strong prior art. India is designated `[V][S041]`, `[INF]`.
 5. **Hivebotics' public GitHub (S071) shows its 2026 engineering focus is force-compliant manipulation** (F/T sensing, admittance/FDCC compliance control, toilet-seat lifting sim; MoveIt Pro), **not perception**. Nothing public touches contamination detection. Cameras changed within ~6 months (OAK-D S2 → Orbbec Gemini 335Le).
-5. **Hivebotics' core patent lapsed** `[V][S065][S066]`. WO 2023/075687 (NUS-owned; founders as inventors) ceased ~Apr 2024 with no national filings, so its alignment, waypoint and tool-changer methods are **free prior art**. It also shows Hivebotics **switched from disposable-brush contact cleaning (myCobot arm, 2021–22) to contactless steam (UFACTORY 850, 2026)**. Field deployment confirmed in **Orlando, FL** (S068).
-5. **Primech's HYTRON is far less mature than its marketing** `[V][S043][S044]`. FY2026 robot revenue was US$12k and the robotics segment lost US$2.48M, against a 300-robot rollout plan and a ">99% disinfection" claim (lab not named). Primech is **suing its former Primech AI CTO** (49% shareholder, lead patent inventor) over missed HYTRON milestones and source code; he counter-claims IP ownership. See [SEC deep dive](primechai/primechai-sec-filings.md).
-6. **S001's comparison table overstates capabilities** for Primech, Eternia and Hivebotics compared with its own cited text. The corrected matrix is above. Don't reuse the original table.
+6. **Hivebotics' core patent lapsed** `[V][S065][S066]`. WO 2023/075687 (NUS-owned; founders as inventors) ceased ~Apr 2024 with no national filings, so its alignment, waypoint and tool-changer methods are **free prior art**. It also shows Hivebotics **switched from disposable-brush contact cleaning (myCobot arm, 2021–22) to contactless steam (UFACTORY 850, 2026)**. Field deployment confirmed in **Orlando, FL** (S068).
+7. **Primech's HYTRON is far less mature than its marketing** `[V][S043][S044]`. FY2026 robot revenue was US$12k and the robotics segment lost US$2.48M, against a 300-robot rollout plan and a ">99% disinfection" claim (lab not named). Primech is **suing its former Primech AI CTO** (49% shareholder, lead patent inventor) over missed HYTRON milestones and source code; he counter-claims IP ownership. See [SEC deep dive](primechai/primechai-sec-filings.md).
+8. **S001's comparison table overstates capabilities** for Primech, Eternia and Hivebotics compared with its own cited text. The corrected matrix is above. Don't reuse the original table.
 
 ## Open Questions / Information Gaps
 
@@ -221,3 +234,6 @@ Each company file has its own **People Directory**. There is no combined list.
 | 2026-10-08 | **Hivebotics:** Vishal's notes docx processed (S064); patent WO 2023/075687 OCR'd and analysed (ceased, NUS-owned, myCobot 320, disposable brushes) (S065, S066); 7 new people incl. CTO photo, Head of Eng. Kendrick Chin, Sales & Service Dir. Cawley Mah, Dmitri Manajev (Zurich), Peera Tienthong (Orlando deployment), ex-engineer Zhicheng Lin (S067–S069); A*STAR/Fonda hypothesis evaluated (no evidence yet). **Fonda ALAC** profile updated: ALAC 2.0, MUSE Gold 2025, A*STAR credits (S026, S070). Patent table, capability matrix, supplier table, findings updated. | S064–S070 |
 | 2026-10-08 | **Correction:** the 2023 Hivebotics prototype photo (S064) shows a **Western toilet seen top-down**, not a squat toilet (spotted by Vishal). Removed the squat-toilet claim from the Hivebotics profile and the capability matrix. Primech remains the only competitor claiming squat-toilet support. | S064 |
 | 2026-10-08 | **Hivebotics GitHub** (github.com/hivebotics) analysed: all 5 forks and 14+ branches compared with upstream (S071). **UF850 confirmed by code**; mecanum base; UFACTORY F/T sensor (likely); compliance control + seat-lift sim; MoveIt Pro 9; cameras **Luxonis OAK-D S2 PoE** (confirmed: code + spec match, S072), **Orbbec Gemini 335Le**, RealSense D435i (wrist, sim). 5 new engineers from commits. Supplier table, specs file, findings updated. | S071, S072 |
+| 2026-10-10 | **Hivebotics Crunchbase** (S073) processed: funding history now **pre-seed US$1.3M (Nov 2023, lead Feedback Ventures) → seed US$1M (Oct 2025, K2 Holdings) → Series A US$6M (Sep 2026)**, so ~US$8.3M in total (Crunchbase's $14.3M double-counts the Series A). Both conflict with Gemini's $244k / $2.5M (marked `[CONFLICT]`). 7 investors incl. **NUS GRIP** and a pre-seed SPV; 2 registered trademarks (class 7); LionsBot listed as competitor. Landscape row and finding #1 updated; findings renumbered. Also fixed broken camera/base rows in the Abluo specs table. | S073 |
+| 2026-10-10 | **Hivebotics confirmed as an NUS GRIP company** (website, per Vishal; S074). GRIP pre-seed: up to S$250k under GRIP 2.0 (Mar 2024), ~S$100k for earlier teams; Hivebotics' amount unknown. Added to funding table and timeline. | S074 |
+| 2026-10-10 | **Hivebotics Pre-A/Series A investor deck** (24 Oct 2025, 31 pp.) + ROI/financial model (Jul 2024) + video list analysed (S075–S077). New deep-dive file. Key: **cleaning-validation method shown** (bowl segmentation + stain pixels + one Improvement Score; Mask R-CNN; MoveIt Pro UI; real wrist camera); **pricing** (~US$50–55k or ~US$2k/month RaaS) and **unit cost** (US$53.75k → 24k); traction claims ($150M LOIs, $1.8M POs, inconsistent); partners **Kärcher, PickNik, Formant**; distributors Chaico, Kintsugi, PCCI/Nexus, Bunzl, Ready Robotics; exit talks Kärcher/Xiaomi/SoftBank; 4 new advisors incl. 2 angels; ops history Sep 2023 → Mar 2025. Gemini's "$2.5M" reconciled as cumulative capital. **New competitor: Somatic (US)**, profile created. Pricing table filled; supplier table, capability matrix, finding #3, people count updated; Primech RaaS ~US$1.8K (per Hivebotics). Profile photo replaced with deck photos. | S075–S077 |

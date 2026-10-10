@@ -1,0 +1,47 @@
+[
+  {
+    "_container": "/organization/hivebotics#overview",
+    "mdc-list-item--primary-text": "Overview",
+    "mdc-list-item--primary-text_2": ""
+  },
+  {
+    "_container": "/organization/hivebotics#predictions_and_insights",
+    "mdc-list-item--primary-text": "Predictions & Insights",
+    "mdc-list-item--primary-text_2": "Growth Outlook"
+  },
+  {
+    "_container": "/organization/hivebotics#financials",
+    "mdc-list-item--primary-text": "Financials",
+    "mdc-list-item--primary-text_2": "Financial Details"
+  },
+  {
+    "_container": "/organization/hivebotics#market_intelligence",
+    "mdc-list-item--primary-text": "Market Intelligence",
+    "mdc-list-item--primary-text_2": ""
+  },
+  {
+    "_container": "/organization/hivebotics#people",
+    "mdc-list-item--primary-text": "People",
+    "mdc-list-item--primary-text_2": "Profiles & Contacts"
+  },
+  {
+    "_container": "/organization/hivebotics#news",
+    "mdc-list-item--primary-text": "News",
+    "mdc-list-item--primary-text_2": "News & Analysis"
+  },
+  {
+    "_container": "/organization/hivebotics#technology",
+    "mdc-list-item--primary-text": "Technology",
+    "mdc-list-item--primary-text_2": "Tech Details"
+  },
+  {
+    "_container": "/organization/hivebotics#recommended_searches",
+    "mdc-list-item--primary-text": "Lists Featuring This Company",
+    "mdc-list-item--primary-text_2": ""
+  },
+  {
+    "_container": "/organization/hivebotics#faq",
+    "mdc-list-item--primary-text": "Frequently Asked Questions",
+    "mdc-list-item--primary-text_2": ""
+  }
+]

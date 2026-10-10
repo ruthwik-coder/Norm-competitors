@@ -62,7 +62,7 @@ All repos are **forks of hardware-driver repos**. Hivebotics' own robot code (e.
 |---|---|---|---|
 | **Luxonis OAK-D S2 PoE** (auto-focus) | Their DepthAI fork wires `OAK-D-S2-POE.stl` into the robot URDF as `link_camera` (Arshad Khan, "changes to include this camera in hivebotics") `[V][S071]`. **The brochure's camera specs match it exactly** `[S072]`: stereo **OV9282 1280×800 @120 fps, global shutter, 89.5° DFOV**; colour **IMX378 4056×3040 @60 fps, rolling shutter, 78° DFOV** (78° = AF variant) | Dec 2025 – Jan 2026 | **Confirmed** (code + spec match) as the **Mk2 brochure's depth + RGB camera** |
 | **Orbbec Gemini 335Le** (Ethernet) | Named in Hivebotics' added `mode_config.yaml` ("setting these does nothing on gemini 335Le"); custom passive/active/adaptive stream modes to save bandwidth `[V][S071]` | Mar – Jul 2026 | **In use as of Jul 2026.** Possibly additional or replacing the OAK-D. Newer than the brochure |
-| **Intel RealSense D435i** | Robot description: `camera_name:='wrist_mounted'` on UF850's D435i macro `[V][S071]` | Jan 2026 | **Wrist camera in the robot model/sim.** Real-hardware use not proven |
+| **Intel RealSense D435i** | Robot description: `camera_name:='wrist_mounted'` on UF850's D435i macro `[V][S071]` | Jan 2026 | **Wrist camera in the robot model.** A real `/wrist_mounted_camera/color/image_raw` feed appears in the Oct 2025 investor deck screenshot (S075), so **a wrist camera exists on the real robot**; the model on hardware is unconfirmed |
 | YDLIDAR (2D) | Fork with no own commits | 2024 | Weak: older prototype? |
 
 Not visible on GitHub: the **3D LiDAR** (Livox Mid-360 per brochure, S061). There's no Livox driver fork; they may use upstream `livox_ros_driver2` unmodified `[INF]`.
@@ -99,7 +99,7 @@ Not visible on GitHub: the **3D LiDAR** (Livox Mid-360 per brochure, S061). Ther
 
 ## Open questions
 - [ ] Is the Orbbec Gemini 335Le replacing the OAK-D S2 or added alongside it (e.g. base vs. arm)?
-- [ ] Does the real robot have the RealSense D435i at the wrist?
+- [ ] Does the real robot have the RealSense D435i at the wrist? (A wrist camera is confirmed on real hardware via the deck's MoveIt Pro screenshot, S075)
 - [ ] Which UFACTORY F/T sensor (model, range)?
 - [ ] Do Arshad Khan (UK, JABAS.AI) and others work for Hivebotics as employees or contractors?
 - [ ] Any public repos by Kendrick Chin, Shalman Khan, Yuan Qi Chau or Cherie Hu with more Hivebotics work?

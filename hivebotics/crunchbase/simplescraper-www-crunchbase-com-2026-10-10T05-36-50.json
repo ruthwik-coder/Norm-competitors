@@ -1,0 +1,42 @@
+[
+  {
+    "_container": "/funding_round/hivebotics-series-a--18ba03d5",
+    "accent": "Vertex Ventures Southeast Asia & India",
+    "component--field-formatter": "$6M",
+    "component--field-formatter_2": "Series A",
+    "field-type-date": "Sep 4, 2026",
+    "highlight-color-contrast-light": "3",
+    "identifier-label": "Series A - Hivebotics",
+    "provide-styling": "https://images.crunchbase.com/image/upload/c_pad,h_18,w_18,f_auto,b_white,q_auto:eco,dpr_1/q_30/5207fa9d8c8046edaf51d518964875d3?ik-sanitizeSvg=true"
+  },
+  {
+    "_container": "/funding_round/hivebotics-series-a--465629b8",
+    "accent": "",
+    "component--field-formatter": "$6M",
+    "component--field-formatter_2": "Series A",
+    "field-type-date": "Jan 1, 2026",
+    "highlight-color-contrast-light": "",
+    "identifier-label": "Series A - Hivebotics",
+    "provide-styling": "https://images.crunchbase.com/image/upload/c_pad,h_18,w_18,f_auto,b_white,q_auto:eco,dpr_1/q_30/5207fa9d8c8046edaf51d518964875d3?ik-sanitizeSvg=true"
+  },
+  {
+    "_container": "/funding_round/hivebotics-seed--cb2325e9",
+    "accent": "K2 Holdings",
+    "component--field-formatter": "$1M",
+    "component--field-formatter_2": "Seed",
+    "field-type-date": "Oct 1, 2025",
+    "highlight-color-contrast-light": "1",
+    "identifier-label": "Seed Round - Hivebotics",
+    "provide-styling": "https://images.crunchbase.com/image/upload/c_pad,h_18,w_18,f_auto,b_white,q_auto:eco,dpr_1/q_30/5207fa9d8c8046edaf51d518964875d3?ik-sanitizeSvg=true"
+  },
+  {
+    "_container": "/funding_round/hivebotics-pre-seed--b512fab1",
+    "accent": "Feedback Ventures",
+    "component--field-formatter": "$1.3M",
+    "component--field-formatter_2": "Pre-Seed",
+    "field-type-date": "Nov 1, 2023",
+    "highlight-color-contrast-light": "3",
+    "identifier-label": "Pre Seed Round - Hivebotics",
+    "provide-styling": "https://images.crunchbase.com/image/upload/c_pad,h_18,w_18,f_auto,b_white,q_auto:eco,dpr_1/q_30/5207fa9d8c8046edaf51d518964875d3?ik-sanitizeSvg=true"
+  }
+]

@@ -1,6 +1,6 @@
 # Primech AI
 
-[← Back to master document](../COMPETITOR_INTELLIGENCE.md) · [Sources](../SOURCES.md) · **Last updated:** 2026-10-03
+[← Back to master document](../COMPETITOR_INTELLIGENCE.md) · [Sources](../SOURCES.md) · **Last updated:** 2026-10-10
 
 Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` inferred · `[UNV]` unverified · `[CONFLICT]` · `[INT]` internal observation / opinion from our team. `[S012*]` = cited by S001, not yet opened by us.
 
@@ -147,7 +147,7 @@ Full detail in the [patent deep dive](primechai-patent-WO2025259178.md).
 ## Business / customers / deployments
 
 - **Captive demand:** the parent is a facilities-services company and runs HYTRON in its own cleaning fleet `[V][S043]`
-- **Unit counts: none disclosed anywhere** (checked all SEC filings, 2026-10-02). FY2026 robot lease revenue was US$12k `[V][S043]`. Pricing: _unknown_
+- **Unit counts: none disclosed anywhere** (checked all SEC filings, 2026-10-02). FY2026 robot lease revenue was US$12k `[V][S043]`. Pricing: **RaaS ~US$1,800/month per Hivebotics' investor deck** (Oct 2025) `[3P][S075]` (a competitor's figure; unverified). Hivebotics also lists Primech's "dollars spent" as US$5M+, traction "2+ pilots" in Singapore, and tools as mechanical brush, blower and wiper
 
 ### Deployments and market-entry deals, by region
 
@@ -274,7 +274,7 @@ Full management list and bios: [SEC deep dive §6](primechai-sec-filings.md).
 
 - [ ] Photo or video confirming HYTRON's arm and tool changer
 - [ ] Fleet size and unit economics from the 20-F (S025)
-- [ ] Price / RaaS model (robot-as-a-service)
+- [ ] Price / RaaS model (robot-as-a-service). Hivebotics' deck says ~US$1.8K/month (S075); confirm from a Primech source
 - [x] ~~Time per toilet~~: ~6 min toilet, ~3 min basin or urinal `[CC][S042]`
 - [ ] Restrooms per tank fill (8 L fresh water): does it return to the dock mid-shift?
 - [ ] How does it clean squat toilets (Indian or Asian style)? Demo?
