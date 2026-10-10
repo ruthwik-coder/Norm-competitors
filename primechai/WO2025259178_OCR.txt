@@ -1,0 +1,1495 @@
+
+
+===== PAGE 1 =====
+Wo
+2025/259178
+AA
+/IMIMINMINMAINIIAI
+MNADTEA
+ATATATAU AA
+(12) INTERNATIONAL APPLICATION PUBLISHED UNDER THE PATENT COOPERATION TREATY (PCT)
+>
+a
+(19) World Intellectual Property
+Organization
+International Bureau
+(43) International Publication Date
+18 December 2025 (18.12.2025)
+(10) International Publication Number
+WO 2025/259178 Al
+WIPOIPCT
+(51) International Patent Classification:
+B25J  11/00 (2006.01) B25J  15/00 (2006.01)
+B25J  13/08 (2006.01) A47L 11/40 (2006.01)
+(21) International Application Number:
+PCT/SG2025/050333
+(22) International Filing Date:
+15 May 2025 (15.05.2025)
+(25) Filing Language: English
+(26) Publication Language: English
+(30) Priority Data:
+10202401736R 14 June 2024 (14.06.2024) SG
+(71) Applicant: PRIMECH AI PTE. LTD. [SG/SG]; 23 Ubi
+Crescent, Singapore 408579 (SG).
+(72) Inventors: ZHANG, Youwei; 23 Ubi Crescent, Singapore
+408579 (SG). NG, Chew Poh, 23 Ubi Crescent, Singapore
+408579 (SG). HO, Kin Wai; 23 Ubi Crescent, Singapore
+408579 (SG).
+(74) Agent: YUSARN AUDREY LLC; 4 Shenton Way, #14-03
+SGX Centre I, Singapore 068807 (SG).
+(81) Designated States (unless otherwise indicated, for every
+kind of national protection available). AE, AG, AL, AM,
+AO, AT, AU, AZ, BA, BB, BG, BH, BN, BR, BW, BY, BZ,
+CA, CH, CL, CN, CO, CR, CU, CV, CZ, DE, DJ, DK, DM,
+DO, DZ, EC, EE, EG, ES, FI, GB, GD, GE, GH, GM, GT,
+HN, HR, HU, ID, IL, IN, IQ, IR, IS, IT, JM, JO, JP, KE, KG,
+KH, KN, KP, KR, KW, KZ, LA, LC, LK, LR, LS, LU, LY,
+MA, MD, MG, MK, MN, MU, MW, MX, MY, MZ, NA,
+NG, NI, NO, NZ, OM, PA, PE, PG, PH, PL, PT, QA, RO,
+RS, RU, RW, SA, SC, SD, SE, SG, SK, SL, ST, SV, SY, TH,
+TJ, TM, TN, TR, TT, TZ, UA, UG, US, UY, UZ, VC, VN,
+WS, ZA, ZM, ZW.
+(84) Designated States (unless otherwise indicated, for every
+kind of regional protection available): ARIPO (BW, CV,
+GH, GM, KE, LR, LS, MW, MZ, NA, RW, SC, SD, SL, ST,
+SZ, TZ, UG, ZM, ZW), Eurasian (AM, AZ, BY, KG, KZ,
+RU, TJ, TM), European (AL, AT, BE, BG, CH, CY, CZ,
+DE, DK, EE, ES, FI, FR, GB, GR, HR, HU, IE, IS, IT, LT,
+LU, LV, MC, ME, MK, MT, NL, NO, PL, PT, RO, RS, SE,
+SI, SK, SM, TR), OAPI (BF, BJ, CF, CG, CI, CM, GA, GN,
+GQ, GW, KM, ML, MR, NE, SN, TD, TG).
+(54) Title: A CLEANING ROBOT
+Fig. 4
+a
+(57) Abstract: A cleaning robot is disclosed in the present disclosure. The cleaning robot comprises a body comprising a flushing liquid
+tank configured to contain a flushing liquid comprising water; a first flushing outlet; an ozone generator, and a mobility mechanism
+configured to support the body and provide mobility to the cleaning robot along a surface, wherein the ozone generator is configured
+to receive the flushing liquid from the flushing liquid tank to form aqueous ozone, and the cleaning robot is configured to provide
+aqueous ozone from the ozone generator to the first flushing outlet to clean an environment. A method of cleaning an environment
+with a cleaning robot is also disclosed.
+[Continued on next  page]
+
+
+===== PAGE 2 =====
+WO 2025/259178 AJ IMTMITMITTUTIA ING ATTA TRIMER AA
+Declarations under Rule 4.17:
+— as to applicant's entitlement to apply for and be granted a
+patent (Rule 4.17(ii))
+— ofinventorship (Rule 4.17(iv))
+Published:
+— with international search report (Art. 21(3))
+
+
+===== PAGE 3 =====
+WO 2025/259178 PCT/SG2025/050333
+DESCRIPTION
+TITLE OF INVENTION: A CLEANING ROBOT
+TECHNICAL FIELD
+[0001] This invention relates to a cleaning device. More particularly, this invention relates
+to a cleaning robot for use in the cleaning of an environment.
+BACKGROUND
+[0002] The following discussion of the background to the invention is intended to facilitate
+an understanding of one or more inventions disclosed by the present disclosure only. It should
+be appreciated that the discussion is not an acknowledgement or admission that any of the
+material referred to was published, known or part of the common general knowledge of the
+person skilled in the art in any jurisdiction as at the priority date of one or more inventions
+disclosed by the present disclosure.
+[0003] An environment (for example a lavatory) may be cleaned by a cleaning robot that
+can be operated by a human operator or be programmed to automatically clean the
+environment. Cleaning robots may be developed for specific tasks such as cleaning floors,
+cleaning toilet bowls and cleaning walls, where such robots may be equipped with specific tools
+and/or functions that allow them to appropriately perform the tasks that they have been
+developed for.
+[0004] By way of an example, the fixtures and fittings in a lavatory environment create
+areas that are difficult to access and clean, thereby allowing bacteria to thrive. Additionally,
+stubborn stains commonly occur in toilet bowls that are difficult to remove. Most cleaning robots
+can only perform floor cleaning which is a two-dimensional process. The cleaning of structures
+in a lavatory, such as a urinal, a toilet bowl, a basin and a mirror requires a robot that can
+perform three-dimensional cleaning with different tools. Additionally, using clean water alone to
+clean lavatory structures especially those with stubborn stains, which known cleaning robots
+do, is insufficient to achieve the sterilization and disinfection appropriate for the environment.
+Supplementing the clean water with cleaning chemicals is not eco-friendly. While there are
+cleaning robots that use a robotic arm to grip and hold a water gun for spraying water when
+cleaning, the cleaning process performed by such robots is typically long due to the constant
+need for robotic arm to swap between water gun and other cleaning tools.
+
+
+===== PAGE 4 =====
+WO 2025/259178 PCT/SG2025/050333
+2
+[0005] Therefore, there exists a need to provide a cleaning device that addresses,
+alleviates or ameliorate, at least in part, one or more of the aforementioned problems.
+SUMMARY
+[0006] According to an aspect of the present disclosure, there is provided a cleaning robot
+comprising:
+a body comprising:
+a flushing liquid tank configured to contain a flushing liquid comprising water;
+a first flushing outlet;
+an ozone generator, and
+a mobility mechanism configured to support the body and provide mobility to the
+cleaning robot along a surface,
+wherein the ozone generator is configured to receive the flushing liquid from the
+flushing liquid tank to form aqueous ozone, and the cleaning robot is configured to provide
+aqueous ozone from the ozone generator to the first flushing outlet to clean an environment.
+[0007] In some configurations, the ozone generator comprises an electrolytic ozone
+generator configured to provide an electrical discharge to a volume of flushing liquid received
+by the ozone generator from the flushing liquid tank to form the aqueous ozone.
+[0008] In some configurations, the electrolytic ozone generator comprises
+an active state wherein the electrical discharge is provided to the volume of flushing
+liquid, and
+an inactive state wherein the electrical discharge is not provided to the volume of
+flushing liquid,
+wherein the electrolytic ozone generator is configured to be in the active state when
+flushing liquid from the flushing liquid tank is provided to the electrolytic ozone generator, and
+wherein the electrolytic ozone generator is configured to be in the inactive state when the
+flushing liquid from the flushing liquid tank is not provided to the electrolytic ozone generator.
+[oca9] In some configurations, the electrical discharge comprises a voltage of about 24 V.
+
+
+===== PAGE 5 =====
+WO 2025/259178 PCT/SG2025/050333
+3
+[0010] In some configurations, the electrolytic ozone generator comprises a chamber
+configured to hold the volume of flushing liquid received by the electrolytic ozone generator,
+wherein optionally, the chamber comprises a volume of about 500 mL to about 1000 mL, and
+optionally about 700 mL to about 800 mL.
+[0011] In some configurations, the cleaning robot further comprises a flushing liquid pump
+configured to pump the flushing liquid from the flushing liquid tank to the ozone generator,
+wherein the ozone generator is configured to be in the active state when the flushing liquid
+pump is pumping the flushing liquid from the flushing liquid tank to the ozone generator.
+[0012] In some configurations, the flushing liquid tank is fluidly connected to the first
+flushing outlet via only the ozone generator.
+[0013] In some configurations, the cleaning robot further comprises a second flushing
+outlet configured to provide a fluid to clean one or more components of the cleaning robot. In
+some configurations, the fluid comprises aqueous ozone from the ozone generator, and
+wherein the cleaning robot is configured to provide a first portion of the aqueous ozone from
+the ozone generator to the first flushing outlet to clean the environment, and to provide a
+second portion of the aqueous ozone from the ozone generator to the second flushing outlet to
+clean the one or more components of the cleaning robot.
+[0014] In some configurations, the cleaning robot further comprises a waste tank
+configured to collect and contain waste obtained from the cleaning of the one or more
+components of the cleaning robot.
+[0015] In some configurations, the cleaning robot further comprises a cleaning liquid tank
+configured to contain a cleaning liquid comprising a cleaning chemical, and a cleaning liquid
+outlet, wherein the cleaning robot is configured to provide the cleaning liquid to the cleaning
+liquid outlet to clean the environment.
+[0016] In some configurations, the cleaning robot further comprises a movable arm
+extending from the body, the movable arm comprising a first end portion connectable with the
+body and a second end portion movable in a plurality of directions.
+[0017] In some configurations, the body comprises a tool dock configured to removably
+engage one or more cleaning tools and wherein the second end portion of the movable arm is
+configured to removably couple with the one or more cleaning tools to clean an environment.
+
+
+===== PAGE 6 =====
+WO 2025/259178 PCT/SG2025/050333
+4
+[0018] In some configurations, the tool dock comprises the second flushing outlet to clean
+the one or more cleaning tools.
+[0019] In some configurations, the second end portion of the movable arm is configured to
+mechanically and electrically couple with the one or more cleaning tools.
+[0020] In some configurations, the second end portion of the movable arm is configured to
+limit torsional, axial and/or lateral movement of the one or more cleaning tools relative to the
+second end portion when coupled.
+[0021] In some configurations, the cleaning robot further comprises an identification reader
+configured to identify the environment or a characteristic of the environment.
+[0022] In some configurations, the first flushing outlet is provided to the second end portion
+of the movable arm.
+[0023] In some configurations, the cleaning liquid outlet is provided to the second end
+portion of the movable arm.
+[0024] In some configurations, the cleaning robot further comprises a power storage device
+configured to power one or more components of the cleaning robot, and to permit mobility of
+the cleaning robot without being tethered to a power supply, wherein optionally the power
+storage device comprises a rechargeable battery configured to be removably and electrically
+connected to a power supply.
+[0025] According to another aspect of the present disclosure, there is provided a method of
+cleaning an environment with a cleaning robot comprising a mobility mechanism, a flushing
+liquid tank, an ozone generator and a first flushing outlet, the method comprising:
+operating the mobility mechanism to move the cleaning robot to the environment;
+providing a flushing liquid from a flushing liquid tank to the ozone generator;
+forming aqueous ozone by the ozone generator; and
+providing aqueous ozone from the ozone generator to the first flushing outlet to clean
+the environment.
+
+
+===== PAGE 7 =====
+WO 2025/259178 PCT/SG2025/050333
+5
+[0026] In some configurations, the cleaning robot comprises a movable arm and the
+method further comprises operating the movable arm and coupling a second end portion of the
+movable arm with a cleaning tool.
+[0027] In some configurations, the cleaning tool comprises a brush tool and the method
+further comprises operating the brush tool to rotate a brush head of the brush tool and urging
+the brush head against the environment.
+[0028] In some configurations, the method further comprises decoupling the cleaning tool
+from the second end portion of the movable arm and coupling the cleaning tool with a tool dock
+to store the cleaning tool.
+[0029] In some configurations, the method further comprises providing aqueous ozone
+from the ozone generator to a second flushing outlet of the cleaning robot to clean the stored
+cleaning tool.
+[0030] In some configurations, the cleaning tool comprises a fan tool and the method
+further comprises operating the fan tool to rotate an impeller to direct an air flow to the
+environment to dry the environment.
+[0031] In some configurations, the method further comprises providing a cleaning liquid to
+the environment via a cleaning liquid outlet.
+[0032] Other aspects and advantages of the invention will become apparent from the
+following detailed description, taken in conjunction with the accompanying drawings, illustrating
+by way of example the principles of the invention.
+BRIEF DESCRIPTION OF DRAWINGS
+[0033] The invention will be better understood with reference to the drawings, in which:
+[0034] [Fig. 1] is a perspective view of an exemplary configuration of a cleaning robot of the
+present disclosure.
+[0035] [Fig. 2] is a side view of the cleaning robot of [Fig. 1] when viewed from direction A.
+[0036] [Fig. 3] is a side view of the body of the cleaning robot of [Fig. 1] when viewed from
+direction A, with a side portion of the body removed to show the internal components of the
+cleaning robot.
+
+
+===== PAGE 8 =====
+WO 2025/259178 PCT/SG2025/050333
+6
+[0037] [Fig. 4] is a side view of the body of the cleaning robot of [Fig. 1] when viewed from
+direction B, with a side portion of the body removed to show the internal components of the
+cleaning robot.
+[0038] [Fig. 5] is a schematic representation of the flushing liquid flow path of the cleaning
+robot of [Fig. 1].
+[9039] [Fig. 6] is a schematic representation of the cleaning liquid flow path of the cleaning
+robot of [Fig. 1].
+[0040] [Fig. 7] is a side view of an exemplary configuration of an ozone generator of the
+present disclosure.
+[0041] [Fig. 8] is a front view of an exemplary configuration of an ozone generator of the
+present disclosure.
+[0042] [Fig. 9] is a side view of the second end portion of the movable arm of the cleaning
+robot of [Fig. 1].
+[0043] [Fig. 10] is a front view of the second end portion of the movable arm of the cleaning
+robot of [Fig. 1].
+[0044] [Fig. 11] is a schematic drawing of a contacting face of the first jaw portion of the
+gripping mechanism that is provided at the second end portion of the movable arm of the
+cleaning robot of [Fig. 1].
+[0045] [Fig. 12] is a front view of an exemplary configuration of a fan tool of the present
+disclosure.
+[0046] [Fig. 13] is a side view of an exemplary configuration of a fan tool of the present
+disclosure.
+[0047] [Fig. 14] is a front view of an exemplary configuration of a brush tool of the present
+disclosure.
+[0048] [Fig. 15] is a side view of an exemplary configuration of a brush tool of the present
+disclosure.
+DESCRIPTION OF THE EMBODIMENTS
+
+
+===== PAGE 9 =====
+WO 2025/259178 PCT/SG2025/050333
+7
+[0049] As used herein, the term “(s)’ following a noun means the plural and/or singular
+form of that noun.
+[0050] As used herein, the term “and/or” means “and” or “or”, or where the context allows
+both.
+[0051] Throughout this document, unless otherwise indicated to the contrary, the terms
+“comprising”, “consisting of’, “having” and the like, are to be construed as non-exhaustive, or in
+other words, as meaning “including, but not limited to.”
+[0052] Furthermore, throughout the specification, unless the context requires otherwise,
+the word “include” or variations such as “includes” or “including” will be understood to imply the
+inclusion of a stated integer or group of integers but not the exclusion of any other integer or
+group of integers.
+[0053] It is intended that reference to any range of numbers disclosed herein (for example,
+1 to 10) also incorporates reference to all rational numbers within that range (for example, 1,
+1.1, 2, 3, 3.9, 4, 5, 6, 6.5, 7, 8, 9 and 10) and also any range of rational numbers within that
+range (for example, 2 to 8, 1.5 to 5.5 and 3.1 to 4.7) and, therefore, all sub-ranges of all ranges
+expressly disclosed herein are hereby expressly disclosed. These are only examples of what is
+specifically intended and all possible combinations of numerical values between the lowest
+value and the highest value enumerated are to be considered to be expressly stated in this
+application in a similar manner.
+[0054] This disclosure may also be said broadly to consist in the parts, elements and
+features referred to or indicated in the specification of the application, individually or
+collectively, and any or all combinations of any two or more said parts, elements or features,
+and where specific integers are mentioned herein which have known equivalents in the art to
+which this disclosure relates, such known equivalents are deemed to be incorporated herein as
+if individually set forth.
+[0055] Throughout the description, it is to be appreciated that the term “processor” and its
+plural form include controllers, microcontrollers, microprocessors, programmable integrated
+circuit chips such as application specific integrated circuit chip (ASIC), computer servers,
+electronic devices, and/or combination thereof capable of processing one or more input
+electronic signals to produce one or more output electronic signals. The processor includes one
+or more input modules and one or more output modules for processing of electronic signals.
+
+
+===== PAGE 10 =====
+WO 2025/259178 PCT/SG2025/050333
+8
+[0056] “Coupled” — The following description refers to elements or nodes or features being
+“coupled” together. As used herein, unless expressly stated otherwise, “coupled” means that
+one element/node/feature/ is directly or indirectly joined to (or directly or indirectly
+communicates with) another element/node/feature, and does not necessarily connect a direct
+mechanical connection. Coupled elements/nodes/features are understood to exert mutual
+influence on one another. For example, although [Fig. 1] depicts one exemplary arrangement
+of elements, additional intervening elements, devices, features, or components may be present
+in an embodiment of the depicted subject matter.
+[0057] In addition, certain terminology may also be used in the following description for the
+purpose of reference only, and thus are not intended to be limiting. For example, terms such
+as “upper”, “lower”, “above”, and “below’ refer to directions in the drawings to which reference
+is made in a consistent but arbitrary frame of reference. Such terminology may include the
+words specifically mentioned above, derivatives thereof, and words of similar import. Similarly,
+the terms “first”, “second”, and other such numerical terms referring to structures do not imply a
+sequence or order unless clearly indicated by the context.
+[0058] For the sake of brevity, conventional techniques related to robotic systems, devices
+and components, robotic system manufacture and operation and/or the like may not be
+described in detail herein. Furthermore, any connecting lines shown in various figures
+contained herein are intended to represent exemplary functional relationships and/or physical
+couplings between various elements. It should be noted that many alternative or additional
+functional relationships or physical connections may be present in exemplary cleaning robots
+and/or components thereof.
+[0059] Unless defined otherwise, all technical and scientific terms used herein have the
+same meaning as is commonly understood by a skilled person to which the subject matter
+herein belongs.
+[0060] The foregoing description of example embodiments includes example forms and
+configurations. Modifications may be made without departing from the scope of the disclosure
+and/or accompanying claims.
+[0061] [Fig.1] shows a cleaning robot 1 according to an embodiment of the present
+disclosure. The cleaning robot 1 comprises a body 10, a mobility mechanism 20 and a movable
+arm 30. The cleaning robot 1 is configured to clean an environment. Unless specified, an
+“environment” used in the present disclosure includes an area (for example a lavatory, a
+lavatory stall, etc.) and/or a structure (for example a sink, toilet bowl, a floor, etc). The cleaning
+
+
+===== PAGE 11 =====
+WO 2025/259178 PCT/SG2025/050333
+9
+robot 1 may be a non-autonomous, semi-autonomous or fully autonomous robot. A non-
+autonomous robot may also be known as a controlled robot where operation of the robot can
+be controlled by a user e.g. by using a remote controller. A semi-autonomous robot may be
+capable of performing certain functions autonomously but require a user input or supervision
+for certain other functions and/or in order to fully function, for example, a semi-autonomous
+cleaning robot may require a user to manually move it to a designated environment in order to
+autonomously perform the task of cleaning the environment. A fully autonomous robot may be
+capable of functioning independently for a task without a user input or supervision, for example
+a fully autonomous cleaning robot may be capable of navigating an environment, make
+decisions on how to act to achieve its task(s) and/or learn from its experience to improve its
+efficiency.
+Body
+[0062] As shown in [Fig. 3] and [Fig. 4], the body 10 comprises a cavity 101 defined by one
+or more walls. The cavity 101 houses one or more components of the body 10. The body 10
+comprises an I/O (input/output) interface 102 for receiving user inputs to control one or more
+components of the cleaning robot 1 and/or providing an output, e.g. a display of information,
+related to the cleaning robot 1. The I/O interface 102 may be angled relative to a surface of the
+body 10, for example an upper surface of the body 10 from which the movable arm 30 extends.
+This permits ease of view of an output provided on the I/O interface 102 and/or ease of use for
+a user to provide an input to the I/O interface 102. The body 10 comprises a stop button 103
+which allows a user to stop operation of the cleaning robot 1 when desired, e.g. in the event of
+an emergency. The stop button 103 is a manual button that requires actuation by a user. In
+some configurations, the stop button 103 may be a digital button displayed on the I/O interface
+102.
+[0063] The cleaning robot 1 comprises a power storage device configured to power one or
+more components of the cleaning robot 1 and to permit mobility of the cleaning robot 1 without
+being tethered to a power supply. The power storage device may be stored in the body 10, the
+mobility mechanism 20 and/or the movable arm 30. There may be a plurality of power storage
+devices. The power storage device may comprise a rechargeable battery configured to be
+removably and electrically connected to a power supply. The body 10 comprises one or more
+processors to control one or more components of the body 10. The one or more processors of
+the body 10 may communicate with one or more components of the cleaning robot 1, for
+example, a sensor (not shown), a user input/output (I/O) interface, etc. The body 10 may
+comprise one or more sensors configured to provide feedback to the cleaning robot 1 on an
+
+
+===== PAGE 12 =====
+WO 2025/259178 PCT/SG2025/050333
+10
+environment, for example to allow the cleaning robot 1 to navigate to an environment to be
+cleaned.
+[0064] The body 10 comprises a tool dock 151 comprising one or more compartments to
+store one or more cleaning tools 152. The tool dock 151 is configured to removably engage the
+one or more cleaning tools 152 and comprises a tool chamber in which a portion of the one or
+more cleaning tools 152 is positioned. The tool chamber is configured to prevent a stored
+cleaning tool 152, for example the portion that is used to clean the environment, from
+contacting anything external to the cleaning robot 1 so as to maintain sanitary conditions of the
+environment. The tool chamber additionally provides a zone for cleaning the cleaning tool 152
+and the collection of any waste generated from such cleaning. The tool dock 151 may comprise
+one or more electrical contacts to power and/or control a cleaning tool 152 that is engaged with
+the tool dock 151.
+[0065] The body 10 comprises a waste tank 141 configured to collect waste and contain
+waste obtained from the cleaning of one or more components of the cleaning robot 1, for
+example from cleaning the one or more cleaning tools 152. The waste may travel to the waste
+tank 141 under the effects of gravity or be suctioned by a pump into the waste tank 141. The
+waste may be stored for later removal and disposal.
+[0066] The body 10 comprises a flushing liquid sub-assembly, components of which are
+housed, at least in part, within the cavity 101. The flushing liquid sub-assembly comprises a
+flushing liquid tank 121, flushing liquid conduits 122, a flushing liquid pump 123, an ozone
+generator 124, a manifold 125, a first flushing outlet 126 and a second flushing outlet 127. The
+flushing liquid sub-assembly is configured to provide a flushing liquid to an environment that is
+being cleaned by the cleaning robot 1. The term ‘flushing’ is not limited to a high flow rate
+and/or high velocity liquid and can include a liquid with any flow rate and/or velocity that can
+wash away an artefact from an environment. In some configurations, the flushing liquid may be
+provided at a substantially high flow rate and/or velocity to wash away an artefact from an
+environment, where the high flow rate and/or velocity is context dependent, for example
+whether a floor or a toilet bowl is being cleaned. The flushing liquid conduits 122 are configured
+to fluidly connect one or more components of the flushing liquid sub-assembly. The flushing
+liquid conduits 122 or portions thereof, may be arranged within the body 10 and/or the movable
+arm 30, external to the body 10 and/or the movable arm 30, or a combination of both.
+[0067] [Fig. 5] provides a schematic representation of a flushing liquid flow path 120 in the
+cleaning robot 1. The flushing liquid tank 121 is configured to contain a flushing liquid that
+comprises water. The flushing liquid tank 121 may be configured to receive via an inlet, the
+
+
+===== PAGE 13 =====
+WO 2025/259178 PCT/SG2025/050333
+11
+flushing liquid from an external liquid source. The flushing liquid tank 121 may therefore be
+replenished with flushing liquid. The flushing liquid may be water which includes but is not
+limited to distilled, tap and sterilized water. The flushing liquid need not be pure water such as
+distilled water, however water purity, pH and temperature can affect the solubility and/or
+stability of ozone in aqueous ozone as will be described further below. In some configurations,
+the flushing liquid is water with at least about 50% purity, at least about 60% purity, at least
+about 70% purity, at least about 80% purity, at least about 90% purity, at least about 95% purity
+or about 100% purity. In some configurations, the flushing liquid is tap water.
+[0068] The flushing liquid pump 123 is configured to pump the flushing liquid from the
+flushing liquid tank 121 to ozone generator 124. The flushing liquid pump 123 may be
+configured to pump the flushing liquid through the ozone generator 124 at a flow rate of about 1
+Limin. As depicted in [Fig. 5], the flushing liquid pump 123 is arranged between the flushing
+liquid tank 121 and the ozone generator 124. In some configurations, the flushing liquid pump
+123 may be positioned elsewhere along the flushing liquid flow path 120, for example upstream
+before the flushing liquid tank 121. The flushing liquid pump 123 may be a part of one or more
+components of the flushing liquid sub-assembly, for example it may be a part of the flushing
+liquid tank 121 or the ozone generator 124. The flushing liquid pump 123 may be a pump that
+draws in the flushing liquid from an upstream component, a pump that drives the flushing liquid
+to a downstream component or a combination thereof.
+[0069] The ozone generator 124 is configured to receive the flushing liquid from the
+flushing liquid tank 121 to form aqueous ozone, and the cleaning robot 1 is configured to
+provide the aqueous ozone from the ozene generator 124 to the first flushing outlet 126 to
+clean an environment 2. In particular, the ozone generator 124 receives the flushing liquid from
+the flushing liquid tank 121 (via the flushing liquid pump 123) to form aqueous ozone. When
+cleaning an environment, aqueous ozone can effectively decompose stains and improve
+cleaning efficiency. Sanitary ware can also be concurrently sterilized and disinfected. The
+ozone generator 124 may be an ozone generator that generates gaseous ozone which is
+dissolvable in the flushing liquid to form aqueous ozone or an ozone generator that generates
+aqueous ozone from the flushing liquid via an electrolytic process. In some configurations, the
+ozone generator comprises an electrolytic ozone generator that is configured to generate
+aqueous ozone from the flushing liquid. An electrolytic ozone generator is capable of
+generating aqueous ozone quickly and efficiently. An exemplary configuration of an electrolytic
+ozone generator is shown in [Fig. 7] and [Fig. 8]. The electrolytic ozone generator 124
+comprises a generator inlet 124a that is configured to receive the flushing liquid from the
+flushing liquid tank 121, and a generator outlet 124b that is configured to provide the generated
+
+
+===== PAGE 14 =====
+WO 2025/259178 PCT/SG2025/050333
+12
+aqueous ozone to downstream components, e.g. the first flushing outlet 126. The electrolytic
+ozone generator 124 comprises a chamber configured to hold a volume of flushing liquid
+received by the electrolytic ozone generator 124. The chamber of the electrolytic ozone
+generator 124 may comprise a volume of about 500 mL to about 1000 mL, or about 700 mL to
+about 800 mL. The electrolytic ozone generator 124 comprises electrodes to provide an
+electrical discharge to a volume of flushing liquid received by the electrolytic ozone generator
+124. The electrolytic ozone generator 124 further comprises one or more electrical contacts to
+electrically couple the electrodes to one or more electrical components of the cleaning robot,
+€.g. a processor and a power supply (e.g. the power storage device). The electrolytic ozone
+generator may comprise one or more of a metal, glass, plastic and ceramic. The electrodes
+may be formed of a different material from a wall of the chamber.
+[0070] The electrolytic ozone generator 124 is configured to provide an electrical discharge
+to a volume of flushing liquid that is received by the electrolytic ozone generator 124 to
+generate the aqueous ozone. The electrical discharge may be provided continuously or
+discontinuously. The amount and duration of the electrical discharge provided may vary
+depending on the desired concentration of ozone in the aqueous ozone. The electrical
+discharge may comprise a voltage of about 24 V. The electrolytic ozone generator 124 may
+comprise an active state where the electrical discharge is provided to the volume of flushing
+liquid, and an inactive state where the electrical discharge is not provided to the volume of
+flushing liquid.
+[0071] The electrolytic ozone generator 124 may be configured to be in the active state
+when flushing liquid from the flushing liquid tank 121 is provided to the electrolytic ozone
+generator 124. The electrolytic ozone generator 124 may be configured to be in the active state
+when the flushing liquid pump 123 is pumping the flushing liquid from the flushing liquid tank
+121 to the electrolytic ozone generator 124. In some configurations, the active state of the
+electrolytic ozone generator 124 occurs concurrently with the pumping of the flushing liquid by
+the flushing liquid pump 123. In some configurations, the active state of the electrolytic ozone
+generator 124 occurs for the same duration of time when the flushing liquid pump 123 is
+pumping the flushing liquid. In other configurations, the start of the active state of the
+electrolytic ozone generator 124 may occur at a different time from when the flushing liquid
+pump 123 is pumping the flushing liquid and/or the active state may occur for a different
+duration of time when the flushing liquid pump 123 is pumping the flushing liquid, however it is
+preferable for the period of time of the active state of the electrolytic ozone generator 124 to at
+least overlap with the period of time of pumping the flushing liquid by the flushing liquid pump
+123.
+
+
+===== PAGE 15 =====
+WO 2025/259178 PCT/SG2025/050333
+13
+[0072] The electrolytic ozone generator 124 may be configured to be in the inactive state
+when the flushing liquid from the flushing liquid tank 121 is not provided to the electrolytic
+ozone generator 124. The electrolytic ozone generator 124 may be configured to be in the
+inactive state when the flushing liquid pump 123 is not pumping the flushing liquid from the
+flushing liquid tank 121 to the electrolytic ozone generator 124. In some configurations, the
+inactive state of the electrolytic ozone generator 124 occurs concurrently with the time when
+the flushing liquid is not pumped to the electrolytic ozone generator 124 by the flushing liquid
+pump 123. In some configurations, the inactive state of the electrolytic ozone generator 124
+occurs for the same duration of time when the flushing liquid pump 123 is not pumping the
+flushing liquid. In other configurations, the start of the inactive state of the electrolytic ozone
+generator 124 may occur at a different time from when the flushing liquid pump 123 is not
+pumping the flushing liquid and/or the inactive state may occur for a different duration of time
+when the flushing liquid pump 123 is not pumping the flushing liquid.
+[0073] The aqueous ozone generated by the ozone generator 124 is provided from the
+ozone generator 124 to the first flushing outlet 126 and/or second flushing outlet via manifold
+125 to clean an environment 2 or one or more components of the cleaning robot 1, e.g.
+cleaning tool 152 respectively. The manifold 125 receives the aqueous ozone from the ozone
+generator 124 via a manifold inlet. The manifold 125 comprises two or more manifold outlets. A
+first manifold outlet directs a first portion of the aqueous ozone to the first flushing outlet 126 via
+a first flow path, and a second manifold outlet directs a second portion of the aqueous ozone to
+the second flushing outlet 127 via a second flow path. The manifold 125 may comprise one or
+more valves to control the flow (for example stop a flow or change a flow rate) of the aqueous
+ozone to the first and/or second flushing outlets 126, 127. The one or more valves may be
+solenoid valves. The one or more valves may be controlled electronically by a processor of the
+cleaning robot 1. In some configurations, the manifold 125 comprises three manifold outlets,
+where one manifold outlet directs a portion of the aqueous ozone to the first flushing outlet 126
+and the other two manifold outlets direct a portion of the aqueous ozone to a plurality of second
+flushing outlets 127. In the flushing liquid flow path 120, the liquids are considered to flow in a
+downstream direction from the flushing liquid tank 121 to the first flushing outlet 126 and/or
+second flushing outlet 127. The flushing liquid tank 121 is fluidly connected to the first flushing
+outlet 126 and/or the second flushing outlet 127 via only the ozone generator 124 (and
+manifold 125), i.e. liquid flow does not bypass the ozone generator 124. In some
+configurations, the flushing liquid tank 121 is fluidly connected to the first flushing outlet 126 via
+only the ozone generator 124, optionally via the manifold 125. One or more one-way valves
+
+
+===== PAGE 16 =====
+WO 2025/259178 PCT/SG2025/050333
+14
+may be provided to the flushing liquid flow path 120 to prevent or minimize reverse flow of the
+flushing liquid in an upstream direction.
+[0074] In some configurations, there is no manifold 125 and the aqueous ozone is divided
+into various flow paths to the first and/or second flushing outlets 126, 127 by the ozone
+generator outlet. In some configurations, there is no manifold 125 and the aqueous ozone from
+the ozone generator 124 is provided only to the first flushing outlet 126. In some configurations,
+the manifold 125 only provides the aqueous ozone to the first flushing outlet 126 and the
+manifold 125 does not provide aqueous ozone to the second flushing outlet 127. In some
+configurations, the second flushing outlet 127 may be provided with a liquid via a different flow
+path and/or source. For example, the second flushing outlet 127 may be provided with the
+flushing liquid from the flushing liquid tank 121, bypassing the ozone generator 124. In another
+example, the second flushing outlet 127 may be provided with a flushing fluid from another
+flushing liquid tank.
+[0075] The first flushing outlet 126 is provided at the second end portion 302 of the
+movable arm 30. The second end portion 302 is configured to direct a flow of the aqueous
+ozone discharged by the first flushing outlet 126 to the environment 2 that is being cleaned by
+the cleaning robot 1. In some configurations, the aqueous ozone may be directed by the
+second end portion 302 towards a cleaning tool 152 that is stored in the tool dock 151 to clean
+said cleaning tool 152. The first flushing outlet 126 may discharge the flow of aqueous ozone
+alongside a cleaning tool 152 that is coupled with the second end portion 302. The discharged
+flow of aqueous ozone may be directed in a direction that is substantially parallel to a length of
+a cleaning tool 152 coupled to the second end portion 302. In some configurations, the first
+flushing outlet 126 is configured to fluidly couple with a tool flushing liquid inlet of a cleaning
+tool 152 that is coupled with the second end portion 302 such that the aqueous ozone is
+delivered through a flow path within the cleaning tool 152 to a tool flushing liquid outlet to
+discharge the aqueous ozone. For example, the tool flushing liquid outlet may comprise one or
+more apertures in the brush head 152b3 of a brush tool 152b, at the base of the bristles. In
+some configurations, the first flushing outlet 126 may be provided on another portion of the
+body 10 such that the direction of the aqueous ozone towards an environment being cleaned
+by the cleaning robot 1, is different from a direction of a cleaning tool 152 (that is coupled to the
+movable arm 30) that engages the same environment. In some configurations, there is a
+plurality of first flushing outlets 126. Each of the plurality of first flushing outlets 126 may be
+provided to different portions of the body 10.
+
+
+===== PAGE 17 =====
+WO 2025/259178 PCT/SG2025/050333
+15
+[0076] The second flushing outlet 127 may be provided to one or more components (for
+example, a tool dock, a tank, a conduit, etc) of the cleaning robot 1 so as to provide the
+aqueous ozone to clean the one or more components of the cleaning robot 1. The tool dock
+151 may comprise one or more second flushing outlet 127 to provide the aqueous ozone to
+clean a cleaning tool 152 stored in the tool dock 151. Aqueous ozone is useful to clean any
+stains on the cleaning tool 152 and also sterilize and disinfect the cleaning tool 152. In
+configurations where the tool dock 151 comprises a plurality of compartments to separately
+store cleaning tools 152, there may be a plurality of second flushing outlets 127, each second
+flushing outlet 127 provided to each compartment. There may be one or more second flushing
+outlets 127 provided to each compartment. The second flushing outlet 127 is configured to
+direct a flow of aqueous ozone towards a portion of a stored cleaning tool 152 to clean the
+cleaning tool 152. Said flow of aqueous ozone may be directed in a direction substantially
+normal to a length of the stored cleaning tool 152, or towards the stored cleaning tool 152 at an
+angle such that the aqueous ozone is directed substantially towards the base of the tool dock
+151 so as to avoid unintentional escape of the aqueous ozone out of the tool dock 151.
+[0077] The first and/or second flushing outlets 126, 127 may discharge the aqueous ozone
+in one or more forms, e.g. a liquid column or liquid droplets. In some configurations, the first
+and/or second flushing outlets 126, 127 discharge the aqueous ozone in the form of a liquid
+column. The first and/or second flushing outlets 126, 127 may comprise a nozzle.
+[0078] The body 10 may comprise a cleaning liquid sub-assembly, components of which
+are housed, at least in part, within the cavity 101. The cleaning liquid sub-assembly comprises
+a cleaning liquid tank 131, a cleaning liquid pump 133 and a cleaning liquid outlet 136. The
+cleaning liquid sub-assembly is configured to provide a cleaning liquid to an environment 2 that
+is being cleaned by the cleaning robot 1. The cleaning liquid sub-assembly also comprises
+cleaning liquid conduits (not shown) to fluidly connect one or more components of the cleaning
+liquid sub-assembly. The cleaning liquid conduits or portions thereof, may be arranged within
+the body 10 and/or the movable arm 30, external to the body 10 and/or the movable arm 30, or
+a combination of both.
+[0079] [Fig. 6] provides a schematic representation of a cleaning liquid flow path 130 in the
+cleaning robot 1. The cleaning liquid tank 131 is configured to contain a flushing liquid that
+comprises water. The cleaning liquid tank 131 may be configured to receive via an inlet, the
+cleaning liquid from an external liquid source. The cleaning liquid tank 131 may therefore be
+replenished with cleaning liquid. The cleaning liquid comprises one or more cleaning
+chemicals. The one or more cleaning chemicals may be used to for example, decontaminate
+
+
+===== PAGE 18 =====
+WO 2025/259178 PCT/SG2025/050333
+16
+and/or deodorize an environment, degrease a surface and/or remove stains. The cleaning
+liquid may comprise water which is used as a solvent for the one or more cleaning chemicals.
+In some configurations, the cleaning liquid comprises an organic solvent. The flushing liquid is
+different from the cleaning liquid in that the flushing liquid would at least comprise water which
+is of a higher purity compared to the cleaning liquid. In some configurations, the flushing liquid
+does not comprise a cleaning chemical. In some configurations, the cleaning liquid comprises
+one or more cleaning chemicals and the flushing liquid comprises tap water. In the cleaning
+liquid flow path 130, liquids are considered to flow in a downstream direction from the cleaning
+liquid tank 131 to the cleaning liquid outlet 136. One or more valves may be provided to the
+cleaning liquid flow path 130 to for example, control the flow of the cleaning liquid to the
+cleaning outlet 136 and/or to prevent or minimize any reverse flow of the cleaning liquid in an
+upstream direction.
+[0080] The cleaning liquid pump 133 is configured to pump the cleaning liquid from the
+cleaning liquid tank 131 to the cleaning liquid outlet 136 to clean an environment 2. As depicted
+in [Fig. 6], the cleaning liquid pump 133 is arranged between the cleaning liquid tank 131 and
+the cleaning liquid outlet 136. In some configurations, the cleaning liquid pump 133 may be
+positioned upstream before the cleaning liquid tank 131. The cleaning liquid pump 133 may be
+part of one or more components of the cleaning liquid sub-assembly, for example it may be a
+part of the cleaning liquid tank 131. The cleaning liquid pump 133 may be a pump that draws in
+the cleaning liquid from an upstream component, a pump that drives the cleaning liquid to a
+downstream component or a combination thereof.
+[0081] The cleaning liquid outlet 136 is provided at the second end portion 302 of the
+movable arm 30. The cleaning liquid outlet 136 may be arranged adjacent to the first flushing
+outlet 126 as shown in [Fig. 9]. The terminal end of the first flushing outlet 126 may be
+positioned proximal to the second end portion 302 relative to the terminal end of the cleaning
+liquid outlet 136 (i.e. the flushing liquid outlet 126 is closer to the second end portion 302). In
+some configurations, cleaning liquid diverges as it exits cleaning liquid outlet 136. Having the
+first flushing outlet 126 positioned closer to the second end portion 302 prevent or minimizes
+the first flushing outlet 126 from being blocked up by the cleaning liquid. Further, having the
+cleaning liquid outlet 136 arranged distal relative to the first flushing outlet 126 creates a pivotal
+point of contact for the second end portion 302. This is advantageous for example when the
+second end portion 302 is actuating a toilet bowl flush button where a pivot point will make it
+easier to press the flush button compared to a larger area of contact if the terminal ends of the
+first flushing outlet 126 and the cleaning liquid outlet 136 terminate along the same plane. The
+flow rate of the aqueous ozone from the first flushing outlet 126 may be the same or different
+
+
+===== PAGE 19 =====
+WO 2025/259178 PCT/SG2025/050333
+17
+from the flow rate of the cleaning liquid from the cleaning outlet 136. The second end portion
+302 is configured to direct a flow of the cleaning liquid discharged by the cleaning liquid outlet
+136 to an environment 2 that is being cleaned by the cleaning robot 1. In some configurations,
+the cleaning liquid may be directed by the second end portion 302 towards a cleaning tool 152
+that is stored in the tool dock 151 to clean said cleaning tool 152. The cleaning liquid outlet 136
+may discharge the flow of cleaning liquid alongside a cleaning tool 152 that is coupled with the
+second end portion 302. The discharged flow of cleaning liquid may be directed in a direction
+that is substantially parallel to a length of a cleaning tool 152 coupled to the second end portion
+302. In some configurations, the cleaning liquid outlet 136 is configured to fluidly couple with a
+tool cleaning liquid inlet of a cleaning tool 152 that is coupled with the second end portion 302
+such that the cleaning liquid is delivered through a flow path within the cleaning tool 152 to a
+tool cleaning liquid outlet to discharge the cleaning liquid. In some configurations, a portion of
+said flow path may merge with the flow path for the flushing liquid, and the tool flushing liquid
+outlet is the same as the tool cleaning liquid outlet. In some configurations, the flow paths are
+separate, and the tool cleaning liquid outlet is different from the tool flushing liquid outlet. For
+example, the tool cleaning liquid outlet may comprise one or more apertures in the brush head
+152b3 of a brush tool 152b, at the base of the bristles. In some configurations, the cleaning
+liquid outlet 136 may be provided on another portion of the body 10 such that the direction of
+the cleaning liquid towards an environment being cleaned by the cleaning robot 1, is different
+from a direction of a cleaning tool 152 (that is coupled to the movable arm 30) that engages the
+same environment. In some configurations, there is a plurality of cleaning liquid outlets 136.
+Each of the plurality of cleaning liquid outlets 136 may be provided to different portions of the
+body 10. One or more cleaning liquid outlets 136 may be provided to the tool dock 151 (e.g.
+one or more compartments if there are a plurality of compartments) to clean one or more
+cleaning tools 152 stored at the tool dock 151. The flow of cleaning liquid provided by the
+cleaning liquid outlet 136 may be directed in a direction substantially normal to a length of the
+stored cleaning tool 152, or towards the stored cleaning tool 152 at an angle such that the
+cleaning liquid is directed substantially towards the base of the tool dock 151 so as to avoid
+unintentional escape of the cleaning liquid out of the tool dock 151.
+[0082] The cleaning liquid outlet 136 may discharge the cleaning liquid in one or more
+forms, e.g. a liquid column or liquid droplets. In some configurations, the cleaning liquid outlet
+136 discharges the cleaning liquid in the form of liquid droplets. The cleaning liquid outlet 136
+may comprise a nozzle.
+Mobility Mechanism
+
+
+===== PAGE 20 =====
+WO 2025/259178 PCT/SG2025/050333
+18
+[0083] The mobility mechanism 20 is configured to support the body 10 and provide
+mobility to the cleaning robot 1 along a surface, e.g. a floor. Accordingly, cleaning robot 1
+comprises a mobile cleaning robot 1. The mobility mechanism 20 may permit manual
+movement (e.g. user operated) or provided automated movement of the cleaning robot 1. As
+depicted in [Fig. 1], the body 10 is arranged on top of the mobility mechanism 20, where the
+mobility mechanism 20 acts as a base of the cleaning robot 1. However, it will be appreciated
+that a cleaning robot is not limited to such an arrangement and in some configurations, the
+mobility mechanism 20 may be arranged on a lateral side of the body 10, such that the mobility
+mechanism 20 permits mobility of the cleaning robot 1 along a substantially vertical surface,
+such as a wall. The body 10 may be removably coupled with the mobility mechanism 20 to
+permit for example independent repair and/or maintenance of the body 10 and the mobility
+mechanism 20.
+[0084] The mobility mechanism 20 comprises four wheels 210. It will be appreciated that
+the number of wheels is not limiting and in some configurations the mobility mechanism 20 may
+comprise one, two, three or five or more wheels. The one or more wheels 210 may be a caster
+wheel that permit movement in a plurality of directions. The mobility mechanism 20 may
+comprise other forms of propulsion mechanisms, for example continuous tracks. The mobility
+mechanism 20 may comprise actuators (e.g. gears) that are configured to actuate movement of
+one or more components of the mobility mechanism 20. The mobility mechanism 20 comprises
+one or more processors to control one or more components of the mobility mechanism 20. The
+one or more processors of the mobility mechanism 20 may communicate with one or more
+components of the cleaning robot 1, for example, a sensor (not shown), a user input/output
+(I/O) interface, etc. The mobility mechanism 20 may comprise a power storage device to power
+one or more components of the cleaning robot 1. The mobility mechanism 20 permits
+movement of the cleaning robot 1 in one or more directions, for example in the x and/or y
+directions.
+Movable Arm
+[0085] The movable arm 30 extends from the body 10. In particular, the movable arm 30
+extends from an upper surface of the body 10, where the upper surface is opposite to the
+surface of the body 10 that engages the mobility mechanism 20. It will be appreciated that the
+arrangement of the movable arm 30 with respect to the body 10 is not limiting and in some
+configurations, the movable arm 30 may extend from another surface, e.g. a lateral side
+surface, of the body 10. In some configurations, the movable arm 30 may be positioned
+proximate to the mobility mechanism 20. In some configurations, the movable arm 30 may
+
+
+===== PAGE 21 =====
+WO 2025/259178 PCT/SG2025/050333
+19
+extend from the mobility mechanism 20. The movable arm 30 may be removably coupled with
+the body 10 to permit for example independent repair and/or maintenance of the movable arm
+30 and body 10.
+[0086] The movable arm 30 comprises a first end portion 301 and a second end portion
+302. The first end portion 301 is connectable to the body 10 and the second end portion 302 is
+movable in a plurality of directions, i.e. in the x, y and/or z directions. The ability of the movable
+arm 30 and/or second end portion 302 to move allows the cleaning robot 1 to perform cleaning
+actions in a_ three-dimensional space, expanding its capability of cleaning complex
+environments, such as sanitary appliances (e.g. toilet bowls, urinals, water basins, etc.) in a
+bathroom. The first end portion 301 is rotatably (includes pivotably) connected to the body 10.
+The first end portion 301 may be rotatable about one or more axes relative to the body 10. The
+movable arm 30 further comprises joints 303 and segments 304. The joints 303 connect the
+segments 304 and/or one or more parts of the movable arm 30 together. The joints 303 are
+configured to permit rotational movement of the segments 304 and/or one or more parts of the
+movable arm 30 relative to one another. The one or more joints 303 accordingly permit mobility
+of the movable arm 30 and/or the second end portion 302. In some configurations, the movable
+arm 30 comprises one joint 303. In some configurations, the movable arm 30 comprises a
+plurality of joints 303. In some configurations, the movable arm 340 comprise one segment
+304. In some configurations, the movable arm 30 comprises a plurality of segments 304. The
+segments 304 may be elongate segments 304 as shown in [Fig. 1] to [Fig. 4]. The movable arm
+30 comprises actuators (e.g. gears) that are configured to actuate movement in one or more
+components of the movable arm 30. The movable arm 30 may comprise one or more electrical
+and/or fluidic connections, for example electrical wiring and flexible conduits. The one or more
+electrical and/or fluidic connections (e.g. liquid conduits) may be arranged internally within the
+movable arm 30, mounted externally to the movable arm 30, or a combination of both. The
+electrical and fluidic connections allow communication of for example electrical signals
+(includes power) and liquids between the body 10 and the second end portion 302 and/or one
+or more cleaning tools 152.
+[0087] The second end portion 302 is configured to removably couple with one or more
+cleaning tools 152 to clean an environment. The second end portion 302 is configured to
+mechanically and electrically couple with the one or more cleaning tools 152 to clean an
+environment. [Fig. 9] and [Fig. 10] show the second end portion 302 of the movable arm 30.
+The second end portion 302 comprises a tool coupling mechanism in the form of gripping
+mechanism 310, and an identification reader 320. The first flushing outlet 126 and cleaning
+
+
+===== PAGE 22 =====
+WO 2025/259178 PCT/SG2025/050333
+20
+liquid outlet 136 are provided to the second end portion 302 as described elsewhere in the
+present disclosure.
+[0088] The second end portion 302 of the movable arm 30 is configured to limit torsional,
+axial and/or lateral movement of a cleaning tool 152 relative to the second end portion 302
+when coupled. In the configuration shown in [Fig. 9] and [Fig. 10], the gripping mechanism 310
+comprises a first jaw portion 311 and a second jaw portion 312. In some configurations, the
+gripping mechanism 310 comprises more than two jaw portions. The gripping mechanism 310
+is configured to actuate the first and second jaw portions 311, 312 towards each other to clamp
+a grip portion (for example a fan tool grip portion 152a5 and brush tool grip portion 152b5) of a
+cleaning tool 152. The first jaw portion 311 comprises a contact surface that faces and is
+opposite a contact surface of the second jaw portion 312. The contact surfaces of the first and
+second jaw portions 311, 312 may comprise a shape, texture and/or material that facilitates the
+coupling of a cleaning tool 152 with the second end portion 302. As shown in [Fig. 11], the
+contact surface of the first jaw portion 311 comprises two elongate recesses 311a, 311b that
+are arranged transverse to one another, in the shape of a cross. The contact surface of the
+second jaw portion 312 may comprise the same recesses (312a, 312b not shown) in mirror
+image. The two elongate recesses 311a, 311b are arranged to correspond with complimentary
+projections on the grip portion of the cleaning tool 152. The recesses 311a, 311b are
+configured to receive at least a portion of the complimentary projections of the grip portion of
+the cleaning tool 152. When the first and second jaw portions 311, 312 are engaged with the
+grip portion of the cleaning tool 152 and the complimentary projections are received by the
+recesses 311a, 311b, 312a, 312b, the cleaning tool 152 is prevented or restricted from
+torsional, axial and/or lateral movement relative to the second end portion 302. The provides
+stability of the engaged cleaning tool 152 relative to the second end portion 302 during
+operation of the cleaning tool 152. It will be appreciated that in the alternative, the recesses
+may be provided on the grip portion of the cleaning tool 152 and the contact surfaces of the first
+and second jaw portions 311, 312 comprise the complimentary projections. In some
+configurations, the contact surfaces comprise a combination of recesses and projections. Other
+configurations of the recesses and/or projections are envisaged in the present disclosure and
+are not limited to the configuration shown in [Fig. 11], for example the two recesses may form
+an “X” shape. The contact surface of the second jaw portion 312 may have the same or
+different shape, texture and/or material from the contact surface of the first jaw portion 311.
+[0089] The second end portion 302 comprises one or more electrical contacts to electrically
+couple with one or more electrical contacts on the one or more cleaning tools 152 when a
+cleaning tool 152 is coupled with the second end portion 302. Electrically coupling the second
+
+
+===== PAGE 23 =====
+WO 2025/259178 PCT/SG2025/050333
+21
+end portion 302 and the cleaning tool 152 allows the cleaning robot 1 to power and/or control
+the cleaning tool 152 to clean an environment 2. An electrical coupling is however optional and
+the cleaning tool 152 may not require electrical power. In such a configuration, the second end
+portion 302 of the movable arm 30 is only mechanically coupled with the cleaning tool 152.
+Other forms of coupling to couple movement of a component (e.g. second end portion 302)
+with another (e.g. cleaning tool 152) are also envisaged in the present disclosure, whether in
+addition to or as an alternative of mechanical coupling, for example, magnetic coupling.
+Therefore, any reference to a mechanical coupling in the present disclosure may include other
+such forms of coupling as an alternative or in addition to mechanical coupling.
+[0090] The identification reader 320 is configured to identify the environment 2 or a
+characteristic of the environment 2, for example the type of toilet fixtures such as toilet bowl,
+mirror, basin and urinal. The identification reader may be a camera.
+Cleaning Tool
+[0091] Examples of cleaning tools 152 are shown in [Fig. 12] to [Fig. 15], where [Fig. 12]
+and [Fig. 13] show a fan tool 152a, and [Fig. 14] and [Fig. 15] show a brush tool 152b.
+[0092] With reference to [Fig. 12] and [Fig. 13], the fan tool 152a comprises a fan tool body
+152a1, an air inlet 152a2, an impeller 152a3, an air outlet 152a4, a fan tool grip portion 152a5,
+fan tool electrical contacts 152a6 and a fan tool dock engagement portions 152a7. The fan tool
+152a is configured to provide an air flow to dry an environment. The fan tool body 152a1
+houses one or more electronic and mechanical components of the fan tool 152a. When in
+operation, the impeller 152a3 is configured to draw in a flow of air from ambient via the air inlet
+152a2 and direct the flow of air out through the air outlet 152a4. The fan tool grip portion 152a5
+is configured to be clamped by the first and second jaw portions 311, 312 of the gripping
+mechanism 310, to couple with the second end portion 302. The fan tool electrical contacts
+152a6 are configured to electrically couple with electrical contacts on the second end portion
+302. When the fan tool 152a is electrically coupled with the cleaning robot 1 via the second end
+portion 302, the cleaning robot 1 is configured to power and/or control the operation of the fan
+tool 152a, for example driving the rotation of the impeller 152a3 to generate an air flow and
+controlling the angular velocity of the impeller 152a3 to control the air flow rate. The fan tool
+electrical contacts 152a6 are configured to electrically couple with electrical contacts on the
+second end portion 302 when the fan tool 152a is mechanically coupled with the second end
+portion 302. The fan tool electrical contacts 152a6 and the fan tool grip portion 152a5 are
+arranged to allow substantially simultaneous electrical and mechanical coupling when the
+gripping mechanism 310 engages the fan tool 152a. In the alternative, the electrical coupling
+
+
+===== PAGE 24 =====
+WO 2025/259178 PCT/SG2025/050333
+22
+and mechanical coupling occur sequentially. The electrical coupling may occur after the
+mechanical coupling occurs. The fan tool electrical contacts 152a6 are arranged proximate to
+the fan tool grip portion 152a5. The fan tool dock engagement portions 152a7 are configured to
+removably engage the fan tool 152a with the tool dock 151 for storage of the fan tool 152a
+when it is not in use. There may be two or more fan tool dock engagement portions 152a7 to
+provide secure engagement of the fan tool 152a with the tool dock 151, which can be useful so
+that the fan tool 152a does not become disengaged from the tool dock 151 or become
+dislodged from its predetermined configuration in the tool dock 151 (which the cleaning robot 1
+uses to determine where to manoeuvre the second end portion 302 to in order to engage with
+the correct cleaning tool 152), when the cleaning robot 1 moves. Having upper and lower fan
+tool dock engagement portions 152a7 as shown in [Fig. 13] may also prevent or minimize
+lateral movement of the fan tool 152a when it is engaged with the tool dock 151, particularly
+during movement of the cleaning robot 1. When the fan tool 152a is engaged with the tool dock
+151, a portion of the fan tool 152a (e.g. the impeller 152a3 and air outlet 152a4) are positioned
+in the tool chamber of the tool dock 151 which keeps said portion from contacting anything
+external to the cleaning robot 1 so as to maintain sanitary conditions of the environment 2. The
+fan tool dock engagement portions 152a7 may comprise electrical contacts to electrically
+couple with electrical contacts at the tool dock 151 when the fan tool 152a is engaged with the
+tool dock 151. When the fan tool 152a is electrically coupled with the cleaning robot 1 via the
+electrical contacts of the fan tool dock engagement portions 152a7 and the tool dock 151, the
+cleaning robot 1 may be configured to power and/or control the operation of the fan tool 152b,
+which may be useful to for example rotate the impeller 152a3 when a liquid is directed to the
+impeller 152a3 to clean it. As the fan tool 152a relies on the cleaning robot 1 to power and/or
+control its operation and has an inbuilt impeller which will likely be positioned proximate the
+environment being cleaned when in operation (i.e. when the fan tool 152a is coupled with the
+second end portion 302), the fan tool 152a avoids the need for complicated wiring and air
+ducts.
+[0093] With reference to [Fig. 14] and [Fig. 15], the brush tool 152b comprises a brush tool
+body 152b1, a rotor shaft 152b2, a brush head 152b3, a brush tool grip portion 152b5, brush
+tool electrical contacts 152b6 and brush tool dock engagement portions 152b7. The brush tool
+152b is configured to clean stains in an environment, which can be done effectively because of
+the rotation of the brush head 152b3. The brush tool body 152b1 houses one or more
+electronic and mechanical components of the brush tool 152b. When in operation, a motor in
+the brush tool body 152b1 is configured to drive the rotation of the rotor shaft 152b which in
+turn drives the rotation of the brush head 152b3. The brush tool grip portion 152b5 is
+
+
+===== PAGE 25 =====
+WO 2025/259178 PCT/SG2025/050333
+23
+configured to be clamped by the first and second jaw portions 311, 312 of the gripping
+mechanism 310, to couple with the second end portion 302. The brush tool electrical contacts
+152b6 are configured to electrically couple with electrical contacts on the second end portion
+302. When the brush tool 152b is electrically coupled with the cleaning robot 1 via the brush
+tool electrical contacts 152b6 and the second end portion 302, the cleaning robot 1 is
+configured to power and/or control the operation of the brush tool 152b, for example driving the
+rotation and/or controlling the angular velocity of rotation of the rotor shaft 152b2 and brush
+head 152b3, to clean an environment 2. The brush tool electrical contacts 152b6 are
+configured to electrically couple with electrical contacts on the second end portion 302 when
+the brush tool 152b is mechanically coupled with the second end portion 302. The brush tool
+electrical contacts 152b6 and the brush tool grip portion 152b5 are arranged to allow
+substantially simultaneous electrical and mechanical coupling when the gripping mechanism
+310 engages the brush tool 152b. In the alternative, the electrical coupling and mechanical
+coupling occur sequentially. The electrical coupling may occur after the mechanical coupling
+occurs. The brush tool electrical contacts 152b6 are arranged proximate to the brush tool grip
+portion 152b5.
+[0094] The brush tool dock engagement portions 152b7 are configured to removably
+engage with the tool dock 151 for storage of the brush tool 152b when it is not in use and/or
+when cleaning of the brush tool 152b is required. There may be two or more brush tool dock
+engagement portions 152b7 to provide secure engagement of the brush tool 152b with the tool
+dock 151, which can be useful so that the brush tool 152b does not become disengaged from
+the tool dock 151 or become dislodged from its predetermined configuration in the tool dock
+151 (which the cleaning robot 1 uses to determine where to manoeuvre the second end portion
+302 to in order to engage with the correct cleaning tool 152), when the cleaning robot 1 moves.
+Having upper and lower brush tool dock engagement portions 152b7 as shown in [Fig. 15] may
+also prevent or minimize lateral movement of the brush tool 152b when it is engaged with the
+tool dock 151, particularly during movement of the cleaning robot 1. When the brush tool 152b
+is engaged with the tool dock 151, a portion of the brush tool 152b (e.g. the rotor shaft 152b2
+and brush head 152b3) are positioned in the tool chamber of the tool dock 151 which keeps
+said portion from contacting anything external to the cleaning robot 1 so as to maintain sanitary
+conditions of the environment 2. The brush tool dock engagement portions 152b7 may
+comprise electrical contacts to electrically couple with electrical contacts at the tool dock 151
+when the brush tool 152b is engaged with the tool dock 151. When the brush tool 152b is
+electrically coupled with the cleaning robot 1 via the electrical contacts of the brush tool dock
+engagement portions 152b7 and the tool dock 151, the cleaning robot 1 may be configured to
+
+
+===== PAGE 26 =====
+WO 2025/259178 PCT/SG2025/050333
+24
+power and/or control the operation of the brush tool 152b, for example driving the rotation
+and/or controlling the angular velocity of rotation of the rotor shaft 152b2 and brush head
+152b3, to clean the brush tool 152b whena liquid is directed to the brush head 152b3.
+[0095] As the brush tool 152b relies on the cleaning robot 1 to power and/or control its
+operation, it does not require complicated wiring and can rotate independently, which can clean
+stubborn stains and enhance the cleaning effect on stubborn stains in an environment 2.
+Method of Operating the Cleaning Robot
+[0096] The cleaning robot 1 may be configured with preset cleaning programmes and/or
+may receive user set cleaning programmes via the I/O interface 102. For example, the cleaning
+robot 1 may be pre-programmed with details of an environment 2 to be cleaned, and a user
+may input into the I/O interface 102 when the cleaning robot 1 should commence the cleaning
+of the environment 2. For example, the process of cleaning a toilet bowl is pre-programmed in
+the cleaning robot 1, where which tool to use and the sequence of cleaning (e.g. use of brush
+tool 152b before use of fan tool 152a) is predetermined. When the cleaning robot 1 identifies
+the toilet bowl, it will commence cleaning the toilet bowl based on the pre-programmed
+sequence. The cleaning robot 2 may assess the condition of the environment 2 before
+commencing cleaning. When a cleaning process commences, the cleaning robot may
+autonomously navigate the environment 2 to clean said environment 2. In some configurations,
+the user may move the cleaning robot 1 to the environment 2 to be cleaned. For example, the
+environment 2 may be a toilet bowl and the user may position the cleaning robot 1 proximal the
+toilet bowl, and the user may commence the cleaning of the toilet bowl by the cleaning robot 1
+by selecting a start function on the I/O interface 102. The I/O interface 102 may provide
+information to a user on one or more of the cleaning progress, amount of liquids remaining in
+the flushing liquid and/or cleaning liquid tanks 121, 131, and amount of waste in the waste tank
+141.
+[0097] A method of cleaning of an environment 2 by the cleaning robot 1 is provided as a
+non-limiting example below. Other types of cleaning operations by the cleaning robot 1 are also
+possible and should not be limited by the steps and/or their sequences provided in this non-
+limiting example.
+[0098] The method of cleaning an environment comprises operating the mobility
+mechanism 20 to move the cleaning robot 1 to an environment 2 for cleaning. Operating the
+mobility mechanism 20 includes a manual operation by a user (the mobility mechanism 20 may
+be set to a ‘manual’ mode) and an autonomous movement by the cleaning robot 1. The
+
+
+===== PAGE 27 =====
+WO 2025/259178 PCT/SG2025/050333
+25
+environment 2 may comprise an area and/or a structure. Where the environment comprises an
+area, the method comprises moving the cleaning robot 1 within the area.
+[0099] The method further comprises performing a cleaning process of the environment 2
+by the cleaning robot 1. The step of performing a cleaning process of the environment 2 may
+comprise the cleaning robot 1 receiving a user input via the I/O interface 102 to begin the
+cleaning process or may comprise commencing the cleaning process based on a timed trigger
+based on a preset cleaning programme. The user input may include details regarding the
+environment 2, for example where the environment 2 comprises a toilet bowl, dimensions and
+shape of the toilet bowl. The cleaning robot 1 may perform steps of a pre-programmed cleaning
+process sequence or may perform steps set by a user providing user inputs via the I/O
+interface 102.
+[00100] The cleaning robot 1 may operate the identification system 320 to identify the
+environment 2 or a characteristic of the environment 2, before commencing the cleaning
+process. Once the cleaning process commences, the cleaning process may comprise an
+optional step of pre-flushing the environment 2 with a flow of aqueous ozone by pointing the
+first flushing outlet 126 provided on the second end portion 302 of the movable arm 30 towards
+the environment 2 and directing the flow of aqueous ozone towards the environment 2. During
+the pre-flushing of the environment 2, the flushing liquid pump 123 is pumping the flushing
+liquid from the flushing liquid tank 121 to the ozone generator 124 to generate aqueous ozone,
+and providing the aqueous ozone from the ozone generator 124 to the flushing liquid outlet 126
+at the second end portion 302. Where the ozone generator 124 comprises an electrolytic ozone
+generator and as the flushing liquid is being pumped to the ozone generator 124, the
+electrolytic ozone generator 124 is in an active state and is providing an electrical discharge to
+a volume of the flushing liquid to generate the aqueous ozone.
+[00101] The cleaning process comprises operating the movable arm 30 and coupling the
+second end portion 302 of the movable arm 30 with a brush tool 152b that is stored at the tool
+dock 151. The cleaning tools 152 are arranged in a predetermined configuration in the tool
+dock 151 so that cleaning robot 1 will know where to control the second end portion 302 to
+move to so as to couple with the correct cleaning tool 152. After engaging the brush tool 152b,
+the cleaning robot 1 moves the brush tool 152b and engages the brush tool 152b with a surface
+of the environment 2. The cleaning robot 1 may be configured to detect stained areas on the
+environment 2 and the cleaning robot 1 may be configured to engage the brush tool 152 with
+the stained areas of the environment 2. The cleaning process further comprises operating the
+brush tool 152b by rotating the brush head 152b3 and urging the brush head 152b3 against the
+
+
+===== PAGE 28 =====
+WO 2025/259178 PCT/SG2025/050333
+26
+environment 2. While the brush tool 152b is being operated to clean the environment 2, the
+cleaning process may comprise providing a flow of aqueous ozone from the first flushing outlet
+126 to the environment 2 to flush away dislodged artefacts. During this time, the flushing liquid
+pump 123 is operating to provide the flushing liquid from the flushing liquid tank 121 to the
+ozone generator 124 which is operating in the active state to form the aqueous ozone and is
+providing the aqueous ozone to the first flushing liquid outlet 126 to clean the environment 2. In
+some configurations, the cleaning process comprises stopping operation of the brush tool 152b
+and flushing the environment 2 with the aqueous ozone after the brush tool 152b has stopped
+operating.
+[00102] The cleaning process may comprise directing a flow of cleaning liquid to the
+environment 2 by pointing the cleaning liquid outlet 136 provided on the second end portion
+302 of the movable arm 30 towards the environment 2 and directing a flow of cleaning liquid
+towards the environment 2. During provision of the cleaning liquid to the environment 2, the
+cleaning liquid pump 133 is pumping cleaning liquid from the cleaning liquid tank 131 to the
+cleaning liquid outlet 136. In some configurations, the cleaning liquid is provided to the
+environment 2 during the operation of the brush tool 152b. In some configurations, the cleaning
+liquid is provided to the environment 2 after the brush tool 152b has stopped operating. In
+some configurations, the cleaning liquid is provided to the environment 2 while aqueous ozone
+is provided to the environment 2. In some configurations, the cleaning liquid is provided to the
+environment 2 when the aqueous ozone is not being provided to the environment 2, i.e. the
+provision of the aqueous ozone and cleaning liquid to the environment 2 are in a consecutive
+manner.
+[00103] After the environment 2 is considered to be adequately cleaned, for example by
+determining whether there are still any stained areas present in the environment 2 by the
+cleaning robot 1, or after a series of cleaning steps have been completed by the cleaning robot
+1, the cleaning process comprises decoupling the brush tool 152b from the second end portion
+302 of the movable arm 30 and coupling the brush tool 152b with the tool dock 151 to store the
+brush tool 152b. The cleaning process may further comprises coupling the second end portion
+302 of the movable arm 30 with the fan tool 152a that is stored in the tool dock 151. The fan
+tool 152a is thereafter moved to the environment 2 by the movable arm 30 and the cleaning
+process comprises operating the fan tool 152a to rotate the impeller 15243 to direct an air flow
+to the environment 2 to dry the environment 2. When the environment 2 is being dried by the
+fan tool 152a, the cleaning robot 1 may concurrently clean the brush tool 152b stored in the tool
+dock 151 by providing a flow of aqueous ozone from the ozone generator 124 to the brush tool
+152b, e.g. the brush head 152b3, via the second flushing outlet 127. The cleaning robot 1 may
+
+
+===== PAGE 29 =====
+WO 2025/259178 PCT/SG2025/050333
+27
+operate the brush tool 152b to rotate the brush head 152b3 being cleaned while the flow of
+aqueous ozone is directed to the brush head 152b3. In some configurations, the cleaning of the
+brush tool 152b3 in the tool dock 151 occurs after the environment 2 has been dried and the
+fan tool 152a is returned to the tool dock 151 for storage.
+[00104] After the cleaning process has completed, the cleaning robot 1 may be moved or
+may move to a storage zone for storing the cleaning robot 1 until it is needed. The storage
+zone may include a base station to which the cleaning robot 1 is configured to removably
+couple. When the cleaning robot 1 is coupled with the base station, the cleaning robot 1 may
+electrically couple with a power supply to charge the power storage device of the cleaning robot
+1, the flushing liquid tank 121 and/or the cleaning liquid tank 131 may be replenished with
+flushing liquid and cleaning liquid respectively, and/or the waste tank 141 may be emptied of
+waste for disposal. The cleaning robot 1 and the base station may accordingly comprise one or
+more of electrical contacts, mechanical couplings and pneumatic couplings.
+[00105] Although the present invention is described as implemented in the above described
+embodiment[s], it is not to be construed to be limited as such. It is to be appreciated that
+modifications and improvements may be made without departing from the scope of the present
+invention.
+[00106] For example, the cleaning robot 1 may comprise a metal, a plastic or a combination
+thereof.
+[00107] As yet another example, the cleaning robot 1 may comprise one or more sensors.
+The one or more sensors may be one or more of an image sensor, a line sensor, a proximity
+sensor, flow sensor, pressure sensor and temperature sensor. One or more of the sensors of
+the cleaning robot 1 may be configured to provide feedback to the cleaning robot 1 regarding
+an environment 2, e.g. the distance between the cleaning robot 1 and the environment 2 to be
+cleaned. One or more of the sensors of the cleaning robot 1 may be configured to receive
+information of a flow along one or more flow paths of the cleaning robot 1, for example the flow
+rate of flushing liquid through the flushing liquid flow path 120. Information provided by sensors
+relating to a flow along one or more flow paths of the cleaning robot 1 may be used to control
+one or more components of the cleaning robot 1, for example a flow sensor may detect a flow
+entering the ozone generator 124 and may provide a signal to a processor which controls the
+electrical discharge to the volume of flushing liquid in the ozone generator 124. Therefore, the
+trigger to place the ozone generator 124 in the active state may be the detection of one or more
+characteristics of a flow through the flushing liquid flow path 120 rather than the detection of
+operation of the flushing liquid pump 123.
+
+
+===== PAGE 30 =====
+WO 2025/259178 PCT/SG2025/050333
+28
+[00108] As yet another example, the flushing liquid tank 121, cleaning liquid tank 131 and/or
+waste tank may comprise one or more level sensors to detect a level of content in the
+respective tank. The one or more level sensors may comprise a liquid level sensor. The one or
+more level sensors may comprise a maximum level sensor and a minimum level sensor.
+[00109] As yet another example, the cleaning robot 1 may be configured to output one or
+more audible and visual (e.g. via the I/O interface 102) signals, for example to indicate the
+commencement and/or end of a cleaning process.
+[00110] As yet another example, the tool dock 151 is optional and the second end portion
+302 of the movable arm 30 is configured to couple with cleaning tools 152 stored elsewhere, for
+example in a storage at the base station.
+[00111] It should be further appreciated by the person skilled in the art that variations and
+combinations of features described above, not being alternatives or substitutes, may be
+combined to form yet further embodiments falling within the intended scope of the disclosure.
+As would be understood by a person skilled in the art, each embodiment, may be used in
+combination with other embodiment or several embodiments.
+REFERENCE SIGNS LIST
+Cleaning robot 1
+Body 10
+Cavity 101
+I/O interface 102
+Stop button 103
+Flushing liquid flow path 120
+Flushing liquid tank 121
+Flushing liquid conduit 122
+Flushing liquid pump 123
+Ozone generator 124
+
+
+===== PAGE 31 =====
+WO 2025/259178 PCT/SG2025/050333
+29
+Manifold 125
+First flushing outlet 126
+Second flushing outlet 127
+Cleaning liquid flow path 130
+Cleaning liquid tank 131
+Cleaning liquid pump 133
+Cleaning liquid outlet 136
+Waste tank 141
+Tool dock 151
+Fan tool 152a
+Fan tool body 152a1
+Air inlet 152a2
+Impeller 152a3
+Air outlet 152a4
+Fan tool grip portion 152a5
+Fan tool electrical contacts 152a6
+Fan tool dock engagement portion 152a7
+Brush tool 152b
+Brush tool body 152b1
+Rotor shaft 152b2
+Brush head 152b3
+Brush tool grip portion 152b5
+
+
+===== PAGE 32 =====
+WO 2025/259178
+30
+Brush tool electrical contacts 152b6
+Brush tool dock engagement portion 152b7
+Mobility mechanism 20
+Wheel 210
+Movable Arm 30
+First end portion 301
+Second end portion 302
+Joint 303
+Gripping mechanism 310
+First jaw portion 311
+Second jaw portion 312
+Identification reader 320
+PCT/SG2025/050333
+
+
+===== PAGE 33 =====
+WO 2025/259178 PCT/SG2025/050333
+31
+CLAIMS
+[Claim 1] A cleaning robot comprising:
+a body comprising:
+a flushing liquid tank configured to contain a flushing liquid comprising
+water;
+a first flushing outlet;
+an ozone generator, and
+a mobility mechanism configured to support the body and provide mobility to the
+cleaning robot along a surface,
+wherein the ozone generator is configured to receive the flushing liquid from the
+flushing liquid tank to form aqueous ozone, and the cleaning robot is configured
+to provide aqueous ozone from the ozone generator to the first flushing outlet to
+clean an environment.
+[Claim 2] The cleaning robot according to claim 1, wherein the ozone generator comprises
+an electrolytic ozone generator configured to provide an electrical discharge to a
+volume of flushing liquid received by the ozone generator from the flushing liquid
+tank to form the aqueous ozone.
+[Claim 3] The cleaning robot according to claim 2, wherein the electrolytic ozone generator
+comprises
+an active state wherein the electrical discharge is provided to the volume of
+flushing liquid, and
+an inactive state wherein the electrical discharge is not provided to the
+volume of flushing liquid,
+wherein the electrolytic ozone generator is configured to be in the active state
+when flushing liquid from the flushing liquid tank is provided to the electrolytic
+ozone generator, and wherein the electrolytic ozone generator is configured to be
+
+
+===== PAGE 34 =====
+WO 2025/259178 PCT/SG2025/050333
+32
+in the inactive state when the flushing liquid from the flushing liquid tank is not
+provided to the electrolytic ozone generator.
+[Claim 4] The cleaning robot according to claim 2 or claim 3, wherein the electrical
+discharge comprises a voltage of about 24 V.
+[Claim 5] The cleaning robot according to any one of claims 2 to 4, wherein the electrolytic
+ozone generator comprises a chamber configured to hold the volume of flushing
+liquid received by the electrolytic ozone generator, wherein optionally, the
+chamber comprises a volume of about 500 mL to about 1000 mL, and optionally
+about 700 mL to about 800 mL.
+[Claim 6] The cleaning robot according to claim 3 or any one of claims 4 to 5 when
+dependent on claim 3, further comprising a flushing liquid pump configured to
+pump the flushing liquid from the flushing liquid tank to the ozone generator,
+wherein the ozone generator is configured to be in the active state when the
+flushing liquid pump is pumping the flushing liquid from the flushing liquid tank to
+the ozone generator.
+[Claim 7] The cleaning robot according to any one of the preceding claims, wherein the
+flushing liquid tank is fluidly connected to the first flushing outlet via only the
+ozone generator.
+[Claim 8] The cleaning robot according to any one of the preceding claims, further
+comprising a second flushing outlet configured to provide a fluid to clean one or
+more components of the cleaning robot.
+[Claim 9] The cleaning robot according to claim 8, wherein the fluid comprises aqueous
+ozone from the ozone generator, and wherein the cleaning robot is configured to
+provide a first portion of the aqueous ozone from the ozone generator to the first
+flushing outlet to clean the environment, and to provide a second portion of the
+aqueous ozone from the ozone generator to the second flushing outlet to clean
+the one or more components of the cleaning robot.
+[Claim 10] The cleaning robot according to claim 8 or 9, further comprising a waste tank
+configured to collect and contain waste obtained from the cleaning of the one or
+more components of the cleaning robot.
+
+
+===== PAGE 35 =====
+WO 2025/259178 PCT/SG2025/050333
+33
+[Claim 11] The cleaning robot according to any one of the preceding claims, further
+comprising a cleaning liquid tank configured to contain a cleaning liquid
+comprising a cleaning chemical, and a cleaning liquid outlet, wherein the cleaning
+robot is configured to provide the cleaning liquid to the cleaning liquid outlet to
+clean the environment.
+[Claim 12] The cleaning robot according to any one of the preceding claims, further
+comprising a movable arm extending from the body, the movable arm comprising
+a first end portion connectable with the body and a second end portion movable
+in a plurality of directions.
+[Claim 13] The cleaning robot according to claim 12, wherein the body comprises a tool
+dock configured to removably engage one or more cleaning tools and wherein
+the second end portion of the movable arm is configured to removably couple
+with the one or more cleaning tools to clean an environment.
+[Claim 14] The cleaning robot according to claim 13 when dependent on claim 8, wherein
+the tool dock comprises the second flushing outlet to clean the one or more
+cleaning tools.
+[Claim 15] The cleaning robot according to claim 13 or 14, wherein the second end portion
+of the movable arm is configured to mechanically and electrically couple with the
+one or more cleaning tools.
+[Claim 16] The cleaning robot according to any one of claims 13 to 15, wherein the second
+end portion of the movable arm is configured to limit torsional, axial and/or lateral
+movement of the one or more cleaning tools relative to the second end portion
+when coupled.
+[Claim 17] The cleaning robot according to any one claims 13 to 16, further comprising an
+identification reader configured to identify the environment or a characteristic of
+the environment.
+[Claim 18] The cleaning robot according to any one of the preceding claims, wherein the first
+flushing outlet is provided to the second end portion of the movable arm.
+[Claim 19] The cleaning robot according to any one of claims 12 to 18 when dependent on
+claim 11, wherein the cleaning liquid outlet is provided to the second end portion
+of the movable arm.
+
+
+===== PAGE 36 =====
+WO 2025/259178 PCT/SG2025/050333
+34
+[Claim 20] The cleaning robot according to any one of the preceding claims, further
+comprising a power storage device configured to power one or more components
+of the cleaning robot, and to permit mobility of the cleaning robot without being
+tethered to a power supply, wherein optionally the power storage device
+comprises a rechargeable battery configured to be removably and electrically
+connected to a power supply.
+[Claim 21] A method of cleaning an environment with a cleaning robot comprising a mobility
+mechanism, a flushing liquid tank, an ozone generator and a first flushing outlet,
+the method comprising:
+operating the mobility mechanism to move the cleaning robot to the environment;
+providing a flushing liquid from a flushing liquid tank to the ozone generator;
+forming aqueous ozone by the ozone generator; and
+providing aqueous ozone from the ozone generator to the first flushing outlet to
+clean the environment.
+[Claim 22] The method according to claim 21, wherein the cleaning robot comprises a
+movable arm and the method further comprises operating the movable arm and
+coupling a second end portion of the movable arm with a cleaning tool.
+[Claim 23] The method according to claim 22, wherein the cleaning tool comprises a brush
+tool and the method further comprises operating the brush tool to rotate a brush
+head of the brush tool and urging the brush head against the environment.
+[Claim 24] The method according to claim 22 or claim 23, the method further comprises
+decoupling the cleaning tool from the second end portion of the movable arm and
+coupling the cleaning tool with a tool dock to store the cleaning tool.
+[Claim 25] The method according to claim 24, the method further comprises providing
+aqueous ozone from the ozone generator to a second flushing outlet of the
+cleaning robot to clean the stored cleaning tool.
+[Claim 26] The method according to claim 22, wherein the cleaning tool comprises a fan tool
+and the method further comprises operating the fan tool to rotate an impeller to
+direct an air flow to the environment to dry the environment.
+
+
+===== PAGE 37 =====
+WO 2025/259178 PCT/SG2025/050333
+35
+[Claim 27] The method according to any one of claims 21 to 26, the method further
+comprises providing a cleaning liquid to the environment via a cleaning liquid
+outlet.
+
+
+===== PAGE 38 =====
+WO 2025/259178 PCT/SG2025/050333
+oh
+; a
+
+
+===== PAGE 39 =====
+PCT/SG2025/050333
+wo 2025/259178
+401
+
+
+===== PAGE 40 =====
+WO 2025/259178 PCT/SG2025/050333
+3/5
+<a
+120
+[ 425 130
+131
+133 |
+136
+Fig. 5
+T)
+fF) ff\of
+ype
+Fig. 6
+
+
+===== PAGE 41 =====
+WO 2025/259178 PCT/SG2025/050333
+45
+124a 124b
+124
+Fig. 8
+311b
+
+
+===== PAGE 42 =====
+WO 2025/259178
+5/5
+152a6
+—
+152a5
+P [7 eat
+4
+Fig.
+12
+152b6
+1521.
+he be 8
+PCT/SG2025/050333
+152a6
+152a5
+152a7 AIL
+152a2 _ ag
+YI
+Realy
+15283 —_
+152a4 a
+Fig.
+13
+152b6 4152b5
+152b7
+4152b3
+Fig.
+15
+
+
+===== PAGE 43 =====
+INTERNATIONAL SEARCH REPORT
+International application No.
+PCT/SG2025/050333
+A. CLASSIFICATION OF SUBJECT MATTER
+B25J 11/00(2006.01)i; B25J 13/08(2006.01)i; B25J 15/00(2006.01)i; A47L 11/40(2006.01)i
+According to International Patent Classification (IPC) or to both national classification and IPC
+B. FIELDS SEARCHED
+Minimum documentation searched (classification system followed by classification symbols)
+B25J 11/00(2006.01); A47L 11/24(2006.01); A47L 11/38(2006.01); A47L 11/40(2006.01); A61L 2/24(2006.01);
+BO8B 3/02(2006.01); BO8B 9/00(2006.01); B25J 5/00(2006.01); B25J 5/02(2006.01); F24J 2/52(2006.01)
+Korean utility models and applications for utility models
+Japanese utility models and applications for utility models
+Documentation searched other than minimum documentation to the extent that such documents are included in the fields searched
+Electronic data base consulted during the international search (name of data base and, where practicable, search terms used)
+eKOMPASS(KIPO internal) & Keywords: cleaning robot, ozone generator, mobillity, movable arm, cleaning tools, detachable
+Cc. DOCUMENTS CONSIDERED TO BE RELEVANT
+Category* Citation of document, with indication, where appropriate, of the relevant passages Relevant to claim No.
+(2020-07-31)
+CN 111466837 A (GUANGZHOU DEPOSON ELECTRIC TECHNOLOGY CO., LTD.) 31 July 2020
+xX paragraphs [0029]-[0038], claims 1-10, and figure 4 1-7,20,21
+12,13,15-18,22-24
+A 8-11,14,19,25-27
+CN 218484463 U (SHENZHEN GOODIX TECHNOLOGY CO., LTD.) 17 February 2023 (2023-02-17)
+Y paragraphs [0035]-[0053] and figures 1-8 12,13,15-18,22-24
+US 2023-0270905 Al (SAMSUNG ELECTRONICS CO., LTD.) 31 August 2023 (2023-08-31)
+A paragraphs [0063]-[0066] and figure 9 1-27
+WO 2018-019775 Al (LM.A. INDUSTRIA MACCHINE AUTOMATICHE S.P.A.) 01 February 2018
+(2018-02-01)
+A claims 1-8 and figure 4 1-27
+[V | Further documents are listed in the continuation of Box C.
+See patent family annex.
+* Special categories of cited documents:
+“a” document defining the general state of the art which is not considered
+to be of particular relevance
+“PD” document cited by the applicant in the international application
+“RE” earlier application or patent but published on or after the international
+filing date
+“EL” document which may throw doubts on priority claim(s) or which is
+cited to establish the publication date of another citation or other
+special reason (as specified)
+“OQ” document referring to an oral disclosure, use, exhibition or other
+means
+“p” document published prior to the international filing date but later than
+the priority date claimed
+“T” later document published after the international filing date or priority
+date and not in conflict with the application but cited to understand the
+principle or theory underlying the invention
+“x” document of particular relevance; the claimed invention cannot be
+considered novel or cannot be considered to involve an inventive step
+when the document is taken alone
+«y” document of particular relevance; the claimed invention cannot be
+considered to involve an inventive step when the document is
+combined with one or more other such documents, such combination
+being obvious to a person skilled in the art
+«“g document member of the same patent family
+Date of the actual completion of the international search
+Date of mailing of the international search report
+35208, Republic of Korea
+Facsimile No. +82-42-481-8578
+18 August 2025 19 August 2025
+Name and mailing address of the ISA/KR Authorized officer
+Korean Intellectual Property Office
+189 Cheongsa-ro, Seo-gu, Daejeon PARK, Tae Wook
+Telephone No. +82-42-481-3405
+Form PCT/ISA/210 (second sheet) (July 2022)
+
+
+===== PAGE 44 =====
+INTERNATIONAL SEARCH REPORT International application No.
+PCT/SG2025/050333
+Cc. DOCUMENTS CONSIDERED TO BE RELEVANT
+Category* Citation of document, with indication, where appropriate, of the relevant passages Relevant to claim No.
+US 2016-0368135 Al (TADAYON, SAIED) 22 December 2016 (2016-12-22)
+A paragraph [0078], claims 1-20, and figures 15-18(b), 33(c) 1-27
+Form PCT/ISA/210 (second sheet) (July 2022)
+
+
+===== PAGE 45 =====
+INTERNATIONAL SEARCH REPORT
+Information on patent family members
+International application No.
+PCT/SG2025/050333
+Patent document Publication date Patent family member(s) Publication date
+cited in search report (day/month/year) (day/month/year)
+CN 111466837 A 31 July 2020 None
+CN 218484463 U 17 February 2023 None
+US 2023-0270905 Al 31 August 2023 JP 2022-100830 A 06 July 2022
+WO 2022-139364 Al 30 June 2022
+WO 2018-019775 Al 01 February 2018 CA 3032009 = Al 01 February 2018
+EP 3490732 Al 05 June 2019
+EP 3490732 —- B1 31 August 2022
+ES 2929145 T3 25 November 2022
+IT 201600078037 = Al 26 January 2018
+US 2016-0368135 Al 22 December 2016 US 10232505 B2 19 March 2019
+US 10926401 B2 23 February 2021
+US 11345016 B2 31 May 2022
+US 11738448 B2 29 August 2023
+US 12290922 B2 06 May 2025
+US 2012-0152877. Al 21 June 2012
+US 2015-0217443 = Al 06 August 2015
+US 2019-0184544 = Al 20 June 2019
+US 2021-0170571 = Al 10 June 2021
+US 2022-0080577. Al 17 March 2022
+US 2024-0009830 Al 11 January 2024
+US 9020636 =B2 28 April 2015
+US 9457463 B2 04 October 2016
+Form PCT/ISA/210 (patent family annex) (July 2022)

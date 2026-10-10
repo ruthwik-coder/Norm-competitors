@@ -1,0 +1,863 @@
+
+
+===== PAGE 1 =====
+wo
+2025/259179
+Ad
+TIMIUIAIITNIM
+AUNYN
+AT A A
+(12) INTERNATIONAL APPLICATION PUBLISHED UNDER THE PATENT COOPERATION TREATY (PCT)
+»
+ee
+(19) World Intellectual Property
+Organization
+International Bureau
+(43) International Publication Date
+18 December 2025 (18.12.2025)
+UNM TAMIA
+AAT A
+(10) International Publication Number
+WO 2025/259179 Al
+WIPOI PCT
+61) International Patent Classification:
+B25J  9/16 (2006.01) B25J  15/00 (2006.01)
+B25J  11/00 (2006.01) A47E 11/40 (2006.01)
+B25J  13/08 (2006.01)
+(21) International Application Number:
+PCT/SG2025/050334
+(22) International Filing Date:
+15 May 2025 (15.05.2025)
+(25) Filing Language: English
+(26) Publication Language: English
+(30) Priority Data:
+10202401737P 14 June 2024 (14.06.2024) 5G
+(71) Applicant: PRIMECH AI PTE. LTD. [SG/SG]; 23 Ubi
+Crescent, Singapore 408579 (SG).
+(72) Inventors: ZHANG, Youwei; 23 Ubi Crescent, Singapore
+408579 (SG). NG, Chew Poh; 23 Ubi Crescent, Singapore
+408579 (SG). HO, Kin Wai; 23 Ubi Crescent, Singapore
+408579 (SG).
+(74) Agent: YUSARN AUDREY LLC, 4 Shenton Way, #14-03
+SGX Centre IT, Singapore 068807 (SG).
+(81) Designated States (unless otherwise indicated, for every
+kind of national protection available): AE, AG, AL, AM,
+AO, AT, AU, AZ, BA, BB, BG, BH, BN, BR, BW, BY, BZ,
+CA, CH, CL, CN, CO, CR, CU, CV, CZ, DE, DJ, DK, DM,
+DO, DZ, EC, EE, EG, ES, FI, GB, GD, GE, GH, GM, GT,
+HN, HR, HU, ID, IL, IN, 1Q, IR, IS, IT, JM, JO, JP, KE, KG,
+KH, KN, KP, KR, KW, KZ, LA, LC, LK, LR, LS, LU, LY,
+MA, MD, MG, MK, MN, MU, MW, MX, MY, MZ, NA,
+NG, NI, NO, NZ, OM, PA, PE, PG, PH, PL, PT, QA, RO,
+RS, RU, RW, SA, SC, SD, SE, SG, SK, SL, ST, SV, SY, TH,
+TJ, TM, TN, TR, TT, TZ, UA, UG, US, UY, UZ, VC, VN,
+WS, ZA, 2M, ZW.
+(84) Designated States (unless otherwise indicated, for every
+kind of regional protection available): ARIPO (BW, CV,
+GH, GM, KE, LR, LS, MW, MZ, NA, RW, SC, SD, SL, ST,
+SZ, TZ, UG, ZM, ZW), Eurasian (AM, AZ, BY, KG, KZ,
+RU, TJ, TM), European (AL, AT, BE, BG, CH, CY, CZ,
+DE, DK, EE, ES, FL, FR, GB, GR, HR, HU, IE, IS, IT, LT,
+LU, LV, MC, ME, MK, MT, NL, NO, PL, PT, RO, RS, SE,
+SI, SK, SM, TR), OAPI (BF, BJ, CF, CG, CI, CM, GA, GN,
+GQ, GW, KM, ML, MR, NE, SN, TD, TG).
+(54) Title: A SYSTEM AND METHOD FOR MAKING A FLUID CONNECTION BETWEEN A CLEANING ROBOT AND A
+BASE STATION
+MOVE ROBOT TO
+BASE STATION
+L—- 100
+|
+PICK UP 157
+CONNECTING
+MEMBER
+|
+EXTEND 28°
+CONNECTING
+MEMBER
+|
+L—- 102
+L~ 106
+wo?
+£
+CONNECT 157
+AND 200 fe 108
+CONNECTING
+MEMBERS
+TRANSFER FLUID [~ 116
+|
+CONTINUE
+OPERATION
+L— 118
+Fig. 1
+RETURN 187
+CONNECTING
+MEMBER
+L~ 445
+(57) Abstract: A method for making a fluid connection between a cleaning robot and
+a base station is disclosed. The method includes moving the cleaning robot to the base
+station, and picking up a first connecting member from the base station using a robot-
+ic arm of one of the cleaning robot and the base station. The method further includes
+connecting the first connecting member to a second connecting member of the cleaning
+robot to complete the fluid connection between the cleaning robot and the base station,
+and transferring fluid between the cleaning robot and the base station through the fluid
+connection. A cleaning robot and a base station is also disclosed. A fluid transferring
+system including a cleaning robot and a base station is also further disclosed.
+[Continued on next  page]
+
+
+===== PAGE 2 =====
+WO 2025/259179 AJ |MMTIITTATATAMAT
+TGA A TTA A
+Declarations under Rule 4.17:
+— as to applicant's entitlement to apply for and be granted a
+patent (Rule 4.17(ii))
+— of inventorship (Rule 4.17(iv))
+Published:
+— with international search report (Art. 21(3))
+
+
+===== PAGE 3 =====
+WO 2025/259179 PCT/SG2025/050334
+A SYSTEM AND METHOD FOR MAKING A FLUID
+CONNECTION BETWEEN A CLEANING ROBOT AND A BASE STATION
+TECHNICAL FIELD
+[0001] This invention relates to a system and method for making a fluid connection
+between a cleaning robot and a base station. More particularly, this invention relates to
+a system and method for connecting the cleaning robot to the base station for
+transferring fluid therebetween.
+BACKGROUND
+[0002] The following discussion of the background to the invention is intended to
+facilitate an understanding of the present invention only. It should be appreciated that
+the discussion is not an acknowledgement or admission that any of the material
+referred to was published, known or part of the common general knowledge of the
+person skilled in the art in any jurisdiction as at the priority date of the invention.
+[0003] Cleaning robots are widely used these days. Some of these robots include a
+clean water tank and a dirty or waste water tank that require refilling and draining
+respectively during use. Consequently, to increase the level of automation, base
+stations are provided where the cleaning robot can move to dock at to have its clean
+water tank refilled and waste water tank drained. An example of such a cleaning robot
+and base station system is disclosed in Chinese Utility Model No. CN220024922U, Lee
+et al., entitled “Water changing base station, intelligent cleaning machine and system
+thereof’. The disclosed base station includes ports for connecting to corresponding
+ports of the cleaning robot. The system uses blind docking between the cleaning robot
+and the base station, which is low in docking accuracy and there is also a risk of
+docking failure. The ports of the base station also protrude from an outer surface of a
+housing of the base station. As a result, these protruding ports increase the footprint of
+the base station. They are also a safety hazard. Furthermore, each port uses an
+elastic sealing member sleeved thereon to seal the connection between two ports. The
+two ports are forced to merely abut each other. There is a risk that water may leak out
+of where the two ports meet.
+
+
+===== PAGE 4 =====
+WO 2025/259179 PCT/SG2025/050334
+[0004] There is therefore a need for a system for transferring fluid between a
+cleaning robot and a base station which addresses, at least in part, one or more of the
+forgoing problems.
+SUMMARY
+[0005] According to an aspect of the present disclosure, there is provided a method
+for making a fluid connection between a cleaning robot and a base station. The
+method includes moving the cleaning robot to the base station and picking up a first
+connecting member from the base station using a robotic arm. The robotic arm may on
+the cleaning robot or the base station. The method further includes connecting the first
+connecting member to a second connecting member of the cleaning robot to complete
+the fluid connection between the cleaning robot and the base station, and transferring
+fluid between the cleaning robot and the base station through the fluid connection.
+[0006] In some embodiments of the method, the method further includes extending
+the second connecting member out of the cleaning robot before connecting the first
+connecting member to the second connecting member.
+[0007] In some embodiments of the method, the second connecting member is
+extended through a trap door out of the cleaning robot.
+[0008] In some embodiments of the method, the method further includes retracting
+the second connecting member into the cleaning robot after transferring fluid between
+the cleaning robot and the base station.
+[0009] In some embodiments of the method, the method further includes detecting
+that the fluid connection is established before transferring fluid between the cleaning
+robot and the base station.
+[0010] In some embodiments of the method, detecting that the fluid connection is
+established includes detecting an electrical signal at a first electrical contact of one of
+the cleaning robot and the base station.
+[0011] In some embodiments of the method, the electrical signal is output through a
+second electrical contact by the cleaning robot and routed back by the base station to
+the cleaning robot to be detected at the first electrical contact of the cleaning robot.
+[0012] In some embodiments of the method, the first and the second electrical
+contacts are location on the second connecting member of the cleaning robot.
+
+
+===== PAGE 5 =====
+WO 2025/259179 PCT/SG2025/050334
+[0013] According to another aspect of the present disclosure, there is provided a
+fluid transferring system. The fluid transfer system includes a base station having a
+first connecting member and a cleaning robot having a second connecting member.
+The cleaning robot is configured to move to the base station. Either the cleaning robot
+or the base station includes a robotic arm that is configured to pick up the first
+connecting member from the base station and connect it to the second connecting
+member of the cleaning robot to allow fluid to be transferred between the cleaning
+robot and the base station therethrough.
+[0014] In some embodiments of the system, the cleaning robot is further configured
+to extend the second connecting member out of the cleaning robot before the robotic
+arm connects the first connecting member to the second connecting member.
+[0015] In some embodiments of the system, the cleaning robot is further configured
+to retract the second connecting member into the cleaning robot after transferring fluid
+between the cleaning robot and the base station.
+[0016] In some embodiments of the system, the cleaning robot is further configured
+to detect that the fluid connection is established before transferring fluid between the
+cleaning robot and the base station.
+[0017] In some embodiments of the system, detecting that the fluid connection is
+established comprises detecting an electrical signal at a first electrical contact of one of
+the cleaning robot and the base station.
+[0018] In some embodiments of the system, the electrical signal is output through a
+second electrical contact by the cleaning robot and routed back by the base station to
+the cleaning robot to be detected at the first electrical contact of the cleaning robot.
+[0019] In some embodiments of the system, the first and the second electrical
+contacts are located on the second connecting member of the cleaning robot.
+[0020] According to another aspect of the present disclosure, there is provided a
+cleaning robot. The cleaning robot includes a body and a retractable second
+connecting member that is extendable out of the body for connecting to a first
+connecting member of a base station to establish a fluid connection between the
+cleaning robot and the base station.
+[0021] In some embodiments of the cleaning robot, the cleaning robot further
+includes an actuator that is coupled to the second connecting member. The actuator is
+
+
+===== PAGE 6 =====
+WO 2025/259179 PCT/SG2025/050334
+actuatable to extend the second connecting member out of the body and retract the
+second connecting member into the body.
+[0022] In some embodiments of the cleaning robot, the cleaning robot further
+includes a pair of guide rails on which the second connecting member is slideable
+when being extended and retracted.
+[0023] In some embodiments of the cleaning robot, the cleaning robot further
+includes a trap door on the body through which the second connecting member
+extends out of the body.
+[0024] In some embodiments of the cleaning robot, the second connecting member
+includes a first electrical contact to which an electrical signal is applicable, a second
+electrical contact; and a controller coupled to the second electrical contact for reading
+an electrical signal thereon.
+[0025] According to another aspect of the present disclosure, there is provided a
+base station. The base station includes a first connecting member, and a support for
+supporting the first connecting member. The first connecting member is removable
+from the support for connecting to a second connecting member of a cleaning robot for
+establishing a fluid connection therebetween.
+[0026] In some embodiments of the base station, the first connecting member
+comprises a handle by which the first connecting member may be gripped to be
+removed from the support.
+[0027] In some embodiments of the base station, the first connecting member
+comprises a locating means that is used by the cleaning robot to position a robotic arm
+over the first connecting member.
+[0028] In some embodiments of the base station, the first connecting member
+comprises a first electrical contact and a second electrical contact electrically
+connected to the first electrical contact.
+[0029] Other aspects and advantages of the invention will become apparent from
+the following detailed description, taken in conjunction with the accompanying
+drawings, illustrating by way of example the principles of the invention.
+BRIEF DESCRIPTION OF DRAWINGS
+[0030] The invention will be better understood with reference to the drawings, in
+which:
+
+
+===== PAGE 7 =====
+WO 2025/259179 PCT/SG2025/050334
+[Figure 1] is a flowchart showing a sequence of steps for making a fluid
+connection between a cleaning robot and a base station according to one
+embodiment of the invention;
+[Figure 2A] is a drawing of a system including a cleaning robot and a base station
+according to another embodiment of the invention, wherein a second connecting
+member is shown extended out of a body of the cleaning robot;
+[Figure 2B] is a drawing of the system in Figure 2A showing a robotic arm
+gripping onto a first connecting member picked up from the base station and connecting
+it to the second connecting member of the cleaning robot to establish a fluid connection
+between the cleaning robot and the base station;
+[Figure 3] is an exploded isometric drawing of the second connecting member in
+Figures 2A and 2B;
+[Figure 4] is a sectional side view drawing of the second connecting member in
+Figures 2A and 2B, showing the second connecting member in a retracted position
+within the body of the cleaning robot;
+[Figure 5] is a side view drawing of the base station in Figures 2A and 2B
+showing the first connecting member supported on a support;
+[Figure 6] is an isometric drawing of the first connecting member shown aligned
+with the second connecting member; and
+[Figure 7] is an isometric drawing showing the first connecting member
+connected to the second connecting member that is extended out of the cleaning robot;
+and
+[Figure 8] is a side view drawing of the first connecting member connected to the
+second connection member in Figure 7.
+DESCRIPTION OF THE EMBODIMENTS
+[0031] Throughout this document, unless otherwise indicated to the contrary, the
+terms “comprising”, “consisting of’, “having” and the like, are to be construed as non-
+exhaustive, or in other words, as meaning “including, but not limited to.”
+[0032] Furthermore, throughout the specification, unless the context requires
+otherwise, the word “include” or variations such as “includes” or “including” will be
+
+
+===== PAGE 8 =====
+WO 2025/259179 PCT/SG2025/050334
+understood to imply the inclusion of a stated integer or group of integers but not the
+exclusion of any other integer or group of integers.
+[0033] Throughout the description, it is to be appreciated that the term
+‘processor/controller’ and its plural form include microcontrollers, microprocessors,
+programmable integrated circuit chips such as application specific integrated circuit
+chip (ASIC), computer servers, electronic devices, and/or combination thereof capable
+of processing one or more input electronic signals to produce one or more output
+electronic signals. The controller includes one or more input modules and one or more
+output modules for processing of electronic signals.
+[0034] The following description refers to elements or nodes or features being
+“coupled” together. As used herein, unless expressly stated otherwise, “coupled”
+means that one element/node/feature/ is directly or indirectly joined to (or directly or
+indirectly communicates with) another element/node/feature, and does not necessarily
+connect a direct mechanical connection. Coupled elements/nodes/features are
+understood to exert mutual influence on one another. Thus, although the figures
+depicts one exemplary arrangement of elements, additional intervening elements,
+devices, features, or components may be present in an embodiment of the depicted
+subject matter.
+[0035] _In addition, certain terminology may also be used in the following description
+for the purpose of reference only, and thus are not intended to be limiting. For
+example, terms such as “upper”, “lower”, “above”, and “below’ refer to directions in the
+drawings to which reference is made in a consistent but arbitrary frame of reference.
+Such terminology may include the words specifically mentioned above, derivatives
+thereof, and words of similar import. Similary, the terms “first’, “second”, and other
+such numerical terms referring to structures do not imply a sequence or order unless
+clearly indicated by the context.
+[0036] Unless defined otherwise, all technical and scientific terms used herein have
+the same meaning as is commonly understood by a skilled person to which the subject
+matter herein belongs.
+[0037] As shown in the drawings for purposes of illustration, the invention may be
+embodied in a versatile method for making a fluid connection between a cleaning robot
+and a base station. Existing methods tend to be more restrictive as far as robot
+design is concerned. Referring to Figure 1, the method includes moving the cleaning
+6
+
+
+===== PAGE 9 =====
+WO 2025/259179 PCT/SG2025/050334
+robot to the base station and picking up a first connecting member from the base
+station using a robotic arm of the cleaning robot. The method further includes
+connecting the first connecting member to a second connecting member of the
+cleaning robot to define the fluid connection between the cleaning robot and the base
+station, and transferring fluid between the cleaning robot and the base station through
+the fluid connection.
+[0038] Specifically, Figure 1 shows a sequence 2 of steps in the method for making
+a fluid connection between a cleaning robot 4 and a base station 6. As shown in
+Figures 2-8, the cleaning robot 4 includes a body 8 and a robotic arm 10 mounted to
+the top of the body 8. The robotic arm 10 may be any suitabie robotic arm, such as
+those supplied by Elite Robots (Shanghai, China). Mounted to the robotic arm 10 is a
+camera 12. The cleaning robot 4 further includes a connecting member 20, referred to
+hereinafter as a second connecting member 20, that is housed inside the body 8. The
+second connecting member 20 is extendable through a trap door 22 on the body 8 to
+be outside the body 8. As shown in Figure 3, the second connecting member 20
+includes a header block 24, three Y-shape sealing rings 26 and a cover plate 28. The
+header block 24 includes three cavities 30, Each Y-shape sealing ring 26 sits in a
+cavity 30. The cover plate 28 is fixedly attached to the header block 24 to retain the
+three Y-shape sealing rings 28 within the cavities 30. Extending from a lower edge of
+the cover plate 28 is a tongue member 32. The header block 24 further includes three
+tubes 36, each of which is in fluid communication with a respective one of the three
+cavities 30. In this embodiment, a first tube 36 is fluidly coupled via a first hose to a
+clean water tank (both not shown). A second tube is fluidly coupled via a second hose
+to a cleaning liquid or liquid detergent tank (both not shown). A third tube is fluidly
+coupled via a third hose to a waste water tank (both not shown). During a cleaning
+operation, the liquid detergent is drawn from the liquid detergent tank and sprayed onto
+a cleaning surface. The cleaning robot picks up a brush (not shown) with its robotic
+arm 10 and scrubs the cleaning surface with the brush. The cleaning robot 4 then
+draws water from the clean water tank and sprays it on the scrubbed surface to rinse
+off the liquid detergent. The cleaning robot 4 cleans the brush by spraying the liquid
+detergent and/or the clean water on the brush. This liquid detergent and/or clean water
+is then collected in the waste water tank. The header block 24 also includes a pair of
+panels 38 extending horizontally from both sides of the header block 24. The cleaning
+7
+
+
+===== PAGE 10 =====
+WO 2025/259179 PCT/SG2025/050334
+robot 4 further includes a pair of guide rails 40, each having a longitudinal groove 42
+therein. The panels 38 of the header block 24 sit in the longitudinal grooves 42 of the
+guide rails 40 to allow the header block 24 to be slidable along the length of the guide
+rails 40. The cleaning robot 4 further includes a linear actuator 50 having a lead screw
+and a nut (both not shown). Fixedly attached to the nut is a slider 52. Connected to
+the slider 52 is one end of a push plate 54. The other end of the push plate 54 is
+connected to the header block 24. The linear actuator 50 is actuatable to rotate the
+lead screw so that the nut moves along the length of the lead screw. This in turn
+causes the header block 24 coupled thereto to be pushed and pulled along the guide
+rails 40 by the linear actuator 50. The assembly of the linear actuator 50, guide rails 40
+and second connecting member 20 is mounted to an undersurface of a mounting plate
+55. The mounting plate 55 is mounted to an undersurface of the top the body 8. The
+trap door 22 is hinged to the body 8 and faces the header block 24. The trap door 22 is
+biased by a torsion spring 56 to cover an opening 58 (Figure 7) in the body 8. When
+the header block 24 is moved towards an extended position thereof, the tongue
+member 32 pushes the trap door 22 against the force exerted thereon by the torsion
+spring 56 to tilt the trap door 22 outwards as shown in Figures 7 and 8. In the
+extended position, the header block 24 emerges from the opening 58 in the body 8 to
+be outside the body 8. Mounted to the cover plate 28 is an electrical connector 60
+having a first electrical contact and a second electrical contact. An electrical signal,
+such as a +5V voltage, can be applied to the first electrical contact. The cleaning robot
+4 further includes a battery (not shown).
+[0039] The base station 6 is next described. The base station 6 includes a housing
+70. Inside the housing 70 is a clean water supply tank and a liquid detergent supply
+tank (both not shown). The base station 6 further includes another connecting member
+72, hereinafter referred to as a first connecting member 72, for mating with the second
+connecting member 20 of the cleaning robot 4. The first connecting member 72
+includes three ganged tubes 74 and a handle 76. Two of the ganged tubes 74 are
+coupled to the clean water supply tank and liquid detergent supply tank. The third tube
+74 is coupled by a hose to a drainage pipe (both not shown). The handle 76 has a
+panel 78 with a bulbous edge 80 distal from the ganged tubes 74. The handle 76
+further includes a pillar 82 that intersects the panel 78 to protrude from both sides of
+the panel 78 and also a top of the bulbous edge 80. Such a handle design allows
+8
+
+
+===== PAGE 11 =====
+WO 2025/259179 PCT/SG2025/050334
+clamping jaws of the robotic arm 10 to clamp on the handle 76 to firmly grip it without
+slippage in any direction. The first connecting member 72 is securely supported on a
+support 73 within the housing 70 via any means, including but not limited to, a
+magnetic means. The first connecting member 72 is accessible via a cover 77 on the
+housing 70. The base station 6 further includes two charging terminals 90 (Figures 2A
+and 2B).
+[0040] Returning to the sequence 2 in Figure 1, the sequence 2 starts in a MOVE
+ROBOT TO BASE STATION step 100, wherein the autonomous cleaning robot 4
+returns to a base station 6 for one or more reasons during operation. The cleaning
+robot 4 may return to the base station 6 in the step 100 for example when the battery is
+low, when it is low on clean water or liquid detergent, or when the waste water tank is
+full. As known to those skilled in the art, the location of and the path to the base station
+from where the cleaning robot's current location is stored in a memory (not shown) of
+the cleaning robot 4. The cleaning robot 4 is configured to move to the base station 6
+based on the information stored thereon. When the cleaning robot 4 is adjacent the
+base station 6, it uses its camera 12 mounted to the robotic arm 10 and a vision system
+implemented therein to locate a first indicium (not shown) on the base station 6. The
+first indicium may include but not limited to a QR code. The cleaning robot 4 is further
+configured to determine its exact location with respect to the first indicium and therefore
+the base station 6. The cleaning robot 4 then aligns itself with the base station 6 and
+moves towards the base station 6 such that it docks at the base station 6 with the
+charging terminals 90 of the base station 6 inserted into corresponding charging ports
+of the cleaning robot 4 to initiate charging of the battery as shown in Figure 2A.
+[0041] The sequence 2 proceeds next to a PICK UP 18’ CONNECTING MEMBER
+step 102when the clean water tank and/or the liquid detergent tank needs to be refilled
+or the waste water tank needs to be drained. The cleaning robot 4 communicates with
+the base station 6 through a wireless communication channel established
+therebetween to inform the base station 6 that there is such a need. The base station
+6 then opens the cover 77. Figure 2B shows the base station 6 with the cover 77 in an
+open position. The cleaning robot 4 next moves its robotic arm 10 with the camera 12
+mounted thereon to search for a second indicium on the first connecting member 72.
+The second indicium may also include but not limited to a QR code. Once located, the
+cleaning robot 4 knows the exact location of the first connecting member 72 relative
+9
+
+
+===== PAGE 12 =====
+WO 2025/259179 PCT/SG2025/050334
+thereto and is able to move its robotic arm 10 to grip its handle 76, lift the first
+connecting member 72 off the support 73 and move it towards the cleaning robot 4. As
+the cleaning robot 4 does that, the sequence 2 proceeds to an EXTEND 2ND
+CONNECTING MEMBER step 106, wherein the cleaning robot 4 actuates the linear
+actuator 50 to push the second connecting member 20 outwards. The tongue member
+32 will come into contact with the trap door 22 and push it outwards as the second
+connecting member 20 extends outwards of the body 8. Figures 7 and 8 show the
+second connecting member in its extended position.
+[0042] The sequence 2 next proceeds to a CONNECT 1§7 AND 282 CONNECTING
+MEMBERS step 108, wherein the cleaning robot 4 moves the robotic arm 10 towards
+the extended second connecting member 20 and connects the first connecting member
+72 to the second connecting member 20, When properly connected, the end sections
+110 of the tubes of the first connecting member 72 will be inserted through openings
+112 in the cover plate 28 and the Y-shape sealing rings 26 in the cavities 30 of the
+header block 24 as shown in Figures 7 and 8. In this manner, fluid connection
+between the first connecting member 72 and the second connecting member 20 is
+made. The Y-shape sealing rings 26 prevent water leakage at this interconnection.
+The first electrical contact and the second electrical contact of the second connecting
+member 20 are also connected to the third electrical contact and fourth electrical
+contact of the first connecting member 72 respectively.
+[0043] The sequence 2 next proceeds to an PROPERLY CONNECTED? decision
+step 114, wherein the cleaning robot 4 reads the voltage on the second electrical
+contact to determine if the first connecting member 72 is properly connected to the
+second connecting member 20. If the first connecting member 72 is properly
+connected to the second connecting member 20, the voltage applied to the first
+electrical contact will be detected on the second electrical contact having been routed
+through the shorted third electrical contact and fourth electrical contact of the first
+connecting member 72. If it is determined in this decision step 114 that the first
+connecting member 72 and the second connecting member 20 are not properly
+connected, the sequence 2 proceeds to a RETURN 18’ CONNECTING MEMBER step
+115, wherein the cleaning robot 4 moves its robotic arm 10 to return the first connecting
+member 72 to the base station by placing it back on the support 73. The robot 4 next
+locates the second indicium on the first connecting member 72 to align the robotic arm
+10
+
+
+===== PAGE 13 =====
+WO 2025/259179 PCT/SG2025/050334
+10 thereto and picks up the first connecting member 72 once again. The sequence 2
+then returns to the CONNECT 187 AND 282 CONNECTING MEMBERS step 108 in
+another attempt to connect the first connecting member 72 to the second connecting
+member 20. The cleaning robot 4 keeps a count of the number of altempts to connect
+the first connecting member 72 to the second connecting member 20. If the cleaning
+robot 4 determines that the number of attempts has exceeded a predetermined
+number, such as but not limited to two, it will abort the operation and send an
+appropriate error message to an operator.
+[0044] ‘If, however, it is determined in the decision step 114 that the connection
+between the first connecting member 72 and the second connecting member 20 is
+proper, the sequence 2 proceeds to a TRANSFER FUILD step 116. In this step 116, if
+the clean water tank needs refilling, the cleaning robot 4 will instruct the base station 6
+via the wireless communication to pump clean water from its clean water supply tank
+through the fluid connection into the clean water tank of the cleaning robot 4. Similarly,
+if the liquid detergent tank needs refilling, the cleaning robot 4 will instruct the base
+station 6 via the wireless communication to pump liquid detergent from its liquid
+detergent supply tank through the fluid connection into the liquid detergent tank of the
+cleaning robot 4. And if waste water needs to be drained, the cleaning robot 4 pumps
+waste water in its waste water tank out through the fluid connection. In this manner,
+fluid can be transferred between the cleaning robot 4 and the base station 6 either
+sequentially or simultaneously.
+[0045] The sequence 2 next proceeds to a CONTINUE OPERATION step 118,
+wherein the cleaning robot 4 disconnects the first connecting member 72 from the
+second connecting member 20 and returns it to the base station 6 by placing it back on
+the support 73. In this step 118, the cleaning robot 4 also actuates the linear actuator
+50 to retract the second connecting member 20 into the body 8 of the cleaning robot 4
+to return it back to its retracted position as shown in Figure 4. As a result, the trap door
+22 closes behind the retracting second connecting member 20. The cleaning robot 4
+can then continue with its operation where it left off earlier to return to the base station
+6.
+[0046] Advantageously, the method allows the first connecting member 72 to be
+connected to the second connecting member 20 that may be located anywhere on the
+cleaning robot 4 within reach of the robotic arm 10. As a result, positioning of the
+11
+
+
+===== PAGE 14 =====
+WO 2025/259179 PCT/SG2025/050334
+second connecting member 20 on a robot becomes less critical. The first connecting
+member 72 is also stored within the housing 70 of the base station 6 and does not
+protrude therefrom. This allows the base station 6 to have a smaller footprint and
+makes it safer to operate. With the vision system and robotic arm 10, a docking
+accuracy of about 0.02mm may be achieved. The structure of the header block 24
+and Y-shape sealing rings 26 receiving end portions 110 of the tubes 74 of the first
+connecting member 72 allows for effective sealing to prevent liquid leakage therefrom.
+The ganged tubes 74 of the first connecting member 74 also allows the connection of
+the various tubes 74 to the cleaning robot 4 to be made simultaneously.
+[0047] Although the present invention is described as implemented in the above
+described embodiment, it is not to be construed to be limited as such. It is to be
+appreciated that modifications and improvements may be made without departing from
+the scope of the present invention.
+[0048] For example, although the robotic arm is described to be that of the cleaning
+robot, the robotic arm may be one that is mounted to the base station in some
+embodiments. In other embodiments, the robotic arm may be a standalone robotic arm
+that is independent of the cleaning robot and base station.
+[0049] As another example, a check is carried out to determine that the first
+connecting member is properly connected to the second connecting member.
+However, such a step may not be necessary if it is determined that the connection
+between the two can be consistently made with the cleaning robot's vision and
+positioning system. And even if the check is necessary, it is not limited to the specific
+embodiment described above. The check may be carried out by the base station
+instead of the cleaning robot ina manner similar to that described above. Alternatively,
+the cleaning robot or the base station may output the voltage for reading by the other.
+[0050] As yet a further example, it is described that the second connecting member
+of the cleaning robot is hidden within the body of the cleaning robot and extended out
+of the body only when connecting with the first connecting member of the base station.
+The second connecting member may alternatively be fixed in position either inside or
+outside and the body.
+[0051] ‘It should be further appreciated by the person skilled in the art that one or
+more of the above modifications or improvements, not being mutually exclusive, may
+be further combined to form yet further embodiments of the present invention.
+12
+
+
+===== PAGE 15 =====
+WO 2025/259179 PCT/SG2025/050334
+CLAIMS
+[Claim 1] A method for making a fluid connection between a cleaning robot and a base
+station, the method comprising:
+moving the cleaning robot to the base station;
+picking up a first connecting member from the base station using a robotic
+arm of one of the cleaning robot and the base station;
+connecting the first connecting member to a second connecting member
+of the cleaning robot to define the fluid connection between the cleaning robot
+and the base station; and
+transferring fluid between the cleaning robot and the base station through
+the fluid connection.
+[Claim 2] The method according to Claim 1, further comprising extending the second
+connecting member out of the cleaning robot before connecting the first connecting
+member to the second connecting member.
+[Claim 3] The method according to Claim 2, wherein the second connecting member is
+extended through a trap door out of the cleaning robot.
+[Claim 4] The method according to Claim 2 or Claim 3, further comprising retracting the
+second connecting member into the cleaning robot after transferring fluid between the
+cleaning robot and the base station.
+[Claim 5] The method according to any one of the preceding claims, further comprising
+detecting that the fluid connection is established before transferring fluid between the
+cleaning robot and the base station.
+[Claim 6] The method according to Claim 5, wherein detecting that the fluid connection
+is established comprises detecting an electrical signal at a first electrical contact of one
+of the cleaning robot and the base station.
+13
+
+
+===== PAGE 16 =====
+WO 2025/259179 PCT/SG2025/050334
+{Claim 7] The method according to Claim 6, wherein the electrical signal is output
+through a second electrical contact by the cleaning robot and routed back by the base
+station to the cleaning robot to be detected at the first electrical contact of the cleaning
+robot.
+[Claim 8] The method according to Claim 7, wherein the first and the second electrical
+contacts are location on the second connecting member of the cleaning robot.
+[Claim 9] Afluid transferring system comprising:
+a base station having a first connecting member; and
+a cleaning robot having a second connecting member;
+wherein the cleaning robot is configured to move to the base station, and
+wherein one of the cleaning robot and the base station further includes a robotic
+arm that is configured to pick up the first connecting member from the base
+station and connect the first connecting member to the second connecting
+member to allow fluid to be transferred between the cleaning robot and the base
+station therethrough.
+[Claim 10] The fluid transferring system according to Claim 9, wherein the cleaning
+robot is further configured to extend the second connecting member out of the cleaning
+robot before the robotic arm connects the first connecting member to the second
+connecting member.
+[Claim 11] The fluid transferring system according to Claim 10, wherein the cleaning
+robot is further configured to retract the second connecting member into the cleaning
+robot after transferring fluid between the cleaning robot and the base station.
+[Claim 12] The fluid transferring system according to any one of Claims 9-11, wherein
+the cleaning robot is further configured to detect that the fluid connection is established
+before transferring fluid between the cleaning robot and the base station.
+14
+
+
+===== PAGE 17 =====
+WO 2025/259179 PCT/SG2025/050334
+{Claim 13] The fluid transferring system according to Claim 12, wherein detecting that
+the fluid connection is established comprises detecting an electrical signal at a first
+electrical contact of one of the cleaning robot and the base station.
+[Claim 14] The fluid transferring system according to Claim 13, wherein the electrical
+signal is output through a second electrical contact by the cleaning robot and routed
+back by the base station to the cleaning robot to be detected at the first electrical
+contact of the cleaning robot.
+[Claim 15] The method according to Claim 14, wherein the first and the second
+electrical contacts are located on the second connecting member of the cleaning robot.
+{Claim 16] A cleaning robot comprising:
+a body;
+a retractable second connecting member that is extendable out of the
+body for connecting to a first connecting member of a base station to establish a
+fluid connection between the cleaning robot and the base station.
+[Claim 17] The cleaning robot according to Claim 16, further comprising an actuator
+that is coupled to the second connecting member, the actuator being actuatable to
+extend the second connecting member out of the body and retract the second
+connecting member into the body.
+[Claim 18] The cleaning robot according to Claim 17, further comprising a pair of guide
+rails on which the second connecting member is slideable when being extended and
+retracted.
+[Claim 19] The cleaning robot according to any one of Claims 16-18, further comprising
+a trap door on the body through which the second connecting member extends out of
+the body.
+{Claim 20] The cleaning robot according to any one of Claims 16-19, wherein the
+second connecting member comprises:
+15
+
+
+===== PAGE 18 =====
+WO 2025/259179 PCT/SG2025/050334
+a first electrical contact to which an electrical signal is applicable;
+a second electrical contact; and
+a controller coupled to the second electrical contact for reading any
+electrical signal thereon.
+[Claim 21] A base station comprising:
+a first connecting member; and
+a support for supporting the first connecting member;
+wherein the first connecting member is removable from the support for
+connecting to a second connecting member of a cleaning robot for establishing a
+fluid connection therebetween.
+[Claim 22] A base station according to Claim 21, wherein the first connecting member
+comprises a handle by which the first connecting member may be gripped to be
+removed from the support.
+[Claim 23] A base station according to Claim 21 or Claim 22, wherein the first
+connecting member comprises a locating means that is used by the cleaning robot to
+position a robotic arm over the first connecting member.
+[Claim 24] A base station according to any one of Claims 21-23, wherein the first
+connecting member comprises a first electrical contact and a second electrical contact
+electrically connected to the first electrical contact.
+16
+
+
+===== PAGE 19 =====
+WO 2025/259179 PCT/SG2025/050334
+1/6
+MOVE ROBOT TO
+BASE STATION
+L— 100
+PICK UP 157
+CONNECTING [LW 102
+MEMBER
+EXTEND 2N2
+CONNECTING [L~ 106
+MEMBER
+ail
+7
+CONNECT
+457
+AND 2 LE 108
+CONNECTING
+MEMBERS
+114
+RETURN 4ST
+CONNECTING [~ ‘15
+MEMBER
+PROPERLY
+CONNECTED
+?
+TRANSFER FLUID }~ 116
+CONTINUE L— 118
+OPERATION
+Fig.1
+
+
+===== PAGE 20 =====
+PCT/SG2025/050334
+WO 2025/259179
+2/6
+
+
+===== PAGE 21 =====
+PCT/SG2025/050334
+3/6
+WO 2025/259179
+€‘sid
+
+
+===== PAGE 22 =====
+WO 2025/259179 PCT/SG2025/050334
+4/6
+Fig. 4
+Smorroannencoonnnnnd
+a ar ae eee ein oe “i
+ss
+RAMEN
+eS
+g$
+g Ng
+a 5
+je RN
+Bm N
+a ce }
+&
+8 ve
+8
+Na BS
+8 BY
+iN BY
+ng iN SY
+Se iN BY
+mo N eae
+a RN aie
+73 — NBS
+iy
+ a airlll
+70
+Fig. 5
+
+
+===== PAGE 23 =====
+PCT/SG2025/050334
+WO 2025/259179
+5/6
+52
+Fig. 7
+
+
+===== PAGE 24 =====
+WO 2025/259179 PCT/SG2025/050334
+6/6
+Fig. 8
+
+
+===== PAGE 25 =====
+INTERNATIONAL SEARCH REPORT
+International application No.
+PCT/SG2025/050334
+A.
+CLASSIFICATION OF SUBJECT MATTER
+B25J 9/16(2006.01)i; B25J 11/00(2006.01)i; B25J 13/08(2006.01)i; B25J 15/00(2006.01)i; A47L 11/40(2006.01)i
+According to International Patent Classification (IPC) or to both national classification and IPC
+B.
+FIELDS SEARCHED
+Minimum documentation searched (classification system followed by classification symbols)
+B25J 9/16(2006.01); A47L 11/34(2006.01); A47L 9/28(2006.01); BOSB 7/00(2006.01); B25J 11/00(2006.01);
+B25] 5/00(2006.01); B25J 9/00(2006.01)
+Korean utility models and applications for utility models
+Japanese utility models and applications for utility models
+Documentation searched other than minimum documentation to the extent that such documents are inchided in the fields searched
+Electronic data base consulted during the international search (name of data base and, where practicable, search terms used)
+eKOMPASS(KIPO internal) & Keywords: cleaning robot, base station, robotic arm, fluid, connecting member
+Cc. DOCUMENTS CONSIDERED TO BE RELEVANT
+Category* Citation of document, with indication, where appropriate, of the relevant passages Relevant to claim No.
+US 2007-0051757 Al (LIM et al.) 08 March 2007 (2007-03-08)
+Y paragraphs [0032], [0050], [0058], [0070]-[0072] and figures 2, 4-6 1-5,9-12,19,21-23
+US 2024-0066707 Al (SAMSUNG ELECTRONICS C“0., LTD.) 29 February 2024 (2024-02-29)
+Y paragraphs [0024], [0025], [0027], [0028], [0033] and figures 1, 2 1-5,9-12,21-23
+KR 10-2014-0036653 A (LG ELECTRONICS INC.) 61March 2014 (2014-03-26)
+paragraphs [0021], [0033], [0054], [0058]-[0063], [0070]-[0076] and figures 4-6 16-17
+2-5,10-12,19
+KR 10-2023-0139407 A (DOOSAN ROBOTICS INC.) 05 October 2023 (2023- 10-05)
+A paragraphs [0037], [0040], [0042], [0046], [0048] and figure 1 1-24.
+CN 205521358 U (ZHOU, YING) 31 August 2016 (2016-08-31)
+A claim 1 and figure | 1-24
+[_ ] Further documents are listed in the continuation of Box C.
+See patent family annex.
+“Cy”
+«p”
+Special categories of cited documents:
+* document defining the general state of the art which is not considered
+to be of particular relevance
+* document cited by the applicant in the international application
+earlier application or patent but published on or after theinternational
+filing date
+* document which may throw doubts on priority claim(s) or whichis
+cited to establish the publication date of another citation or other
+special reason (as specitied)
+document referring to an oral disclosure, use, exhibition or other
+means
+document published prior to the international filing date but later than
+the priority date claimed
+“TT”
+wy
+“yr
+later document published after the international filing date or priority
+date and not in conflict with the application but cited to understand the
+principle or theory underlying the invention
+document of particular relevance; the claimed invention cannot be
+considered novel or cannot be considered to involve an inventive step
+when the documentis taken alone
+document of particular relevance; the claimed invention cannot be
+considered to involve an inventive step when the document is
+combined with one or more other such documents, such combination
+being obvious to a person skilled in the art
+* document member of the same patent family
+Date of the actual completion of the international search
+Date of mailing of the international search report
+35208, Republic of Korea
+Facsimile No. +82-42-481-8578
+13 August 2025 13 August 2025
+Name and mailing address of the ISA/KR Authorized officer
+Korean Intellectual Property Office
+189 Cheongsa-ro, Seo-gu, Daejeon PARK, Tae Wook
+Telephone No. +82-42-481-3405
+Form PCT/ISA/210 (second sheet) (July 2022)
+
+
+===== PAGE 26 =====
+INTERNATIONAL SEARCH REPORT
+Information on patent family members
+International application No.
+PCT/SG2025/050334
+Patent document
+Publication date
+Patent family member(s)
+Publication date
+cited in search report (day/month/year) (day/month/year)
+US 2007-0051757 Al 08 March 2007 CN 1927549 A 14 March 2007
+EP 1762165 = A2 14 March 2007
+EP 1762165 = A3 22 February 2012
+EP 1762165 BI 04 September 2013
+EP 2604164 Al 19 June 2013
+JP 2007-069983 A 22. March 2007
+KR 10-0674564 Bl 29 January 2007
+RU 2006 126822 A 27 January 2008
+RU 2344030 C2 20 January 2009
+US 7891387 = B2 22 Febmary 2011
+US 2024-0066707 = Al 29 February 2024 KR 10-2024-0030351 A 07 March 2024
+KR 10-2014-0036653 A 26 March 2014 KR 10-1397056 = BI 20 May 2014
+KR 10-2023-0139407 A 05 October 2023 KR 10-2699520 = BI 27 August 2024
+CN 205521358 U 31 August 2016 None
+Form PCT/ISA/210 (patent family annex} July 2022

@@ -1,0 +1,1473 @@
+
+
+===== PAGE 1 =====
+WO
+2023/075687
+A2
+IIMA
+MATIN
+AAAT
+AIAT
+ANAT
+(12) INTERNATIONAL APPLICATION PUBLISHED UNDER THE PATENT COOPERATION TREATY (PCT)
+(19) World Intellectual Property >
+Organization
+=
+International Bureau
+(43) International Publication Date
+(10) International Publication Number
+WO 2023/075687 A2
+04 May 2023 (04.05.2023) WIPO|PCT
+(1) International Patent Classification:
+Not classified
+(21) International Application Number:
+PCT/SG2022/050762
+(22) International Filing Date:
+25 October 2022 (25.10.2022)
+(25) Filing Language: English
+(26) Publication Language: English
+(30) Priority Data:
+102021120468 29 October 2021 (29.10.2021) SG
+(71) Applicant: NATIONAL UNIVERSITY OF SINGA-
+PORE [SG/SG]; 21 Lower Kent Ridge Road, Singapore
+119077 (SG).
+(72) Inventors: PATWARI, Rishab; c/o National University
+of Singapore, Faculty of Engineering / Department of Elec-
+trical and Computer Engineering, 21 Lower Kent Ridge
+Road, Singapore 119077 (SG). NGUYEN TUAN, Dung,
+c/o National University of Singapore, Faculty of Engineer-
+ing / Department of Mechanical Engineering, 21 Lower
+Kent Ridge Road, Singapore 119077 (SG). LIN, Zhicheng:
+c/o National University of Singapore, Faculty of Engi-
+neering / Department of Mechanical Engineering, 21 Low-
+er Kent Ridge Road, Singapore 119077 (SG). SEENI-
+VASAN, Praveenkumar, c/o National University of Sin-
+gapore, Faculty of Engineering / Department of Electrical
+(74)
+(81)
+(84)
+and Computer Engineering, 21 Lower Kent Ridge Road,
+Singapore 119077 (SG).
+Agent: DAVIES COLLISON CAVE ASIA PTE. LTD.;
+10 Collyer Quay #07-01, Ocean Financial Centre, Singa-
+pore 049315 (SG).
+Designated States (unless otherwise indicated, for every
+kind of national protection available): AE, AG, AL, AM,
+AO, AT, AU, AZ, BA, BB, BG, BH, BN, BR, BW, BY, BZ,
+CA, CH, CL, CN, CO, CR, CU, CV, CZ, DE, DJ, DK, DM,
+DO, DZ, EC, EE, EG, ES, FI, GB, GD, GE, GH, GM, GT,
+HN, HR, HU, ID, IL, IN, IQ, IR, IS, IT, JM, JO, JP, KE,
+KG, KH, KN, KP, KR, KW, KZ, LA, LC, LK, LR, LS, LU,
+LY, MA, MD, MG, MK, MN, MW, MX, MY, MZ, NA, NG,
+NI, NO, NZ, OM, PA, PE, PG, PH, PL, PT, QA, RO, RS,
+RU, RW, SA, SC, SD, SE, SG, SK, SL, ST, SV, SY, TH,
+TJ, TM, TN, TR, TT, TZ, UA, UG, US, UZ, VC, VN, WS,
+ZA, ZM, ZW.
+Designated States (unless otherwise indicated, for every
+kind of regional protection available): ARIPO (BW, CV,
+GH, GM, KE, LR, LS, MW, MZ, NA, RW, SD, SL, ST, SZ,
+TZ, UG, ZM, ZW), Eurasian (AM, AZ, BY, KG, KZ, RU,
+TJ, TM), European (AL, AT, BE, BG, CH, CY, CZ, DE,
+DK, EE, ES, FI, FR, GB, GR, HR, HU, IE, IS, IT, LT, LU,
+LV, MC, ME, MK, MT, NL, NO, PL, PT, RO, RS, SE, SI,
+SK, SM, TR), OAPI (BF, BJ, CF, CG, CI, CM, GA, GN,
+GQ, GW, KM, ML, MR, NE, SN, TD, TG).
+Declarations under Rule 4.17:
+of inventorship (Rule 4.17(iv))
+(54) Title: ROBOT ALIGNMENT AND MANIPULATION
+202 | identifying the object in an image of the environment | wa
+l
+.., | Performing a first alignment based on an edge of the
+204 object and a reference point
+ane Performing a second alignrment based on a bounding
+206 box of the object and a frame boundary of the image
+ane Performing a second alignment based on a bounding
+208 box of the object and a frame boundary of the umage
+Figure 2
+(57) Abstract: Disclosed is a method for aligning an autonomous cleaning robot with an object in an environment. The method includes
+identifying the object in an image of the environment, performing a first alignment of the autonomous cleaning robot with the object
+based on an edge of the object and a reference point, performing a second alignment of the autonomous cleaning robot with the object
+based ona bounding box of the object and a frame boundary of the image, and performing a third alignment of the autonomous cleaning
+robot based on a distance between the autonomous cleaning robot and the object.
+[Continued on next  page]
+
+
+===== PAGE 2 =====
+WO 2023/075687 A |IMTINIUMNTNMIIE  MTA  NACA ANAM
+Published:
+— without international search report and to be republished
+upon receipt of that report (Rule 48.2(g))
+
+
+===== PAGE 3 =====
+WO 2023/075687 PCT/SG2022/050762
+Robot Alignment And Manipulation
+Technical Field
+The present invention relates, in general terms, to systems and methods for
+aligning an autonomous cleaning robot with an object, manipulating a robotic
+arm of that robot, and interchanging tool heads of an end effector.
+Background
+While the traditional manual method is effective for toilet cleaning, it is labour
+intensive and time consuming. Moreover, its cleaning effectiveness decreases
+as the cleaning fluid becomes contaminated. A need exists in the art for an
+improved method for cleaning a Surface to provide an affordable cleaning device
+for automating wet floor cleaning in the home.
+In many large buildings, such as hospitals, large retail stores, cafeterias, and
+the like, there is a need to clean on a daily or nightly basis, and attempts have
+been made to address this problem by the development of industrial
+floor cleaning "robots".
+It has become increasingly advantageous to automate certain routine
+processes, particularly those that are manual labour intensive. Processes
+involving manual labour can often be difficult to automate on the basis that they
+require high consistency and low tolerance for error.
+It would be desirable to overcome or ameliorate at least one of the above-
+described problems, or at least to provide a useful alternative.
+Summary
+Disclosed is a method for aligning an autonomous cleaning robot with an object
+in an environment, the method comprising:
+identifying the object in an image of the environment;
+performing a first alignment of the autonomous cleaning robot with the
+object based on an edge of the object and a reference point;
+performing a second alignment of the autonomous cleaning robot with
+1
+
+
+===== PAGE 4 =====
+WO 2023/075687 PCT/SG2022/050762
+the object based on a bounding box of the object and a frame boundary of the
+image; and
+performing a third alignment of the autonomous cleaning robot based on
+a distance between the autonomous cleaning robot and the object.
+Performing the first alignment may comprise:
+identifying two points defining the edge; and
+comparing angles of the two points, each angie being defined between
+the edge and a line from the respective said point to the reference point.
+Performing the first alignment may comprise determining a distance between
+the autonomous cleaning robot and each of the two points.
+Performing the second alignment may comprise detecting alignment between
+the bounding box and frame boundary. Detecting alignment may comprise
+determining a centre of the bounding box relative to centre region of the image.
+Performing the third alignment may comprise:
+determining a distance between the autonomous cleaning robot and the
+edge; and
+adjusting a position of the autonomous cleaning robot if the distance is
+outside a reference range.
+The image may be captured by a camera system.
+Also disclosed is a method for vision guided manipulation of a robotic arm of an
+autonomous cleaning robot, comprising:
+generating a 3-dimensional (3D) model of an object based on a point
+cloud of the object;
+modelling a cleaning surface of the object, based on an edge of the 3-D
+model;
+forming an array of waypoints along the cleaning surface; and
+moving an end effector of the robotic arm between successive ones of the
+waypoints, to clean the cleaning surface.
+Moving the end effector may comprise determining movements of the end
+effector based on a model of the end effector and the cleaning surface.
+2
+
+
+===== PAGE 5 =====
+WO 2023/075687 PCT/SG2022/050762
+Forming an array of waypoints may comprise:
+sampling the point cloud at the cleaning surface to produce a point cloud
+for each waypoint; and
+storing the point cloud for each waypoint in memory.
+The point cloud may be generated from a depth image captured by a camera
+system.
+Also disclosed is a system for controlling an autonomous cleaning robot,
+comprising:
+memory;
+at least one processor (hereinafter the Processor); and
+a camera system,
+wherein the memory stores instructions that, when executed by the Processor,
+cause the system to perform the method described above.
+Also disclosed is an autonomous cleaning robot comprising the system described
+above.
+Also disclosed is an autonomous cleaning robot comprising:
+a robotic arm;
+a tool head dispenser for dispensing tool heads; and
+a tool head disposal unit,
+wherein the robotic arm is configured to use a tool head by:
+removing the tool head from the tool head dispenser;
+using the tool head to clean a surface; and
+delivering the tool head to the tool head disposal unit after cleaning the
+surface.
+The robot may further comprise at least one tool holder holding a respective
+tool to which the tool head is attachable, the tool and too! head together forming
+an end effector, the robotic arm being configured to connect to a said tool such
+that using the tool head comprises controlling the tool. The robotic arm and tool
+may couple using a pneumatic coupling.
+
+
+===== PAGE 6 =====
+WO 2023/075687 PCT/SG2022/050762
+The tool head disposal unit may comprise a tool head remover and delivering
+the tool head comprises removing the tool head using the tool head remover.
+The tool head remover may align the tool head with a disposal bin.
+The robot may further comprise one or more utilities lines extending from a
+body of the robot to a distal end of the robotic arm. The one or more utilities
+lines may connect from the distal end to the tool head.
+The robot may further comprise a control system configured to perform at least
+one of:
+aligning the autonomous cleaning robot with an object according to the
+method described above; and
+manipulating the robotic arm according to the method described above.
+Advantageously, some embodiments provide autonomous computer vision
+guided robot alignment. The robotic arm automatically adjusts to best fit
+intended trajectory along a surface in a real environment. This eliminates need
+to pre-train the robot and calibrate it for fixed use case, hence increasing its
+versatility.
+Advantageously, some embodiments use real-time surface normal estimation —
+e.g. those that use point cloud, where a surface normal for each point in the
+cloud is used in surface normal estimation. This enables the robot arm to
+maintain constant consistent force and distance when manipulating along a
+surface. For example, a distance from the surface can be calculated and the
+robot arm thereby controlled (i.e. manipulated) to maintain a consistent
+distance from the cleaning surface.
+Advantageously, some embodiments provide an autonomous tool switching
+mechanism. These embodiments are able to switch different tools on robot
+without human intervention.
+Brief description of the drawings
+Embodiments of the present invention will now be described, by way of non-
+limiting example, with reference to the drawings in which:
+4
+
+
+===== PAGE 7 =====
+WO 2023/075687 PCT/SG2022/050762
+Figure 1 is a robotic arm with depth camera in observe pose;
+Figure 2 illustrates an example method for aligning an autonomous cleaning
+robot with an object in an environment;
+Figure 3 shows a bounding box detection and labelling of toilet scene with Yolo5;
+Figure 4 shows a toilet bowl image extracted from original image;
+Figure 5 shows edges of toilet bowl are detected and alignment w.r.t. feature is
+calculated;
+Figure 6 illustrates image segmentation of toilet bow! into sub-features;
+Figure 7A-7C show edges of water cabinet detected and used for angie
+estimation;
+Figure 8 illustrates an example method of performing the first alignment;
+Figure 9 illustrates horizontal edges of water cabinet used for distance
+comparison;
+Figure 10 shows a depth camera with isosceles triangle;
+Figure 11 is an illustration of origin within alignment margin;
+Figure 12 illustrates an example method of performing the third alignment.
+Figure 13 shows an example method 1300 for vision guided manipulation of a
+robotic arm of an autonomous cleaning robot;
+Figure 14 shows progressive steps in the identification of a cleaning surface and
+cleaning of that surface;
+Figure 15 relates to a block diagram showing an exemplary computer device, in
+which embodiments of the invention may be practiced;
+Figure 16 shows a display of the splash screen of an autonomous or semi-
+autonomous robot;
+Figure 17 shows a display of the home screen of an autonomous or semi-
+autonomous robot;
+Figure 18 shows a display depicting misalignment of an autonomous or semi-
+autonomous robot relative to an object (toilet);
+Figure 19 shows a display depicting proper alignment of an autonomous or semi-
+autonomous robot relative to an object (toilet);
+Figure 20 shows a display of a cleaning selection screen of an autonomous or
+semi-autonomous robot;
+Figure 21 shows a display of a cleaning in progress of an autonomous or semi-
+autonomous robot;
+Figure 22 shows a display of a cleaning completed screen of an autonomous or
+5
+
+
+===== PAGE 8 =====
+WO 2023/075687 PCT/SG2022/050762
+semi-autonomous robot;
+Figure 23 shows trolley design with cleaning tool management system;
+Figure 24 depicts a tool changer pneumatic base plates;
+Figure 25 is an exploded drawing of toilet brush;
+Figure 26A-26E show some tools and their customisations;
+Figure 27 shows an electrical power delivery sequence;
+Figure 28 illustrates a utilities supply tool;
+Figure 29 shows tools stored horizontally on magnetic gripper;
+Figure 30 illustrates disposable toilet brush tool storage;
+Figure 31 is a robot arm attaching toilet brush to toilet brush tool stick;
+Figure 32 illustrates toilet brush head disposal;
+Figure 33 shows an example point cloud surface normal estimates shows along
+arm trajectory;
+Figure 34 shows a tool holder with passive swapping and disposable tool
+dispersal system; and
+Figure 35 is a robotic arm tool switching mechanism.
+Detailed description
+The present disclosure relates to autonomous robots with robotic arms. The
+robots and arms disclosed herein can reduce human involvement in repeated
+menial tasks (i.e., cleaning toilet bowl, mirrors and welding) and automate tasks
+requiring multiple tools and surface contact (such as cleaning, welding,
+manufacturing). In general, the proposed robots and arms can occupy an
+important position in people's lives because they can automatically do repetitive
+tasks such as cleaning objects with limited need of manual participation.
+In order for the proposed robots (such as cleaning robots) to execute pre-
+defined interactions with scene objects (for example as shown in Figure 1, the
+robotic arm 102 manipulates along surface of toilet bowl 106 to perform
+cleaning task), it is essential that the alignment of the robot to the scene object
+is similar to the alignment when the trajectory path is trained. As such, a system
+to determine robot alignment needs to be developed. In the present disclosure,
+a method for autonomous computer vision guided robot arm trajectory
+alignment is proposed. Said method allows the robotic arm to align to target
+cleaning feature (such as toilet bowl, urinal, sink and mirror). In some
+6
+
+
+===== PAGE 9 =====
+WO 2023/075687 PCT/SG2022/0350762
+embodiments as illustrated in Figure 1, the robotic arm 102 with a camera 104
+mounted on its end-effector captures scene from an observe pose 106. This
+captured scene is then processed for robotic movement control.
+As will be discussed in detail, the proposed method involves recognition of the
+target feature, followed by determination of angle and distance from the
+feature. The proposed method is an improvement of the traditional YOLO
+classification algorithm. In particular, the output class list is updated to be just
+the target features (i.e., toilet bowl, urinal, sink, mirror, shower glass panel) in
+the toilet to limit the classification model to only relevant features.
+Figure 2 illustrates an example method 200 for aligning an autonomous cleaning
+robot with an object in an environment. The method 200 comprises:
+Step 202: identifying the object in an image of the environment;
+Step 204: performing a first alignment of the autonomous cleaning robot
+with the object based on an edge of the object and a reference point;
+Step 206: performing a second alignment of the autonomous cleaning
+robot with the object based on a bounding box of the object and a frame
+boundary of the image; and
+Step 208: performing a third alignment of the autonomous cleaning robot
+based on a distance between the autonomous cleaning robot and the object.
+At step 202, a suitable target object in the scene can be detected (such as toilet
+bowl 302, potted plant 304 and cup 306) using bounding box classification per
+Figure 3. In particular, an optimized YOLOv5 object classification algorithm can
+be used to detect and classify the features (for example the toilet features,
+including the toilet bowl feature, urinal feature, sink feature and mirror feature)
+in the scene. YOLOvS5 is a family of compound-scaled object detection models
+trained on the COCO dataset, and includes simple functionality for test time
+augmentation and hyper parameter evolution. It is an object detection model
+that combines bounding box prediction and object classification into a single end
+to end differentiable network.
+The target feature (for example the toilet bowl feature, urinal feature, sink
+feature and mirror feature) is then extracted from the target image obtained.
+In one example shown in Figure 4, the toilet bowl image (i.e., feature) 402 can
+7
+
+
+===== PAGE 10 =====
+WO 2023/075687 PCT/SG2022/050762
+be extracted from the original image 404. It will be appreciated that fixed
+feature points on the target image (for example rear edges of toilet bowl 402)
+can then be identified per Figure 5.
+After the fixed feature points on the target image are identified, the pre-trained
+YOLOv5 classification models will then be used to detect key sub-features of
+common toilet features for classification. Figure 6 illustrates images
+segmentation of toilet bowl feature into sub-features. As shown in Figure 6, the
+toilet bowl feature 600 includes water cabinet sub-feature 602 (including flush
+sub-feature and cabinet sub-feature), toilet bowl base sub-feature 604
+(including inner surface and outer surface sub-features), toilet lid sub-feature
+606 (including toilet seat cover sub-feature and toilet seat sub-feature). In some
+embodiments, the urinal feature includes flush sub-feature and urinal container
+sub-feature. The sink feature includes tap sub-feature, sink surface sub-feature
+(including inner surface outer surface sub-features). The mirror feature includes
+mirror surface sub-feature.
+After the key sub-features are detected, edge-based image segmentation is run
+on each feature to identify its edges and classify different segments as shown
+in Figure 7A. Figure 7B shows the water cabinet detected. In the present
+disclosure, standard straight edges are identified that can be used for alignment
+to particular feature. As shown in Figure 7C, two horizontal edges (i.e., P1-P2
+and P3-P4) on the water cabinet are detected. Those two edges, as will be
+discussed in detail, can be used for distance comparison. Table I shows some
+examples of edges used for different features (not exhaustive).
+Toilet Straight Edges Used
+Feature
+Toilet Bowl |  Horizontal edge on wall behind toilet bowl;
+Horizontal edges on water cabinet;
+Urinal Vertical edges along the side of urinal;
+Horizontal edges at the top and bottom of urinal;
+Sink Horizontal edges along sink cabinet;
+
+
+===== PAGE 11 =====
+WO 2023/075687 PCT/SG2022/050762
+Vertical edges along the side of sink cabinet;
+Mirror For rectangular mirrors, horizontal & vertical edges along
+the side of mirror;
+For circular mirrors, points along arc of mirror edge.
+Table I
+As illustrated in Figure 8, at step 204, in some embodiments, performing the
+first alignment comprises:
+Step 802: identifying two points defining the edge; and
+Step 804: comparing angles of the two points, each angle being defined
+between the edge and a line from the respective said point to the reference
+point.
+At step 802, as illustrated in Figure 9, two points (i.e., Pl and P2) on the straight
+edge P1-P2 are chosen and their distance from the reference point 902 is
+measured using a depth camera. The distance between Pi and point 902 is
+marked as 11, and the distance between P2 and point 902 is marked as I2.
+At step 804, as shown in Figure 10, X1 refers to the angle defined between the
+edge formed between points 1002 and 1004 and a line from point 1002 to the
+reference point 1006. Similarly, X2 refers to the angle defined between the edge
+formed between points 1002 and 1004 and a line from point 1004 to the
+reference point 1006. In this example, the depth camera is located at the
+reference point 1006. In some embodiments, performing the first alignment
+comprises determining a distance between the autonomous cleaning robot
+(which may also be located at the reference point 1006) and each of the two
+points 1002 and 1004. If the distances between the two points 1002 and 1004
+and the reference point 1006 are similar, the cleaning robot is deemed to be
+facing the target feature and it is deemed to be normal to the target feature.
+At step 206, as shown in Figure 11, performing the second alignment may
+comprise detecting alignment between the bounding box 1102 and frame
+boundary of the toilet water cabinet to align the robot horizontally to the centre
+of the feature. Detecting alignment comprises determining a centre 1104 of the
+9
+
+
+===== PAGE 12 =====
+WO 2023/075687 PCT/SG2022/050762
+bounding box 1102 relative to centre region (see 1106) of the image. Said
+image can be captured by a camera system (for example the depth camera). In
+particular, an origin 1104 is marked in the centre of the bounding box 1102 of
+a feature and compared against the centre line (see 1108 and 1110) of the
+image frame. To be specific, if the image origin lies outside of the alignment
+margin in the centre of the image frame, it is determined to be not aligned. On
+the contrary, if the image origin lies within the alignment margin in the centre
+of the image frame it is determined to be aligned.
+As illustrated in Figure 12, at step 206, in some embodiments, performing the
+third alignment comprises:
+Step 1202: determining a distance between the autonomous cleaning
+robot and the edge; and
+Step 1204: adjusting a position of the autonomous cleaning robot if the
+distance is outside a reference range.
+In particular, once the cleaning robot is aligned to be normal to the feature as
+well as horizontally aligned to the centre of the feature, the pre-set expected
+distance range from the feature origin is compared against the distance
+obtained. This pre-set distance is calculated for the different features in order
+to allow maximum freedom for the arm motion and to reduce chances of
+collision. If the current distance is greater than expected range, the robot is
+deemed to be too far away from feature. On the contrary, if the current distance
+is less than the expected range, the robot is deemed too near to the feature.
+The present disclosure also relates to a method for vision guided autonomous
+robotic Arm manipulation. The proposed method allows autonomous robotic arm
+manipulation for cleaning on selected target features. It allows detecting surface
+to be cleaned and stores point cloud map of surface in memory. A data model
+is used to store the cleaning status of each point on the surface. The proposed
+method is also able to select points along a surface to form trajectory for arm
+of the cleaning robot to move and clean. Figure 33 illustrates an example point
+cloud surface normal estimates shows along arm trajectory.
+Figure 13 illustrates an example method 1300 for vision guided manipulation of
+a robotic arm of an autonomous cleaning robot, comprising:
+10
+
+
+===== PAGE 13 =====
+WO 2023/075687 PCT/SG2022/050762
+Step 1302: generating a 3-dimensional (3D) model of an object based on
+a point cloud of the object;
+Step 1304: modelling a cleaning surface of the object, based on an edge
+of the 3-D model;
+Step 1306: forming an array of waypoints along the cleaning surface;
+and
+Step 1308: moving an end effector of the robotic arm between successive
+ones of the waypoints, to clean the cleaning surface.
+At step 1302, in an observe pose, the depth camera mounted on the robot arm
+can capture the image of the toilet feature. The point cloud from the depth
+camera of the scene can be used to generate a 3D model that is represented in
+the Movelt Planning Scene, which allows one to setup virtual environments (i.e.,
+scenes), create start and goal states for the robot interactively, test various
+motion planners, and visualize the output.
+At step 1304, edge based image segmentation is done to identify and detect the
+surface of the feature. Table I above shows examples of the edges that are
+analysed for the feature detection.
+Figure 14 shows the progressive steps 1402 to 1407 in identification of shapes,
+one of which is a cleaning surface, and the cleaning of that surface. Steps 1402
+and 1403 relate to modelling a cleaning surface of the object, based on an edge
+of the 3-D model (i.e., step 1304 of method 1300). In particular, step 1402
+relates to edge detection on toilet feature to identify relevant edges (i.e., outer
+ellipse 1408 and inner ellipse 1409). Step 1403 relates to identifying cleaning
+surfaces (i.e., 1410) and toilet seat surface (i.e., 1411) bounded by edges 1408
+and 1409.
+Steps 1404-1407 relate to the process of forming an array of waypoints along
+the cleaning surface (i.e., step 1306 of method 1300). Step 1404 relates to
+forming suitable shape used to mark waypoints path (see 1412) along edge
+1409. Step 1405 illustrates ellipse of Toilet Bowl with origin marked waypoints.
+As shown from steps 1405 to 1407, as the cleaning process is going on, the
+area of the unclean surface will be decreased. The new edge of the unclean
+surface will be updated as the area of the unclean surface is decreasing. The
+11
+
+
+===== PAGE 14 =====
+WO 2023/075687 PCT/SG2022/050762
+new waypoint path 1412 will be updated accordingly. Finally, as shown at step
+1407, the trajectory is terminated when cleaning surface has been fully covered.
+The present disclosure now discloses details regarding the method of generating
+path trajectory. First, a suitable shape based on the edge is used to model the
+cleaning surface of the toilet feature. (i.e., ellipse 1409 for inner toilet bowl).
+Second, the Cartesian points of all the point clouds points located within the
+shape is stored in an array of tuples of the form (cartesian_coordinate,
+pass count), where pass_count is initialised to 0. The centre of the shape
+detected in step 1404 is identified as the origin located at Cartesian point (xo,
+yo, zo). Third, forming an array of waypoints comprises sampling the point cloud
+at the cleaning surface to produce a point cloud for each waypoint; and storing
+the point cloud for each waypoint in memory. Said point cloud may be generated
+from a depth image captured by a camera system. In particular, point clouds
+lying along the shape where zi = zo are sampled ((xi,yi,zi), pass_count) stored
+in an array denoting the waypoint for the arm cleaning trajectory. Said array
+can be formalized as:
+waypoints = [((x1,y1,z0), 0), ((x2,y2,z0), 0), ...].
+In some embodiments, moving the end effector comprises determining
+movements of the end effector based on a model of the end effector and the
+cleaning surface It will be appreciated that when a robotic arm with the
+appropriate end-effector (such as cleaning tool head) would move along the
+path denoted by the waypoints 1412 in steps 1404 to 1407, the end-effector
+(such as toilet brush) would contact the points on the surface of the toilet
+feature within the radius of the end-effector. The 3D planning scene mentioned
+instep 1302 of method 1300 would be aware of the 3D model of the end-effector
+as it would be pre-loaded and the position of the end-effector would be used as
+targets for the inverse kinematics planner to actuate the robot arm. In the
+present disclosure, the inverse kinematic planner used for testing is the OMPL
+library. Hence, after the first set of waypoints are stored for zi = zo, the z-
+coordinate is decremented such that zi = zQ - (radius of end effector). Step
+1308 of method 1300 are then repeated until the termination condition which is
+when zi exceeds the depth of the 3D model or if the position would be beyond
+the robot arm’s reach.
+12
+
+
+===== PAGE 15 =====
+WO 2023/075687 PCT/SG2022/050762
+After the entire trajectory for the cleaning sequence has been identified, the
+path is simulated in MovelIt against the planning scene which contains the
+detected obstacle. In addition, if all the points do not lead to any collision, the
+path is accepted and can be used for cleaning. During the actual path execution,
+the joint angles of the robot are continuously monitored, if there is a deviation
+of more than 4 degrees for the joint angle on any axis as compared to the
+expected angle, the trajectory is halted and the operator is alerted.
+The present disclosure also relates to system for controlling an autonomous
+cleaning robot, comprising:
+memory;
+at least one processor (hereinafter the Processor); and
+a camera system,
+wherein the memory Stores instructions that, when executed by the Processor,
+cause the system to perform the method 200 and 1300. The present invention
+also relates to an autonomous cleaning robot comprising the proposed system.
+Figure 15 is a block diagram showing an exemplary system (such as computer
+device) 1500, in which embodiments of the invention may be practiced. The
+computer device 1000 may be a mobile computer device such as a smart phone,
+a wearable device, a palm-top computer, and multimedia Internet enabled
+cellular telephones when used in training the model, and, for use in controlling
+a vehicle or other machine for autonomous driving, may be an on-board
+computing system or a mobile device such as an iPhone TM manufactured by
+AppleTM, Inc or one manufactured by LGTM, HTCTM and Samsung, for
+example, or other device in communication with the vehicle or other machine
+and configured to send control commands thereto and to receive information on
+human interventions from the vehicle or other machine.
+As shown, the mobile computer device 1500 includes the following components
+in electronic communication via a bus 1506:
+(a) adisplay 1502;
+{b) non-volatile (non-transitory) memory 1504;
+(c) random access memory ("RAM") 1508;
+(d) N processing components 1510;
+(e) a transceiver component 1512 that includes N transceivers; and
+13
+
+
+===== PAGE 16 =====
+WO 2023/075687 PCT/SG2022/050762
+(f) user controls 1514.
+Although the components depicted in Figure 15 represent physical components,
+Figure 15 is not intended to be a hardware diagram. Thus, many of the
+components depicted in Figure 15 may be realized by common constructs or
+distributed among additional physical components. Moreover, it is certainly
+contemplated that other existing and yet-to-be developed physical components
+and architectures may be utilized to implement the functional components
+described with reference to Figure 15.
+The display 1502 generally operates to provide a presentation of content to a
+user, and may be realized by any of a variety of displays (e.g., CRT, LCD, HDMI,
+micro-projector and OLED displays).
+In general, the non-volatile data storage 1504 (also referred to as non-volatile
+memory) functions to store (e.g., persistently store) data and executable code.
+The system architecture may be implemented in memory 1504, or by
+instructions stored in memory 1504.
+In some embodiments, the non-volatile memory 1504 includes bootloader code,
+modem software, operating system code, file system code, and code to facilitate
+the implementation components, well known to those of ordinary skill in the art,
+which are not depicted nor described for simplicity.
+In many implementations, the non-volatile memory 1504 is realized by flash
+memory (e.g., NAND or ONENAND memory), but it is certainly contemplated
+that other memory types may be utilized as well. Although it may be possible
+to execute the code from the non-volatile memory 1504, the executable code
+in the non-volatile memory 1504 is typically loaded into RAM 1508 and executed
+by one or more of the N processing components 1510.
+The N processing components 1510 in connection with RAM 1508 generally
+operate to execute the instructions stored in non-volatile memory 1504. As one
+of ordinarily skill in the art will appreciate, the N processing components 1510
+may include a video processor, modem processor, DSP, graphics processing unit
+(GPU), and other processing components.
+14
+
+
+===== PAGE 17 =====
+WO 2023/075687 PCT/SG2022/0350762
+The transceiver component 1512 includes N transceiver chains, which may be
+used for communicating with external devices via wireless networks. Each of
+the N transceiver chains may represent a transceiver associated with a
+particular communication scheme. For example, each transceiver may
+correspond to protocols that are specific to local area networks, cellular
+networks (e.g., a CDMA network, a GPRS network, a UMTS networks), and other
+types of communication networks.
+The system 1500 of Figure 15 may be connected to any appliance 418, such as
+one or more cameras mounted to other robots or fixed in the building in which
+the robot is operating, to provide scene information, a clock (e.g. so
+automatically clean areas at a particular time of day or night) or an external
+database from which context can be acquired.
+It should be recognized that Figure 15 is merely exemplary and in one or more
+exemplary embodiments, the functions described herein may be implemented
+in hardware, software, firmware, or any combination thereof. If implemented in
+software, the functions may be stored on or transmitted over as one or more
+instructions or code encoded on a non-transitory computer-readable medium
+1504. Non-transitory computer-readable medium 1504 includes both computer
+storage medium and communication medium including any medium that
+facilitates transfer of a computer program from one place to another. A storage
+medium may be any available medium that can be accessed by a computer.
+The present disclosure now illustrates human user interfaces (UIs) for
+controlling the proposed multi-functional cleaning robot. These UIs allow human
+cleaner to operate semi-automated cleaning robot, where the robot may be
+automatic in other embodiments. They can also guide human to align robot with
+toilet feature assisted with the methods 200 and 1300 described above.
+Figures 16 to 22 shows some example UIs, and they illustrate the cleaning
+sequence and the corresponding design to control the robot through the
+application. Table II provides details of these UIs and their functions.
+15
+
+
+===== PAGE 18 =====
+PCT/SG2022/0350762
+Functions
+It shows loader while robot is being turned on
+and initialized.
+It is an intuitive screen to allow human to
+select desired toilet feature to clean.
+It guides robot to align to toilet feature using
+computer vision methods described above.
+Namely, the angular alignment, horizontal
+offset from centre and the distance from the
+toilet feature are checked.
+It reminds user to lock robot wheels and
+requests user input to select cleaning options.
+It displays the tasks that the robot will perform
+and its current status as well as time elapsed.
+It shows each of the tasks in the cleaning
+process, and the state (e.g. not start, in
+process, completed) of each task.
+WO 2023/075687
+Related UI Name
+Figure
+16 Splash Screen
+17 Home Screen
+18 Alignment Screen
+19 Cleaning
+Selection Screen
+20 Cleaning Screen
+21 Cleaning in
+progress screen
+22 Cleaning
+completed screen
+It shows all the tasks in the cleaning process
+have been completed.
+Table II
+It will be appreciated that the design for the user interface had to have the
+considerations shown in Table III based on user feedback and analysis:
+User Need/Behaviour
+Consequential Design Choice
+The user will control the robot using The buttons have to be large and
+a touch screen panel mounted on the easily identifiable.
+robot body.
+The user needs properly align the A guiding box is added in the
+robot to a toilet feature. alignment screen to make alignment
+more intuitive.
+they run out.
+User needs to charge battery and Battery and consumable icons and
+replace cleaning consumables when their status is shown at all times
+throughout operation.
+Table III
+16
+
+
+===== PAGE 19 =====
+WO 2023/075687 PCT/SG2022/050762
+The present disclosure now discloses a method for multiple cleaning tool
+management. The proposed method allows switching between multiple cleaning
+tool heads required for different cleaning processes. It also allows power, control
+and utilities (such as detergent, water and air) delivery to the cleaning tool, as
+well as enables proper sanitation and disposal of used cleaning tool.
+To illustrate the proposed method for multiple cleaning tool management, this
+disclosure first describes a cleaning tool modification mechanism. In order to
+accommodate a multiple cleaning tool setup and their intended cleaning role, a
+series of cleaning tools had to be modified so that they can stored easily, have
+a common switching mechanism, and a common process to deliver electrical
+power, utilities like water, detergent, etc..
+Figure 23 shows an example autonomous cleaning robot 2300 with the cleaning
+tool system features annotated, comprising:
+a robotic arm 2302 (e.g. elephant robotics mycobot 320 M5 robotic arm);
+a tool head dispenser 2304 for dispensing tool heads; and
+a tool head disposal unit 2306,
+wherein the robotic arm 2302 is configured to use a tool head (not shown)
+by:
+removing the tool head from the tool head dispenser 2304;
+using the tool head to clean a surface; and
+delivering the tool head to the tool head disposal unit 2306 after
+cleaning the surface.
+In some embodiments, the robot 2300 further comprises at least one tool holder
+2308 holding a respective tool (not shown) to which the tool head is attachable.
+The tool and tool head together form an end effector. The robotic arm 2302 is
+configured to connect to a said tool such that using the tool head comprises
+controlling the tool. The robot 2300 may further comprises a dust bin for
+containing rubbish generated during the cleaning process.
+In some embodiments, the robotic arm 2302 and tool couple using a pneumatic
+coupling. For each tool, tool switching is done using a set of pneumatic base
+plates (for example 2400 in Figure 24) that would attach to each other through
+17
+
+
+===== PAGE 20 =====
+WO 2023/075687 PCT/SG2022/050762
+air compression from a centrally controlled air compressor. In order to attach a
+tool, the robot arm 2302 would align the plate on its end-effector to the tool’s
+base plate 2400 and then activate the air compression.
+Also disclosed is tool stick customisation. Figure 25 illustrates am exploded
+drawing of a toilet brush 2500, of which the common features that are present
+on all tools. Table IV shows a list of tool components of the toilet brush 2500
+and their purposes.
+Tool Component Purpose
+Robot Arm Connector The arm connector 2502 is a joint on the robot
+2502 arm to which custom attachments like
+pneumatic plates can be attached.
+Pneumatic Base Plates The plates 2504 are main form of switching
+2504 tools. The base plate connected to the robot
+arm connector has a pneumatic valve that is
+controlled by the main system. This allows a
+plate 2504 to attach to other base plates on the
+tools systems.
+Custom Tool Control The control box 256 is used to control different
+Box 2506 tools which may require different types of
+actuation. Some tools require rotation with a DC
+motor. Some tools require a linear actuator and
+some nothing at all. The common design is to
+attach these actuators in between the tool base
+plate 2504 and tool stick 2508 as shown.
+Custom Tool Stick 2508] The stick 2508 acts as the shaft to extend the
+tool length. For the toilet brush tool 2500, its
+tool stick 2508 has an end which allows
+disposable toilet brushes to be attached and
+detached freely.
+18
+
+
+===== PAGE 21 =====
+WO 2023/075687 PCT/SG2022/0350762
+Cleaning Attachment Different cleaning tasks require different
+2510 (e.g. Cleaning cleaning attachments, hence specific cleaning
+Brush/ Tool Head) attachments are identified for various tasks.
+Table IV
+In particular, Figure 26A-26E list example tools and their customisations. Figure
+26A illustrates a toilet brush for toilet bowl or urinal cleaning. The custom tool
+control box of this toilet brush is for controlling a DC motor type spin toilet
+brush. The control tool stick of the toilet brush has an end which is able to snap
+onto toilet brush. The tool head of the toilet brush is a Chlorox disposable head.
+Figure 26B illustrates a gripper for grasping items such as flush and toilet bowl
+lid. The custom tool control box of this gripper is for controlling a stepper motor
+for rotation. The control tool stick of the gripper is a pneumatic system. The tool
+head of the gripper is a gripper-type head.
+Figure 26C illustrates a duster for dusting. The custom tool control box of this
+duster is for controlling a DC motor for spin mop. The control tool stick of the
+duster has an internal water and detergent pipe. The tool head of the duster is
+a mop-type head.
+Figure 26D illustrates a dry sponge for drying surface after cleaning. The control
+tool stick of the dry sponge has a dry sponge holder fixed to stick end. The tool
+head of the dry sponge is a replaceable dry sponge.
+Figure 26E illustrates a wiper for mirror/glass panel wiping. The custom tool
+control box of this wiper is for controlling a linear actuator to extend and contract
+wiper. The control tool stick of the wiper has an end connected to fixed wiper
+holder. The tool head of the toilet brush is a wiper-type head.
+Also disclosed is electrical power delivery and utilities delivery. Electrical power
+and control wires are required to control the end-effector (such as the cleaning
+tool). However, since the arm 2302 is not always connected to the cleaning tool,
+one of the major challenges for designing is how to handle electrical power
+delivery.
+19
+
+
+===== PAGE 22 =====
+WO 2023/075687 PCT/SG2022/050762
+The proposed design shown above consists of the custom tool box which is
+where the actuators for electrically controlled tools are needed. In order to have
+a standard approach for all tools, this embodiment used an 8-pin electrical
+module for tool changers to transfer electrical signal and power between the
+plates to the tool box. Figure 27 illustrates an example electrical power and
+signal delivery set-up 2700. In the first step 2702, electrical wires pass through
+the robot arm. In the second step 2704, said wires are connected to an electrical
+module on the bases plates 2504. In the third step 2706, pins on said electrical
+module form electrical joint when attached. In the final step 2708, electrical
+wires are connected to the tool box 2506 actuating tool head.
+For utilities delivery, we create an additional tool shown in Figure 28 that can
+be switched to just like the tools mentioned. In general, in the present
+disclosure, the robot 2300 comprises one or more utilities lines extending from
+a body of the robot 2300 to a distal end of the robotic arm 2302. The one or
+more utilities lines may connect from the distal end to the tool head. The utility
+pipe (i.e., line) 2800 is able to transfer fluids like water, water mixed with
+detergent, and air through its nozzle and be used for applications. The control
+for the fluid is done directly at source and no additional electrical control box is
+required for this tool.
+For tool storage, the robot body is modified to support the arm in mounting and
+dismounting different tools. As seen from Figure 29, the tools are stored ona
+gripper 2904 which holds on to the tools 2902 in a horizontal position. This
+gripper is designed to be magnetic so it can snap on to the tool and keep it in
+place as the tool base plates are conductors as well.
+For special tools like the toilet brush tool, which is disposable, the present
+disclosure also provides a mechanism to store the toilet brush refills. The design
+of the disposable tool storage 3000 is shown as seen in Figure 30. In order to
+mount a disposable toilet brush using the toilet brush attachment, the robot
+arm 3102 may simply have to press down the tool stick 3104, guided by the
+aligned 3106 as shown in figure 31.
+20
+
+
+===== PAGE 23 =====
+WO 2023/075687 PCT/SG2022/050762
+A sanitation system is required in order to dispose of used toilet brushes after
+each toilet cleaning operation. For this, a dustbin attachment 3202 (see Figure
+32) is added which can be loaded with a disposable plastic bag by a human
+cleaner. After each cleaning operation, the robot arm 3204 can align above the
+toilet brush and snap it off from the toilet brush tool stick. As illustrated in Figure
+32, at the first step, the robot arm 3204 pulls off the too stick 3208 into the
+aligner 3206. At the second step, the arm 3204 pulls off the tool stick 3208 from
+the used toilet brush in the direction 3210. At the final step, the too stick 3208
+will be attached to a new toilet brush stored in the refill storage 3212.
+In some embodiments, the robot further comprises a control system configured
+to perform at least one of:
+aligning the autonomous cleaning robot with an object according to the
+proposed method; and
+manipulating the robotic arm according to the proposed method.
+In some embodiments, the autonomous robot is aligned as follows. First, a
+suitable target object in the scene is detected (such as a toilet bowl) using
+bounding box classification. Second, fixed feature points 3302 on the target
+image are identified (such as rear edges of toilet bowl) per Figure 33. In
+particular, A vector 3304 is drawn to the feature 3302 and the displacement
+and angle of the robotic arm with respect to the feature point 3302 is detected.
+Third, the current angle and displacement is compared to the pre-defined target
+angle and displacement and the necessary adjustment to the robot's pose is
+suggested. When the robot is within an acceptable threshold for angle and
+displacement, it is determined to be aligned to the object.
+In fact, the present disclosure proposes a real time surface normal estimation
+mechanism. Real time surface normal estimation allows the robot to detect the
+normal to the surface as it is manipulating and correct its trajectory in order to
+maintain a constant displacement from the surface. In particular, depth camera
+is used to generate a visual 3D map of the environment. Point cloud data points
+are analysed and surface is identified. Using surface normal estimation, the
+normal to the surface is identified (shown in Figure 33 as arrows 3304). As the
+robot arm moves along its predefined trajectory, the normal displacement of
+the arm from the surface is computed and the value is then processed. If the
+21
+
+
+===== PAGE 24 =====
+WO 2023/075687 PCT/SG2022/050762
+displacement (x cm) is different from the expected displacement at the points
+3302, then the arm adjusts its joint angles to move the arm closer or further
+away from the surface based on the requirement. It will be appreciated that in
+this way the robot arm is able to maintain a constant distance with the surface
+and such design also improves the reliability of the system as issues with
+alignment of the robot with target feature can be compensated for through the
+surface normal estimation correction.
+In the present disclosure, robotic operating system is used for communication
+between the following nodes responsible for the corresponding actions. Table V
+illustrates nodes for which the robotic operating system controls
+communication.
+S/N Node Description
+1 Camera The camera of the robotic
+operating system publishes
+image from the mounted depth
+camera at a fixed frequency.
+2 Computer Vision Scene Said detector uses object
+Detector classification algorithm (such
+as YOLO) to detect objects ina
+scene using a bounding box
+classification and identify the
+objects of interest (which may
+be pre-defined).
+3 Computer Vision Alignment It identifies common feature
+points on objects of interest
+and calculates angular and
+physical displacement from the
+feature points to describe
+alignment of robot to the
+object.
+Table V
+22
+
+
+===== PAGE 25 =====
+WO 2023/075687 PCT/SG2022/050762
+The present disclosure also relates to an autonomous tool switching mechanism
+illustrated in Figure 35. The purpose of said switching mechanism is that the
+autonomous robot needs to be able to wield different tools automatically in order
+to perform multiple tasks through the same platform. This is achieved by
+designing and implementing the following sub-systems. The first sub-system is
+a tool holder that is able to allow passive swapping of its end effector (see 3400
+of Figure 34). The second sub-system is a disposable tool dispersal system. The
+third sub-system is an active tool swapping mechanism that allows robotic arm
+to switch between different tool holders. One pneumatic plate is the end effector
+of the robotic arm while the other plate is attached to the top of the tool holder.
+In order to support hot swapping of different tool holders, a pneumatic system
+is used at the end effector of the robotic arm. It consists of two base plates (see
+the third sub-system mentioned above), one of which is attached to the end of
+the robotic arm and the other is on individual tool holders. When the arm
+attaches to a tool holder, the pneumatic plates will align and join each other.
+The tool-holder in turn has been designed such that it can connect and
+disconnect with various disposable tools. For example, the tool holder (see the
+first sub-system above), is able to load a disposable toilet brush from the toilet
+brush dispenser by aligning and then pushing down onto the brush. A fork finger
+3402 on the tool holder 3400 locks on to the inner wali of the disposable toilet
+brush.
+When a tool (such as the toilet brush) is dispensed from the dispenser (see the
+second sub-system above), the dispenser will activate its linear actuator which
+will push up the next toilet brush to the top ready to be dispensed next. When
+a disposable tool like the toilet brush is to be disposed of, the tool holder has a
+latch which releases the fork finger lock when pressed hence releasing the tool
+attached. Such design is used for disposal of used tools after they are no longer
+required.
+It will be appreciated that many further modifications and permutations of
+various aspects of the described embodiments are possible. Accordingly, the
+described aspects are intended to embrace all such alterations, modifications,
+23
+
+
+===== PAGE 26 =====
+WO 2023/075687 PCT/SG2022/050762
+and variations that fall within the spirit and scope of the appended claims or
+statements.
+Throughout this specification and the claims or statements that follow, unless
+the context requires otherwise, the word “comprise”, and variations such as
+“comprises” and “comprising”, will be understood to imply the inclusion of a
+stated integer or step or group of integers or steps but not the exclusion of any
+other integer or step or group of integers or steps.
+The reference in this specification to any prior publication (or information
+derived from it), or to any matter which is known, is not, and should not be
+taken as an acknowledgment or admission or any form of suggestion that that
+prior publication (or information derived from it) or known matter forms part of
+the common general knowledge in the field of endeavour to which this
+specification relates.
+24
+
+
+===== PAGE 27 =====
+WO 2023/075687 PCT/SG2022/050762
+Claims
+1. A method for aligning an autonomous cleaning robot with an object in an
+environment, the method comprising:
+identifying the object in an image of the environment;
+performing a first alignment of the autonomous cleaning robot with
+the object based on an edge of the object and a reference point;
+performing a second alignment of the autonomous cleaning robot
+with the object based on a bounding box of the object and a frame
+boundary of the image; and
+performing a third alignment of the autonomous cleaning robot
+based on a distance between the autonomous cleaning robot and the
+object.
+2. The method of claim 1, wherein performing the first alignment comprises:
+identifying two points defining the edge; and
+comparing angles of the two points, each angle being defined
+between the edge and a line from the respective said point to the
+reference point.
+3. The method of claim 2, wherein performing the first alignment comprises
+determining a distance between the autonomous cleaning robot and each
+of the two points.
+4. The method of any one of claims 1 to 3, wherein performing the second
+alignment comprises detecting alignment between the bounding box and
+frame boundary.
+5. The method of claim 4, wherein detecting alignment comprises
+determining a centre of the bounding box relative to centre region of the
+image.
+6. The method of claim 1 or 2, wherein performing the third alignment
+comprises:
+determining a distance between the autonomous cleaning robot
+and the edge; and
+25
+
+
+===== PAGE 28 =====
+WO 2023/075687 PCT/SG2022/050762
+adjusting a position of the autonomous cleaning robot if the
+distance is outside a reference range.
+7. The method of any one of claims 1 to 6, wherein the image is captured
+by a camera system.
+8. A method for vision guided manipulation of a robotic arm of an
+autonomous cleaning robot, comprising:
+generating a 3-dimensional (3D) mode! of an object based on a
+point cloud of the object;
+modelling a cleaning surface of the object, based on an edge of the
+3-D model;
+forming an array of waypoints along the cleaning surface; and
+moving an end effector of the robotic arm between successive ones
+of the waypoints, to clean the cleaning surface.
+9. The method of claim 8, wherein moving the end effector comprises
+determining movements of the end effector based on a model of the end
+effector and the cleaning surface.
+10.The method of claim 8 or 9, wherein forming an array of waypoints
+comprises:
+sampling the point cloud at the cleaning surface to produce a point
+cloud for each waypoint; and
+storing the point cloud for each waypoint in memory.
+11.The method of any one of claims 8 to 10, wherein the point cloud is
+generated from a depth image captured by a camera system.
+12.A system for controlling an autonomous cleaning robot, comprising:
+memory;
+at least one processor (hereinafter the Processor); and
+a camera system,
+wherein the memory stores instructions that, when executed by the
+Processor, cause the system to perform the method of claim 7 or 11.
+26
+
+
+===== PAGE 29 =====
+WO 2023/075687 PCT/SG2022/050762
+13.An autonomous cleaning robot comprising the system of claim 12.
+14.An autonomous cleaning robot comprising:
+a robotic arm;
+a tool head dispenser for dispensing tool heads; and
+a tool head disposal unit,
+wherein the robotic arm is configured to use a tool head by:
+removing the tool head from the tool head dispenser;
+using the tool head to clean a surface; and
+delivering the tool head to the tool head disposal unit after cleaning
+the surface.
+15.The robot of claim 14, further comprises at least one tool holder holding
+a respective tool to which the tool head is attachable, the tool and tool
+head together forming an end effector, the robotic arm being configured
+to connect to a said tool such that using the tool head comprises
+controlling the tool.
+16.The robot of claim 15, wherein the robotic arm and tool couple using a
+pneumatic coupling.
+17.The robot of any one of claims 14 to 16, wherein the tool head disposal
+unit comprises a tool head remover and delivering the tool head
+comprises removing the tool head using the tool head remover.
+18.The robot of claim 17, wherein the tool head remover aligns the tool head
+with a disposal bin.
+19.The robot of any one of claims 14 to 18, further comprising one or more
+utilities lines extending from a body of the robot to a distal end of the
+robotic arm.
+20.The robot of claim 19, wherein the one or more utilities lines connect from
+the distal end to the tool head.
+21.The robot of claim 15 or 16, further comprising a control system
+configured to perform at least one of:
+27
+
+
+===== PAGE 30 =====
+WO 2023/075687 PCT/SG2022/050762
+aligning the autonomous cleaning robot with an object according
+to the method of any one of claims 1 to 7; and
+manipulating the robotic arm according to the method of any one
+of claims 8 to 13.
+28
+
+
+===== PAGE 31 =====
+WO 2023/075687 PCT/SG2022/050762
+Figure 1
+1/35
+
+
+===== PAGE 32 =====
+WO 2023/075687 PCT/SG2022/050762
+' 200
+202 | identifying the object in an image of the environment | St
+Performing a first alignment based on an edge of the
+object and a reference point
+204
+4
+Performing a second alignment based on a bounding
+box of the object and a frame boundary of the image
+!
+Performing a second alignment based on a bounding
+box of the object and a frame boundary of the image
+206
+208
+Figure 2
+2/35
+
+
+===== PAGE 33 =====
+WO 2023/075687 PCT/SG2022/050762
+302 ~~
+Figure 3
+3/35
+
+
+===== PAGE 34 =====
+WO 2023/075687 PCT/SG2022/050762
+402
+Figure 4
+4/35
+
+
+===== PAGE 35 =====
+WO 2023/075687 0  PETISG2022/050762
+
+
+===== PAGE 36 =====
+WO 2023/075687 PCT/SG2022/050762
+604
+Figure 6
+6/35
+
+
+===== PAGE 37 =====
+WO 2023/075687 PCT/SG2022/050762
+Figure 7A Figure 7B Figure 7C
+1135
+
+
+===== PAGE 38 =====
+WO 2023/075687
+802 |
+804
+PCT/SG2022/050762
+identifying two points defining the edge
+| SS 204
+Comparing angles of the two points, each angle being
+defined between the edge and a line from the
+respective said paint to the reference point
+Figure 8
+8/35
+
+
+===== PAGE 39 =====
+WO 2023/075687 PCT/SG2022/050762
+Figure 9
+9/35
+
+
+===== PAGE 40 =====
+WO 2023/075687
+hanad
+?
+’
+f
+é
+f
+\
+N é
+‘ ?
+ae ?
+‘ Pa
+‘. ¢
+\ ?
+\. :
+‘ten fF
+x “
+SE?
+Ss
+a
+ME0:
+Depth Camera
+Figure 160
+10/35
+PCT/SG2022/050762
+
+
+===== PAGE 41 =====
+WO 2023/075687 PCT/SG2022/050762
+1106 1104
+~
+Alignment Margin 1110
+Figure ii
+11/35
+
+
+===== PAGE 42 =====
+WO 2023/075687
+1202 | Determining a distance between the robot and the edge | J
+1204
+PCT/SG2022/050762
+206
+Adjusting a position of the robot if the distance is
+outside a reference range
+Figure 12
+12/35
+
+
+===== PAGE 43 =====
+WO 2023/075687
+1302
+1306
+1308
+Generating a 3D model of an object based ona
+paint cloud of the object
+Modelling a cleaning surface of the object, based
+onan edge of the 3D model
+¥
+Forming an array of waypoints along the cleaning
+surface
+Moving an end effector of the robotic arm
+between successive ones of the waypoints, to
+clean the cleaning surface
+Figure 13
+13/35
+PCT/SG2022/050762
+SL 1300
+
+
+===== PAGE 44 =====
+WO 2023/075687 PCT/SG2022/050762
+1404
+Figure 14
+14/35
+
+
+===== PAGE 45 =====
+PCT/SG2022/050762
+WO 2023/075687
+OTST
+2tSt
+20ST
+vISt
+vost
+°
+80ST
+GT
+eanBig
+erst
+PSoROS
+A ARERR
+od
+15/35
+
+
+===== PAGE 46 =====
+WO 2023/075687 PCT/SG2022/050762
+Figure 16
+16/35
+
+
+===== PAGE 47 =====
+WO 2023/075687 PCT/SG2022/050762
+eee
+%
+Bechet
+Boot
+on
+nt
+wee
+we
+Le
+gel
+fpoot
+o
+OO AM iS
+Moriday, P1V05/2023 ae >
+4
+woe
+oS
+oS
+ed
+\N
+\
+“neececerreresertte:
+q Last Cleared: 32/08/2023 (77.05 AM) Last Sleaned: 22/05/2021 417.05 AM)
+Soe
+Figure 1?
+17/35
+
+
+===== PAGE 48 =====
+WO 2023/075687 PCT/SG2022/050762
+100%) <
+MOVE LEFT
+- Alignment E 80%
+Figure 18
+18/35
+
+
+===== PAGE 49 =====
+WO 2023/075687 PCT/SG2022/050762
+©
+Alignment Completed
+Lock Wheels then
+Press Next
+~
+Veet Gosw - Alignment E 80% 100%
+WS Angle
+\ Distance
+Figure 19
+19/35
+
+
+===== PAGE 50 =====
+WO 2023/075687 PCT/SG2022/050762
+Select Cleaning
+Option
+Sow! ~ Alignment E 80%
+ae
+.
+Figure 20
+20/35
+
+
+===== PAGE 51 =====
+WO 2023/075687 PCT/SG2022/050762
+fowl -
+came
+a
+S| 80%dh 100%
+(\ Wheellock ©) Outer Bow!
+< © Toilet Seat ©) Flushing
+C) Inner Bow! © Drying
+Figure 21
+21/35
+
+
+===== PAGE 52 =====
+WO 2023/075687 PCT/SG2022/050762
+ee YE PR
+BS eho EF os
+3 RSS  Rel s
+"
+. } y rg
+x 2 Pee
+nok ESSN
+“i - Cleaning §
+Book RF EE : j ISS
+Return to
+\\ Wheel Lock W Outer Bow! Homescreen
+iN W
+W) Toilet Seat \) Flushing 10
+SS «
+CW inner Bow! \\ Drying
+- Cleaning Completed
+Figure 22
+22/35
+
+
+===== PAGE 53 =====
+WO 2023/075687 PCT/SG2022/050762
+SO 2300
+2302
+Figure 23
+23/35
+
+
+===== PAGE 54 =====
+WO 2023/075687 PCT/SG2022/050762
+S  2400
+Figure 24
+24/35
+
+
+===== PAGE 55 =====
+WO 2023/075687 PCT/SG2022/050762
+a 2500
+roa
+2502 2504 3506 2508 2510
+ay WS
+x |
+Fixed to 4 riven io
+Rabat Arm tool stick
+Figure 25
+25/35
+
+
+===== PAGE 56 =====
+WO 2023/075687
+PCT/SG2022/050762
+Figure 268
+Figure 26C
+Figure 26D
+26/35
+Figure 26E
+a
+a
+i,
+ERI
+Me
+oA
+Poy,
+
+
+===== PAGE 57 =====
+WO 2023/075687
+2704
+ra
+“"” Fixed to *
+Robot Arm
+\ [Fixed to
+\ ted! stick
+id Ny
+2708
+2706
+Figure 27
+27/35
+PCT/SG2022/050762
+
+
+===== PAGE 58 =====
+WO 2023/075687 PCT/SG2022/050762
+2800
+Figure 28
+28/35
+
+
+===== PAGE 59 =====
+WO 2023/075687 PCT/SG2022/050762
+\
+SANS
+2904
+Figure 29
+29/35
+
+
+===== PAGE 60 =====
+PCT/SG2022/050762
+WO 2023/075687
+igure 30
+F
+30/35
+
+
+===== PAGE 61 =====
+PCT/SG2022/050762
+WO 2023/075687
+N
+S
+rt
+ae)
+\
+Figure 31
+31/35
+
+
+===== PAGE 62 =====
+PCT/SG2022/050762
+WO 2023/075687
+32/35
+.
+_ oo
+CU
+3202
+Figure 32
+32/35
+
+
+===== PAGE 63 =====
+
+
+===== PAGE 64 =====
+PCT/SG2022/050762
+WO 2023/075687
+ee
+Figure 34
+34/35
+
+
+===== PAGE 65 =====
+PCT/SG2022/050762
+WO 2023/075687
+Figure 35
+35/35
