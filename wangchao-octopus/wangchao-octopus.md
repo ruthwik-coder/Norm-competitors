@@ -122,6 +122,29 @@ Video: https://www.youtube.com/watch?v=TDdowbHThfw (1:42). Analysed 2026-10-13 f
 - **So far, every filing names 王辉 (Wang Hui)** as inventor/designer. He is likely the technical founder `[INF]`.
 - A design patent protects only the *look* of the robot, not how it works. It doesn't affect Ubanthu unless we copy the C1 shape.
 
+**Full CN122493419A files** (from Vishal, 2026-10-13): [original CN PDF (26 pp.)](patents/CN122493419A_original-CN.pdf) · [**English PDF**](patents/CN122493419A_EN.pdf) (biblio, abstract and Fig. 3 legend translated by Claude; claims and description = Google Patents machine translation; original figures appended) `[V][S086]`. The PDF is the **A (application) publication**. **A B (grant) document has still not been seen**, so the grant remains unconfirmed.
+
+**⭐ Fig. 3: labelled C1 hardware (the most useful part of the patent)** `[V][S086]`:
+
+<img src="screenshots/2026-07-31_CN122493419A_fig3_C1-labelled-parts.png" width="520">
+
+| # | Part (translated) | Note `[INF]` |
+|---|---|---|
+| 1 | **Depth camera, mounted low on the body** | Wide-view depth for fixture localisation |
+| 2 | **Vision recognition (RGB) camera beside the gripper**, on the arm end | Close-up RGB that moves with the arm |
+| 3 | **Magnetic quick-release interface** | Tool change |
+| 4 | Flexible two-finger gripper | Grips handheld tools (matches the video) |
+| 5 | 6-DoF serial **foldable** arm | — |
+| 6 / 7 / 8 | End tools: **high-pressure water spray**, **wastewater recovery (suction)**, **air-drying head** | **No steam tool or brush is listed.** Matches the video (spray + hot air) |
+| 9 | Sealed pressure-resistant tubing **routed inside the arm** | — |
+| 10 / 11 | Sealed clean-water / wastewater tanks | — |
+| 12 | Electronic control & scheduling unit with built-in **AI model library + scheduling engine** | — |
+| 13 | Multimodal sensor cabling | — |
+| 14 | **Side infrared sensor** | — |
+| 15 | **Multi-line LiDAR** (front, low) | Model unknown |
+
+**Algorithm details from the description** (examples given in the text): class confidence example 0.94 (toilet) vs 0.03 (urinal); anchor scales 64/128/256 px with ratios 1:1, 1:2, 2:1 (i.e. a **Faster R-CNN-style RPN**, despite the "large vision model" label `[INF]`); region-growing cluster radius **40 mm**; local-curvature radius 15 mm; confidence-weighted ICP with a sigmoid weight (centre 0.6, steepness 10) plus a curvature term; example world coordinate output (810.2, 50.6, 605.4) mm. The method again covers **fixture pose only; no dirt or cleanliness detection**.
+
 **⚠️ Status of CN122493419: `[CONFLICT]`**. Google Patents shows **A (application, pending)** (S083). A Baidu AI answer says it was **granted as CN122493419B** (S085), but the same answer also says "1 granted, 1 under substantive examination", which contradicts itself. A grant within ~3 months of filing is possible only under China's fast-track (prioritised examination). **Check on CNIPA (epub.cnipa.gov.cn) for "CN122493419B".**
 
 Link: https://patents.google.com/patent/CN122493419A/en · extract saved in [patents/](patents/CN122493419A_google-patents-extract.txt) `[V][S083]`.
