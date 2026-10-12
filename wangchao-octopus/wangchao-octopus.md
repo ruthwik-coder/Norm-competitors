@@ -108,11 +108,21 @@ Video: https://www.youtube.com/watch?v=TDdowbHThfw (1:42). Analysed 2026-10-13 f
 
 ## Patents
 
-**Search done 2026-10-13 (Google Patents, assignee "望潮创新"): 1 published application.**
+**Status 2026-10-13: 2 patents found** (Google Patents search + design patent PDF from CNIPA supplied by Vishal). Baidu AI also mentions **2 software copyrights** `[UNV][S085]`.
 
 | No. | Title | Inventor | Filed (priority) | Published | Status |
 |---|---|---|---|---|---|
+| **CN310188487S** (design patent; appl. 202630095668.2) | 智能清洁机器人（望潮C1）*Intelligent Cleaning Robot (Wangchao C1)*. LOC 15-05; use: "automated cleaning, environmental inspection and safety management"; design point: **shape**; 8 views | **王辉 (Wang Hui)** (designer) | **4 Mar 2026** | **Granted 4 Sep 2026** | **Granted** `[V][S084]` |
 | **CN122493419A** | 基于深度相机与视觉大模型的厕具识别方法及系统 (*Toilet-fixture identification method and system based on a depth camera and a vision large model*) | **王辉 (Wang Hui)** | **2 Jul 2026** | **31 Jul 2026** (published within 1 month, so early publication was requested `[INF]`) | Pending (invention application, 9 claims) |
+
+**Design patent files:** [original CN PDF](patents/CN310188487S_design-patent_original-CN.pdf) · [**English translation PDF**](patents/CN310188487S_design-patent_EN.pdf) (Chinese text replaced in place by English; drawings unchanged; translated by Claude) `[V][S084]`.
+- The drawings match the website's **grey C1 renders**: a top view shows a **tool rack with 4 handheld tools** and a **two-finger gripper** on the arm. The bottom view shows the drive-wheel layout.
+- **Patentee address in the patent:** Room 102-1, 1F, **Bldg 4**, 650 Bin'an Rd (website says Bldg C 1F; same site `[INF]`).
+- **Patent agency:** Shenzhen Zhongyuan Xinke Patent Agency (44757), agent Xie Xiaoyang.
+- **So far, every filing names 王辉 (Wang Hui)** as inventor/designer. He is likely the technical founder `[INF]`.
+- A design patent protects only the *look* of the robot, not how it works. It doesn't affect Ubanthu unless we copy the C1 shape.
+
+**⚠️ Status of CN122493419: `[CONFLICT]`**. Google Patents shows **A (application, pending)** (S083). A Baidu AI answer says it was **granted as CN122493419B** (S085), but the same answer also says "1 granted, 1 under substantive examination", which contradicts itself. A grant within ~3 months of filing is possible only under China's fast-track (prioritised examination). **Check on CNIPA (epub.cnipa.gov.cn) for "CN122493419B".**
 
 Link: https://patents.google.com/patent/CN122493419A/en · extract saved in [patents/](patents/CN122493419A_google-patents-extract.txt) `[V][S083]`.
 
@@ -173,7 +183,7 @@ Link: https://patents.google.com/patent/CN122493419A/en · extract saved in [pat
 | Photo | Name | Role | Background | Links | Sources |
 |---|---|---|---|---|---|
 | — | **何冰 (He Bing)** | Legal representative | — | — | S079 |
-| — | **王辉 (Wang Hui)** | Patent inventor (CN122493419A, toilet-fixture recognition) | Likely perception/R&D lead `[INF]` | — | S083 |
+| — | **王辉 (Wang Hui)** | Inventor/designer on **both** patents (CN122493419A, CN310188487S) | Likely technical founder / R&D lead `[INF]` | — | S083, S084 |
 | — | "Wang Chao" | Facebook page name (brand page, logo avatar; not a person) | — | [Facebook](https://www.facebook.com/p/Wang-Chao-61583293276325/) | S081 |
 
 ## Assessment `[INF]`
@@ -188,7 +198,7 @@ Link: https://patents.google.com/patent/CN122493419A/en · extract saved in [pat
 - [ ] Price of C1 / X1 (sale and rental)
 - [ ] Arm and LiDAR suppliers; which arm is on the real C1 vs the renders
 - [ ] Founders and team names; relationship to Zhejiang University / China Jiliang University labs; any funding round
-- [x] ~~Patent search~~: 1 published (CN122493419A, S083). Still open: utility models/designs on CNIPA or Qichacha, and the "patented steam"
+- [x] ~~Patent search~~: 2 found: CN122493419A (invention) + CN310188487S (design, granted). Still open: is CN122493419 granted (B)? Utility models? The "patented steam" and "10+ patents" claims; the 2 software copyrights
 - [ ] Real deployments (named sites); Vanke/Lingqing pilot status
 - [x] ~~Frame-analyse C1 video~~ (S082): real white C1, squat toilet, water jet + hot air, doors/lift/turnstile. Still open: the door-opening clip, the X1 debut short, and real-site (non-showroom) footage
 - [ ] Does the email domain hdc2014.com indicate a parent or affiliate company?
