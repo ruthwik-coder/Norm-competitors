@@ -8,7 +8,7 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 
 <img src="screenshots/2026-10-13_octopus-c1-product-images.jpg" width="720">
 
-*Octopus C1 product renders from the website: dark grey body, red octopus logo, **tool rack on top holding several handheld tools**, and a **6-axis arm with a tool/gripper end**. Very similar layout to Hivebotics' Abluo (tool rack + arm that picks tools) `[INF]`.*
+*Octopus C1 product **renders** from the website (the real C1 in the YouTube video is **white**; see below): dark grey body, red octopus logo, **tool rack on top holding several handheld tools**, and a **6-axis arm with a tool/gripper end**. Very similar layout to Hivebotics' Abluo (tool rack + arm that picks tools) `[INF]`.*
 
 ## Snapshot
 
@@ -22,7 +22,7 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 | **Website** | https://www.octoairobotics.com/ (ICP 浙ICP备2026003517号) `[S078]` |
 | **Socials** | YouTube [@OctopusRobotics-1](https://www.youtube.com/@OctopusRobotics-1) · Instagram [octo_pusrobotics](https://www.instagram.com/octo_pusrobotics) · Facebook ["Wang Chao"](https://www.facebook.com/p/Wang-Chao-61583293276325/) (Hangzhou) · Weibo, Xiaohongshu (RedNote), Douyin, WeChat official account `[S078][S081]` |
 | **Team** | R&D "rooted in labs of **Zhejiang University** and **China Jiliang University**", **PhD-led** core technical team plus a management team with industrialisation experience `[CC][S078]`. Names not disclosed |
-| **IP** | "10+ core patents" claimed; "patented steam technology" `[CC][S078]`. Not yet searched |
+| **IP** | "10+ core patents" claimed `[CC][S078]`. **Found 1 published: CN122493419A** (toilet-fixture recognition with RGB-D + vision model, filed 2 Jul 2026, inventor 王辉 Wang Hui) `[V][S083]`. See [Patents](#patents) |
 | **Compute partner** | **中昊芯英 (Zhonghao Xinying)**, shown as co-brand "望潮创新 & 中昊芯英" and named "算力合作伙伴" (compute partner) for edge inference `[CC][S078][S081]`. Zhonghao Xinying is a Hangzhou maker of domestic AI (TPU-style) chips (general knowledge) |
 | **Contact** | Website contact form (`/api/contact`). The phone and email in the site code look personal (a mobile number; an email at a different domain, hdc2014.com), so **not recorded** (privacy rule) |
 | **Folder** | [wangchao-octopus/](./) |
@@ -77,6 +77,65 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 
 An "intelligent inspection platform" integrates robot dogs, drones and IoT sensors, with alarm-to-work-order loops, for energy/power, petrochemical, rail and smart parks `[CC][S078]`. They also showed **warehouse AGVs** at the Canton Fair (S078 news).
 
+## ⭐ Real hardware: C1 YouTube video (19 Aug 2026), frame analysis `[V][S082]`
+
+Video: https://www.youtube.com/watch?v=TDdowbHThfw (1:42). Analysed 2026-10-13 from frames sampled every 3 s (no audio). **This is real footage, not a render** (point raised by Vishal).
+
+<img src="screenshots/2026-08-19_youtube-c1_arm-and-squat-toilet.jpg" width="720">
+
+<img src="screenshots/2026-08-19_youtube-c1-video_frames-01.jpg" width="720">
+<img src="screenshots/2026-08-19_youtube-c1-video_frames-02.jpg" width="720">
+<img src="screenshots/2026-08-19_youtube-c1-video_frames-03.jpg" width="720">
+
+**What the video shows:**
+- **The real C1 is white** (white body, blue LED strip, red octopus logo, "OCTOPUS" label, touchscreen + e-stop on the back). The website images are **grey renders** of a later or styled version `[INF]`.
+- **Arm:** white 6-axis cobot with black joint bands. Overlay: "Adaptive Gripper · Six-Degree-of-Freedom Flexible Robotic Arm". **Brand not legible** in frames.
+- **Tool rack on top:** a **spray gun**, a **hot-air dryer nozzle**, coiled hoses and a vacuum hose. The arm grips the tools ("Choosing the right cleaning tools to meet cleaning needs").
+- **Building integration (shown):** "Smart Elevator Control Integration – Fully automatic cross-floor operation" (robot next to a lift); "Automatic Access Control – passage through fully automated turnstiles"; "**AI Real-Time Door Detection – Automatic Door Opening** for Entry and Exit". **The arm pushes a cubicle door open.**
+- **Navigation:** "Intelligent Cleaning Route Planning – No spot left uncleaned".
+- **Perception overlays:** "**AI Sanitation Target Recognition – Automatically identify cleaning locations**"; "**AI-Powered Hygiene and Cleanliness Target Recognition**". These suggest detecting *what/where* to clean. There is **no before/after score or dirt map on screen** `[INF]`.
+- **⚠️ SQUAT TOILET CLEANED ON CAMERA:** "High-Pressure Spray Cleaning – Breaks down dirt in corners" on a **squat pan**, then "**Hot-Air Drying** – Removes moisture and inhibits bacteria".
+- **Western toilet:** high-pressure spray inside the bowl (lid up), then "Constant-Temperature Hot-Air Circulation Drying".
+- **Sink/countertop:** "High-pressure water jet rinsing – breaks down dirt in corners and crevices"; "Powerfully removes water stains from countertops".
+- **No steam visible in this video.** The cleaning shown is **high-pressure water spray + hot-air drying** (steam is claimed on the website).
+- **No lid/seat lifting shown.** The Western toilet lid was already up.
+- **Setting:** looks like a **showroom/demo restroom**, not a live public restroom. There are exhibition screens and a banner reading "…基于国产TPU算力架构与望…" (domestic TPU compute architecture, i.e. the Zhonghao Xinying tie-in) `[INF]`.
+
+**Analysis** `[INF]`:
+- **Wangchao is the first competitor on file to *show* squat-toilet cleaning** (Primech only *claims* it). For India this matters a lot: Wangchao's design already handles the Asian squat pan.
+- **Cleaning method in practice: water jet + hot air** (contact-free, like Hivebotics minus steam). It's simple, and cheap to build.
+- **Door opening + lifts + turnstiles are demonstrated.** Hivebotics only lists these on its roadmap.
+
+## Patents
+
+**Search done 2026-10-13 (Google Patents, assignee "望潮创新"): 1 published application.**
+
+| No. | Title | Inventor | Filed (priority) | Published | Status |
+|---|---|---|---|---|---|
+| **CN122493419A** | 基于深度相机与视觉大模型的厕具识别方法及系统 (*Toilet-fixture identification method and system based on a depth camera and a vision large model*) | **王辉 (Wang Hui)** | **2 Jul 2026** | **31 Jul 2026** (published within 1 month, so early publication was requested `[INF]`) | Pending (invention application, 9 claims) |
+
+Link: https://patents.google.com/patent/CN122493419A/en · extract saved in [patents/](patents/CN122493419A_google-patents-extract.txt) `[V][S083]`.
+
+**What it claims (claim 1, 5 steps):**
+1. **Time-sync and align RGB + depth point cloud** (hardware timestamps, reject out-of-tolerance frames, project depth into pixels → RGB-D aligned data).
+2. A **vision large model** detects the fixture: **2D anchor boxes + class confidence score** (toilet, urinal, …).
+3. **Use the 2D box as a pixel mask** to crop the point cloud; statistical outlier filtering; cluster segmentation → isolated fixture point cloud.
+4. **PCA for initial pose**, then **confidence-weighted ICP** against a **template point cloud from a database** (chosen by the class label) → **6-DoF fixture pose**.
+5. **Hand-eye calibration** → robot base frame; **anti-collision check** (back-off along the surface normal by a safety distance; reachability envelope) → collision-free arm working coordinates.
+
+**Analysis for Ubanthu** `[INF]`:
+- This is **fixture localisation for arm motion**: detect, mask, ICP to a template, then a safe pose. It's standard robotics practice packaged as a patent. Hivebotics' lapsed patent WO 2023/075687 also covered YOLO fixture detection + point-cloud alignment.
+- **It does NOT cover stain/contamination detection or cleaning verification.** No conflict with contamination-CV IP.
+- Possible prior-art overlap with Hivebotics' WO 2023/075687 and generic RGB-D + ICP pipelines. A **weak patent** unless the confidence-weighted ICP is novel.
+- The website's "10+ core patents" isn't reflected in published data yet. Chinese utility models and designs publish after grant, and other applications may still be unpublished, or held by founders/affiliates.
+
+**How to search yourself:**
+- **Google Patents** (easiest, English machine translation): https://patents.google.com/?assignee=望潮创新 . Also try `inventor:王辉 toilet` or keywords like `厕所 清洁 机器人 机械臂`.
+- **CNIPA official search** (authoritative, includes utility models; free registration): https://pss-system.cponline.cnipa.gov.cn . Search by 申请人 (applicant) = 杭州望潮创新机器人有限公司.
+- **Qichacha / Tianyancha** (企查查 / 天眼查): the company page has a "知识产权 → 专利" tab listing all patents incl. utility models and design patents, plus shareholders. Basic view is free; full view needs an account.
+- **Espacenet** (EPO): https://worldwide.espacenet.com . Search applicant "Wangchao"; it catches PCT/WO filings if they go abroad.
+- Tip: check **utility models (实用新型, "U" suffix)** and **designs ("S")**. Chinese startups often hold mostly these, and they are what "10+ patents" usually counts.
+
 ## Market, partners & activity (website news, Jul – Aug 2026) `[CC][S078]`
 
 | Date (posted) | Item |
@@ -114,13 +173,14 @@ An "intelligent inspection platform" integrates robot dogs, drones and IoT senso
 | Photo | Name | Role | Background | Links | Sources |
 |---|---|---|---|---|---|
 | — | **何冰 (He Bing)** | Legal representative | — | — | S079 |
+| — | **王辉 (Wang Hui)** | Patent inventor (CN122493419A, toilet-fixture recognition) | Likely perception/R&D lead `[INF]` | — | S083 |
 | — | "Wang Chao" | Facebook page name (brand page, logo avatar; not a person) | — | [Facebook](https://www.facebook.com/p/Wang-Chao-61583293276325/) | S081 |
 
 ## Assessment `[INF]`
 
 - **Closest Chinese analogue to Hivebotics:** steam plus a tool-rack arm, restroom-first. It is **smaller and lighter (50 kg vs Abluo's 180 kg)**, with elevator/door/gate IoT, which Hivebotics lacks.
 - **Speed:** incorporated Dec 2025, yet it had a 4-product line, a Canton Fair booth and English marketing within ~6–9 months. Possibly a spin-out of an existing team or company (PhDs from Zhejiang University / China Jiliang University) or a rebrand of OEM products. **C2/C3 look like standard Chinese OEM scrubbers** (generic spec-sheet format).
-- **On verification:** Wangchao claims a "quality inspection" step and hospital logs (time, area, steam temperature), but **no stain detection or before/after scoring**. Its AI focus is spatial/VLA. **Contamination verification remains a gap here too.**
+- **On verification:** Wangchao claims a "quality inspection" step and hospital logs (time, area, steam temperature). The video shows "AI hygiene & cleanliness target recognition" (finding *where* to clean), but **no before/after scoring**, and its patent is about fixture pose, not dirt. Its AI focus is spatial/VLA. **Contamination verification remains a gap here too.**
 - **Relevance to Ubanthu/India:** Chinese pricing could reach India via distributors. **Watch for an India distributor.**
 
 ## Open questions
@@ -128,7 +188,7 @@ An "intelligent inspection platform" integrates robot dogs, drones and IoT senso
 - [ ] Price of C1 / X1 (sale and rental)
 - [ ] Arm and LiDAR suppliers; which arm is on the real C1 vs the renders
 - [ ] Founders and team names; relationship to Zhejiang University / China Jiliang University labs; any funding round
-- [ ] "10+ core patents": search CNIPA for 杭州望潮创新机器人有限公司 / He Bing
+- [x] ~~Patent search~~: 1 published (CN122493419A, S083). Still open: utility models/designs on CNIPA or Qichacha, and the "patented steam"
 - [ ] Real deployments (named sites); Vanke/Lingqing pilot status
-- [ ] Frame-analyse the restroom YouTube videos (real hardware, dirt detection UI)
+- [x] ~~Frame-analyse C1 video~~ (S082): real white C1, squat toilet, water jet + hot air, doors/lift/turnstile. Still open: the door-opening clip, the X1 debut short, and real-site (non-showroom) footage
 - [ ] Does the email domain hdc2014.com indicate a parent or affiliate company?
