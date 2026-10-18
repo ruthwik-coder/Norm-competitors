@@ -44,6 +44,7 @@
 | [Genrobotics](genrobotics/genrobotics.md) | 🇮🇳 Kerala | Sewer/manhole robots | Adjacent | Commercial | ⚪ Adjacent | [genrobotics/](genrobotics/) |
 | [Solinas](solinas/solinas.md) | 🇮🇳 Chennai (IITM incubator) | Septic-tank cleaning robot | Adjacent | Commercial | ⚪ Adjacent | [solinas/](solinas/) |
 | [Hivebotics](hivebotics/hivebotics.md) | 🇸🇬 Singapore (NUS spin-out, 2021) | Abluo (Mark 1 / Mark II) | Mobile manipulator, **contactless** | **~US$8.3M raised**: pre-seed $1.3M (2023), seed $1M (2025), **Series A $6M** (Sep 2026: Vertex, Farglory, Rigel) `[3P][S073]`; ~10,000 h, 20+ sites | 🔴 **Main benchmark**; claims scored before/after verification | [hivebotics/](hivebotics/) |
+| [Peanut Robotics](peanut/peanut.md) | 🇺🇸 San Francisco (2018) | Hotel bathroom-cleaning mobile manipulator | Mobile manipulator; tool carrier; Orbbec Gemini 2 ×4 | **Wound down (~2024)**; ~$9.5M raised (post-money $40M, May 2022); 13,000 h in hotels `[S075][S090]` | ⚪ Defunct, but 🔴 **precedent + 2 active US patents with before/after imaging claims** | [peanut/](peanut/) |
 | [Somatic](somatic/somatic.md) | 🇺🇸 USA | Commercial restroom-cleaning robot ("BCR-01"?) | Mobile manipulator; jet + vacuum + blower | Series A US$7.16M (Mar 2022); 10+ pilots; **RaaS ~US$4.5K/month** (per Hivebotics deck) `[3P][S075]` | 🟠 Benchmark (US) | [somatic/](somatic/) |
 | [Wangchao Innovation / Octopus Robotics](wangchao-octopus/wangchao-octopus.md) | 🇨🇳 Hangzhou (inc. Dec 2025) | **C1** restroom robot (+ X1, C2, C3) | Mobile manipulator; **steam >120 °C**, 6-axis arm 900 mm, tool rack; 50 kg | Launched 2026; Canton Fair; Vanke Service channel via Lingqing; no named restroom customers `[CC][S078]` | 🔴/🟠 **New Chinese direct competitor**; price threat `[INF]` | [wangchao-octopus/](wangchao-octopus/) |
 | [Eternia Robotics / Cleaning Robotics](eternia-robotics/eternia-robotics.md) | 🇸🇬 Singapore | TCR-H | Mobile | Being productised | 🔴 Benchmark | [eternia-robotics/](eternia-robotics/) |
@@ -70,7 +71,7 @@ Each company has its own file with its full profile, its people and its open que
 | [Hachimichi](hachimichi/hachimichi.md) | [Senxeed Robotics](senxeed-robotics/senxeed-robotics.md) |
 | [ATSC / i-Hub Gujarat](atsc-ihub-gujarat/atsc-ihub-gujarat.md) | [Somatic](somatic/somatic.md) |
 | [VAATA](vaata/vaata.md) | [Wangchao / Octopus Robotics](wangchao-octopus/wangchao-octopus.md) |
-| [RIFE Technologies](rife-technologies/rife-technologies.md) | |
+| [RIFE Technologies](rife-technologies/rife-technologies.md) | [Peanut Robotics](peanut/peanut.md) (defunct) |
 | [Genrobotics](genrobotics/genrobotics.md) | |
 | [Solinas](solinas/solinas.md) | |
 
@@ -82,28 +83,28 @@ Each company has its own file with its full profile, its people and its open que
 
 `✓` stated by a source · `✗` stated absent / not applicable · `?` claimed by S001's table but **not supported by the cited text** · `—` no info
 
-| Capability | Sketch | Amrita Sudha | HapiHygi | IITM | Hivebotics | Eternia TCR-H | Primech HYTRON | ZeeqClean | Fonda ALAC | Somatic | Wangchao C1 |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Mobile platform | ✓ | ✓ | ✗ | concept | ✓ | ✓ | ✓ | ✓ | — | ✓ | ✓ 50 kg, 734 mm long |
-| Robotic arm | ✓ 6-DOF | ✓ | ✗ | concept | ✓ 6-DOF (Mk2) | ? | ✓ patent; functions on site imply arm `[INF]` | — | — | ✓ cobot (render) | ✓ 6-axis, 900 mm, 3 kg |
-| Toilet | ✓ | ✓ | seat only | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Urinal | ? | — | ✗ | — | ✓ | ✓ | ✓ brushing (site) | ✓ | — | — | ✓ (YouTube text) |
-| Sink / basin | ✓ | — | ✗ | — | ✓ | — | ✓ sink + countertop (site) | — | — | — | ✓ countertops |
-| Floor | ✓ | — | ✗ | — | ✓ | ✓ | ✓ mopping + blower drying | ✓ | — | — | ✓ wash + dry |
-| **Squat (Indian/Asian) toilet** | — | — | — | — | not listed in Mk2 brochure `[S061]`; no evidence | — | **✓ claimed (S042)** | — | — | — | **✓ shown on video** (water jet + hot air) `[V][S082]` |
-| Mirror | — | — | — | — | ✓ "sinks & mirrors" `[S061]` | — | ✓ wiping | — | — | — | walls/glass/partitions (VLA claim) |
-| Doors / elevators | — | — | ✗ | — | **same floor only** (no lift claim) `[S061]`; door opening + lift on roadmap, elevator co-development sought `[S075]` | — | ✓ both claimed | — | — | — | ✓ door opening (video) + IoT lift/gate calling |
-| Fixture recognition | ✓ VLM | ✓ | ✗ | — | **Mask R-CNN** segmentation `[S075]` | ✓ | ✓ camera (patent) | lid detection | — | — | VLA claim; **RGB-D + vision model + ICP 6-DoF pose (patent CN122493419A)** `[S083]` |
-| **Stain / dirt detection** | — | **✓** | ✗ | intended | **✓ stain-pixel highlighting in segmented bowl** (deck screenshot); "multi-surface stain detection" claimed `[S075]` | — | "may" (patent); "UV bacteria detection" listed for Mark 2 (deck) | — | stain *removal* | — | not claimed |
-| Cleanliness verification | — | **✓** | — | — | **✓ "scored before-and-after check" every job** (S056); shown as one "Improvement Score" + re-clean if needed `[S075]` | — | "may" (patent) | — | QR-tracked cleaning status per bowl (ALAC 2.0) `[S070]` | — | "quality inspection" step (no detail) |
-| Lid / seat lifting | — | — | — | — | — | ✓ | — | ✓ | ✓ | — | — |
-| Steam | — | — | ✗ | — | ✓ **173 °C**, 3/5/8 bar, 75 g/min (7 min start-up) `[S061]` | — | — | — | — | ✗ | claimed >120 °C (website); **not seen in video** (water jet + hot-air drying) |
-| Jet / spray | spray | spray | spray | — | **contactless:** high-pressure steam + chemical jet + vacuum + blow-dry; **no brushes** | — | e-water (electrolysed/ozone) jetting + detergent; "high-pressure" unconfirmed | pressurised | — | chemical water jet + vacuum + blower | spray |
-| UV-C | ✓ | — | ✓ | — | — | — | — | ✓ | — | — | — |
-| Tool disinfection | — | — | — | — | — | ✓ brush | ✓ ozone wash in dock (patent) | — | — | — | colour-coded tool sets per zone |
-| Cleanliness / hygiene reporting | — | — | — | — | ✓ "outcomes can be audited"; HiveIntelligence validates jobs (S056) | — | not mentioned; dashboard shows task status only | — | — | — | logs time, area, steam temp (hospital) |
-| Time per toilet | — | — | — | — | **5 min** (urinal 3–5, sink 2–4) `[S061]` | — | ~6 min (basin/urinal ~3) | — | — | — | — |
-| Commercial deployments | none found | none found | pilots (claimed) | ✗ | ✓ ~10,000 h, 20+ sites, 4 continents (S056) | pilot history | early: army-camp lease, SG hospital; US$12k lease revenue FY26 | — | — | 10+ pilots (per Hivebotics) | claimed; none named |
+| Capability | Sketch | Amrita Sudha | HapiHygi | IITM | Hivebotics | Eternia TCR-H | Primech HYTRON | ZeeqClean | Fonda ALAC | Somatic | Wangchao C1 | Peanut (defunct) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Mobile platform | ✓ | ✓ | ✗ | concept | ✓ | ✓ | ✓ | ✓ | — | ✓ | ✓ 50 kg, 734 mm long | ✓ holonomic |
+| Robotic arm | ✓ 6-DOF | ✓ | ✗ | concept | ✓ 6-DOF (Mk2) | ? | ✓ patent; functions on site imply arm `[INF]` | — | — | ✓ cobot (render) | ✓ 6-axis, 900 mm, 3 kg | ✓ (on vertical conveyor in patent) |
+| Toilet | ✓ | ✓ | seat only | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ hotel bathrooms |
+| Urinal | ? | — | ✗ | — | ✓ | ✓ | ✓ brushing (site) | ✓ | — | — | ✓ (YouTube text) | — |
+| Sink / basin | ✓ | — | ✗ | — | ✓ | — | ✓ sink + countertop (site) | — | — | — | ✓ countertops | ✓ (patent) |
+| Floor | ✓ | — | ✗ | — | ✓ | ✓ | ✓ mopping + blower drying | ✓ | — | — | ✓ wash + dry | ✓ vacuum/mop (patent) |
+| **Squat (Indian/Asian) toilet** | — | — | — | — | not listed in Mk2 brochure `[S061]`; no evidence | — | **✓ claimed (S042)** | — | — | — | **✓ shown on video** (water jet + hot air) `[V][S082]` | — |
+| Mirror | — | — | — | — | ✓ "sinks & mirrors" `[S061]` | — | ✓ wiping | — | — | — | walls/glass/partitions (VLA claim) | ✓ (patent) |
+| Doors / elevators | — | — | ✗ | — | **same floor only** (no lift claim) `[S061]`; door opening + lift on roadmap, elevator co-development sought `[S075]` | — | ✓ both claimed | — | — | — | ✓ door opening (video) + IoT lift/gate calling | — |
+| Fixture recognition | ✓ VLM | ✓ | ✗ | — | **Mask R-CNN** segmentation `[S075]` | ✓ | ✓ camera (patent) | lid detection | — | — | VLA claim; **RGB-D + vision model + ICP 6-DoF pose (patent CN122493419A)** `[S083]` | ICP + RANSAC registration; VLMs (CTO) |
+| **Stain / dirt detection** | — | **✓** | ✗ | intended | **✓ stain-pixel highlighting in segmented bowl** (deck screenshot); "multi-surface stain detection" claimed `[S075]` | — | "may" (patent); "UV bacteria detection" listed for Mark 2 (deck) | — | stain *removal* | — | not claimed | — |
+| Cleanliness verification | — | **✓** | — | — | **✓ "scored before-and-after check" every job** (S056); shown as one "Improvement Score" + re-clean if needed `[S075]` | — | "may" (patent) | — | QR-tracked cleaning status per bowl (ALAC 2.0) `[S070]` | — | "quality inspection" step (no detail) | **before/after room images "for comparison" (patent claim 1)** |
+| Lid / seat lifting | — | — | — | — | — | ✓ | — | ✓ | ✓ | — | — | — |
+| Steam | — | — | ✗ | — | ✓ **173 °C**, 3/5/8 bar, 75 g/min (7 min start-up) `[S061]` | — | — | — | — | ✗ | claimed >120 °C (website); **not seen in video** (water jet + hot-air drying) | ✗ |
+| Jet / spray | spray | spray | spray | — | **contactless:** high-pressure steam + chemical jet + vacuum + blow-dry; **no brushes** | — | e-water (electrolysed/ozone) jetting + detergent; "high-pressure" unconfirmed | pressurised | — | chemical water jet + vacuum + blower | spray | spray bottle tool; fluid through arm |
+| UV-C | ✓ | — | ✓ | — | — | — | — | ✓ | — | — | — | — |
+| Tool disinfection | — | — | — | — | — | ✓ brush | ✓ ozone wash in dock (patent) | — | — | — | colour-coded tool sets per zone | auto pad swap (patent) |
+| Cleanliness / hygiene reporting | — | — | — | — | ✓ "outcomes can be audited"; HiveIntelligence validates jobs (S056) | — | not mentioned; dashboard shows task status only | — | — | — | logs time, area, steam temp (hospital) | — |
+| Time per toilet | — | — | — | — | **5 min** (urinal 3–5, sink 2–4) `[S061]` | — | ~6 min (basin/urinal ~3) | — | — | — | — | — |
+| Commercial deployments | none found | none found | pilots (claimed) | ✗ | ✓ ~10,000 h, 20+ sites, 4 continents (S056) | pilot history | early: army-camp lease, SG hospital; US$12k lease revenue FY26 | — | — | 10+ pilots (per Hivebotics) | claimed; none named | ✓ 13,000 h hotels (ceased) |
 
 ### What stands out `[INF]`
 - **⚠️ Updated 2026-10-06: post-clean verification is no longer unclaimed.** **Hivebotics** says "every job ends with a scored before-and-after check, so cleaning outcomes can be audited" (S056), and Amrita Sudha claims cleanliness monitoring. **The differentiator for Ubanthu must now be the *quality* of contamination detection** (what is detected, how accurately, what evidence), not merely having verification. **Update 2026-10-10:** Hivebotics' deck shows the method. It segments the bowl, highlights stain pixels before and after, and outputs **one "Improvement Score"** (e.g. 0.0538), re-cleaning if needed. It looks **prototype-grade: RGB, area-based, with a water/drain false positive visible** `[INF][S075]`. That leaves Ubanthu room on contamination *type*, robustness and audit-grade evidence.
@@ -120,6 +121,7 @@ Each company has its own file with its full profile, its people and its open que
 | **Manufacturer / assembly** | **Named:** unnamed China production partner, "300 robots' initial capacity" (Jul 2025) `[CC][S044]` | — | — | — |
 | **Robot arm** | **Named (as example):** **Elite Robots, Shanghai** ("such as those supplied by…", patent WO 2025/259179 p.9) `[V][S054]`. Likely, not confirmed for the shipping unit | **Confirmed: UFACTORY 850**. Brochure specs match (S061/S063) + UF850 config/URDF edits in their GitHub fork of UFACTORY's `xarm_ros2` `[V][S071]`. *History:* Elephant Robotics myCobot 320 M5 in 2021–22 NUS patent `[V][S065]` | 6-DOF arm, supplier unknown `[CC][S002*]` | — |
 | **Compute** | **Named:** NVIDIA Jetson Orin "Super" `[CC][S044]` | **Named:** AMD Ryzen Embedded 8845HS + NVIDIA RTX A400 `[CC][S061]` | — | **Wangchao C1: Named NVIDIA Jetson Orin**; AI-chip partner **Zhonghao Xinying** `[CC][S078]` |
+| **Depth cameras (Peanut)** | — | — | — | **Peanut: Orbbec Gemini 2 ×4** (chosen from 6 evaluated), per ex-engineer résumé `[V][S089]` |
 | **Sensor layout (Wangchao C1)** | — | — | — | **From patent Fig. 3:** low-mounted depth camera + RGB camera on the gripper + multi-line LiDAR + side IR; magnetic quick-release tools (spray / suction / air-dryer) `[V][S086]`; brands unknown |
 | **Navigation controller / base** | **Candidate:** SEER Robotics (Roboshop), mecanum-wheel AGV, from an engineer's résumé; not tied to HYTRON `[S049]` | **Mecanum** base in ros2_control (custom; supplier unidentified) `[V][S071]`; 0.8 m/s `[S061]` | — | — |
 | **3D LiDAR** | **Candidate:** Hesai (model unknown), from an engineer's driver work; not tied to HYTRON `[S048]` | **Identified (high confidence): Livox Mid-360**. All 6 brochure specs match, incl. distinctive 360°×59° FOV `[S061][S063]` | — | — |
@@ -155,6 +157,9 @@ Each company has its own file with its full profile, its people and its open que
 
 | ID | Title | Owner | Filed | Status | Source |
 |---|---|---|---|---|---|
+| **US 11,407,118 B1** | Peanut: mobile robot + **arm on vertical conveyor** + tool carrier; claim 1 includes **images before and after the task "for comparison"**. [Details](peanut/peanut.md#patents) | "Individual" (inventors Augenbraun, Ghosh, Hansen, Verheye) | 2019-12-10 (priority 2018-12-10) | **Granted 2022-08-09; active to 2040** | S092 |
+| **US 12,397,440 B1** | Peanut CIP: arm + **automatic cleaning-pad remover/installer** + imaging during task; fluid through arm | "Individual" | 2022-07-06 (priority 2018-12-10) | **Granted 2025-08-26; active** | S093 |
+| **US 12,440,076 B2** / WO 2025/035010 | Somatic: **bathroom cleaning robot** with body-mounted tools, tool-change module, **door-opening module** | Somatic Holdings, Inc. | 2023-08-08 | **Granted 2025-10-14**; EP pending | S094 |
 | **CN310188487S** | Design patent: "Intelligent Cleaning Robot (Wangchao C1)"; shape only (8 views). [EN translation](wangchao-octopus/patents/CN310188487S_design-patent_EN.pdf) | Hangzhou Wangchao Innovation Robot (designer 王辉) | 2026-03-04 | **Granted 2026-09-04** | S084 |
 | **CN122493419A** | Toilet-fixture identification with depth camera + vision large model: RGB-D alignment → 2D detection as mask → confidence-weighted ICP to template → 6-DoF pose → hand-eye + anti-collision. **No dirt detection.** [Details](wangchao-octopus/wangchao-octopus.md#patents) | Hangzhou Wangchao Innovation Robot (inventor 王辉) | 2026-07-02 | Pending per Google (published 2026-07-31); Baidu AI claims granted as B `[CONFLICT]` | S083, S085 |
 | **WO 2023/075687** | Robot Alignment and Manipulation: YOLOv5 fixture detection + 3-step alignment; point-cloud waypoint cleaning (MoveIt); pneumatic tool changer with disposable brush heads; arm = myCobot 320. **Applicant NUS**; inventors incl. Hivebotics founders. [Deep dive](hivebotics/hivebotics-patent-WO2023075687.md) | NUS (Hivebotics founders) | 2022-10-25 (priority 2021-10-29) | **Ceased** (~Apr 2024): no national-phase entries, so free prior art | S065, S066 |
@@ -176,7 +181,8 @@ Each company file has its own **People Directory**. There is no combined list.
 | [Sketch Robotics](sketch-robotics/sketch-robotics.md#people-directory) | 11 (3 founders, 6 team, 2 mentors) |
 | [HapiHygi](hapihygi/hapihygi.md#people-directory) | 2 |
 | [Hivebotics](hivebotics/hivebotics.md#people-directory) | 24 (8 current named staff on LinkedIn + 5 GitHub-only engineers; **6 advisors** incl. 2 angel investors; 5 former/early; 15 photos) |
-| [Somatic](somatic/somatic.md#people-directory) | 0 |
+| [Somatic](somatic/somatic.md#people-directory) | 6 (patent inventors) |
+| [Peanut Robotics](peanut/peanut.md#people-directory) | 15 (CEO, 4 co-founders, 6 staff, 4 extra patent inventors; no photos) |
 | [Wangchao / Octopus](wangchao-octopus/wangchao-octopus.md#people-directory) | 1 (legal representative He Bing) |
 | [IIT Madras](iit-madras/iit-madras.md#people-directory) | 1 |
 | [Primech AI](primechai/primechai.md#people-directory) | 10 (CEO, Primech AI COO, ex-CTO, 3 execs, 4 technical hires from Mar–Jul 2026) |
@@ -191,6 +197,8 @@ Each company file has its own **People Directory**. There is no combined list.
 5. **Hivebotics' public GitHub (S071) shows its 2026 engineering focus is force-compliant manipulation** (F/T sensing, admittance/FDCC compliance control, toilet-seat lifting sim; MoveIt Pro), **not perception**. Nothing public touches contamination detection. Cameras changed within ~6 months (OAK-D S2 → Orbbec Gemini 335Le).
 6. **Hivebotics' core patent lapsed** `[V][S065][S066]`. WO 2023/075687 (NUS-owned; founders as inventors) ceased ~Apr 2024 with no national filings, so its alignment, waypoint and tool-changer methods are **free prior art**. It also shows Hivebotics **switched from disposable-brush contact cleaning (myCobot arm, 2021–22) to contactless steam (UFACTORY 850, 2026)**. Field deployment confirmed in **Orlando, FL** (S068).
 7. **Primech's HYTRON is far less mature than its marketing** `[V][S043][S044]`. FY2026 robot revenue was US$12k and the robotics segment lost US$2.48M, against a 300-robot rollout plan and a ">99% disinfection" claim (lab not named). Primech is **suing its former Primech AI CTO** (49% shareholder, lead patent inventor) over missed HYTRON milestones and source code; he counter-claims IP ownership. See [SEC deep dive](primechai/primechai-sec-filings.md).
+9. **US patents now cover key parts of the restroom-robot architecture (2026-10-19)** `[V][S092]–[S094]`. **Peanut US 11,407,118** (active to 2040) claims a cleaning robot whose cameras capture the room **before and after the task for comparison**, though only in combination with a conveyor-mounted arm. **Somatic US 12,440,076** claims a bathroom robot with **tool change + door opening**. **Before any US launch, Ubanthu needs a freedom-to-operate check**, and its own patents must target the *specific* contamination-detection method, not generic before/after imaging `[INF]`.
+10. **Peanut Robotics (2018–~2024) is the cautionary precedent**: ~$9.5M raised, 13,000 h in hotel bathrooms, sub-$10k BOM. But each surface needed **2–4 h of operator teaching** (later 15 min), and the hotel market collapsed in COVID. **Setup cost per site, not robot cost, is a killer** `[INF][S089]`.
 8. **S001's comparison table overstates capabilities** for Primech, Eternia and Hivebotics compared with its own cited text. The corrected matrix is above. Don't reuse the original table.
 
 ## Open Questions / Information Gaps
@@ -247,3 +255,4 @@ Each company file has its own **People Directory**. There is no combined list.
 | 2026-10-13 | **Wangchao C1 video frame-analysed** (S082): real white C1; **squat toilet cleaned on camera** (first demonstrated case; master squat finding updated); water jet + hot-air drying (no steam seen); door opening, lift, turnstiles shown; showroom setting. **Patent CN122493419A** found and read (S083): RGB-D + vision model fixture pose for arm, no dirt detection. Patent table, capability matrix, open questions updated; how-to-search guide added to the profile. | S082, S083 |
 | 2026-10-13 | **Wangchao design patent CN310188487S** (C1 shape; filed 4 Mar 2026, granted 4 Sep 2026; designer 王辉) translated to an English PDF (S084). Baidu AI summary logged (S085): 2 patents + 2 software copyrights; claim that CN122493419 is granted (B) is `[CONFLICT]` with Google Patents (A, pending). Patent table updated. | S084, S085 |
 | 2026-10-13 | **CN122493419A full text** (26 pp., from Vishal) processed (S086): English PDF built; **Fig. 3 labelled C1 hardware** added (depth cam low on body, RGB cam on gripper, magnetic quick-release, spray/suction/air-dry tools, multi-line LiDAR, side IR). The document is the A publication; a B grant is still unconfirmed. Supplier table updated. | S086 |
+| 2026-10-19 | **New profile: Peanut Robotics** (SF, 2018 – ~2024, wound down) from Vishal's docs (notes S087, tracker S088, résumés S089–S090, AI summary S091) + **2 US patents read** (S092, S093: before/after imaging; pad swap). **Somatic patent US 12,440,076 found** (S094: tool change + door opening); Somatic website/YC lead added. Master: landscape row, index, capability matrix (+Peanut column), supplier table (Orbbec Gemini 2), patent table (+3), people count, findings 9–10. | S087–S094 |
