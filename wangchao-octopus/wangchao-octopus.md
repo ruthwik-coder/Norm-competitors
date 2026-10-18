@@ -113,7 +113,7 @@ Video: https://www.youtube.com/watch?v=TDdowbHThfw (1:42). Analysed 2026-10-13 f
 | No. | Title | Inventor | Filed (priority) | Published | Status |
 |---|---|---|---|---|---|
 | **CN310188487S** (design patent; appl. 202630095668.2) | 智能清洁机器人（望潮C1）*Intelligent Cleaning Robot (Wangchao C1)*. LOC 15-05; use: "automated cleaning, environmental inspection and safety management"; design point: **shape**; 8 views | **王辉 (Wang Hui)** (designer) | **4 Mar 2026** | **Granted 4 Sep 2026** | **Granted** `[V][S084]` |
-| **CN122493419A** | 基于深度相机与视觉大模型的厕具识别方法及系统 (*Toilet-fixture identification method and system based on a depth camera and a vision large model*) | **王辉 (Wang Hui)** | **2 Jul 2026** | **31 Jul 2026** (published within 1 month, so early publication was requested `[INF]`) | Pending (invention application, 9 claims) |
+| **CN122493419A** | 基于深度相机与视觉大模型的厕具识别方法及系统 (*Toilet-fixture identification method and system based on a depth camera and a vision large model*) | **王辉 (Wang Hui)** | **2 Jul 2026** | **31 Jul 2026** (published within 1 month, so early publication was requested `[INF]`) | **Granted 9 Oct 2026 as CN 122493419 B** (6 claims) `[S095]` |
 
 **Design patent files:** [original CN PDF](patents/CN310188487S_design-patent_original-CN.pdf) · [**English translation PDF**](patents/CN310188487S_design-patent_EN.pdf) (Chinese text replaced in place by English; drawings unchanged; translated by Claude) `[V][S084]`.
 - The drawings match the website's **grey C1 renders**: a top view shows a **tool rack with 4 handheld tools** and a **two-finger gripper** on the arm. The bottom view shows the drive-wheel layout.
@@ -145,7 +145,12 @@ Video: https://www.youtube.com/watch?v=TDdowbHThfw (1:42). Analysed 2026-10-13 f
 
 **Algorithm details from the description** (examples given in the text): class confidence example 0.94 (toilet) vs 0.03 (urinal); anchor scales 64/128/256 px with ratios 1:1, 1:2, 2:1 (i.e. a **Faster R-CNN-style RPN**, despite the "large vision model" label `[INF]`); region-growing cluster radius **40 mm**; local-curvature radius 15 mm; confidence-weighted ICP with a sigmoid weight (centre 0.6, steepness 10) plus a curvature term; example world coordinate output (810.2, 50.6, 605.4) mm. The method again covers **fixture pose only; no dirt or cleanliness detection**.
 
-**⚠️ Status of CN122493419: `[CONFLICT]`**. Google Patents shows **A (application, pending)** (S083). A Baidu AI answer says it was **granted as CN122493419B** (S085), but the same answer also says "1 granted, 1 under substantive examination", which contradicts itself. A grant within ~3 months of filing is possible only under China's fast-track (prioritised examination). **Check on CNIPA (epub.cnipa.gov.cn) for "CN122493419B".**
+**✅ Status of CN122493419 resolved (2026-10-19): GRANTED as CN 122493419 B on 9 Oct 2026** `[V][S095]` ([granted CN PDF](patents/CN122493419B_granted_original-CN.pdf), 28 pp., from Vishal). Filed 2 Jul 2026 and granted in **~3 months**, so it was fast-tracked (prioritised examination) `[INF]`. Baidu AI's "granted" claim (S085) was right. Google Patents had not yet updated.
+- **Claims narrowed in grant: 9 → 6 claims.** Granted claim 1 now also requires:
+  - the **per-point local-curvature (covariance eigenvalue) weighting** in the confidence-weighted ICP (former claims 6–8);
+  - the **hand-eye transform + back-off along the surface normal + arm-reach envelope check** (former claim 7).
+  - **Narrower = easier to design around** `[INF]`.
+- **Examiner's cited prior art:** US 12,505,568 B1 (Ambarella, 3D point cloud from multiple vehicle cameras) and US 2026/0102658 A1 (an AI yoga/fitness trainer). Both are **far from robotic toilet cleaning**. Hivebotics' WO 2023/075687 (YOLO fixture detection + point-cloud alignment) was **not cited**, which suggests a light examination `[INF]`.
 
 Link: https://patents.google.com/patent/CN122493419A/en · extract saved in [patents/](patents/CN122493419A_google-patents-extract.txt) `[V][S083]`.
 
@@ -221,7 +226,7 @@ Link: https://patents.google.com/patent/CN122493419A/en · extract saved in [pat
 - [ ] Price of C1 / X1 (sale and rental)
 - [ ] Arm and LiDAR suppliers; which arm is on the real C1 vs the renders
 - [ ] Founders and team names; relationship to Zhejiang University / China Jiliang University labs; any funding round
-- [x] ~~Patent search~~: 2 found: CN122493419A (invention) + CN310188487S (design, granted). Still open: is CN122493419 granted (B)? Utility models? The "patented steam" and "10+ patents" claims; the 2 software copyrights
+- [x] ~~Patent search~~: 2 found: CN122493419A (invention) + CN310188487S (design, granted). CN122493419 **granted** (B, 9 Oct 2026, S095). Still open: utility models? The "patented steam" and "10+ patents" claims; the 2 software copyrights
 - [ ] Real deployments (named sites); Vanke/Lingqing pilot status
 - [x] ~~Frame-analyse C1 video~~ (S082): real white C1, squat toilet, water jet + hot air, doors/lift/turnstile. Still open: the door-opening clip, the X1 debut short, and real-site (non-showroom) footage
 - [ ] Does the email domain hdc2014.com indicate a parent or affiliate company?
