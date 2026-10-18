@@ -13,7 +13,7 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 
 | | |
 |---|---|
-| **Status** | **Terminated / wound down** per Vishal's tracker `[INT][S088]`. Key staff left Apr – Jul 2024 (S089, S090). An unsourced AI summary says operations "wound down" after COVID and failed 2022 fundraising `[UNV][S091]` |
+| **Status** | **`[CONFLICT]`**. "Terminated" per Vishal's tracker `[INT][S088]`; engineer left Apr 2024 (S089); CTO's LinkedIn shows Feb 2018 – Jul 2024 (S088); an unsourced AI summary says operations "wound down" `[UNV][S091]`. **But** both 2026 Forbes bylines call Ashis Ghosh "co-founder and CTO at Peanut Robotics" (present tense) `[S096][S097]`. Most likely: no longer operating commercially, entity/brand still used `[INF]` |
 | **HQ** | 51 Federal Street, Suite 100, San Francisco, CA 94107 `[S088]` |
 | **Founded** | **2018** (CTO résumé: "2018 – Present"; first round Jun 2018) `[S090][S075]`. Tracxn says 2016 `[3P][S091]` `[CONFLICT]`. The 2018-12-10 patent priority fits 2018 |
 | **Website** | https://peanutrobotics.com/ (per CTO résumé) `[S090]` |
@@ -116,11 +116,14 @@ Evidence-based picture so far:
 - **Labour-intensive deployment:** 2–4 h of operator teaching **per surface** (cut to 15 min). Every new hotel bathroom needed human setup. That is a scaling problem.
 - **The hotel market collapsed in 2020–21 (COVID)**, Peanut's core vertical `[UNV][S091]`. Yet it still raised $9.5M in 2021–22 at a $40M post-money valuation.
 - **Hardware compromises:** a sub-$10k BOM, plus arm droop that needed motion-capture calibration.
-- **CTO's Forbes Technology Council articles (2026)**, not yet read (forbes.com blocked for automated fetch):
-  - "**Why Robotics Demos Fail In The Real World**" (2 Apr 2026);
-  - "**Commercial Cleaning Robots Are More Viable Than You Think—And What Will Separate The Winners**" (12 Mar 2026).
+- **CTO's Forbes Technology Council articles (2026), now read** (text from Vishal): [summary and lessons](2026_S096-S097_ashis-ghosh-forbes-articles.md) `[S096][S097]`. Key points:
+  - **Deployments:** live hotels, contractual SLAs, overnight runtime, **no on-site engineers**.
+  - **Restroom perception problems:** reflective, tight spaces; varying lighting; specular highlights.
+  - **Where he now argues the industry must go:** **away from configuration-heavy deployment** (pre-mapping, manual setup) towards **runtime semantic perception**. This is Peanut's own bottleneck (2–4 h teaching per surface) `[INF]`.
+  - **What matters most:** recovery states, remote observability, interventions/MTBI metrics, tight scoping. "Operational maturity" beats model accuracy.
+  - **His buyer test:** field hours, failure modes, unattended recovery, **time to deploy a new site**.
   - Co-founder Hansen: "**Four Hard-Won Lessons On Product-Market Fit For Deep Tech Startups**" (7 Aug 2025).
-  - **Worth reading:** first-hand failure lessons from the closest precedent to Ubanthu.
+  - Hansen's article: not yet read.
 
 ## Internal notes / opinions
 
@@ -132,7 +135,8 @@ Evidence-based picture so far:
 
 ## Open questions
 
-- [ ] Read the 3 Forbes articles (Ghosh ×2, Hansen ×1) and extract the failure lessons
+- [x] ~~Read Ghosh's 2 Forbes articles~~ (S096, S097). Still open: Hansen's Aug 2025 PMF article
+- [ ] Is Peanut still operating in any form (CTO byline 2026 vs "terminated")?
 - [ ] Confirm investors (Kärcher New Venture? Ulu? Creative Ventures? Grep VC?) via Crunchbase/PitchBook
 - [ ] Who owns the two patents now? (USPTO assignment search) Are they for sale or licence?
 - [ ] What robot arm and base did they use? Any photos or video of the robot (YouTube link in Harsh's résumé)?

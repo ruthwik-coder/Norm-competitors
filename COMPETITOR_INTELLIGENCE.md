@@ -1,6 +1,6 @@
 # Competitor Intelligence: Restroom / Toilet Cleaning Automation
 
-**Owner:** Ubanthu Robotics · **Last updated:** 2026-09-30 · **Sources:** [SOURCES.md](SOURCES.md) · **Rules:** [CLAUDE.md](CLAUDE.md)
+**Owner:** Ubanthu Robotics · **Last updated:** 2026-10-19 · **Sources:** [SOURCES.md](SOURCES.md) · **Rules:** [CLAUDE.md](CLAUDE.md)
 
 **Confidence tags:** `[V]` verified · `[3P]` third-party report · `[CC]` company or institution claim · `[INF]` inferred · `[UNV]` unverified · `[CONFLICT]` sources disagree
 **Citations:** `[S012]` = source ID in SOURCES.md. An asterisk (`[S012*]`) means the source was cited by an AI summary (S001) and **nobody here has opened it yet**.
@@ -16,6 +16,33 @@
 - **Closest Indian commercial player overall:** HapiHygi (HygiSeat), but it is a *fixed retrofit seat cleaner*, not a mobile robot.
 - **Internationally the field is further ahead.** Hivebotics (Singapore, Abluo) is the main benchmark: deployed in hospitals and airports, and a reported US$6M Series A in Sep 2026 to move toward volume production `[3P][S011*]`.
 - **No verified presence of the international players in India** `[3P][S001]`. RIFE Technologies claims to sell a washroom robot in India but this is unverified.
+
+## Competitive Quadrant `[INF]`
+
+<img src="_general/quadrant/competitive-quadrant.svg" width="720">
+
+*Gartner-style quadrant (inspired by Gartner's Magic Quadrant layout; **not a Gartner product**). Ubanthu internal judgement, Oct 2026. Regenerate after editing scores: `python _general/quadrant/make_quadrant.py`.*
+
+**Rubric (0–10 each, 5 = midline):**
+- **Ability to execute:** money raised; deployed hours/sites; real (not rendered) working product; team depth; manufacturing/supply; customers and distribution.
+- **Completeness of vision:** fixture scope (toilet, urinal, sink, floor, squat); autonomy across buildings (doors, lifts); **cleaning verification / contamination AI**; product roadmap; IP; go-to-market reach.
+
+| Company | Vision | Execute | Quadrant | Why (short) |
+|---|---|---|---|---|
+| [Hivebotics](hivebotics/hivebotics.md) | 7.8 | 7.6 | Leader | ~US$8.3M; 10,000 h, 20+ sites, 4 continents; scored before/after check; distributors in 5 regions |
+| [Somatic](somatic/somatic.md) | 6.3 | 6.0 | Leader (borderline) | US$7.5–20M; 10+ US pilots; granted US patent (tool change + door opening); YC. Thin first-hand data |
+| [Wangchao / Octopus](wangchao-octopus/wangchao-octopus.md) | 6.8 | 4.7 | Visionary | Working C1 on video (squat toilet, lifts, turnstiles, doors), granted patents; but founded Dec 2025, no named customers |
+| [Primech AI](primechai/primechai.md) | 6.0 | 4.1 | Visionary | Broad claims (squat, elevator, ozone); listed parent; but US$12k robot revenue and a lawsuit against its ex-CTO |
+| [Peanut (defunct)](peanut/peanut.md) | 5.7 | 3.2 | Visionary (grey) | 13,000 h in hotel bathrooms and a before/after patent, but ceased operating; scored on its current state |
+| [Fonda + A*STAR ALAC](fonda-global-alac/fonda-global-alac.md) | 4.2 | 4.2 | Niche | Toilet-bowl-only, semi-autonomous; A*STAR backing; QR cleaning-status tracking |
+| [Eternia TCR-H](eternia-robotics/eternia-robotics.md) | 4.6 | 3.6 | Niche (low data) | Lid lifting, fixture ID claimed; productisation stage; few sources opened |
+| [ZeeqClean](zeeqclean/zeeqclean.md) | 4.4 | 2.8 | Niche (low data) | Claims lid lifting, contactless, UV; unsourced |
+| [Senxeed WUUMIE](senxeed-robotics/senxeed-robotics.md) | 3.9 | 2.3 | Niche (low data) | Tool changing claimed; cited source was the wrong product page |
+| [Amrita Sudha](amrita-sudha/amrita-sudha.md) | 4.8 | 1.3 | Niche | Research prototype; stain recognition + cleanliness monitoring (closest to our CV loop) |
+| [Sketch Robotics](sketch-robotics/sketch-robotics.md) | 3.6 | 1.4 | Niche | Incorporated May 2025; no prototype seen; ~₹10–15L grant `[INT]` |
+| **Ubanthu** | 7.0? | 2.0? | **Placeholder** | ☆ **The team should set this.** Placed on the assumption that our contamination-verification vision is strong and execution is early |
+
+Not plotted: fixed retrofits (HapiHygi, Hachimichi, ATSC), adjacent categories (Genrobotics, Solinas, VAATA), and unverified RIFE.
 
 ## Competitive Landscape
 
@@ -257,3 +284,4 @@ Each company file has its own **People Directory**. There is no combined list.
 | 2026-10-13 | **CN122493419A full text** (26 pp., from Vishal) processed (S086): English PDF built; **Fig. 3 labelled C1 hardware** added (depth cam low on body, RGB cam on gripper, magnetic quick-release, spray/suction/air-dry tools, multi-line LiDAR, side IR). The document is the A publication; a B grant is still unconfirmed. Supplier table updated. | S086 |
 | 2026-10-19 | **New profile: Peanut Robotics** (SF, 2018 – ~2024, wound down) from Vishal's docs (notes S087, tracker S088, résumés S089–S090, AI summary S091) + **2 US patents read** (S092, S093: before/after imaging; pad swap). **Somatic patent US 12,440,076 found** (S094: tool change + door opening); Somatic website/YC lead added. Master: landscape row, index, capability matrix (+Peanut column), supplier table (Orbbec Gemini 2), patent table (+3), people count, findings 9–10. | S087–S094 |
 | 2026-10-19 | **Wangchao CN 122493419 B: granted 9 Oct 2026** (granted PDF from Vishal, S095). The `[CONFLICT]` is resolved. Claims narrowed 9 → 6 (curvature-weighted ICP + hand-eye/back-off now in claim 1); examiner cited unrelated art (Ambarella, yoga trainer). Duplicate copy of the PDF removed. | S095 |
+| 2026-10-19 | **Competitive quadrant added** (Gartner-style, Ability to Execute × Completeness of Vision; `_general/quadrant/`, editable script) with rubric and per-company scores `[INF]`; Ubanthu marked as a placeholder for the team to set. Root **README.md** added as the GitHub home page. **Peanut:** Ashis Ghosh's 2 Forbes articles processed (S096, S097): lessons on configuration-heavy deployment, reflective surfaces, recovery and observability; status now `[CONFLICT]` (2026 bylines say CTO). | S096, S097 |
