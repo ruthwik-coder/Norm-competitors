@@ -37,7 +37,7 @@
 | [Wangchao / Octopus](wangchao-octopus/wangchao-octopus.md) | 6.8 | 4.7 | Visionary | Working C1 on video (squat toilet, lifts, turnstiles, doors), granted patents; but founded Dec 2025, no named customers |
 | [Primech AI](primechai/primechai.md) | 6.0 | 4.1 | Visionary | Broad claims (squat, elevator, ozone); listed parent; but US$12k robot revenue and a lawsuit against its ex-CTO |
 | [Peanut (defunct)](peanut/peanut.md) | 5.7 | 3.2 | Visionary (grey) | 13,000 h in hotel bathrooms and a before/after patent, but ceased operating; scored on its current state |
-| [Fonda + A*STAR ALAC](fonda-global-alac/fonda-global-alac.md) | 4.2 | 4.2 | Niche ● (team: same robot type) | Toilet-bowl-only, semi-autonomous; A*STAR backing; QR cleaning-status tracking |
+| [Fonda + A*STAR ALAC](fonda-global-alac/fonda-global-alac.md) | 5.3 | 2.9 | Visionary (just past the line; next to Peanut, slightly below) | Vision: per-bowl QR cleaning-status tracking + 3D bowl scanning (verification-adjacent), A*STAR R&D, MUSE Gold. Execution: no named deployment, internal FM tool, MOUs only (S098, S099). Placed by team 2026-10-19 |
 | [Eternia TCR-H](eternia-robotics/eternia-robotics.md) | 4.6 | 3.6 | Niche ○ (arm not confirmed; low data) | Lid lifting, fixture ID claimed; productisation stage; few sources opened |
 | [ZeeqClean](zeeqclean/zeeqclean.md) | 4.4 | 2.8 | Niche ○ (arm not confirmed; low data) | Claims lid lifting, contactless, UV; unsourced |
 | [Senxeed WUUMIE](senxeed-robotics/senxeed-robotics.md) | 3.9 | 2.3 | Niche (low data) | Tool changing claimed; cited source was the wrong product page |
@@ -295,3 +295,4 @@ Each company file has its own **People Directory**. There is no combined list.
 | 2026-10-19 | **Fonda ALAC** updated: AI overview from Vishal fact-checked (S098). The A*STAR institute claim (SIMTech/I2R) conflicts with Fonda's own source (ARTC) and was rejected; the CESG debut was unverified; co-bot/internal-FM model judged plausible. New: **23 Apr 2024 Temasek Polytechnic showcase** with SMS Amy Khor; MOUs with TP + 11 industry partners for commercialisation (S099). Quadrant unchanged. | S098, S099 |
 | 2026-10-19 | **New profile: Loki Robotics** (Zürich/US): website + 7 site videos frame-analysed (S100), job ads (S101), pre-seed CHF 1.6M May 2025 (S102), **US$11.8M Form D Apr 2026** (S103). Added to landscape, index, capability matrix (+Loki column), supplier table, people, quadrant (7.2 / 5.4). IP note re Peanut US 11,407,118 (vertical-column arm). | S100–S103 |
 | 2026-10-19 | Quadrant: Fonda ALAC changed to a filled marker (same robot type) per team; label moved right. |  |
+| 2026-10-19 | Quadrant: Fonda ALAC moved next to Peanut, slightly below (5.3 / 2.9), per team. |  |
