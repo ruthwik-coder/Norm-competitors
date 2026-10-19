@@ -23,6 +23,8 @@
 
 *Gartner-style quadrant (inspired by Gartner's Magic Quadrant layout; **not a Gartner product**). Ubanthu internal judgement, Oct 2026. Regenerate after editing scores: `python _general/quadrant/make_quadrant.py`.*
 
+**Markers:** ● filled = same problem **and** same robot type (restroom mobile manipulator) · ○ hollow = same problem, different robot type (fixed / semi-autonomous / arm not confirmed) · grey = defunct · **orange = Ubanthu**.
+
 **Rubric (0–10 each, 5 = midline):**
 - **Ability to execute:** money raised; deployed hours/sites; real (not rendered) working product; team depth; manufacturing/supply; customers and distribution.
 - **Completeness of vision:** fixture scope (toilet, urinal, sink, floor, squat); autonomy across buildings (doors, lifts); **cleaning verification / contamination AI**; product roadmap; IP; go-to-market reach.
@@ -34,13 +36,13 @@
 | [Wangchao / Octopus](wangchao-octopus/wangchao-octopus.md) | 6.8 | 4.7 | Visionary | Working C1 on video (squat toilet, lifts, turnstiles, doors), granted patents; but founded Dec 2025, no named customers |
 | [Primech AI](primechai/primechai.md) | 6.0 | 4.1 | Visionary | Broad claims (squat, elevator, ozone); listed parent; but US$12k robot revenue and a lawsuit against its ex-CTO |
 | [Peanut (defunct)](peanut/peanut.md) | 5.7 | 3.2 | Visionary (grey) | 13,000 h in hotel bathrooms and a before/after patent, but ceased operating; scored on its current state |
-| [Fonda + A*STAR ALAC](fonda-global-alac/fonda-global-alac.md) | 4.2 | 4.2 | Niche | Toilet-bowl-only, semi-autonomous; A*STAR backing; QR cleaning-status tracking |
-| [Eternia TCR-H](eternia-robotics/eternia-robotics.md) | 4.6 | 3.6 | Niche (low data) | Lid lifting, fixture ID claimed; productisation stage; few sources opened |
-| [ZeeqClean](zeeqclean/zeeqclean.md) | 4.4 | 2.8 | Niche (low data) | Claims lid lifting, contactless, UV; unsourced |
+| [Fonda + A*STAR ALAC](fonda-global-alac/fonda-global-alac.md) | 4.2 | 4.2 | Niche ○ | Toilet-bowl-only, semi-autonomous; A*STAR backing; QR cleaning-status tracking |
+| [Eternia TCR-H](eternia-robotics/eternia-robotics.md) | 4.6 | 3.6 | Niche ○ (arm not confirmed; low data) | Lid lifting, fixture ID claimed; productisation stage; few sources opened |
+| [ZeeqClean](zeeqclean/zeeqclean.md) | 4.4 | 2.8 | Niche ○ (arm not confirmed; low data) | Claims lid lifting, contactless, UV; unsourced |
 | [Senxeed WUUMIE](senxeed-robotics/senxeed-robotics.md) | 3.9 | 2.3 | Niche (low data) | Tool changing claimed; cited source was the wrong product page |
 | [Amrita Sudha](amrita-sudha/amrita-sudha.md) | 4.8 | 1.3 | Niche | Research prototype; stain recognition + cleanliness monitoring (closest to our CV loop) |
-| [Sketch Robotics](sketch-robotics/sketch-robotics.md) | 3.6 | 1.4 | Niche | Incorporated May 2025; no prototype seen; ~₹10–15L grant `[INT]` |
-| **Ubanthu** | 7.0? | 2.0? | **Placeholder** | ☆ **The team should set this.** Placed on the assumption that our contamination-verification vision is strong and execution is early |
+| [Sketch Robotics](sketch-robotics/sketch-robotics.md) | 5.6 | 0.9 | **Visionary (very low execution)** | Same robot type and an India focus (6-DOF arm, VLM perception, UV-C claimed), so vision is above the midline; but incorporated May 2025, no prototype seen, ~₹10–15L grant `[INT]`. Placement set by team (2026-10-19) |
+| **Ubanthu** | 6.6 | 2.4 | **Visionary** (orange dot) | Placed by the team (2026-10-19): strong contamination-verification vision, early execution |
 
 Not plotted: fixed retrofits (HapiHygi, Hachimichi, ATSC), adjacent categories (Genrobotics, Solinas, VAATA), and unverified RIFE.
 
@@ -285,3 +287,4 @@ Each company file has its own **People Directory**. There is no combined list.
 | 2026-10-19 | **New profile: Peanut Robotics** (SF, 2018 – ~2024, wound down) from Vishal's docs (notes S087, tracker S088, résumés S089–S090, AI summary S091) + **2 US patents read** (S092, S093: before/after imaging; pad swap). **Somatic patent US 12,440,076 found** (S094: tool change + door opening); Somatic website/YC lead added. Master: landscape row, index, capability matrix (+Peanut column), supplier table (Orbbec Gemini 2), patent table (+3), people count, findings 9–10. | S087–S094 |
 | 2026-10-19 | **Wangchao CN 122493419 B: granted 9 Oct 2026** (granted PDF from Vishal, S095). The `[CONFLICT]` is resolved. Claims narrowed 9 → 6 (curvature-weighted ICP + hand-eye/back-off now in claim 1); examiner cited unrelated art (Ambarella, yoga trainer). Duplicate copy of the PDF removed. | S095 |
 | 2026-10-19 | **Competitive quadrant added** (Gartner-style, Ability to Execute × Completeness of Vision; `_general/quadrant/`, editable script) with rubric and per-company scores `[INF]`; Ubanthu marked as a placeholder for the team to set. Root **README.md** added as the GitHub home page. **Peanut:** Ashis Ghosh's 2 Forbes articles processed (S096, S097): lessons on configuration-heavy deployment, reflective surfaces, recovery and observability; status now `[CONFLICT]` (2026 bylines say CTO). | S096, S097 |
+| 2026-10-19 | Quadrant revised per team: Sketch moved to Visionaries (5.6, 0.9); Ubanthu shown as an orange dot at (6.6, 2.4); markers redefined (filled = same robot type, hollow = different robot type); chart enlarged. |  |
