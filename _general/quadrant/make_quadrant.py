@@ -15,11 +15,12 @@ SCORES = [
     #        'diff'  = hollow: same problem, different robot type (fixed / semi-autonomous / arm not confirmed)
     #        'defunct' = grey filled, 'us' = orange filled
     ('Hivebotics',          7.8, 7.6, 'same',    0.18, 0.00, 'right'),
+    ('Loki Robotics',       7.2, 5.4, 'same',    0.18, 0.00, 'right'),
     ('Somatic',             6.3, 6.0, 'same',    0.18, 0.00, 'right'),
     ('Wangchao / Octopus',  6.8, 4.7, 'same',    0.18, 0.00, 'right'),
     ('Primech AI',          6.0, 4.1, 'same',    0.18, -0.05, 'right'),
     ('Peanut (defunct)',    5.7, 3.2, 'defunct', 0.18, 0.00, 'right'),
-    ('Fonda + A*STAR ALAC', 4.2, 4.2, 'diff',   -0.18, 0.00, 'left'),
+    ('Fonda + A*STAR ALAC', 4.2, 4.2, '',   -0.18, 0.00, 'left'),
     ('Eternia TCR-H',       4.6, 3.6, 'diff',   -0.18, 0.00, 'left'),
     ('ZeeqClean',           4.4, 2.8, 'diff',   -0.18, 0.00, 'left'),
     ('Senxeed WUUMIE',      3.9, 2.3, 'same',   -0.18, 0.00, 'left'),
