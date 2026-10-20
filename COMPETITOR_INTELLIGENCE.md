@@ -172,7 +172,7 @@ Each company has its own file with its full profile, its people and its open que
 
 | Company | Purchase | RaaS / month | Unit cost | Source |
 |---|---|---|---|---|
-| **Hivebotics** | ~US$50–55k (model: $65k yr 1 → $55k yr 5) | **~US$2,000** (Rome €1,250; SG S$2,000) | **US$53.75k (2024)** → ~US$24.4k target | `[CC][S075][S076]` |
+| **Hivebotics** | ~US$55–65k (model: $65k yr 1 → $55k yr 5; deck's $50k is a sizing assumption) | **~US$2,000** (Rome €1,250; SG S$2,000) | **US$53.75k (2024)** → ~US$24.4k target | `[CC][S075][S076]` |
 | **Somatic** | — | **~US$4,500** | — | per Hivebotics deck `[3P][S075]` |
 | **Primech HYTRON** | — | **~US$1,800** | — | per Hivebotics deck `[3P][S075]` |
 
@@ -297,3 +297,4 @@ Each company file has its own **People Directory**. There is no combined list.
 | 2026-10-19 | Quadrant: Fonda ALAC changed to a filled marker (same robot type) per team; label moved right. |  |
 | 2026-10-19 | Quadrant: Fonda ALAC moved next to Peanut, slightly below (5.3 / 2.9), per team. |  |
 | 2026-10-20 | **Hivebotics Abluo Mark 2 BOM estimate** (Excel, 32 lines, low/mid/high, live formulas): mid ≈ **US$49k/robot incl. warranty** (36–62k) vs their own model US$53.7k (S076). Component list prices web-checked (S104). New candidate: steam unit = **Kärcher SGV 8/5** (8 bar / 173 °C spec match). | S104, S076 |
+| 2026-10-20 | **Correction:** Hivebotics' "~US$50k per robot" (deck p.8) is a **market-sizing assumption** (2,000 robots/yr × $50k = $100M SAM), not a quoted price. Model price: **$65k yr 1 → $55k yr 5**; ROI sheet $55k incl. AMC. | S075, S076 |

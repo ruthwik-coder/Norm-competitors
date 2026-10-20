@@ -86,7 +86,7 @@ All numbers below are **company claims made to investors** `[CC][S075]` unless t
 
 | Item | Value | Source |
 |---|---|---|
-| **Robot price** | **~US$50k per robot** (p.8); model: **US$65k (yr 1) → US$55k (yr 5)**; ROI sheet "Selling price of robot + AMC: US$55,000" | `[CC][S075][S076]` |
+| **Robot price** | **US$50k/robot used as a market-sizing assumption** on p.8 ("2,000 robots/year at 50K/robot" = US$100M SAM), **not a quoted price** (corrected 2026-10-20); model: **US$65k (yr 1) → US$55k (yr 5)**; ROI sheet "Selling price of robot + AMC: US$55,000" | `[CC][S075][S076]` |
 | **RaaS (monthly)** | **US$2,000/month** (p.9). Rome case: **€1,250/month**; Singapore cases: **S$2,000/month** (+ S$1,000 security add-on); model: lease **US$2,275 → 1,925/month** (3.5% of purchase price per month) | `[CC][S075][S076]` |
 | Paid trial | US$4,550/month (2× the lease rate; model) | `[S076]` |
 | **Unit cost (COGS incl. 10% warranty)** | **US$53,750 (yr 1) → ~US$24,400 (yr 5)**. So **gross margin on the first robots was ~17%** (65k vs 53.75k) | `[S076]` (model dated 30 Jul 2024) |

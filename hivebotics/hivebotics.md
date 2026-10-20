@@ -17,7 +17,7 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 | **Product** | **Abluo** (Mark 1 → **Mark II**): mobile robot with an articulated arm; cleans toilets, urinals, sinks, floors `[CC][S056]` |
 | **Software** | **HiveIntelligence**, a "physical AI layer that plans, monitors and validates every cleaning job"; fleet dashboard `[CC][S056]` |
 | **Stage** | Moving from pilots to **volume production** `[CC][S056]` |
-| **Pricing** | **~US$50–55k per robot**, or **RaaS ~US$2,000/month** (Rome €1,250; Singapore S$2,000); unit cost **US$53.75k (2024) → target ~US$24k** `[CC][S075][S076]` |
+| **Pricing** | **~US$55–65k per robot** (model: $65k yr 1 → $55k yr 5; ROI sheet $55k incl. AMC). The deck's "$50k" is a market-sizing assumption, not a price (corrected 2026-10-20), or **RaaS ~US$2,000/month** (Rome €1,250; Singapore S$2,000); unit cost **US$53.75k (2024) → target ~US$24k** `[CC][S075][S076]` |
 | **Traction (Oct 2025 deck)** | >2,000 h; 20+ sites; 4 countries; **"$150M+ LOIs"**, **"$1.8M+ POs"** (11–35 units; the figures conflict) `[CC][S075]` |
 | **Traction** | **~10,000 operating hours over 12 months, 20+ sites** in Asia, Europe, Middle East and North America (hospitals, airport terminals, malls) `[CC][S056]` |
 | **Team size** | ~15–18, scaling to ~18 after the Series A `[UNV][S055]`; **≥8 current staff named** on LinkedIn (SG, Zurich, Florida) `[S064]`; Crunchbase: 1–10 employees, 6 profiles (likely stale) `[3P][S073]` |
