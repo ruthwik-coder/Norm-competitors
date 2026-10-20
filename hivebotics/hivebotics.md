@@ -1,6 +1,6 @@
 # Hivebotics
 
-[← Back to master document](../COMPETITOR_INTELLIGENCE.md) · [Sources](../SOURCES.md) · **Last updated:** 2026-10-10 (Series A deck added)
+[← Back to master document](../COMPETITOR_INTELLIGENCE.md) · [Sources](../SOURCES.md) · **Last updated:** 2026-10-20 (BOM estimate added)
 
 Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` inferred · `[UNV]` unverified · `[CONFLICT]` · `[INT]` internal observation / opinion from our team. `[S012*]` = cited by S001, not yet opened by us.
 
@@ -56,6 +56,8 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 
 ## Products & technology
 
+**Cost estimate:** [Abluo Mark 2 BOM estimate (Excel)](hivebotics-abluo-bom-estimate.xlsx): 32 lines, low/mid/high; **mid ≈ US$49k per robot incl. 10% warranty** (range ~36–62k), vs Hivebotics' own model US$53.7k (yr 1) `[INF][S104][S076]`. Arm + F/T sensor ≈ 35% of hardware cost.
+
 **Deep dive:** [Series A deck deep dive](hivebotics-series-a-deck.md) (Oct 2025: validation method, pricing, unit cost, pipeline, partners, distributors, exit plans) · [Abluo Mark 2 specs and hardware identification](hivebotics-abluo-mk2-specs.md) (brochure, March 2026) · [Patent WO 2023/075687 (NUS, ceased): 2021–22 prototype](hivebotics-patent-WO2023075687.md) · [GitHub: what the code reveals](hivebotics-github.md)
 
 **Hardware supplier summary (as of 2026-10-08):**
@@ -70,6 +72,7 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 | **Depth camera** (newer) | **Orbbec Gemini 335Le** | Named in Hivebotics' Orbbec driver config (Jul 2026); role vs OAK-D unknown | `[V][S071]` |
 | Wrist camera | **Intel RealSense D435i** (in robot description) | `wrist_mounted` D435i in arm URDF (Jan 2026) `[S071]`; **real wrist-camera feed (`/wrist_mounted_camera/color/image_raw`) shown in deck screenshot**, so it exists on real hardware. Model on the real robot not proven | `[V][S071][S075]` |
 | **Cleaning tools** | **Kärcher** (steam, vacuum, floor nozzle); "MOU partner and supplier for integration of Kärcher equipment" | **Named** in Series A deck | `[CC][S075]` |
+| **Steam + vacuum unit** | **Kärcher SGV 8/5** (candidate) | **Inferred from spec match:** brochure steam 3/5/8 bar, max 173 °C = SGV 8/5 datasheet (8 bar max, boiler 173 °C max). Could be the full unit or only its boiler. Retail ~US$4.9–6.3k | `[INF][S061][S104]` |
 | **Motion planning / arm control** | **PickNik MoveIt Pro** ("key R&D partner for robot arm control") | **Named** in deck + MoveIt Pro UI screenshot (S075); MoveIt Pro 9 build on GitHub (S071) | `[V][S075][S071]` |
 | **Fleet management** | **Formant** | **Named** in deck (p.19) | `[CC][S075]` |
 | **Fixture perception** | **Mask R-CNN** segmentation | Topic name in deck screenshot | `[V][S075]` |

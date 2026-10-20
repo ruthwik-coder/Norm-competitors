@@ -1,6 +1,6 @@
 # Competitor Intelligence: Restroom / Toilet Cleaning Automation
 
-**Owner:** Ubanthu Robotics · **Last updated:** 2026-10-19 · **Sources:** [SOURCES.md](SOURCES.md) · **Rules:** [CLAUDE.md](CLAUDE.md)
+**Owner:** Ubanthu Robotics · **Last updated:** 2026-10-20 · **Sources:** [SOURCES.md](SOURCES.md) · **Rules:** [CLAUDE.md](CLAUDE.md)
 
 **Confidence tags:** `[V]` verified · `[3P]` third-party report · `[CC]` company or institution claim · `[INF]` inferred · `[UNV]` unverified · `[CONFLICT]` sources disagree
 **Citations:** `[S012]` = source ID in SOURCES.md. An asterisk (`[S012*]`) means the source was cited by an AI summary (S001) and **nobody here has opened it yet**.
@@ -160,7 +160,7 @@ Each company has its own file with its full profile, its people and its open que
 | **Force/torque sensor** | **Candidate:** KWR75 (believed Kunwei, China), from an engineer's driver work `[S048]` | Likely **UFACTORY 6-axis F/T sensor** (UFACTORY FT API enabled for real hardware, Aug 2026) `[INF][S071]` | — | — |
 | **Camera** | Wrist camera on arm; brand unknown `[V][S041][S054]` | **Confirmed: Luxonis OAK-D S2 PoE** (brochure depth+RGB; code + exact spec match) `[V][S071][S072]` · **Orbbec Gemini 335Le** (Jul 2026, code) `[V][S071]` · RealSense D435i wrist (robot model/sim) `[S071]` | VLM perception claimed; camera unknown | — |
 | **Fleet software** | Open-RMF (from engineer's résumé) `[S049]`; own task-management dashboard `[CC][S042]` | Own: **HiveOS** (brochure) / **HiveIntelligence** (Vertex release) `[CC][S061][S056]`; **Named: Formant** for fleet management `[CC][S075]` | — | — |
-| **Cleaning tools / consumables** | Own brush/ozone system (patents) `[S041][S054]` | **Named: Kärcher** (MOU; steam, vacuum, floor tools) `[CC][S075]` | — | — |
+| **Cleaning tools / consumables** | Own brush/ozone system (patents) `[S041][S054]` | **Named: Kärcher** (MOU; steam, vacuum, floor tools) `[CC][S075]`; steam unit likely **Kärcher SGV 8/5** (spec match) `[INF][S104]` | — | — |
 | **Motion-planning software** | — | **Named: PickNik MoveIt Pro** (R&D partner; UI shown in deck) `[V][S075][S071]` | — | — |
 | **Perception model** | — | **Mask R-CNN** fixture segmentation (topic in deck screenshot) `[V][S075]` | VLM claimed | — |
 
@@ -296,3 +296,4 @@ Each company file has its own **People Directory**. There is no combined list.
 | 2026-10-19 | **New profile: Loki Robotics** (Zürich/US): website + 7 site videos frame-analysed (S100), job ads (S101), pre-seed CHF 1.6M May 2025 (S102), **US$11.8M Form D Apr 2026** (S103). Added to landscape, index, capability matrix (+Loki column), supplier table, people, quadrant (7.2 / 5.4). IP note re Peanut US 11,407,118 (vertical-column arm). | S100–S103 |
 | 2026-10-19 | Quadrant: Fonda ALAC changed to a filled marker (same robot type) per team; label moved right. |  |
 | 2026-10-19 | Quadrant: Fonda ALAC moved next to Peanut, slightly below (5.3 / 2.9), per team. |  |
+| 2026-10-20 | **Hivebotics Abluo Mark 2 BOM estimate** (Excel, 32 lines, low/mid/high, live formulas): mid ≈ **US$49k/robot incl. warranty** (36–62k) vs their own model US$53.7k (S076). Component list prices web-checked (S104). New candidate: steam unit = **Kärcher SGV 8/5** (8 bar / 173 °C spec match). | S104, S076 |
