@@ -1,6 +1,6 @@
 # Competitor Intelligence: Restroom / Toilet Cleaning Automation
 
-**Owner:** Ubanthu Robotics · **Last updated:** 2026-10-20 · **Sources:** [SOURCES.md](SOURCES.md) · **Rules:** [CLAUDE.md](CLAUDE.md)
+**Owner:** Ubanthu Robotics · **Last updated:** 2026-10-23 · **Sources:** [SOURCES.md](SOURCES.md) · **Rules:** [CLAUDE.md](CLAUDE.md)
 
 **Confidence tags:** `[V]` verified · `[3P]` third-party report · `[CC]` company or institution claim · `[INF]` inferred · `[UNV]` unverified · `[CONFLICT]` sources disagree
 **Citations:** `[S012]` = source ID in SOURCES.md. An asterisk (`[S012*]`) means the source was cited by an AI summary (S001) and **nobody here has opened it yet**.
@@ -45,7 +45,7 @@
 | [Sketch Robotics](sketch-robotics/sketch-robotics.md) | 5.6 | 0.9 | **Visionary (very low execution)** | Same robot type and an India focus (6-DOF arm, VLM perception, UV-C claimed), so vision is above the midline; but incorporated May 2025, no prototype seen, ~₹10–15L grant `[INT]`. Placement set by team (2026-10-19) |
 | **Ubanthu** | 6.6 | 2.4 | **Visionary** (orange dot) | Placed by the team (2026-10-19): strong contamination-verification vision, early execution |
 
-Not plotted: fixed retrofits (HapiHygi, Hachimichi, ATSC), adjacent categories (Genrobotics, Solinas, VAATA), and unverified RIFE.
+Not plotted: fixed retrofits (HapiHygi, Hachimichi, ATSC), adjacent categories (Genrobotics, Solinas, VAATA, Origin/construction), and unverified RIFE.
 
 ## Competitive Landscape
 
@@ -57,6 +57,7 @@ Not plotted: fixed retrofits (HapiHygi, Hachimichi, ATSC), adjacent categories (
 | **2. Fixed fixture automation** | The toilet/seat cleans itself | HapiHygi, Hachimichi, ATSC, VAATA (chemical dosing only) |
 | **3. Human + machine hybrid** | Semi-autonomous machine assists a cleaner | Fonda Global ALAC |
 | *Adjacent: sanitation infrastructure* | Sewer and septic robots | Genrobotics, Solinas |
+| *Adjacent: same robot, other trade* | Mobile manipulator + tool station in construction | Origin (OG-1, drywall finishing) |
 
 ### Master table
 
@@ -72,6 +73,7 @@ Not plotted: fixed retrofits (HapiHygi, Hachimichi, ATSC), adjacent categories (
 | [VAATA](vaata/vaata.md) | 🇮🇳 Chennai | DryTab | Cistern dosing | Commercial | ⚪ Low | [vaata/](vaata/) |
 | [RIFE Technologies](rife-technologies/rife-technologies.md) | 🇮🇳 | "Washroom Cleaning Robot" | Unknown | Claimed deployments `[UNV]` | 🟠 Verify: possible reseller | [rife-technologies/](rife-technologies/) |
 | [Genrobotics](genrobotics/genrobotics.md) | 🇮🇳 Kerala | Sewer/manhole robots | Adjacent | Commercial | ⚪ Adjacent | [genrobotics/](genrobotics/) |
+| [Origin (Artila Robotics)](origin-artila/origin-artila.md) | 🇺🇸 San Francisco + 🇮🇳 Bengaluru (Dec 2024) | OG-1: drywall finishing (compound, sanding, priming) | Adjacent: wheeled base + tall arm (14 ft) + swappable tool station; learned "Construction Action Model" + teleop; **per-pass quality grading** | **US$20M** (Accel, Zacua; Oct 2026); 5,000 h, 100k+ sq ft claimed; 2 large US contractors | ⚪ Adjacent; architecture template + Bengaluru talent competitor | [origin-artila/](origin-artila/) |
 | [Solinas](solinas/solinas.md) | 🇮🇳 Chennai (IITM incubator) | Septic-tank cleaning robot | Adjacent | Commercial | ⚪ Adjacent | [solinas/](solinas/) |
 | [Hivebotics](hivebotics/hivebotics.md) | 🇸🇬 Singapore (NUS spin-out, 2021) | Abluo (Mark 1 / Mark II) | Mobile manipulator, **contactless** | **~US$8.3M raised**: pre-seed $1.3M (2023), seed $1M (2025), **Series A $6M** (Sep 2026: Vertex, Farglory, Rigel) `[3P][S073]`; ~10,000 h, 20+ sites | 🔴 **Main benchmark**; claims scored before/after verification | [hivebotics/](hivebotics/) |
 | [Loki Robotics](loki-robotics/loki-robotics.md) | 🇨🇭 Zürich + 🇺🇸 Dallas (~2025) | Loki: restroom + day-porter cleaning robot | Mobile manipulator; vertical-column arm; scrub-head swapping; learned policies + teleop | **~US$13M raised** (CHF 1.6M pre-seed May 2025; **US$11.8M Apr 2026**); real robot on video; US field deployments starting | 🔴 **Direct, fast-moving**; AI-native | [loki-robotics/](loki-robotics/) |
@@ -104,7 +106,7 @@ Each company has its own file with its full profile, its people and its open que
 | [VAATA](vaata/vaata.md) | [Wangchao / Octopus Robotics](wangchao-octopus/wangchao-octopus.md) |
 | [RIFE Technologies](rife-technologies/rife-technologies.md) | [Peanut Robotics](peanut/peanut.md) (defunct) |
 | [Genrobotics](genrobotics/genrobotics.md) | [Loki Robotics](loki-robotics/loki-robotics.md) |
-| [Solinas](solinas/solinas.md) | |
+| [Solinas](solinas/solinas.md) | [Origin (Artila Robotics)](origin-artila/origin-artila.md) (adjacent: construction) |
 
 ---
 
@@ -215,6 +217,7 @@ Each company file has its own **People Directory**. There is no combined list.
 | [Hivebotics](hivebotics/hivebotics.md#people-directory) | 24 (8 current named staff on LinkedIn + 5 GitHub-only engineers; **6 advisors** incl. 2 angel investors; 5 former/early; 15 photos) |
 | [Somatic](somatic/somatic.md#people-directory) | 6 (patent inventors) |
 | [Loki Robotics](loki-robotics/loki-robotics.md#people-directory) | 3 (2 co-founders, 1 director) |
+| [Origin (Artila Robotics)](origin-artila/origin-artila.md#people-directory) | 3 (co-founders) |
 | [Peanut Robotics](peanut/peanut.md#people-directory) | 15 (CEO, 4 co-founders, 6 staff, 4 extra patent inventors; no photos) |
 | [Wangchao / Octopus](wangchao-octopus/wangchao-octopus.md#people-directory) | 1 (legal representative He Bing) |
 | [IIT Madras](iit-madras/iit-madras.md#people-directory) | 1 |
@@ -298,3 +301,4 @@ Each company file has its own **People Directory**. There is no combined list.
 | 2026-10-19 | Quadrant: Fonda ALAC moved next to Peanut, slightly below (5.3 / 2.9), per team. |  |
 | 2026-10-20 | **Hivebotics Abluo Mark 2 BOM estimate** (Excel, 32 lines, low/mid/high, live formulas): mid ≈ **US$49k/robot incl. warranty** (36–62k) vs their own model US$53.7k (S076). Component list prices web-checked (S104). New candidate: steam unit = **Kärcher SGV 8/5** (8 bar / 173 °C spec match). | S104, S076 |
 | 2026-10-20 | **Correction:** Hivebotics' "~US$50k per robot" (deck p.8) is a **market-sizing assumption** (2,000 robots/yr × $50k = $100M SAM), not a quoted price. Model price: **$65k yr 1 → $55k yr 5**; ROI sheet $55k incl. AMC. | S075, S076 |
+| 2026-10-23 | **New profile: Origin (Artila Robotics, Inc.)**, adjacent: OG-1 drywall-finishing mobile manipulator (14 ft reach, swappable tool station, learned CAM + DAgger teleop, **scan-and-grade-each-pass quality map**). US$20M (Accel, Zacua; Oct 2026); SF/NY/**Bengaluru**. Added to landscape (new adjacent row), index, people. Not on quadrant. Pasted AI summary logged as [UNV]. | S105–S108 |
