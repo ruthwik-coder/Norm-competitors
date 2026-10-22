@@ -88,11 +88,26 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 | **Test rigs** | Experimentation roles ask for **UR**, KUKA, ABB or Fanuc arm experience (DOEs on spraying and sanding) |
 | **Ops metrics** | Availability, utilisation, task completion, **intervention rate** (Forward Deployment Engineer) |
 
+### Robot arm: what we know `[V][S115]` + `[INF]`
+
+| Period | Arm | Evidence | Confidence |
+|---|---|---|---|
+| **Nov 2025** (first NYC deployment, company still called "10x") | **Universal Robots (UR), e-Series-style light-blue joint cap** with the embossed UR logo, arm wrapped in a beige protective dust cover | Photo in Tushar Makkar's LinkedIn post, 20 Nov 2025, taken at night on a high floor in New York (Empire State Building visible across the river) `[V][S115]` | **High for UR brand.** Model (UR5e / UR10e / UR16e) **cannot be told from one joint cap**; Gemini's "UR10e" is a guess `[UNV][S116]`. Given the 14 ft reach, a UR10e/UR16e-class arm is plausible `[INF]` |
+| **2026** (V3, video + Oct 2026 LinkedIn photo) | **Unknown.** Silver links with black/dark joint caps; "origin" branding on the forearm in the video | S107, S111 | No blue UR caps visible, so the arm (or its covers) **changed** `[INF]`. **Candidate: UR's newer UR20/UR30** (grey links with dark joint caps) re-badged, or a different/own arm; job ads mention designing a "multi-axis robotic arm structure" `[S112]`. Needs checking |
+
+**Gemini's "RobotMeta" claim** (production OG-1 uses a "custom-wrapped, high-payload collaborative manipulator from RobotMeta") `[UNV][S116]`: **no evidence found.** RobotMeta is a Shenzhen company (founded 2017) known for **welding robots** and teach pendants; no source links it to Origin `[3P][S116]`. Gemini also called Artila Robotics Origin's *former* name; it is the current legal entity (S105). Treat the whole RobotMeta claim as a likely hallucination.
+
+<img src="screenshots/2025-11-20_tushar-makkar-post_UR-joint-cap_NYC-site.jpg" width="260">
+
+*UR joint cap (light blue, embossed logo, two screws) on a dust-wrapped arm, NYC site, Nov 2025 `[V][S115]`.*
+
+**Post text (S115):** "Our Robot Is Now Powering Construction Work Across New York … From **Bangalore labs to New York buildings** … At **10x** we're building … perception pipelines, autonomous navigation stacks, manipulation systems, cloud dashboards, operator apps, teleoperation interfaces". Hiring link then: apply.workable.com/**10x-3** (old job board). Company LinkedIn page now: linkedin.com/company/**origin-autonomy**.
+
 ### OG-1 V3 photo (LinkedIn post, 4 Oct 2026) `[V][S111]` + analysis `[INF]`
 
 <img src="screenshots/2026-10-04_og1-v3-photo_from-linkedin-post.jpg" width="360">
 
-- **Large 6-axis arm**: silver links with black joint caps and bands. Bigger than a UR5-class arm. Brand not visible; given "multi-axis robotic arm structure" in a job ad, possibly their own design or a re-housed commercial arm `[INF]`.
+- **Large 6-axis arm**: silver links with black joint caps and bands. Bigger than a UR5-class arm. Brand not visible. **No light-blue UR e-Series caps**, unlike the Nov 2025 arm (S115). Candidates: UR20/UR30 (similar grey-and-dark look), a re-housed arm, or their own design `[INF]`.
 - Arm sits on a wide **black carriage** on top of a **lift column**: a **cable carrier (drag chain)** runs down the side, which fits a vertical axis giving the 14 ft reach `[INF]`.
 - **Stack light** (signal tower) on the right; a small dark camera/sensor module at bottom left of the base.
 - A **large wheel/drum** at the base (drive wheel or hose reel; unclear).
@@ -170,7 +185,7 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 | Photo | Name | Role | Background | Links | Sources |
 |---|---|---|---|---|---|
 | — | **Yogesh Ghaturle** | Co-founder & CEO | Co-founder of **Perpule** (Bengaluru retail-tech, UltraPOS; co-founders Abhinav Pathak, Saketh BSV), **acquired by Amazon Mar 2021 for ₹107.6 cr (~US$14.7M)** `[3P][S110]`. Reported as expected to join Amazon after the deal; "several years at Amazon" per AI summary `[UNV][S109]` | — | S106, S110 |
-| — | **Tushar Makkar** | Co-founder & CTO; leads autonomy / CAM | Previously led AI teams at **Eightfold AI** (HR-tech AI) `[3P][S110]` | — | S106, S110 |
+| — | **Tushar Makkar** | Co-founder & CTO; leads autonomy / CAM | Previously led AI teams at **Eightfold AI** (HR-tech AI) `[3P][S110]`. Posted the Nov 2025 NYC deployment / hiring post (S115) | [LinkedIn](https://www.linkedin.com/in/tusharmakkar08) | S106, S110, S115 |
 | — | **Ashish Daga** | Co-founder; leads hardware (mechanical, tooling, chassis) | Previously at **Morphle Labs** (digital-pathology scanners, Bengaluru) `[3P][S110]` | — | S106, S110 |
 | <img src="people/sathya.png" width="60"> | **Sathya …** (surname cut off in screenshot) | Headline "Physical AI, Origin \| …"; built "Origin's supply chain and deployment functions from the ground up" over the last year. Possibly the "Supply Chain Lead & Plant Head" named in job ads `[INF]`, unconfirmed | Not visible | LinkedIn (URL not captured) | S111 |
 
@@ -191,7 +206,8 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 - [x] ~~Pricing model~~: subscription RaaS US$25–40k/month; deals US$2–2.5M (S113)
 - [ ] Named US contractors (which "two largest drywall finishing contractors"?)
 - [ ] Sathya's full name and title; plant location in Bengaluru (which SEZ?)
-- [ ] Arm: own design or re-housed commercial arm (UR? Chinese?) — check a hi-res product photo or a teardown
+- [x] ~~Arm in Nov 2025~~: **Universal Robots** (blue e-Series joint cap, S115); exact model unknown
+- [ ] V3 arm (2026): UR20/UR30, another brand, or own design? Look for a joint-cap close-up or the arm base label in newer posts/videos. RobotMeta claim unsupported
 - [ ] Read the Mint article (source of Dealroom's pricing figures) for detail
 - [ ] Any patents (Artila Robotics, Inc.; inventors Ghaturle / Daga / Makkar)?
 - [ ] Any signal of moving into facility cleaning / restrooms?
