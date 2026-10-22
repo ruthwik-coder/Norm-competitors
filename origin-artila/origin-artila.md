@@ -1,10 +1,18 @@
 # Origin (Artila Robotics, Inc.): OG-1 interior-construction robot
 
-[← Back to master document](../COMPETITOR_INTELLIGENCE.md) · [Sources](../SOURCES.md) · **Last updated:** 2026-10-23
+[← Back to master document](../COMPETITOR_INTELLIGENCE.md) · [Sources](../SOURCES.md) · **Last updated:** 2026-10-23 (night research: job board, pricing, factory)
 
 Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` inferred · `[UNV]` unverified · `[CONFLICT]` · `[INT]` internal observation / opinion from our team.
 
 **Threat level:** ⚪ **Adjacent (different job, same robot).** Origin does drywall finishing, not restrooms. Its architecture is the closest analogue in the KB to a restroom mobile manipulator: wheeled base + tall arm + **swappable tool station** + learned policy + teleop + **per-pass quality grading**. Relevant as (1) a template for how a well-funded team builds this stack, (2) a **talent competitor in Bengaluru**, and (3) a possible future entrant: its pitch is "**One Robot. Any Trade.**" `[INF]`
+
+> ### ⭐ Key insights (research 2026-10-23)
+> 1. **Built in India, sold in the US.** Origin is moving **V3 robot assembly in-house to a Bengaluru plant**: 19 staff, **3–5 robots/month scaling to 20/month**, moving from an interim unit to an **SEZ (export-zone) factory**. Finished robots and spares are exported `[CC][S112]`.
+> 2. **Pricing: US$25–40k per month** ("outcome as a service", no outright sale). Average deal **US$2–2.5M**, expected to grow to US$5–10M. Pitch: a US crew of 5 costs ~US$50k/month; the robot saves 20% from day one `[3P][S113]`. **That's ~15× Hivebotics' restroom RaaS (~US$2k/month)**: they price against a whole trade crew, not one cleaner `[INF]`.
+> 3. **Engineering is almost entirely in Bengaluru:** **38 of 40 open roles** are there; only 2 (robot-learning research leads) are in San Francisco `[V][S112]`.
+> 4. **Formerly "10xConstruction.ai"**, a seed-funded Bengaluru robotics startup (founded 2024) `[3P][S112][S114]`.
+> 5. **6 robots operating** in the US and Europe (Oct 2026), target **150 by end-2027** `[3P][S113]`.
+> 6. **Their own CV stack does "surface-defect detection" and "surface-quality models"**, the construction twin of our contamination detection `[CC][S112]`.
 
 <img src="screenshots/2026-10-23_og1-youtube-drywall-workflow_1m45s.jpg" width="640">
 
@@ -14,13 +22,15 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 
 | | |
 |---|---|
-| **Brand / legal entity** | **Origin** (origin.tech); legal entity **Artila Robotics, Inc.** (site footer) `[V][S105]`, Delaware per AI summary `[UNV][S109]`. Indian subsidiary **"Artila Robotics Private Limited"** (Bengaluru, inc. Nov 2024) claimed `[UNV][S109]`: not found in a web search; check MCA / Tofler. Job board uses the slug "origin-10x" `[3P][S110]` |
+| **Brand / legal entity** | **Origin** (origin.tech); legal entity **Artila Robotics, Inc.** (site footer) `[V][S105]`, Delaware per AI summary `[UNV][S109]`. **"Three global entities"** (finance job ad; payroll across two, incl. US) `[CC][S112]`. Indian subsidiary **"Artila Robotics Private Limited"** (Bengaluru, inc. Nov 2024) claimed `[UNV][S109]`: not found in a web search; check MCA / Tofler |
+| **Former name** | **10xConstruction / 10xConstruction.ai** ("Origin (Formerly 10xConstruction)", job ads). Job-board slug "origin-10x" `[V][S112]`. Earlier directories: Bengaluru, founded 2024, "seed funded robotics startup on a mission to make construction 10x faster", founders Ghaturle and Daga `[3P][S114]` |
 | **HQ** | **San Francisco** `[3P][S106]`; team in **San Francisco · New York · Bengaluru** (careers page) `[V][S105]`. One aggregator lists Cambridge, Maryland `[CONFLICT][S106]` |
-| **Founded** | **Dec 2024** (company timeline: "Started in Dec 2024") `[CC][S105]`; press says "early 2025" `[3P][S106]` |
+| **Founded** | **Dec 2024** (company timeline: "Started in Dec 2024") `[CC][S105]`; press says "early 2025" / "January 2025" `[3P][S106][S113]`; 10xConstruction directories say 2024 `[3P][S114]` |
 | **Founders** | **Yogesh Ghaturle** (CEO; ex-co-founder **Perpule**, acquired by Amazon 2021), **Tushar Makkar** (CTO; ex-**Eightfold AI**), **Ashish Daga** (hardware; ex-**Morphle Labs**) `[3P][S106][S110]` |
 | **Market** | Interior construction. First application: **drywall finishing**: joint compound (L4/L5), sanding (L4/L5), priming `[CC][S105]` |
-| **Customers** | "Two of the largest drywall finishing contractors in the US" (unnamed); pilots planned in **Germany, Sweden, France, Saudi Arabia** `[3P][S106]` |
-| **Traction claims** | **100k+ sq ft completed; 5,000 hours worked**; "5× time saved", "300% margin expansion", "20% cost reduction" `[CC][S105]`; "3× faster than humans" (Forbes headline, company claim; not independently confirmed) `[3P][S106]` |
+| **Customers** | "Two of the largest drywall finishing contractors in the US" (unnamed); pilots planned in **Germany, Sweden, France, Saudi Arabia** `[3P][S106]`. Live on **NYC commercial construction sites** `[CC][S112]`. **Pitching** big US homebuilders (**D.R. Horton, Lennar**); some customers are also investors `[3P][S113]` |
+| **Strategic focus** | "Our priority is the buildout the US cannot afford to slow down: **data centres and power plants**" (Technical Program Manager ad, Oct 2026) `[CC][S112]`. Trades listed now include **painting** `[CC][S112][S113]`; long-term "entire interior build: HVAC, plumbing, drywall painting" `[3P][S113]` |
+| **Traction claims** | **100k+ sq ft completed; 5,000 hours worked**; "5× time saved", "300% margin expansion", "20% cost reduction" `[CC][S105]`; job ads say "**250%+** margin expansion" `[CC][S112]` (website 300%); "3× faster than humans" (Forbes headline, company claim; not independently confirmed) `[3P][S106]`. **6 robots operational** across US and Europe `[3P][S113]` |
 | **Target** | **150 robots deployed by end-2027** `[3P][S106]` |
 | **Website** | https://origin.tech/ · sales@origin.tech · LinkedIn, X, YouTube linked from site |
 | **Folder** | [origin-artila/](./) |
@@ -30,17 +40,62 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 | Date | Round | Amount | Investors | Source |
 |---|---|---|---|---|
 | Jan 2025 | First raise ("Fundraising and HQ Opening") | Not disclosed | — | `[CC][S105]` |
-| **15 Oct 2026** (announced, emerged from stealth) | Total to date; labelled **seed** by Fundz and a job board, "Series A" by one aggregator `[CONFLICT]` | **US$20M total** | **Accel** and **Zacua Ventures** (co-leads); **Unilazer Ventures** (Ronnie Screwvala's fund, India `[INF]`), Schema Ventures, Z21; angels from **Anduril, Skild AI, 1X, Tesla** | `[3P][S106]` |
+| **15 Oct 2026** (announced, emerged from stealth) | Total to date; labelled **seed** by Fundz and a job board, "early-stage" by Dealroom, "Series A" by one aggregator `[CONFLICT]` | **US$20M total** | **Accel** and **Zacua Ventures** (co-leads); **Unilazer Ventures**, Schema Ventures, Z21; **ISAI**, **Imad Ventures** and **some of Origin's customers** (Dealroom/Mint); angels from **Anduril, Skild AI, 1X, Tesla** | `[3P][S106][S113]` |
 
 **Use of funds:** build and deploy the OG-1 fleet, large pilots in the US and Europe, extend to new interior trades `[3P][S106]`.
 
 **Board:** an AI summary says Zacua partner **Vivin Hegde** joined the board `[UNV][S109]`. Press only quotes him as an investor `[3P][S106]`.
 
+**`[CONFLICT]`:** Dealroom says "Accel's India fund is the only Indian entity on the cap table" `[3P][S113]`, but Unilazer Ventures (Ronnie Screwvala's fund) is usually described as Indian (general knowledge). Possibly invested through a non-Indian vehicle.
+
 ## Business model
 
-- **RaaS / lease, not outright sale**, working alongside crews without safety cages; **dust-free sanding** via a vacuum shroud `[UNV][S109]`. Vacuum-captured sanding itself is visible in the video `[V][S107]`; the commercial model is not confirmed.
+- **Subscription RaaS, no outright sale: "outcome as a service"**, **US$25,000–40,000 per month** for access `[3P][S113]` (Dealroom, citing Mint; CEO quoted). **Average deal US$2–2.5M**, expected to rise to **US$5–10M** as contracts grow `[3P][S113]`.
+- **Value pitch (CEO):** "For a US contractor with a crew of five people, they pay **$50,000 a month**. Replacing them with a robot from us saves them **20% of the cost from day one**" `[3P][S113]`.
+- **Implied economics `[INF]`:** at US$40k/month a robot earns ~US$480k/year. Even a BOM of US$100–150k pays back in ~3–4 months of rental. Price is set by the **labour it replaces (a whole crew)**, not by hardware cost.
+- Works alongside crews without safety cages; **dust-free sanding** via a vacuum shroud `[UNV][S109]`. Vacuum-captured sanding is visible in the video `[V][S107]`.
 - **Site types:** commercial offices, hotels, multifamily, **data centres**; first runs in New York `[UNV][S109]` (NY deployment Nov 2025 is on the company timeline `[CC][S105]`).
 - **Market claim:** drywall mudding/taping is "60–65% of interior finishing timelines" `[UNV][S109]`: no source given.
+
+## Manufacturing & supply chain (job ads + LinkedIn post) `[CC][S111][S112]`
+
+| Item | Detail |
+|---|---|
+| **Robot version** | **V3** ("moving V3 robot assembly in-house in Bengaluru") |
+| **Plant** | **Bengaluru**: an **interim unit** now, then an **SEZ factory** (export-oriented; SEZ/EOU or MOOWR bonded filings). Plant Admin & HR role: "today there is a bare shed and a plan" |
+| **Capacity** | **19-person plant team building 3–5 robots a month, scaling to 20** |
+| **Exports** | Stores role packs "**finished robots and spares for export**". Finance role covers customs, letters of credit, FX, transfer pricing, FEMA/RBI, and export incentives (**RoDTEP, duty drawback, EPCG, PLI**) |
+| **Sourcing** | Motors, drivers, PCBs, connectors, harnesses, sensors, controllers, batteries from "**India, China, and other sourcing regions**"; Approved Vendor List with **3–5 vendors per critical BOM line** (Technical Sourcing Manager). LinkedIn post: "sourcing components across **three continents**" `[S111]` |
+| **Plant org** | Supply Chain Lead & Plant Head → Plant Supervisor, Manufacturing Engineer, technicians (mechanical, embedded, IQC), stores, QA, logistics, sourcing. Technicians hired via ITIs and diploma colleges |
+| **Quality** | ISO 9001-style audits; incoming / in-process / end-of-line checks; HIL tests; mechanical validation for "construction-site abuse" |
+| **Compliance** | Regulatory program for **UL, CE, FCC**, IEC, ISO, OSHA, machinery and functional safety, EMC, radio. Hardware safety loop to **ISO 13849 / IEC 61508** |
+
+**Analysis `[INF]`:** the playbook is **Indian engineering and assembly cost + US pricing**. Robots are built in a duty-advantaged Bengaluru export zone and rented to US contractors at US$25–40k/month. This is the most direct template in the KB for an India-based robotics company selling abroad.
+
+## Tech stack (from 40 job descriptions, Jul – Oct 2026) `[CC][S112]`
+
+| Area | Detail |
+|---|---|
+| **Compute** | **Dual NVIDIA Jetson AGX Orin** on the robot; TensorRT / ONNX; INT8, LoRA, distillation for edge |
+| **Middleware** | **ROS 2**, **MoveIt 2** (manipulation), **Nav2** (navigation); Docker on robot and cloud |
+| **Simulation** | **NVIDIA Isaac Sim / Isaac Lab**, Gazebo; domain randomisation; diffusion-model synthetic data |
+| **Sensors** | **LiDAR + IMU + stereo + RGB / RGB-D** cameras + wheel odometry; online calibration-drift detection ("self-healing") |
+| **Learning** | "**Multi Agent Action Expert** architecture: classical precision algorithms orchestrated alongside learned policies". VLA for contact-rich manipulation; imitation learning; DAgger / HG-DAgger; **world models** for surface state and spray dynamics; learned policies propose, deterministic safety layers enforce |
+| **Teleop / data** | **GELLO, SpaceMouse, VR** teleoperation; CVAT annotation; Weights & Biases / MLflow |
+| **⭐ Quality CV** | "**surface-defect detection**", "**segmentation and surface-quality models deployed on our robots**", offline metrics "that predict real-world finishing quality", VLA "linking text work orders to pixel-level segmentation masks" |
+| **Hardware (in-house)** | They design the "**multi-axis robotic arm structure**, the heavy-duty mobile base chassis, [and] the **lift column**"; high-torque actuators; robotic power tools; dust-extraction nozzles; battery trays. Onshape / SolidWorks |
+| **Power** | **Custom BMS, high-power inverters, fast charging**; LFP / Li-ion packs; CAN, UART, RS485 |
+| **Test rigs** | Experimentation roles ask for **UR**, KUKA, ABB or Fanuc arm experience (DOEs on spraying and sanding) |
+| **Ops metrics** | Availability, utilisation, task completion, **intervention rate** (Forward Deployment Engineer) |
+
+### OG-1 V3 photo (LinkedIn post, 4 Oct 2026) `[V][S111]` + analysis `[INF]`
+
+<img src="screenshots/2026-10-04_og1-v3-photo_from-linkedin-post.jpg" width="360">
+
+- **Large 6-axis arm**: silver links with black joint caps and bands. Bigger than a UR5-class arm. Brand not visible; given "multi-axis robotic arm structure" in a job ad, possibly their own design or a re-housed commercial arm `[INF]`.
+- Arm sits on a wide **black carriage** on top of a **lift column**: a **cable carrier (drag chain)** runs down the side, which fits a vertical axis giving the 14 ft reach `[INF]`.
+- **Stack light** (signal tower) on the right; a small dark camera/sensor module at bottom left of the base.
+- A **large wheel/drum** at the base (drive wheel or hose reel; unclear).
 
 ## Their competitors (construction robotics) `[UNV][S109]` + general knowledge
 
@@ -104,7 +159,10 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 - **Same blueprint, different room.** Base + tall arm + tool station + force control + learned policy + teleop fallback is exactly the restroom-robot architecture (Loki, Hivebotics, Peanut). Origin shows how fast a funded team can field it: customer site in ~7 months.
 - ⭐ **"Scan and grade each pass" is their verification loop.** It is the construction equivalent of our contamination verification: a post-task quality map that both proves the work and trains the policy. This validates our thesis that **verification data = training signal**, and it shows investors already understand the idea.
 - **"One Robot. Any Trade."** Restroom cleaning is not on their list today (interior trades: board hanging, drilling, conduit per the pasted summary `[UNV][S108]`). A pivot into facility cleaning is possible but unsignalled.
-- **Bengaluru engineering team:** competes with us for robotics / CV / embedded talent in India. Indian-origin founders and an Indian fund (Unilazer) on the cap table `[INF]`.
+- **Bengaluru engineering team:** competes with us for robotics / CV / embedded talent in India. **38 of 40 open roles are in Bengaluru**, including 9 apprentice/intern roles (a cheap talent pipeline from IITs, ITIs and diploma colleges) `[V][S112]`. Expect them to hire the same perception, ROS 2 and embedded people we want.
+- ⭐ **Pricing lesson:** they charge US$25–40k/month because they price against a **crew of five**, not one worker. Restroom robots (US$1.8–4.5k/month) price against one cleaner. For Ubanthu: **pricing power comes from how much labour (and liability) the robot replaces**, so a multi-restroom / multi-floor scope, or a verifiable hygiene SLA, supports higher prices `[INF]`.
+- ⭐ **Manufacturing lesson:** an Indian startup can **assemble in a Bengaluru SEZ and export to the US** at small volume (3–5 → 20 robots/month). If Ubanthu ever sells abroad, this is the template, including export incentives (RoDTEP, duty drawback) `[INF]`.
+- **Possible partner, not only competitor:** they will build an India-based supply chain (motors, drivers, harnesses, BMS) for mobile manipulators. Suppliers they qualify could serve us too `[INF]`.
 - **Not plotted on the quadrant** (different problem).
 
 ## People Directory
@@ -114,6 +172,7 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 | — | **Yogesh Ghaturle** | Co-founder & CEO | Co-founder of **Perpule** (Bengaluru retail-tech, UltraPOS; co-founders Abhinav Pathak, Saketh BSV), **acquired by Amazon Mar 2021 for ₹107.6 cr (~US$14.7M)** `[3P][S110]`. Reported as expected to join Amazon after the deal; "several years at Amazon" per AI summary `[UNV][S109]` | — | S106, S110 |
 | — | **Tushar Makkar** | Co-founder & CTO; leads autonomy / CAM | Previously led AI teams at **Eightfold AI** (HR-tech AI) `[3P][S110]` | — | S106, S110 |
 | — | **Ashish Daga** | Co-founder; leads hardware (mechanical, tooling, chassis) | Previously at **Morphle Labs** (digital-pathology scanners, Bengaluru) `[3P][S110]` | — | S106, S110 |
+| <img src="people/sathya.png" width="60"> | **Sathya …** (surname cut off in screenshot) | Headline "Physical AI, Origin \| …"; built "Origin's supply chain and deployment functions from the ground up" over the last year. Possibly the "Supply Chain Lead & Plant Head" named in job ads `[INF]`, unconfirmed | Not visible | LinkedIn (URL not captured) | S111 |
 
 **Team pattern `[INF]`:** software/AI founders with an Indian startup exit plus a precision-hardware engineer, Bengaluru-built. A close analogue to an Indian robotics team, and proof that such a team can raise US$20M from Accel for a US-first go-to-market.
 
@@ -129,7 +188,11 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 - [x] ~~Founder backgrounds~~: Perpule/Amazon, Eightfold AI, Morphle Labs (S110)
 - [ ] Indian entity: confirm "Artila Robotics Private Limited" on MCA (CIN, directors, date); Bengaluru headcount
 - [ ] Board composition (Vivin Hegde?)
-- [ ] Named US contractors; pricing model (RaaS per sq ft?)
+- [x] ~~Pricing model~~: subscription RaaS US$25–40k/month; deals US$2–2.5M (S113)
+- [ ] Named US contractors (which "two largest drywall finishing contractors"?)
+- [ ] Sathya's full name and title; plant location in Bengaluru (which SEZ?)
+- [ ] Arm: own design or re-housed commercial arm (UR? Chinese?) — check a hi-res product photo or a teardown
+- [ ] Read the Mint article (source of Dealroom's pricing figures) for detail
 - [ ] Any patents (Artila Robotics, Inc.; inventors Ghaturle / Daga / Makkar)?
 - [ ] Any signal of moving into facility cleaning / restrooms?
 - [ ] Read the Forbes piece ("This Robot Finishes Drywall 3X Faster Than Humans…") for more detail
