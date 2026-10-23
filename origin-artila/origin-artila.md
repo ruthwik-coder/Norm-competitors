@@ -130,6 +130,27 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 
 *Relevance for us `[INF]`:* same pattern as restrooms: an earlier slow/struggling pioneer (Canvas ↔ Peanut) followed by a new, AI-first, well-funded wave (Origin ↔ Loki / Hivebotics).
 
+## Fleet size over time (number of robots)
+
+| Date | Robots | What happened | Source | Confidence |
+|---|---|---|---|---|
+| Dec 2024 | 0 | Company started | S105 | `[CC]` |
+| Mar 2025 | **1** (prototype) | "First prototype ready": aluminium-extrusion base + arm, built in-house | S105, S122 | `[CC]` + photo `[V]` |
+| 2025 (date unknown) | **2** | "Built **two working robots in 4 weeks**" | Vishal (source not yet captured) | `[INT]` / unverified |
+| May 2025 | ≥1 | First test-site autonomy | S105 | `[CC]` |
+| Jul 2025 | ≥1 | First customer-site deployment | S105 | `[CC]` |
+| Nov 2025 | ≥1 (plural "sites") | First deployment in New York; "working across real customer sites in the US"; robot = UR arm with blue e-Series caps | S105, S115 | `[CC]` + photo `[V]` |
+| Oct 2026 | **4 active** | Website figure quoted by Forbes, with 100k+ sq ft delivered | S120 | `[3P]` |
+| Oct 2026 | **6 operational** (US + Europe) | Dealroom summary of Mint | S113 | `[3P]` `[CONFLICT]` with 4 (different date or definition) |
+| From late 2026 | +3–5 / month → **20 / month** | V3 assembly moving in-house to the Bengaluru plant | S112 | `[CC]` plan |
+| ~Oct 2027 | **80 built** | "Build 80 robots in the next 12 months" | S112 (Lead Manufacturing Engineer) | `[CC]` plan |
+| End 2027 | **150 deployed** | Fleet target | S106, S120 | `[CC]` plan |
+| Later | **200 / year** | Production run-rate target | S112 | `[CC]` plan |
+
+**Robot generations `[INF]`:** **V1** extrusion prototype (2025, S122) → **V2** NYC robot with a blue-cap UR e-Series arm (Nov 2025, S115) → **V3** styled OG-1 with a black-cap UR (likely UR15) and in-house Bengaluru assembly (2026, S112, S123). "V3" is their own term (job ads); V1/V2 labels are our inference.
+
+**Pace `[INF]`:** about **4–6 robots in ~22 months** so far, then a planned jump to **80 in 12 months** (a 13–20× step) on US$20M. For comparison: Hivebotics reports 20+ sites after ~5 years (S056); Peanut logged 13,000 h over ~6 years (S088).
+
 ## Timeline (company "Zero to Infinity" page) `[CC][S105]`
 
 | Date | Milestone |
@@ -192,8 +213,8 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 
 | Photo | Name | Role | Background | Links | Sources |
 |---|---|---|---|---|---|
-| — | **Yogesh Ghaturle** | Co-founder & CEO | Co-founder of **Perpule** (Bengaluru retail-tech, UltraPOS; co-founders Abhinav Pathak, Saketh BSV), **acquired by Amazon Mar 2021 for ₹107.6 cr (~US$14.7M)** `[3P][S110]`. Reported as expected to join Amazon after the deal; "several years at Amazon" per AI summary `[UNV][S109]` | — | S106, S110 |
-| — | **Tushar Makkar** | Co-founder & CTO; leads autonomy / CAM | Previously led AI teams at **Eightfold AI** (HR-tech AI) `[3P][S110]`. Posted the Nov 2025 NYC deployment / hiring post (S115) | [LinkedIn](https://www.linkedin.com/in/tusharmakkar08) | S106, S110, S115 |
+| — | **Yogesh Ghaturle** | Co-founder & CEO (GitHub location: **NITK Surathkal**, so likely an NIT Surathkal alumnus like Makkar `[INF][S125]`) | Co-founder of **Perpule** (Bengaluru retail-tech, UltraPOS; co-founders Abhinav Pathak, Saketh BSV), **acquired by Amazon Mar 2021 for ₹107.6 cr (~US$14.7M)** `[3P][S110]`. Reported as expected to join Amazon after the deal; "several years at Amazon" per AI summary `[UNV][S109]` | — | S106, S110 |
+| — | **Tushar Makkar** | Co-founder & CTO; leads autonomy / CAM | **B.Tech Computer Engineering, NIT Surathkal (2015)**. Senior Data Scientist, **Eightfold.ai** (Dec 2019 – ; NLP/BERT matching, patent pending); Data Scientist, **Rivigo** (2017–19, logistics pricing and network optimisation); SDE-2 **CodeNation** (2015–17); founding engineer **Trestor** (crypto, 2014–15); **Google** SWE intern (2014, Kurzweil's group). "Filed 10+ patents" (NLP/ML) `[CC][S124]`. **No robotics background before Origin** `[INF]`. Posted the Nov 2025 NYC post (S115) | [LinkedIn](https://www.linkedin.com/in/tusharmakkar08) · [GitHub](https://github.com/tusharmakkar08) | S106, S110, S115, S124, S125 |
 | — | **Ashish Daga** | Co-founder; leads hardware (mechanical, tooling, chassis) | Previously at **Morphle Labs** (digital-pathology scanners, Bengaluru) `[3P][S110]` | — | S106, S110 |
 | <img src="people/saketh-vaishya.png" width="60"> | **Saketh Vaishya** | **Senior Robotics Software & Simulation Engineer**, Origin (Nov 2025 – present). LinkedIn headline: "Building physical agents \| Senior Robotics Engineer at Origin" | Sim-to-real specialist (Isaac Sim / Isaac Lab, PPO, ACT, Diffusion Policy, MoveIt 2, RMPFlow). Ex-Techolution (team lead, teleop), SS Innovations (surgical robot), IIIT Hyderabad / IIT Madras internships | [LinkedIn](https://www.linkedin.com/in/saketh-vaishya/) · [GitHub](https://github.com/Saketh-Vaishya) · [site](https://sakethvaishya.com/) | S117, S118 |
 | <img src="people/sathya.png" width="60"> | **Sathya …** (surname cut off in screenshot) | Headline "Physical AI, Origin \| …"; built "Origin's supply chain and deployment functions from the ground up" over the last year. Possibly the "Supply Chain Lead & Plant Head" named in job ads `[INF]`, unconfirmed | Not visible | LinkedIn (URL not captured) | S111 |
