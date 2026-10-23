@@ -1,10 +1,10 @@
 # Origin (Artila Robotics, Inc.): OG-1 interior-construction robot
 
-[← Back to master document](../COMPETITOR_INTELLIGENCE.md) · [Sources](../SOURCES.md) · **Last updated:** 2026-10-23 (night research: job board, pricing, factory)
+[← Back to master document](../COMPETITOR_INTELLIGENCE.md) · [Sources](../SOURCES.md) · **Last updated:** 2026-10-24 (Day Zero Ventures; Saketh Vaishya; threat level raised)
 
 Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` inferred · `[UNV]` unverified · `[CONFLICT]` · `[INT]` internal observation / opinion from our team.
 
-**Threat level:** ⚪ **Adjacent (different job, same robot).** Origin does drywall finishing, not restrooms. Its architecture is the closest analogue in the KB to a restroom mobile manipulator: wheeled base + tall arm + **swappable tool station** + learned policy + teleop + **per-pass quality grading**. Relevant as (1) a template for how a well-funded team builds this stack, (2) a **talent competitor in Bengaluru**, and (3) a possible future entrant: its pitch is "**One Robot. Any Trade.**" `[INF]`
+**Threat level:** 🟡 **Adjacent competitor / potential entrant** (raised from ⚪ on 2026-10-24: the team rates the robot as very similar to Ubanthu's). Different job (construction), near-identical robot. Origin does drywall finishing, not restrooms. Its architecture is the closest analogue in the KB to a restroom mobile manipulator: wheeled base + tall arm + **swappable tool station** + learned policy + teleop + **per-pass quality grading**. Relevant as (1) a template for how a well-funded team builds this stack, (2) a **talent competitor in Bengaluru**, and (3) a possible future entrant: its pitch is "**One Robot. Any Trade.**" `[INF]`
 
 > ### ⭐ Key insights (research 2026-10-23)
 > 1. **Built in India, sold in the US.** Origin is moving **V3 robot assembly in-house to a Bengaluru plant**: 19 staff, **3–5 robots/month scaling to 20/month**, moving from an interim unit to an **SEZ (export-zone) factory**. Finished robots and spares are exported `[CC][S112]`.
@@ -40,9 +40,12 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 | Date | Round | Amount | Investors | Source |
 |---|---|---|---|---|
 | Jan 2025 | First raise ("Fundraising and HQ Opening") | Not disclosed | — | `[CC][S105]` |
+| **1 Mar 2025** | **Seed** (CB Insights listing) | Not disclosed | **Day Zero Ventures** (Bengaluru pre-seed / "first cheque" fund), listed as a new investor in "Origin" `[3P][S119]`. Probably the same Jan 2025 raise `[INF]` | `[3P][S119]` |
 | **15 Oct 2026** (announced, emerged from stealth) | Total to date; labelled **seed** by Fundz and a job board, "early-stage" by Dealroom, "Series A" by one aggregator `[CONFLICT]` | **US$20M total** | **Accel** and **Zacua Ventures** (co-leads); **Unilazer Ventures**, Schema Ventures, Z21; **ISAI**, **Imad Ventures** and **some of Origin's customers** (Dealroom/Mint); angels from **Anduril, Skild AI, 1X, Tesla** | `[3P][S106][S113]` |
 
 **Use of funds:** build and deploy the OG-1 fleet, large pilots in the US and Europe, extend to new interior trades `[3P][S106]`.
+
+**Day Zero Ventures (per AI summary, mostly unverified)** `[UNV][S119]`: Bengaluru-based; invests at inception / pre-seed, before incorporation or product; cheques **up to US$1M**; bridges founders to US seed/Series A leads (e.g. Accel, Lightspeed, Together Fund); theses = physical intelligence (robotics for labour-constrained industries), applied AI, AI-native services. CB Insights confirms portfolio entries for **Origin (Mar 2025)** and **Zeno** (seed II, Sep 2024) `[3P][S119]`; Exponent Energy link **not** confirmed. *Relevance `[INF]`:* the "Day Zero → Accel" path is exactly what happened with Origin, and Day Zero is a **Bengaluru fund that already backs a mobile-manipulator company**. Worth knowing as a potential investor for Ubanthu (they like the thesis) and as a conflict risk (they back a similar robot).
 
 **Board:** an AI summary says Zacua partner **Vivin Hegde** joined the board `[UNV][S109]`. Press only quotes him as an investor `[3P][S106]`.
 
@@ -187,7 +190,26 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 | — | **Yogesh Ghaturle** | Co-founder & CEO | Co-founder of **Perpule** (Bengaluru retail-tech, UltraPOS; co-founders Abhinav Pathak, Saketh BSV), **acquired by Amazon Mar 2021 for ₹107.6 cr (~US$14.7M)** `[3P][S110]`. Reported as expected to join Amazon after the deal; "several years at Amazon" per AI summary `[UNV][S109]` | — | S106, S110 |
 | — | **Tushar Makkar** | Co-founder & CTO; leads autonomy / CAM | Previously led AI teams at **Eightfold AI** (HR-tech AI) `[3P][S110]`. Posted the Nov 2025 NYC deployment / hiring post (S115) | [LinkedIn](https://www.linkedin.com/in/tusharmakkar08) | S106, S110, S115 |
 | — | **Ashish Daga** | Co-founder; leads hardware (mechanical, tooling, chassis) | Previously at **Morphle Labs** (digital-pathology scanners, Bengaluru) `[3P][S110]` | — | S106, S110 |
+| <img src="people/saketh-vaishya.png" width="60"> | **Saketh Vaishya** | **Senior Robotics Software & Simulation Engineer**, Origin (Nov 2025 – present). LinkedIn headline: "Building physical agents \| Senior Robotics Engineer at Origin" | Sim-to-real specialist (Isaac Sim / Isaac Lab, PPO, ACT, Diffusion Policy, MoveIt 2, RMPFlow). Ex-Techolution (team lead, teleop), SS Innovations (surgical robot), IIIT Hyderabad / IIT Madras internships | [LinkedIn](https://www.linkedin.com/in/saketh-vaishya/) · [GitHub](https://github.com/Saketh-Vaishya) · [site](https://sakethvaishya.com/) | S117, S118 |
 | <img src="people/sathya.png" width="60"> | **Sathya …** (surname cut off in screenshot) | Headline "Physical AI, Origin \| …"; built "Origin's supply chain and deployment functions from the ground up" over the last year. Possibly the "Supply Chain Lead & Plant Head" named in job ads `[INF]`, unconfirmed | Not visible | LinkedIn (URL not captured) | S111 |
+
+#### Saketh Vaishya — Senior Robotics Software & Simulation Engineer, Origin
+<img src="people/saketh-vaishya.png" width="110">
+
+| Field | Value |
+|---|---|
+| Current role | Senior Robotics Software & Simulation Engineer, **Origin, Bengaluru** (Nov 2025 – present): "building physical agents — robots that learn in simulation and work in the real world" `[S118]` |
+| Location | LinkedIn: **Hyderabad, Telangana**; site lists Origin · Bengaluru (remote or relocating?) `[S117][S118]` |
+| Previous | **Techolution**, Hyderabad (May 2023 – Nov 2025): Associate Robotics Engineer → Team Lead, HIR (Human Intelligence Robotics): camera-based motion-capture teleoperation, ACT + Diffusion Policy trained in Isaac Lab, RMPFlow + MoveIt 2, digital twin for synthetic data, LLM robot bartender "Alice", ScrewQC (Doosan A0509, YOLOv8, 0.01 mm) · **SS Innovations**, Gurugram (Nov 2022 – Apr 2023, surgical robot; EtherCAT, Beckhoff, harmonic drives) · **SegriTech**, CIE IIIT Hyderabad (2022, fruit sorter) · **Touch Lab, IIT Madras** (2021, AR haptics research) `[S118]` |
+| Education | International Institute of Information Technology (shown on LinkedIn; campus/degree not visible) `[S117]` |
+| Skills / focus | Isaac Sim, Isaac Lab, ROS 2, PyTorch, RL (PPO), ACT, Diffusion Policy, MoveIt 2, RMPFlow, Gazebo, EtherCAT, MODBUS, SolidWorks `[S118]` |
+| Links | [LinkedIn](https://www.linkedin.com/in/saketh-vaishya/) · [GitHub](https://github.com/Saketh-Vaishya) · [Portfolio](https://sakethvaishya.com/) |
+| Source | [S117] LinkedIn screenshot 2026-10-24; [S118] portfolio site + GitHub, checked 2026-10-24 |
+
+**What his public work tells us about Origin `[INF]`:**
+- **Nothing Origin-specific is public.** All 12 portfolio videos are from earlier jobs (Techolution demos, an NVIDIA GTC "Blue" robot clip). The 7 GitHub repos are personal; the two robot-sounding ones (`camera-callibration`, `remote_template`) are **empty (0 KB)**; the friction-model repo is a fork of someone else's 2023 code. No leak of Origin's stack.
+- **It confirms the hiring profile:** Origin hired a **sim-to-real engineer** (Isaac Lab, ACT / Diffusion Policy, teleop) in **Nov 2025**, the same month as the first NYC deployment. This matches the CAM "simulation-trained autonomy" and the job ads (S112).
+- **Talent signal:** Origin recruits mid-level robotics engineers from Indian robotics services firms (Techolution) and medtech robotics (SS Innovations). Same pool Ubanthu would hire from.
 
 **Team pattern `[INF]`:** software/AI founders with an Indian startup exit plus a precision-hardware engineer, Bengaluru-built. A close analogue to an Indian robotics team, and proof that such a team can raise US$20M from Accel for a US-first go-to-market.
 
@@ -203,6 +225,7 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 - [x] ~~Founder backgrounds~~: Perpule/Amazon, Eightfold AI, Morphle Labs (S110)
 - [ ] Indian entity: confirm "Artila Robotics Private Limited" on MCA (CIN, directors, date); Bengaluru headcount
 - [ ] Board composition (Vivin Hegde?)
+- [ ] Day Zero Ventures: cheque size into Origin; do they still invest in robotics (could be an investor for Ubanthu, or a conflict)?
 - [x] ~~Pricing model~~: subscription RaaS US$25–40k/month; deals US$2–2.5M (S113)
 - [ ] Named US contractors (which "two largest drywall finishing contractors"?)
 - [ ] Sathya's full name and title; plant location in Bengaluru (which SEZ?)
