@@ -68,12 +68,14 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 | **Plant** | **Bengaluru**: an **interim unit** now, then an **SEZ factory** (export-oriented; SEZ/EOU or MOOWR bonded filings). Plant Admin & HR role: "today there is a bare shed and a plan" |
 | **Capacity** | **19-person plant team building 3–5 robots a month, scaling to 20** |
 | **Exports** | Stores role packs "**finished robots and spares for export**". Finance role covers customs, letters of credit, FX, transfer pricing, FEMA/RBI, and export incentives (**RoDTEP, duty drawback, EPCG, PLI**) |
-| **Sourcing** | Motors, drivers, PCBs, connectors, harnesses, sensors, controllers, batteries from "**India, China, and other sourcing regions**"; Approved Vendor List with **3–5 vendors per critical BOM line** (Technical Sourcing Manager). LinkedIn post: "sourcing components across **three continents**" `[S111]` |
+| **Sourcing** | Inbound from **India, China, Taiwan, South-East Asia, the US and Europe** (Logistics & Freight Manager ad, new 24 Oct). Motors, drivers, PCBs, connectors, harnesses, sensors, controllers, batteries from "**India, China, and other sourcing regions**"; Approved Vendor List with **3–5 vendors per critical BOM line** (Technical Sourcing Manager). LinkedIn post: "sourcing components across **three continents**" `[S111]` |
 | **Plant org** | Supply Chain Lead & Plant Head → Plant Supervisor, Manufacturing Engineer, technicians (mechanical, embedded, IQC), stores, QA, logistics, sourcing. Technicians hired via ITIs and diploma colleges |
 | **Quality** | ISO 9001-style audits; incoming / in-process / end-of-line checks; HIL tests; mechanical validation for "construction-site abuse" |
 | **Compliance** | Regulatory program for **UL, CE, FCC**, IEC, ISO, OSHA, machinery and functional safety, EMC, radio. Hardware safety loop to **ISO 13849 / IEC 61508** |
 
 **Analysis `[INF]`:** the playbook is **Indian engineering and assembly cost + US pricing**. Robots are built in a duty-advantaged Bengaluru export zone and rented to US contractors at US$25–40k/month. This is the most direct template in the KB for an India-based robotics company selling abroad.
+
+**📋 Full job-board digest:** [jobs/origin-jobs-digest.md](jobs/origin-jobs-digest.md): all 41 roles seen (34 open on 24 Oct, 7 closed since 23 Oct, 1 new), synthesis table, per-role summaries and tools.
 
 ## Tech stack (from 40 job descriptions, Jul – Oct 2026) `[CC][S112]`
 
