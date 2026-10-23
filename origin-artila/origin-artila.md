@@ -32,6 +32,7 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 | **Strategic focus** | "Our priority is the buildout the US cannot afford to slow down: **data centres and power plants**" (Technical Program Manager ad, Oct 2026) `[CC][S112]`. Trades listed now include **painting** `[CC][S112][S113]`; long-term "entire interior build: HVAC, plumbing, drywall painting" `[3P][S113]` |
 | **Traction claims** | **100k+ sq ft completed; 5,000 hours worked**; "5× time saved", "300% margin expansion", "20% cost reduction" `[CC][S105]`; job ads say "**250%+** margin expansion" `[CC][S112]` (website 300%); "3× faster than humans" (Forbes headline, company claim; not independently confirmed) `[3P][S106]`. **6 robots operational** across US and Europe `[3P][S113]` |
 | **Target** | **150 robots deployed by end-2027** `[3P][S106]` |
+| **Forbes (15 Oct 2026)** | 3× speed is measured over a full shift incl. setup and tool changes; **one crew member operates the robot**; recognises 200 object types; **three-wheeled counterbalanced base**; 2027 roadmap: taping, board hanging, studs, drilling, conduit; margins 5–7% → 15–25% claimed. Summary: [2026-10-15_S120_forbes-koetsier-origin.md](2026-10-15_S120_forbes-koetsier-origin.md) `[3P][S120]` |
 | **Website** | https://origin.tech/ · sales@origin.tech · LinkedIn, X, YouTube linked from site |
 | **Folder** | [origin-artila/](./) |
 
@@ -47,7 +48,7 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 
 **Day Zero Ventures (per AI summary, mostly unverified)** `[UNV][S119]`: Bengaluru-based; invests at inception / pre-seed, before incorporation or product; cheques **up to US$1M**; bridges founders to US seed/Series A leads (e.g. Accel, Lightspeed, Together Fund); theses = physical intelligence (robotics for labour-constrained industries), applied AI, AI-native services. CB Insights confirms portfolio entries for **Origin (Mar 2025)** and **Zeno** (seed II, Sep 2024) `[3P][S119]`; Exponent Energy link **not** confirmed. *Relevance `[INF]`:* the "Day Zero → Accel" path is exactly what happened with Origin, and Day Zero is a **Bengaluru fund that already backs a mobile-manipulator company**. Worth knowing as a potential investor for Ubanthu (they like the thesis) and as a conflict risk (they back a similar robot).
 
-**Board:** an AI summary says Zacua partner **Vivin Hegde** joined the board `[UNV][S109]`. Press only quotes him as an investor `[3P][S106]`.
+**Board:** Zacua founding partner **Vivin Hegde has joined Origin's board** `[3P][S120]` (Forbes; confirms the earlier AI-summary claim S109).
 
 **`[CONFLICT]`:** Dealroom says "Accel's India fund is the only Indian entity on the cap table" `[3P][S113]`, but Unilazer Ventures (Ronnie Screwvala's fund) is usually described as Indian (general knowledge). Possibly invested through a non-Indian vehicle.
 
@@ -238,4 +239,4 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 - [ ] Read the Mint article (source of Dealroom's pricing figures) for detail
 - [ ] Any patents (Artila Robotics, Inc.; inventors Ghaturle / Daga / Makkar)?
 - [ ] Any signal of moving into facility cleaning / restrooms?
-- [ ] Read the Forbes piece ("This Robot Finishes Drywall 3X Faster Than Humans…") for more detail
+- [x] ~~Read the Forbes piece~~ (S120)

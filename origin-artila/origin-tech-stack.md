@@ -1,6 +1,6 @@
 # Origin OG-1: tech and hardware stack
 
-[← Origin profile](origin-artila.md) · [Job-board digest](jobs/origin-jobs-digest.md) · **Last updated:** 2026-10-24
+[← Origin profile](origin-artila.md) · [Job-board digest](jobs/origin-jobs-digest.md) · **Last updated:** 2026-10-24 (arm identified as UR; video benchmark table; base analysis; Forbes S120)
 
 **How this was built:** every hardware/software statement in Origin's **41 job ads** (S112, Jul – Oct 2026) was extracted and grouped by subsystem, then combined with photos (S107, S111, S115) and the product page (S105). Job-ad text is a company statement `[CC]`; photo readings are `[V]` or `[INF]`. **Brand names of parts are almost never given in ads**, so most components below are "what kind", not "which supplier".
 
@@ -10,9 +10,9 @@
 
 | Subsystem | What we know | Supplier / brand | Confidence |
 |---|---|---|---|
-| **Arm** | 6-DOF manipulator. "Multi-axis robotic arm structure" is a mechanical-team subsystem; apprentices assemble "manipulator joints"; force/**impedance** control | **Nov 2025: Universal Robots** (blue e-Series cap) `[V][S115]` · **2026 V3: unknown** (no blue caps; UR20/30, re-housed or own) | Brand ✅ (2025) / ❓ (2026) |
+| **Arm** | 6-DOF manipulator, force/**impedance** control | **Universal Robots in both generations.** Nov 2025: blue e-Series caps `[V][S115]`. **2026 OG-1: black joint caps with embossed UR logo + faceted UR base** `[V][S123]`; size fits the **1300 mm-reach class → most likely UR15**, alternative UR10e/UR12e with black caps (see §0) | Brand ✅ / model: UR15 likely `[INF]` |
 | **Lift column** | Separate subsystem ("the lift column"); gives the **14 ft reach**; cable carrier visible down its side | Unknown (in-house design per ads) | Named subsystem ✅ |
-| **Mobile base** | "**Heavy-duty mobile base chassis**", **drivetrain**, belts and bearings; wheel odometry; 30 × 35 in footprint | In-house design; drive type not stated | ✅ |
+| **Mobile base** | **Three-wheeled, counterbalanced** base `[3P][S120]`; "heavy-duty mobile base chassis", drivetrain, belts and bearings; wheel odometry; 30 × 35 in | **In-house design** (prototype built from aluminium extrusion, S122; job ads; non-standard 3-wheel layout) | ✅ in-house `[INF]` |
 | **End effectors / tools** | "**Robotic power tools**" (sprayer, sander, primer/paint); **dust-extraction nozzle**; swappable tool station + swappable end effector; vacuum-captured sanding | Own designs; sander head looks Mirka-like `[INF]` | ✅ / brand ❓ |
 | **Compute** | **Dual NVIDIA Jetson AGX Orin** on the robot | NVIDIA | ✅ `[CC]` |
 | **Sensors** | **LiDAR + stereo + RGB / RGB-D + IMU + wheel odometry**; F/T sensing on end-of-arm tooling; encoders; thermal sensors on power | Brands not named | ✅ types / ❓ brands |
@@ -26,6 +26,71 @@
 | **Fleet / cloud** | Robot-to-cloud + inter-robot networking; **DDS vs MQTT**; Docker; fleet diagnostics; **AWS / GCP** | — | ✅ |
 | **Operator app** | **Native Android app (Kotlin, Jetpack Compose, Room)** that operators use to control robots on site; **FastAPI** backend; REST + WebSocket telemetry; PostgreSQL / SQLite; React dashboards | — | ✅ |
 | **Manufacturing** | CNC-machined, sheet-metal and welded parts; hand-built harnesses; PCBA integration; IP-rated enclosures (aluminium, composites, polymers, coated steel) | India / China / Taiwan / SEA / US / Europe sourcing | ✅ |
+
+---
+
+## 0. Arm identification (2026 OG-1) `[V][S123]` + `[INF]`
+
+<img src="screenshots/2026-10_og1-arm-zoom_UR-logo-caps.jpg" width="420">
+
+**Visible in the official product photo (S123):**
+- **Black joint caps with the embossed interlocking "UR" logo** (shoulder and elbow), several screws around the rim.
+- **Silver aluminium links**, black separator rings, a **faceted/sculpted silver base**, and UR-style product labels on the upper arm.
+- Origin's additions: "ORIGIN" lettering on the forearm, black cable clamps, a small sensor/connector block on the shoulder.
+
+So the **brand is Universal Robots** in 2026 as in Nov 2025. Black caps and the faceted base match UR's **newer-generation design** (UR15 / UR20 / UR30), not the light-blue e-Series caps of the Nov 2025 robot (general knowledge, medium confidence).
+
+**Size check against UR datasheets** (scale from the 30-in robot width in the photo; ±15%, perspective not corrected):
+
+| Measure (photo) | Estimate | UR5e | UR10e / UR12e | **UR15** | UR16e | UR20 | UR30 |
+|---|---|---|---|---|---|---|---|
+| Base diameter | ~190–220 mm | 149 mm | 190 mm | **204 mm** | 190 mm | ~245 mm | ~245 mm |
+| Upper arm length | ~600–650 mm | 425 mm | 613 mm | similar to UR10e (1300 mm reach) | 478 mm | 862 mm | — |
+| Forearm length | ~560–590 mm | 392 mm | 572 mm | similar | 360 mm | 728 mm | — |
+| Upper-arm / forearm ratio | ~1.1 | 1.08 | 1.07 | ~1.1 | **1.33** | 1.18 | — |
+| Reach | — | 850 mm | 1300 mm | **1300 mm** | 900 mm | 1750 mm | 1300 mm (very thick links) |
+| Payload | — | 5 kg | 12.5 kg | **15 kg** (17.5 kg extended) | 16 kg | 20 kg | 30 kg |
+
+**Verdict:** a **1300 mm-reach UR**. **UR15** is the best fit (black-cap new design + Ø204 mm base + 1300 mm reach; 40.7 kg arm). **UR10e/UR12e** fits the geometry but normally has light-blue caps. **Ruled out:** UR5e (too small), **UR16e (Gemini's suggestion: forearm far too short)**, UR20 (too long), UR30 (links far too thick).
+- Gemini's claim that drywall tools weigh "6–9 kg" is unsourced. A 12.5–15 kg payload arm does leave room for a sander plus vacuum hose plus spray tooling.
+- **To settle UR15 vs UR10e:** a close-up of the base connector or the wrist (UR15 has a slimmer new-generation wrist), or any Origin video showing the teach pendant / PolyScope X.
+
+**Also visible on OG-1 (S123):** black "head" with **two white discs** (lights or ultrasonic sensors) and a **central camera**; **dome sensor** on the arm-base block (possibly a small LiDAR); red e-stop; hazard stripes; **rear tool tray**; **fire extinguisher** clipped at the back; a visible caster (three-wheeled base per S120); orbital sander head with vacuum hose.
+
+## 0b. Off-the-shelf baselines vs Origin's own models (YouTube, 11 Oct 2026) `[CC][S121]`
+
+Origin's two "Autonomy Stack" videos compare its models with standard open-source/commercial tools. **The baselines show what they started from** (your theory: prototype on the standard stack, then replace each layer with fine-tuned models). Results are Origin's own demos `[CC]`.
+
+| Layer | Off-the-shelf baseline | What it is (general knowledge) | Origin's version / claimed result | Where |
+|---|---|---|---|---|
+| **Navigation: constrained spaces** | **Vanilla MPPI** | Model Predictive Path Integral controller, the standard local planner in **ROS 2 Nav2** | Origin model fits OG-1 through narrow corridors between partition walls where vanilla MPPI gets stuck/oscillates (Isaac-style sim, top view) | Action Expert video 0:02 |
+| **Navigation: dynamic obstacles** | (same MPPI baseline) | — | Avoids a moving obstacle in an open room | 0:15 |
+| **Manipulation policy** | **π0** (Physical Intelligence VLA) | Open robot foundation model (vision-language-action) | "**100% coverage vs limited VLA performance**"; "**100% corners coverage vs VLA collision**" (sim, OG-1 lift + arm at a wall) | 0:29 |
+| **Motion planning speed** | **cuMotion** (NVIDIA Isaac ROS, GPU motion planner) | GPU-accelerated collision-free planner for arms | "Speed comparison": Origin's model reaches wall poses faster in sim | 0:46 |
+| **Room / surface segmentation** | **SAM3** (Meta Segment Anything 3) | General open-vocabulary segmentation | Custom model labels **construction classes**: window, outlet, electrical outlet, screw, **L4 horizontal seam, L4 vertical seam, ceiling L4 seam**, drywall, frame for door, floor, ceiling. SAM3 only finds coarse regions | Reasoning Layer video 0:02 |
+| ⭐ **Quality model** | **ChatGPT and Gemini** (general VLMs) | General multimodal LLMs | "**Foundational Quality Model**: heatmap accuracy on sanded drywall surface". Origin outputs a graded **defect heatmap**; ChatGPT marks the whole surface fine (all green); Gemini flags large blobs | 0:18 |
+| **Depth** | **DA-V3** (Depth Anything V3, "SOTA") | Monocular depth foundation model | Per-frame MAE shown, e.g. **Origin 0.025 m vs DA-V3 0.079 m**; 0.215 vs 0.683 m; 0.135 vs 0.307 m | 0:28 |
+| **Safety: human detection** | **Pretrained YOLO26s** (Ultralytics) | Standard real-time detector | Fine-tuned model finds people on cluttered sites that the pretrained model misses (e.g. "1 people, 1 missed" → "2 people") | 0:42 |
+
+**What this tells us `[INF]`:**
+- **Their base stack = ROS 2 Nav2 (MPPI) + NVIDIA Isaac ROS (cuMotion) + Isaac Sim + open foundation models (π0, SAM3, Depth Anything, YOLO).** Everything in the left column is free or near-free; the right column is their moat.
+- **Your theory holds:** build on the standard stack, then **fine-tune or replace each layer with construction-specific data**. The depth frames include a real earlier robot (black frame, battery box, blue pump unit, red parts: likely a spray rig) `[V][S121]`.
+- ⭐ **The "Foundational Quality Model" is the direct analogue of Ubanthu's contamination heatmap**: a per-pixel quality map on a reflective, low-texture surface, benchmarked against ChatGPT/Gemini. Our pitch should include the same kind of side-by-side (our contamination model vs GPT/Gemini/SAM on restroom images).
+- Videos are simulation for navigation/manipulation and real footage for perception.
+
+## 0c. Did they build the base themselves? `[INF]`
+
+| Evidence | What it shows | Source |
+|---|---|---|
+| Prototype photos (LinkedIn) | Early AMR built from **aluminium extrusion**, exposed wiring, batteries, red e-stop, small wheels/casters; someone standing on it as a **load test** in their office | S122 |
+| Forbes | OG-1 has a **three-wheeled, counterbalanced** base, designed "backward from the job" | S120 |
+| Job ads | "**heavy-duty mobile base chassis**", "drivetrain", "assemble drivetrains … chassis", belt tension, custom BMS / inverters | S112 |
+| Product photo | Custom-styled silver/black body with Origin logo, own head module, rear tool tray | S123 |
+| Arm | **Bought** (Universal Robots) | S115, S123 |
+
+**Verdict:** the **base, lift and body are designed in-house** (from extrusion prototype to production chassis); the **arm is bought from UR**; motors, wheels, sensors and compute are bought parts. A three-wheeled counterbalanced layout is not a standard catalogue AMR, which supports in-house design.
+
+<img src="screenshots/2025_prototype-amr-extrusion-frame_estop.png" width="420">
 
 ---
 
@@ -148,7 +213,8 @@
 
 ## Unknowns
 
-- [ ] Arm brand/model on V3 (and whether "manipulator joints" means their own actuators)
+- [x] ~~Arm brand~~: Universal Robots (2026 photo shows UR logo on black caps); model most likely UR15, check UR15 vs UR10e/UR12e
+- [ ] Whether "manipulator joints" in job ads means own actuators (lift/joint modules) or just UR maintenance
 - [ ] LiDAR and camera brands
 - [ ] Drive type (differential, mecanum, swerve?)
 - [ ] Battery capacity / runtime; inverter rating
