@@ -63,6 +63,23 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 - **Site types:** commercial offices, hotels, multifamily, **data centres**; first runs in New York `[UNV][S109]` (NY deployment Nov 2025 is on the company timeline `[CC][S105]`).
 - **Market claim:** drywall mudding/taping is "60–65% of interior finishing timelines" `[UNV][S109]`: no source given.
 
+## Revenue and profit (as of 2026-10-24)
+
+**No revenue, ARR or profit figure has been disclosed** in any source found: press release, media kit, Forbes, Dealroom/Mint, Inc42, Tracxn/Entrackr searches `[V]` (absence checked).
+
+| What we have | Value | Source |
+|---|---|---|
+| Price | **US$25–40k per robot per month** (RaaS) | `[3P][S113]` |
+| Average deal size | **US$2–2.5M** per contract (expected to rise to US$5–10M). Likely multi-robot / multi-month **contract value, not annual revenue** `[INF]` | `[3P][S113]` |
+| Robots working | **4 active** (website via Forbes) / **6 operational** (Dealroom) | S120, S113 |
+| Headcount | **~124** (Inc42 company page, LinkedIn-based; −5% in 90 days); Inc42 also labels the company "bootstrapped" (outdated) | `[3P][S128]` |
+
+**Estimate `[INF]`:** 4–6 robots × US$25–40k/month ≈ **US$100–240k per month**, i.e. an **annualised run-rate of roughly US$1.2–2.9M**, *if* every robot is billed full-time (pilots are often discounted or free, so actual revenue is probably lower).
+
+**Profit `[INF]`: almost certainly loss-making.** ~124 staff (mostly Bengaluru), a plant build-out, a fleet build of 80 robots planned in 12 months, and US$20M raised point to annual burn well above current revenue. Per-robot unit economics may be positive (US$300–480k/year rent per robot vs hardware likely well under US$150k), but the company overall is not.
+
+**How to get real numbers:** Indian subsidiary filings on MCA (via Tofler / Entrackr) once the FY2025-26 accounts are filed; check under the old name (10xConstruction) and "Artila Robotics Private Limited". The US parent (Delaware) files no public accounts; a Form D would show the raise only.
+
 ## Manufacturing & supply chain (job ads + LinkedIn post) `[CC][S111][S112]`
 
 | Item | Detail |
