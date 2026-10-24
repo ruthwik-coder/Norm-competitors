@@ -1,6 +1,6 @@
 # Nolon AI (Bengaluru): toilet-cleaning mobile manipulator (early stage)
 
-[← Back to master document](../COMPETITOR_INTELLIGENCE.md) · [Sources](../SOURCES.md) · **Last updated:** 2026-10-25 (Vijeth Rai site + repo; Raushan Kumar now at XP Robotics)
+[← Back to master document](../COMPETITOR_INTELLIGENCE.md) · [Sources](../SOURCES.md) · **Last updated:** 2026-10-25 (pitch deck Jul 2025 added)
 
 Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` inferred · `[UNV]` unverified · `[CONFLICT]` · `[INT]` internal observation / opinion from our team.
 
@@ -25,6 +25,73 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 | **Website** | https://nolon.ai (React single-page app; text extracted from the JS bundle) · hello@nolon.ai (company address) |
 | **Funding** | None found `[V]` (absence checked: web search, LinkedIn) |
 | **Folder** | [nolon/](./) |
+
+## Pitch deck (Jul 2025) `[CC][S140]`
+
+**File:** `nolon/pdf-ai-solutions-for-cleaning-tasks_compress.pdf`. 17 pages, made in Canva, PDF author "**R. Sathya Narayanan**", created **6 Jul 2025**. Kept **local only** (gitignored, with page images in `nolon/deck_pages/`) because it is a private fundraising deck containing a phone number. Tagline: "**Vertical Embodied AI Agents**". All figures are company claims.
+
+| Slide | Content |
+|---|---|
+| Vision / mission | "Give physical form to AI…"; "leverage AI to solve for repetitive, mundane tasks in the physical world, at scale"; "vertical embodied AI agents … **starting with cleaning services**" |
+| Why embodied AI | Analogy: draft animals → steam → IC engine leads to horizontal (cars) and vertical (industrial vehicles) markets; same for robots (control systems → transformers → compute). Nolon = **vertical** embodied AI |
+| Problem | Global cleaning services US$445B (2025) → US$617B (2030), 6.9% CAGR (Grand View Research). **Washroom cleaning in commercial spaces**: labour shortage, unpredictable service (immigration policy), "dignity of work" |
+| Solution | "**Autonomous AI robots for cleaning washrooms in commercial spaces**": end-to-end cleaning; autonomous, AI-driven; **no setup change** |
+| Why now | Lighter pre-trained models for on-device/cloud; cheaper edge compute; US labour shortage and immigration uncertainty |
+| **Product roadmap** | **MVP Sept '25** (< 3 months) → **V1 Mar '26** (8–10 months, "pilot-ready") → **V2 Dec '26** (< 18 months, "revenue ready"). Pictures are AI-generated sketches/renders; the V2 render shows a grey box robot labelled "NOLON AI" with a **UR-style arm (light-blue caps)**, a touchscreen and a round scrub head |
+| **Feature roadmap + BOM** | See table below |
+| **Competitor analysis** | See table below; also "**Peppermint, PAL Robotics, Jingwa robotics** have all tried or are trying" |
+| **"Why nolon?"** | (1) **Faster floor cleaning: a "viper" (squeegee/wiper) at the base like a vacuum cleaner**; (2) faster arm operations via **edge computing** on the device instead of the cloud; (3) **"Mimic human cleaning. [Refrain from steam cleaning, which can be power guzzling]"** (a direct dig at Hivebotics); (4) **swappable batteries** |
+| Target market | **B2B: facility-management service providers and system integrators** that "operate in **California, New York & Texas**"; offices, hospitals, convention centres, factories ("larger washrooms & more frequent cleaning"). US janitorial services US$83B (Grand View Research) |
+| Future roadmap | Three axes: **use case** (washroom cleaning → more), **geography** (US → EU → Asia), **channel** (FMS → …). "Solving for both robotic arm & autonomous navigation" |
+| Team | CEO Sathya, CTO Raushan (bios below); core team **Vijeth Rai** (PhD robotics), **Sagar Saravanan** (hardware consultant); mentors **Rajagopal N** (CEO, Xook) and **Shlok Sobti** (roboticist in US startups) |
+| Contact | hello@nolon.ai; Bangalore, India (phone number on slide not recorded) |
+
+### Feature roadmap and BOM cost (deck slide 9) `[CC][S140]`
+
+| Version | Date | Seat clean | Commode clean | Tool change | Wash-area clean | Navigation | Docking | **BOM cost** |
+|---|---|---|---|---|---|---|---|---|
+| **MVP** | Aug '25 | ✓ | — | — | — | Manual | Manual | **US$38K** |
+| **V1-A** | Mar '26 | ✓ | ✓ | — | Less coverage | Manual | Manual | **US$48K** (V1) |
+| **V1-B** | Jun '26 | ✓ | ✓ | **✓** | Less coverage | Manual | Manual | |
+| **V2-A** | Sep '26 | ✓ | ✓ | ✓ | Improved coverage | **Autonomous** | Manual | **US$32K** (V2) |
+| **V2-B** | Dec '26 | ✓ | ✓ | ✓ | Improved coverage | Autonomous | Manual | |
+
+**Components pictured on the BOM slide** (identified from product images) `[V]` + `[INF]`:
+
+| Image | Likely part |
+|---|---|
+| Silver/black stereo camera bar | **Intel RealSense** D435/D455 depth camera |
+| Black-and-silver finned cylinder | A **3D LiDAR** (brand not readable) |
+| Transparent chassis with gearbox | A **differential-drive base kit** |
+| Arm with light-blue caps + tablet with red e-stop | **Universal Robots** arm + **UR teach pendant** |
+| Red/white unit labelled "**SPOD**" / "**Invento**" | **Invento Robotics** product (Raushan's former employer); possibly used as the base or reference platform |
+| Black battery labelled "**ADIRATH**" | Li-ion battery pack (Indian brand) |
+| Fanless black box | Industrial mini PC (edge compute) |
+| Board labelled "**ODrive**" | **ODrive** BLDC motor controller |
+| Brush heads | Cleaning tools (toilet brush / handheld scrubber) |
+
+**Analysis `[INF]`:** their BOM (US$32–48K) sits in the same range as Hivebotics' per-robot cost (our estimate ~US$49K; their own model US$53.7K yr 1 → 24.4K yr 5). The UR arm alone explains much of it. The plan put **tool change only in V1-B (Jun '26)** and **autonomous navigation only in V2 (Sep '26)**; the MVP was a **manually driven, seat-cleaning-only** robot.
+
+### Their view of the competition (deck slide 10) `[CC][S140]`
+
+| Competitor | Inception | Funds raised | Pricing | Revenue stage |
+|---|---|---|---|---|
+| Somatic | 2018 | US$20M+ | US$4,500/month | **~US$1M ARR** |
+| Hivebotics | 2020 | US$3.5–6M | ~US$2,500/month | Pilot stage |
+| Primech AI | 2021 | US$10M+ | ~US$1,500/month | Pilot stage |
+| Loki Robotics | 2024 | US$1.6M | — | Product development |
+
+*New to our KB: **Somatic ~US$1M ARR** (Nolon's claim, unsourced; added to the Somatic profile as `[UNV]`). Other figures broadly match ours (Hivebotics RaaS US$2K in its own deck; Primech US$1.8K).*
+
+### Plan vs reality `[INF]`
+
+| Deck promise (Jul 2025) | What the evidence shows (Oct 2026) |
+|---|---|
+| MVP by Sept '25 | Only simulations (Aug 2025) and a fixed AUBO arm on a sink (2024). No mobile MVP seen |
+| V1 pilot-ready Mar '26 | No sign; website frozen since Aug 2025 |
+| V2 revenue-ready Dec '26 | CEO at Origin, CTO co-founded XP Robotics |
+
+Most likely the pre-seed raise did not close and the team moved on (the CEO to his former Perpule colleague's company, Origin). Not proven.
 
 ## Development timeline (what exists, and when) `[V]` + `[INF]`
 
@@ -67,9 +134,12 @@ Source: public repo **[aayush-rath/Nolon-simulation-stack](https://github.com/aa
 
 | Photo | Name | Role | Background | Links | Sources |
 |---|---|---|---|---|---|
-| <img src="people/sathya-narayanan.png" width="60"> | **Sathya Narayanan R** | **CEO**, Nolon ("Global Supply Chain"; "Global Supply Chain expert") | LinkedIn headline: "**Physical AI, Origin \| Forbes 30 under 30, 2018**"; Greater Bengaluru; Visvesvaraya Technological University (VTU). Likely the Sathya Narayanan who co-founded **Cusmat Technologies** (Forbes 30 Under 30 **Asia** 2018, Industry/Manufacturing) `[3P][S134]`, not yet confirmed | [LinkedIn](https://www.linkedin.com/in/sathya-narayanan-r-3aa21479/) | S129, S131, S134 |
-| <img src="people/raushan-kumar.png" width="60"> | **Raushan Kumar** | **CTO**, Nolon ("Robotics Development") → **now co-founder, XP Robotics** (Bengaluru humanoids, "Gen Beta"; with founder Vineet Saraogi and Aryaman Saraogi). LinkedIn: "Building Xp", headline "Embodied Intelligence \| …" | "**Deployed 150+ robots**", "**ex-Samsung**, Alumni **IIIT**" `[CC][S129]`; IIIT (Bengaluru) per LinkedIn; ~7,000 followers; judge at Bharat1.ai Physical-AI hackathon (Oct 2026) `[3P][S138]` | [LinkedIn](https://www.linkedin.com/in/raushankumar586) | S129, S137, S138 |
+| <img src="people/sathya-narayanan.png" width="60"> | **Sathya Narayanan R** | **CEO**, Nolon ("Global Supply Chain"; "Global Supply Chain expert") | Deck: **MTech, mechanical engineer**; **"founding member at Perpule"** (the startup co-founded by **Origin CEO Yogesh Ghaturle**, sold to Amazon 2021); **Forbes 30 Under 30, 2018**; sales and ops across 10 countries; cleaned public toilets in a part-time job at Shell `[CC][S140]`. LinkedIn: "Physical AI, Origin \| Forbes 30 under 30, 2018"; VTU. *Earlier guess (Cusmat co-founder, S134) is probably wrong: the Forbes 2018 listing likely came via Perpule* `[INF]` | [LinkedIn](https://www.linkedin.com/in/sathya-narayanan-r-3aa21479/) | S129, S131, S134 |
+| <img src="people/raushan-kumar.png" width="60"> | **Raushan Kumar** | **CTO**, Nolon ("Robotics Development") → **now co-founder, XP Robotics** (Bengaluru humanoids, "Gen Beta"; with founder Vineet Saraogi and Aryaman Saraogi). LinkedIn: "Building Xp", headline "Embodied Intelligence \| …" | "**Deployed 150+ robots**", "**ex-Samsung**, Alumni **IIIT**" `[CC][S129]`. Deck: "built 150+ robots across my tenure at **Samsung & Invento Robotics**"; "built **cleaning robots at Samsung** & autonomous robots at Invento"; LLM systems, PCB design, ROS 2, Python, ML `[CC][S140]`. IIIT (Bengaluru) per LinkedIn; ~7,000 followers; judge at Bharat1.ai Physical-AI hackathon (Oct 2026) `[3P][S138]` | [LinkedIn](https://www.linkedin.com/in/raushankumar586) | S129, S137, S138 |
 | <img src="people/vijeth-rai.png" width="60"> | **Vijeth Rai, PhD** | **CRO** (likely Chief Robotics Officer `[INF]`), Nolon ("Vision & Robotic Arms"). Site: "currently focused on automating contact-rich real-world tasks, such as **washroom cleaning**" | **PhD Bio-Mechatronics, University of Washington** (VA Hospital; data-driven/LSTM prosthetic-leg control, 2014–2020); **MSc Controls & Robotics, CU Boulder**; **Technical Director, Symbionic Pvt Ltd** (myoelectric prosthetics, 2022–2025); research engineer at Northwestern / Rehabilitation Institute of Chicago (Center for Bionic Medicine; Argall Lab); Replicators project (Almende, NL). Built the **AUBO sink-scrubbing demos (2024)** and the **nolon_armcontrol** MoveIt cleaning tasks (2025) | [Site](https://vijethrai.github.io/) · [GitHub](https://github.com/vijethrai) · [LinkedIn](https://www.linkedin.com/in/vijethrai-1987/) · [Scholar](https://scholar.google.com/citations?user=6Tt7w70AAAAJ&hl=en) | S129, S135, S136 |
+| — | **Sagar Saravanan** | Core team, "hardware enthusiast (consultant)" | Not on file | — | S140 |
+| — | **Rajagopal N** | Mentor, "CEO, Xook" | Not on file | — | S140 |
+| — | **Shlok Sobti** | Mentor, "roboticist in US startups" | Not on file | — | S140 |
 | — | **Aayush Rath** | **Robotics Intern @ NOLON.AI (Jul – Sep 2025)**: simulations and planners for "autonomous toilet-cleaning robots" | B.Tech Naval Architecture/Ocean Engineering, **IIT Madras** (2024); Robotics Engineer, **Swaayatt Robots** (Aug 2024 – Jul 2025; perception/SLAM for autonomous driving); Formula Student (Team Raftar); research intern LBMC Lyon (2023); since Aug 2025 research intern at **IIIT Hyderabad RRC** (motion planning) | [GitHub](https://github.com/aayush-rath) · [site](https://aayush-rath.github.io/pages/resume.html) | S132, S133 |
 
 *Website: "The founding team with complementary expertise in robotics, business operations, and AI systems, backed by **industry-leading advisors**" (advisors not named) `[CC][S129]`. LinkedIn "People" tab (https://www.linkedin.com/company/nolon/people/) needs a login; not read.*
@@ -83,7 +153,8 @@ Source: public repo **[aayush-rath/Nolon-simulation-stack](https://github.com/aa
 | At Origin | Very likely the **"Sathya …" who posted Origin's 4 Oct 2026 hiring post**: same headline text ("Physical AI, Origin \| …") and the same profile photo (man standing beside a statue). In it he says he has spent "the last year" **building Origin's supply chain and deployment functions from the ground up** `[V][S111]` + match `[INF]` |
 | Location | Greater Bengaluru Area |
 | Education | Visvesvaraya Technological University (degree not visible) `[S131]` |
-| Recognition | "Forbes 30 under 30, 2018" (headline). A people aggregator lists a Sathya Narayanan, co-founder of **Cusmat Technologies**, on Forbes 30 Under 30 **Asia 2018** (Industry, Manufacturing & Energy) `[3P][S134]`: probably the same person, unconfirmed |
+| Recognition | "Forbes 30 under 30, 2018" (headline and deck). Deck says he was a **founding member at Perpule** `[CC][S140]`, so the Forbes listing was most likely Perpule-related `[INF]`. (An aggregator's Cusmat co-founder match, S134, is probably a different Sathya Narayanan) |
+| **Link to Origin** | ⭐ **Perpule**: Origin CEO Yogesh Ghaturle co-founded Perpule; Sathya was a founding member there. This explains why Sathya joined Origin `[INF]` from S140 + S110 |
 | Links | [LinkedIn](https://www.linkedin.com/in/sathya-narayanan-r-3aa21479/) |
 | Source | [S129] website; [S131] LinkedIn screenshot 2026-10-25; [S111] Origin hiring post |
 
@@ -96,6 +167,7 @@ Source: public repo **[aayush-rath/Nolon-simulation-stack](https://github.com/aa
 | Origin hiring post (4 Oct 2026) by "Sathya …", same headline and photo | He has led **Origin's supply chain and deployment** for ~a year (since ~late 2025) | S111 |
 | Nolon intern worked **Jul – Sep 2025**; repo last touched 30 Aug 2025 | Nolon was active until at least Sep 2025 | S132, S133 |
 | Nolon site footer "© 2024" | Site not updated recently `[INF]` | S129 |
+| Pitch deck: Sathya was a "**founding member at Perpule**" | He worked with Origin CEO Ghaturle before; explains the move to Origin | S140 |
 | CTO Raushan Kumar now **co-founder of XP Robotics** (humanoids) | The technical lead also left | S138 |
 
 **Not proven:** whether Origin **acquired or absorbed** Nolon, whether Nolon is **dormant**, or whether Sathya runs both. The timing (Nolon activity to ~Sep 2025, Origin role from ~late 2025) fits **"Nolon paused, CEO joined Origin"** `[INF]`. Both are Bengaluru physical-AI mobile-manipulator teams. **Watch item:** if Nolon's restroom work moved into Origin, Origin's "any interior trade" roadmap could include restrooms.
@@ -115,4 +187,5 @@ Source: public repo **[aayush-rath/Nolon-simulation-stack](https://github.com/aa
 - [ ] Is Vijeth still on washroom cleaning, and for whom? (Possible hire/advisor for Ubanthu)
 - [ ] Any real prototype photos or videos? Any pilots (New York?)
 - [ ] Advisors ("industry-leading advisors", unnamed)
-- [ ] Confirm Sathya Narayanan R = Cusmat co-founder (Forbes Asia 2018 list)
+- [x] ~~Sathya's Forbes 2018 listing~~: likely via Perpule (deck S140), not Cusmat
+- [ ] Did Nolon raise any money (pre-seed)? Did Invento Robotics supply hardware?

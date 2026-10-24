@@ -17,6 +17,7 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 | **Region** | **US** (traction geography "US") `[3P via Hivebotics][S075]` |
 | **Product** | Mobile manipulator for commercial restroom cleaning; model label "BCR-01"? (partly legible) `[INF]` from image |
 | **Cleaning tools** | Chemical water jet, blower, vacuum (no steam, no brush) `[S075]` |
+| **Revenue (claimed by a competitor)** | **~US$1M ARR**, "inception 2018", "US$20M+ raised", per **Nolon AI's pitch deck** (Jul 2025, competitor table; no source given) `[UNV][S140]` |
 | **Pricing** | **RaaS ~US$4,500/month**, the highest of the three in Hivebotics' comparison (Hivebotics US$2K, Primech US$1.8K) `[S075]` |
 | **Traction** | "10+ pilots" (as of Oct 2025) `[S075]` |
 | **Money** | "US$20+M" dollars spent per Hivebotics' p.9 table, **but** the PitchBook screenshot in the same deck (p.28) shows **US$7.51M raised to date** `[CONFLICT]` |
