@@ -1,10 +1,10 @@
 # Nolon AI (Bengaluru): toilet-cleaning mobile manipulator (early stage)
 
-[← Back to master document](../COMPETITOR_INTELLIGENCE.md) · [Sources](../SOURCES.md) · **Last updated:** 2026-10-25
+[← Back to master document](../COMPETITOR_INTELLIGENCE.md) · [Sources](../SOURCES.md) · **Last updated:** 2026-10-25 (Vijeth Rai site + repo; Raushan Kumar now at XP Robotics)
 
 Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` inferred · `[UNV]` unverified · `[CONFLICT]` · `[INT]` internal observation / opinion from our team.
 
-**Threat level:** 🟡 **Direct (same problem, same robot type, same city) but very early.** A Bengaluru startup building an **autonomous toilet-cleaning mobile manipulator**. Evidence is a 2025 **simulation stack** (MiR-style base + UFACTORY xArm6 + toilet brush + urinal nozzle) built by an intern; no real robot, customer or funding found. ⚠️ **Its CEO, Sathya Narayanan R, now works at Origin** (supply chain and deployment, S111/S131), so Nolon may be dormant or a side project `[INF]`.
+**Threat level:** 🟡 **Direct (same problem, same robot type, same city) but very early.** A Bengaluru startup building an **autonomous toilet-cleaning mobile manipulator**. Evidence: a **real 2024 demo** (AUBO arm scrubbing a washroom sink, S135) and **2025 simulation stacks** (S132, S136); no mobile robot hardware, customer or funding found. ⚠️ **The founding team has dispersed:** CEO **Sathya Narayanan R now at Origin** (supply chain and deployment, S111/S131), CTO **Raushan Kumar now co-founder of XP Robotics** (humanoids, S137/S138). **Nolon is very likely dormant** `[INF]`.
 
 <img src="screenshots/2025-08_github-nolon-bot_gazebo-render.png" width="420"> <img src="screenshots/2025-08_github-nolon-bot_isaac-sim-render.png" width="420">
 
@@ -24,6 +24,25 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 | **Website** | https://nolon.ai (React single-page app; text extracted from the JS bundle) · hello@nolon.ai (company address) |
 | **Funding** | None found `[V]` (absence checked: web search, LinkedIn) |
 | **Folder** | [nolon/](./) |
+
+## Development timeline (what exists, and when) `[V]` + `[INF]`
+
+| When | What | Hardware | Real or sim | Source |
+|---|---|---|---|---|
+| **2024** | "Contact-rich manipulation demos … for **real-world cleaning tasks**": position-control primitives in task-specific frames for **wiping and scrubbing under contact** (Vijeth Rai portfolio, "Date: 2024") | **AUBO 6-DoF cobot** (orange/black, AUBO logo on caps), fixed mount, **sponge scrubber** on the flange | **Real**: scrubbing a sink in an **Indian washroom** (health-faucet hose visible) | S135 |
+| 2024 | "Simulation pipelines for mobile manipulation … contact-heavy **cleaning tasks**" (ROS, MoveIt, Gazebo, Blender) | Mobile base + arm (portfolio image: arm on a small wheeled base next to a toilet and mirror) | Sim | S135 |
+| **Jul 2025** | Repo **`vijethrai/nolon_armcontrol`** ("code for arm control of nolon"): MoveIt Task Constructor pipeline: pick **spray nozzle** → spray the **mirror** corners → pick **brush** → horizontal **swipes row by row** → return tools; "toilet scene" with toilet, lid and mirror meshes | **Franka Emika Panda** (MoveIt demo model) on a **0.8 × 0.6 × 0.8 m box "AMR"** | Sim | S136 |
+| Aug 2025 | Same repo, branch `gz_mv_cleaning`: Gazebo + MoveIt integration, "simple swipe" node | Panda in Gazebo | Sim | S136 |
+| **Aug 2025** | Repo **`aayush-rath/Nolon-simulation-stack`** (intern): full robot description | **UFACTORY xArm6** on a **MiR-class AMR**, toilet brush, urinal nozzle, RealSense, LiDAR | Sim | S132 |
+| Oct 2026 | CTO's LinkedIn post shows a white 6/7-axis arm (silver joint bands, xArm-like) on a round white base with a PSU and e-stop | — | Real, but **probably XP Robotics' robot**, not Nolon's (he is now an XP Robotics co-founder) `[INF]` | S137 |
+
+**Answer to "why does Vijeth say 2024?"** `[INF]`: Nolon's own website footer says **"© 2024"** (S129), so 2024 is most likely **Nolon's own early work** (fixed AUBO arm on a real sink), before the mobile-robot sims of 2025. It need not be a different company. Vijeth's site lists his employer for 2022–2025 as **Symbionic Pvt Ltd** (prosthetics), and does not list Nolon at all, so the cleaning work may have been part-time or pre-incorporation. Not proven either way.
+
+<img src="screenshots/2024_vijeth-rai-site_aubo-sink-scrubbing_still.jpg" width="420">
+
+*AUBO arm with a sponge scrubbing a washroom sink, 2024 (video on Vijeth Rai's portfolio site) `[V][S135]`.*
+
+**Arm choices so far:** AUBO (real, 2024) → Franka Panda (sim, Jul 2025) → UFACTORY xArm6 (sim, Aug 2025). No sign they settled on one `[INF]`.
 
 ## Robot: Nolon Bot (simulation stack, Aug 2025) `[V][S132]`
 
@@ -48,8 +67,8 @@ Source: public repo **[aayush-rath/Nolon-simulation-stack](https://github.com/aa
 | Photo | Name | Role | Background | Links | Sources |
 |---|---|---|---|---|---|
 | <img src="people/sathya-narayanan.png" width="60"> | **Sathya Narayanan R** | **CEO**, Nolon ("Global Supply Chain"; "Global Supply Chain expert") | LinkedIn headline: "**Physical AI, Origin \| Forbes 30 under 30, 2018**"; Greater Bengaluru; Visvesvaraya Technological University (VTU). Likely the Sathya Narayanan who co-founded **Cusmat Technologies** (Forbes 30 Under 30 **Asia** 2018, Industry/Manufacturing) `[3P][S134]`, not yet confirmed | [LinkedIn](https://www.linkedin.com/in/sathya-narayanan-r-3aa21479/) | S129, S131, S134 |
-| <img src="people/raushan-kumar.png" width="60"> | **Raushan Kumar** | **CTO**, Nolon ("Robotics Development") | "**Deployed 150+ robots**", "**ex-Samsung**, Alumni **IIIT**" `[CC][S129]` | — | S129 |
-| <img src="people/vijeth-rai.png" width="60"> | **Vijeth Rai** | **CRO** (likely Chief Robotics Officer `[INF]`), Nolon ("Vision & Robotic Arms") | "**MS & PhD in Robotics**", "Vision, Robotic arms expert" `[CC][S129]` | — | S129 |
+| <img src="people/raushan-kumar.png" width="60"> | **Raushan Kumar** | **CTO**, Nolon ("Robotics Development") → **now co-founder, XP Robotics** (Bengaluru humanoids, "Gen Beta"; with founder Vineet Saraogi and Aryaman Saraogi). LinkedIn: "Building Xp", headline "Embodied Intelligence \| …" | "**Deployed 150+ robots**", "**ex-Samsung**, Alumni **IIIT**" `[CC][S129]`; IIIT (Bengaluru) per LinkedIn; ~7,000 followers; judge at Bharat1.ai Physical-AI hackathon (Oct 2026) `[3P][S138]` | [LinkedIn](https://www.linkedin.com/in/raushankumar586) | S129, S137, S138 |
+| <img src="people/vijeth-rai.png" width="60"> | **Vijeth Rai, PhD** | **CRO** (likely Chief Robotics Officer `[INF]`), Nolon ("Vision & Robotic Arms"). Site: "currently focused on automating contact-rich real-world tasks, such as **washroom cleaning**" | **PhD Bio-Mechatronics, University of Washington** (VA Hospital; data-driven/LSTM prosthetic-leg control, 2014–2020); **MSc Controls & Robotics, CU Boulder**; **Technical Director, Symbionic Pvt Ltd** (myoelectric prosthetics, 2022–2025); research engineer at Northwestern / Rehabilitation Institute of Chicago (Center for Bionic Medicine; Argall Lab); Replicators project (Almende, NL). Built the **AUBO sink-scrubbing demos (2024)** and the **nolon_armcontrol** MoveIt cleaning tasks (2025) | [Site](https://vijethrai.github.io/) · [GitHub](https://github.com/vijethrai) · [LinkedIn](https://www.linkedin.com/in/vijethrai-1987/) · [Scholar](https://scholar.google.com/citations?user=6Tt7w70AAAAJ&hl=en) | S129, S135, S136 |
 | — | **Aayush Rath** | **Robotics Intern @ NOLON.AI (Jul – Sep 2025)**: simulations and planners for "autonomous toilet-cleaning robots" | B.Tech Naval Architecture/Ocean Engineering, **IIT Madras** (2024); Robotics Engineer, **Swaayatt Robots** (Aug 2024 – Jul 2025; perception/SLAM for autonomous driving); Formula Student (Team Raftar); research intern LBMC Lyon (2023); since Aug 2025 research intern at **IIIT Hyderabad RRC** (motion planning) | [GitHub](https://github.com/aayush-rath) · [site](https://aayush-rath.github.io/pages/resume.html) | S132, S133 |
 
 *Website: "The founding team with complementary expertise in robotics, business operations, and AI systems, backed by **industry-leading advisors**" (advisors not named) `[CC][S129]`. LinkedIn "People" tab (https://www.linkedin.com/company/nolon/people/) needs a login; not read.*
@@ -76,6 +95,7 @@ Source: public repo **[aayush-rath/Nolon-simulation-stack](https://github.com/aa
 | Origin hiring post (4 Oct 2026) by "Sathya …", same headline and photo | He has led **Origin's supply chain and deployment** for ~a year (since ~late 2025) | S111 |
 | Nolon intern worked **Jul – Sep 2025**; repo last touched 30 Aug 2025 | Nolon was active until at least Sep 2025 | S132, S133 |
 | Nolon site footer "© 2024" | Site not updated recently `[INF]` | S129 |
+| CTO Raushan Kumar now **co-founder of XP Robotics** (humanoids) | The technical lead also left | S138 |
 
 **Not proven:** whether Origin **acquired or absorbed** Nolon, whether Nolon is **dormant**, or whether Sathya runs both. The timing (Nolon activity to ~Sep 2025, Origin role from ~late 2025) fits **"Nolon paused, CEO joined Origin"** `[INF]`. Both are Bengaluru physical-AI mobile-manipulator teams. **Watch item:** if Nolon's restroom work moved into Origin, Origin's "any interior trade" roadmap could include restrooms.
 
@@ -90,7 +110,8 @@ Source: public repo **[aayush-rath/Nolon-simulation-stack](https://github.com/aa
 
 - [ ] Is Nolon still operating? (MCA filing for a "Nolon"/"Nolon AI" private limited; LinkedIn people list; recent posts)
 - [ ] Origin–Nolon relationship: acqui-hire, merger, or Sathya moved alone?
-- [ ] Raushan Kumar and Vijeth Rai: LinkedIn profiles, where they are now
+- [x] ~~Where are they now~~: Raushan Kumar → XP Robotics co-founder (S138); Vijeth Rai: site still says "focused on … washroom cleaning" (updated Dec 2025), current employer not stated
+- [ ] Is Vijeth still on washroom cleaning, and for whom? (Possible hire/advisor for Ubanthu)
 - [ ] Any real prototype photos or videos? Any pilots (New York?)
 - [ ] Advisors ("industry-leading advisors", unnamed)
 - [ ] Confirm Sathya Narayanan R = Cusmat co-founder (Forbes Asia 2018 list)
