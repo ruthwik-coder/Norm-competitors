@@ -18,6 +18,7 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 | **Location** | **HSR Layout, Bengaluru South, Karnataka 560034** (LinkedIn company page) `[V][S130]` |
 | **Size** | **2–10 employees**; 195 LinkedIn followers; slogan "Autonomous AI robots for cleaning" `[V][S130]` |
 | **Founded** | Website footer "© 2024 nolon" `[V][S129]`; LinkedIn logo uploaded Jul 2025 `[INF]` |
+| **Website last updated** | **~21 Aug 2025, 12:35 UTC**: the Netlify host returns ETag `1755779746` on its 404 page, which is the deploy timestamp `[V][S139]` + `[INF]`. Headshot filenames: "raushan-headshot-**2025**", "sathya-headshot-**latest**". So the **team section has not changed since Aug 2025**, before Sathya's Origin role (~late 2025) and Raushan's move to XP Robotics. Wayback Machine: no snapshots (archive offline at time of check) |
 | **Positioning** | "An AI Robotics company solving repetitive & mundane physical tasks, at scale, across various industries"; "Physical AI robots for commercial automation. **We AUTOMATE so you can INNOVATE.**"; vision: "give physical form to AI" `[CC][S129]` |
 | **Product (as described by an intern)** | "**autonomous toilet-cleaning robots**", "delivering hygiene and efficiency beyond human capability" (Aayush Rath, Robotics Intern @ NOLON.AI, Jul – Sep 2025) `[3P][S133]` |
 | **Target market** | Demo-request form offers company sizes 50–500+ and a "primary location" list that includes **New York** `[V][S129]`, a hint at a US focus `[INF]` |
