@@ -22,3 +22,7 @@ origin-artila/Resume.pdf
 # Origin media kit (large videos/photos; summary + key frames stored instead)
 origin-artila/Media Kit-*/
 origin-artila/Media Kit-*.zip
+
+# Nolon: cloned third-party repo (301 MB) and CV with contact details - local only
+nolon/repos/
+nolon/CV__Main_.pdf

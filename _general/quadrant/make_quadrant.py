@@ -26,6 +26,7 @@ SCORES = [
     ('Senxeed WUUMIE',      3.9, 2.3, 'same',   -0.18, 0.00, 'left'),
     ('Amrita Sudha',        4.8, 1.3, 'same',   -0.18, 0.00, 'left'),
     ('Sketch Robotics',     5.6, 0.9, 'same',    0.18, 0.00, 'right'),
+    ('Nolon AI',            4.2, 0.7, 'same',   -0.18, 0.00, 'left'),
     ('Ubanthu',             6.6, 2.4, 'us',      0.20, 0.00, 'right'),
 ]
 
