@@ -63,6 +63,33 @@ All repos are **forks of hardware-driver repos**. Hivebotics' own robot code (e.
 | **Luxonis OAK-D S2 PoE** (auto-focus) | Their DepthAI fork wires `OAK-D-S2-POE.stl` into the robot URDF as `link_camera` (Arshad Khan, "changes to include this camera in hivebotics") `[V][S071]`. **The brochure's camera specs match it exactly** `[S072]`: stereo **OV9282 1280×800 @120 fps, global shutter, 89.5° DFOV**; colour **IMX378 4056×3040 @60 fps, rolling shutter, 78° DFOV** (78° = AF variant) | Dec 2025 – Jan 2026 | **Confirmed** (code + spec match) as the **Mk2 brochure's depth + RGB camera** |
 | **Orbbec Gemini 335Le** (Ethernet) | Named in Hivebotics' added `mode_config.yaml` ("setting these does nothing on gemini 335Le"); custom passive/active/adaptive stream modes to save bandwidth `[V][S071]` | Mar – Jul 2026 | **In use as of Jul 2026.** Possibly additional or replacing the OAK-D. Newer than the brochure |
 | **Intel RealSense D435i** | Robot description: `camera_name:='wrist_mounted'` on UF850's D435i macro `[V][S071]` | Jan 2026 | **Wrist camera in the robot model.** A real `/wrist_mounted_camera/color/image_raw` feed appears in the Oct 2025 investor deck screenshot (S075), so **a wrist camera exists on the real robot**; the model on hardware is unconfirmed |
+
+### Camera update, 29 Oct 2026 re-check `[V][S141]` + `[INF]`
+
+**Which depth camera now?** Most likely the **Orbbec Gemini 335Le**:
+- The **Luxonis (OAK-D) fork has had no commits since 25 Jan 2026**. The **Orbbec fork** got real feature work in **Jul 2026** ("add passive/active/adaptive publish modes for camera streams", merged 30 Jul by kendrickchin) and an update in Sep 2026.
+- The brochure (Mar 2026) still listed OAK-D specs because it was written from the earlier robot. No commit says the OAK-D was removed, so "replaced" is inferred, not proven.
+- No camera-related commits between 8 Oct and 29 Oct 2026 (newest work: e-stop recovery, F/T payload compensation, a Foxglove adapter).
+
+**Why switch? (inferred from specs, general knowledge)**
+
+| | Luxonis OAK-D S2 PoE | Orbbec Gemini 335Le |
+|---|---|---|
+| Depth method | **Passive stereo** (S2 has **no IR dot projector**; the "Pro" model has one) | **Active stereo**: IR projector adds texture |
+| Problem in restrooms | White ceramic, tiles and painted walls are **low-texture and shiny**, so passive stereo gives holes or noise in the depth image | Projected IR pattern gives depth on plain/shiny surfaces and in dim light |
+| Connection | Ethernet PoE | Ethernet (GigE), rugged (IP-rated) |
+| On-board AI | Yes (Myriad X VPU) | No (depth only); their AI runs on the robot PC |
+
+So the likely reason is **better depth on toilets, urinals and walls**. Peanut's CTO named reflective restroom surfaces as a core perception problem (S096/S097).
+
+**What the Orbbec change itself tells us:** the stream-mode feature lets each camera stream publish **only when needed, always, or at a low rate until enough consumers subscribe**. It is a **bandwidth/compute-saving** measure, consistent with **several cameras on one robot network** (Ethernet cameras + PC with an RTX A400).
+
+**Why more than one camera?** Two different jobs `[INF]`:
+1. **Body camera** (OAK-D → Gemini 335Le): sees the restroom and the fixture from a distance (navigation, fixture detection, Mask R-CNN segmentation).
+2. **Wrist camera** (RealSense D435i in the robot model; a real `/wrist_mounted_camera` feed in the Oct 2025 deck): close-up view from the arm for aligning tools and the **before/after stain check** (deck p.10 shows the wrist feed in MoveIt Pro).
+
+**New activity (Oct 2026):** `xarm_ros2` branch `fix-hold-pose-after-recover` by **Vishalsub** (23 Oct: "keep motion off and pose valid through e-stop so recover cannot servo zeros"); `test-in-sim-peera` (28 Oct, F/T payload compensation); new fork **`foxglove-ros-adapter`** (Dmitri Manajev, 28–29 Oct): **Foxglove** web visualisation/teleop for ROS (general knowledge).
+
 | YDLIDAR (2D) | Fork with no own commits | 2024 | Weak: older prototype? |
 
 Not visible on GitHub: the **3D LiDAR** (Livox Mid-360 per brochure, S061). There's no Livox driver fork; they may use upstream `livox_ros_driver2` unmodified `[INF]`.
