@@ -109,6 +109,8 @@ Hivebotics' YouTube playlist has 24 videos from **Nov 2021 to Aug 2026** (protot
 
 <img src="screenshots/2024-11-09_yt-abluo-teaser_realsense-d415-on-wrist.jpg" width="360"> <img src="screenshots/2025_abluo-mark1_wrist-camera-white-housing.jpg" width="300">
 
+**⚠️ Correction (29 Oct 2026, Vishal):** all camera changes visible in photos/videos are **on the wrist**; **no body camera has been seen** on the prototype, Mark 1 or Mark 2. The only body sensor seen is the **Livox Mid-360 at the bottom**. So the "body camera" labels above are **not supported**. Better reading `[INF]`: a **single wrist depth camera swapped over time** (RealSense D415-type → RealSense D435i in UFACTORY stand → OAK-D S2 PoE → Orbbec Gemini 335Le), with **LiDAR doing navigation**. The Orbbec stream-mode (bandwidth-saving) work does not require several cameras. Still open: whether a second camera sits hidden in the body.
+
 **Direct evidence links (verified 29 Oct 2026):**
 - **Luxonis OAK-D S2 PoE:** commit "changes to include this camera in hivebotics" (Arshad Khan, 28 Dec 2025): https://github.com/hivebotics/depthai-ros/commit/32b74a06f6b1102697fce02cdf1b432c73b09408 · the line loading `OAK-D-S2-POE.stl` as `link_camera`: https://github.com/hivebotics/depthai-ros/blob/hivebotics-humble/depthai_descriptions/urdf/include/base_macro.urdf.xacro#L63
 - **Orbbec Gemini 335Le:** the config line naming the camera ("…does nothing on gemini 335Le…"): https://github.com/hivebotics/OrbbecSDK_ROS2/blob/641dbf7a67caa7c410d8cecfea28e4e3c1123a74/orbbec_camera/config/mode_config.yaml#L15 · pull request #1 (merged 30 Jul 2026): https://github.com/hivebotics/OrbbecSDK_ROS2/pull/1
