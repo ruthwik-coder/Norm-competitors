@@ -60,23 +60,25 @@ Tags: `[V]` verified · `[3P]` third-party · `[CC]` company claim · `[INF]` in
 
 **Deep dive:** [Series A deck deep dive](hivebotics-series-a-deck.md) (Oct 2025: validation method, pricing, unit cost, pipeline, partners, distributors, exit plans) · [Abluo Mark 2 specs and hardware identification](hivebotics-abluo-mk2-specs.md) (brochure, March 2026) · [Patent WO 2023/075687 (NUS, ceased): 2021–22 prototype](hivebotics-patent-WO2023075687.md) · [GitHub: what the code reveals](hivebotics-github.md)
 
-**Hardware supplier summary (as of 2026-10-08):**
+**Hardware supplier summary (updated 2026-10-29):**
 
 | Component | Supplier / model | Status | Source |
 |---|---|---|---|
 | **Robot arm** | **UFACTORY 850** (UFACTORY, China) | **Confirmed:** brochure specs match (S061/S063) **and** Hivebotics' GitHub edits UF850-specific config, URDF and meshes in UFACTORY's `xarm_ros2` driver (S071) | `[V][S071]` + `[S061][S063]` |
 | **Force/torque sensor** | Likely **UFACTORY 6-axis F/T sensor** | Code enables UFACTORY FT-sensor API calls "for real-hardware FT streaming" (Aug 2026) `[INF]` | `[S071]` |
-| **3D LiDAR** | **Livox Mid-360** (Livox, DJI-affiliated, China) | **Identified, high confidence:** all 6 brochure specs match, incl. the distinctive 360° × 59° FOV; **also seen on the robot in the Nov 2024 teaser video** (image match) | `[CC][S061]` + `[S063]` + `[S142]` |
+| **3D LiDAR** | **Livox Mid-360** (Livox, DJI-affiliated, China) | **Near-confirmed:** all 6 brochure specs match (incl. the distinctive 360° × 59° FOV) **and** the sensor is **seen on the robot** in the Nov 2024 teaser video (image match) | `[CC][S061]` + `[S063]` + `[V][S142]` |
 | **Compute** | **AMD Ryzen Embedded 8845HS + NVIDIA RTX A400** | **Named in brochure** | `[CC][S061]` |
-| **Depth + RGB camera** (brochure) | **Luxonis OAK-D S2 PoE** (auto-focus) | **Confirmed:** model file wired into Hivebotics' URDF (S071) **and** brochure specs match exactly: OV9282 1280×800 @120 fps GS 89.5°; IMX378 4056×3040 @60 fps 78° (S072) | `[V][S071][S072]` |
-| **Depth camera** (newer) | **Orbbec Gemini 335Le** | Named in Hivebotics' Orbbec driver config (Jul 2026). **Most likely the current body camera** (OAK-D fork idle since Jan 2026; Orbbec fork developed Jul–Sep 2026). Likely reason: active stereo works on white/shiny restroom surfaces where the OAK-D S2's passive stereo struggles `[INF]`. See [GitHub file §4](hivebotics-github.md) | `[V][S071][S141]` |
-| Wrist camera | **Changed across versions:** RealSense **D415-type** on the 2024 prototype (teaser video); a **white-housed** wrist camera on Mark 1; **black** camera on Mark 2 (likely Orbbec Gemini 335Le). Code: **Intel RealSense D435i** (in robot description) | `wrist_mounted` D435i in arm URDF (Jan 2026) `[S071]`; **real wrist-camera feed (`/wrist_mounted_camera/color/image_raw`) shown in deck screenshot**, so it exists on real hardware. Model on the real robot not proven | `[V][S071][S075]` |
+| **Body depth + RGB camera, 2025–early 2026** | **Luxonis OAK-D S2 PoE** (auto-focus; one device = stereo depth pair + colour sensor) | **Confirmed:** model file wired into their robot description, 28 Dec 2025 ([commit](https://github.com/hivebotics/depthai-ros/commit/32b74a06f6b1102697fce02cdf1b432c73b09408)) **and** brochure (Mar 2026) specs match exactly. Code untouched since 25 Jan 2026 | `[V][S071][S072][S141]` |
+| **Body depth camera, 2026 (current, most likely)** | **Orbbec Gemini 335Le** (active stereo, Ethernet) | Named in their Orbbec driver config ([line](https://github.com/hivebotics/OrbbecSDK_ROS2/blob/641dbf7a67caa7c410d8cecfea28e4e3c1123a74/orbbec_camera/config/mode_config.yaml#L15)); stream-mode feature merged 30 Jul 2026 ([PR #1](https://github.com/hivebotics/OrbbecSDK_ROS2/pull/1)). Mark 2 shows a black camera (Vishal). Likely reason for the switch: active stereo works on white/shiny restroom surfaces where the OAK-D S2's passive stereo struggles `[INF]`. Mount position on the robot not visible in any photo | `[V][S071][S141]` + `[INT][S142]` |
+| **Wrist camera** | **Intel RealSense** in **UFACTORY's RealSense camera stand**: **D415-type** on the 2024 prototype (teaser video); **D435i** in code from Jan 2026 ([commit](https://github.com/hivebotics/xarm_ros2/commit/c9b7b0cd8412747d80d8a522328196619812bdc8), camera named `wrist_mounted`); Mark 1 shows the **white UFACTORY stand** (image match by Vishal). Real wrist-camera feed shown in the Oct 2025 deck | `[V][S071][S075]` + `[INT][S142]` |
 | **Cleaning tools** | **Kärcher** (steam, vacuum, floor nozzle); "MOU partner and supplier for integration of Kärcher equipment" | **Named** in Series A deck | `[CC][S075]` |
 | **Steam + vacuum unit** | **Kärcher SGV 8/5** (candidate) | **Inferred from spec match:** brochure steam 3/5/8 bar, max 173 °C = SGV 8/5 datasheet (8 bar max, boiler 173 °C max). Could be the full unit or only its boiler. Retail ~US$4.9–6.3k | `[INF][S061][S104]` |
 | **Motion planning / arm control** | **PickNik MoveIt Pro** ("key R&D partner for robot arm control") | **Named** in deck + MoveIt Pro UI screenshot (S075); MoveIt Pro 9 build on GitHub (S071) | `[V][S075][S071]` |
 | **Fleet management** | **Formant** | **Named** in deck (p.19) | `[CC][S075]` |
 | **Fixture perception** | **Mask R-CNN** segmentation | Topic name in deck screenshot | `[V][S075]` |
 | Mobile base | **Mecanum** drive (custom; ros2_control) | Commits: "added joint_velocity_cotnroller as mecanum won;t work" (sic); "added extra joints for wheel". Supplier unidentified | `[V][S071]`, `[S061]` |
+| **Remote visualisation / teleop** | **Foxglove** (ROS web dashboard) | New fork `foxglove-ros-adapter`, 28–29 Oct 2026 (Dmitri Manajev) `[INF]` that they connect robots to Foxglove for monitoring | `[V][S141]` |
+| **Safety (software)** | E-stop recovery handling in arm control | Branch `fix-hold-pose-after-recover` (23 Oct 2026): keeps the arm still and its pose valid through an e-stop | `[V][S141]` |
 
 
 **From the Series A release** `[CC][S056]`:
