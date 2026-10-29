@@ -94,6 +94,21 @@ So the likely reason is **better depth on toilets, urinals and walls**. Peanut's
 - **RealSense D435i (wrist):** `add_realsense_d435i` is **UFACTORY's own built-in option** in `xarm_ros2` (default off) for its wrist-camera kit. Hivebotics only renamed the camera to `wrist_mounted`. The deck photo (Oct 2025) shows a **slim bar camera on the wrist**, consistent with UFACTORY's RealSense kit. Model on the real robot: likely D435i, not proven.
 - **Body camera location: not visible in any photo** (deck Oct 2025, brochure Mar 2026). The OAK-D's URDF link (`link_camera`) is defined, but its mount point sits in Hivebotics' **private** `hivebotics_description` package. It may sit behind a front window/panel or low on the base; brochure images are renders/composites. Unresolved.
 
+### Camera generations seen in Hivebotics' own videos (Vishal, 29 Oct 2026) `[INT][S142]` + `[INF]`
+
+Hivebotics' YouTube playlist has 24 videos from **Nov 2021 to Aug 2026** (prototypes → Abluo M1 → Abluo Mark 2).
+
+| Generation | Video / date | Camera seen | Identification |
+|---|---|---|---|
+| **Prototype** | "HiveBotics Abluo Teaser Video" (uploaded **9 Nov 2024**) | **Silver bar camera on top of the wrist tool-changer plate** (blue plate, 3D-printed bracket) | Looks like an **Intel RealSense D415** (Vishal, Google image match). D415 and D435 look almost identical; the small lenses fit the D415 `[INF]` |
+| Prototype | same teaser | Dome sensor with a finned base, low on the robot | **Livox Mid-360** (image match). ⭐ First **visual** evidence for the Mid-360, which we had only from brochure specs |
+| **Abluo Mark 1** | Mark 1 videos (Dec 2024 – Mar 2025) | **Different wrist camera: white housing, dark front strip, small grills on both sides** | Unidentified. Candidate: **UFACTORY's wrist camera module** (a RealSense inside a white UFACTORY housing; the `add_realsense_d435i` option in their xarm_ros2 code) `[INF]` |
+| **Abluo Mark 2** | Mark 2 videos/photos (2026) | **Black camera** | Most likely the **Orbbec Gemini 335Le** (matches the GitHub work, Mar–Jul 2026) `[INT]` + `[INF]`. Caveat: the OAK-D S2 PoE is also dark, so colour alone can't separate them |
+
+**So the camera changed at least three times**: RealSense (D415-type, 2024) → white-housed wrist camera (Mark 1, 2025) → OAK-D S2 PoE in code and brochure (Dec 2025 – Mar 2026) → Orbbec Gemini 335Le (Mark 2, 2026). The pattern fits a team still searching for depth that works on white, shiny restroom surfaces `[INF]`.
+
+<img src="screenshots/2024-11-09_yt-abluo-teaser_realsense-d415-on-wrist.jpg" width="360"> <img src="screenshots/2025_abluo-mark1_wrist-camera-white-housing.jpg" width="300">
+
 **New activity (Oct 2026):** `xarm_ros2` branch `fix-hold-pose-after-recover` by **Vishalsub** (23 Oct: "keep motion off and pose valid through e-stop so recover cannot servo zeros"); `test-in-sim-peera` (28 Oct, F/T payload compensation); new fork **`foxglove-ros-adapter`** (Dmitri Manajev, 28–29 Oct): **Foxglove** web visualisation/teleop for ROS (general knowledge).
 
 | YDLIDAR (2D) | Fork with no own commits | 2024 | Weak: older prototype? |
