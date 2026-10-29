@@ -109,6 +109,12 @@ Hivebotics' YouTube playlist has 24 videos from **Nov 2021 to Aug 2026** (protot
 
 <img src="screenshots/2024-11-09_yt-abluo-teaser_realsense-d415-on-wrist.jpg" width="360"> <img src="screenshots/2025_abluo-mark1_wrist-camera-white-housing.jpg" width="300">
 
+**Direct evidence links (verified 29 Oct 2026):**
+- **Luxonis OAK-D S2 PoE:** commit "changes to include this camera in hivebotics" (Arshad Khan, 28 Dec 2025): https://github.com/hivebotics/depthai-ros/commit/32b74a06f6b1102697fce02cdf1b432c73b09408 · the line loading `OAK-D-S2-POE.stl` as `link_camera`: https://github.com/hivebotics/depthai-ros/blob/hivebotics-humble/depthai_descriptions/urdf/include/base_macro.urdf.xacro#L63
+- **Orbbec Gemini 335Le:** the config line naming the camera ("…does nothing on gemini 335Le…"): https://github.com/hivebotics/OrbbecSDK_ROS2/blob/641dbf7a67caa7c410d8cecfea28e4e3c1123a74/orbbec_camera/config/mode_config.yaml#L15 · pull request #1 (merged 30 Jul 2026): https://github.com/hivebotics/OrbbecSDK_ROS2/pull/1
+- **RealSense D435i wrist camera (`wrist_mounted`):** commit by Arshad Khan, 8 Jan 2026: https://github.com/hivebotics/xarm_ros2/commit/c9b7b0cd8412747d80d8a522328196619812bdc8
+- **Mark 1 white wrist housing** matches **UFACTORY's RealSense camera stand** (white plate + D435-shaped holder; Vishal's image match, 29 Oct 2026) `[INT]`.
+
 **New activity (Oct 2026):** `xarm_ros2` branch `fix-hold-pose-after-recover` by **Vishalsub** (23 Oct: "keep motion off and pose valid through e-stop so recover cannot servo zeros"); `test-in-sim-peera` (28 Oct, F/T payload compensation); new fork **`foxglove-ros-adapter`** (Dmitri Manajev, 28–29 Oct): **Foxglove** web visualisation/teleop for ROS (general knowledge).
 
 | YDLIDAR (2D) | Fork with no own commits | 2024 | Weak: older prototype? |
