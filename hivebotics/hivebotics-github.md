@@ -88,6 +88,12 @@ So the likely reason is **better depth on toilets, urinals and walls**. Peanut's
 1. **Body camera** (OAK-D → Gemini 335Le): sees the restroom and the fixture from a distance (navigation, fixture detection, Mask R-CNN segmentation).
 2. **Wrist camera** (RealSense D435i in the robot model; a real `/wrist_mounted_camera` feed in the Oct 2025 deck): close-up view from the arm for aligning tools and the **before/after stain check** (deck p.10 shows the wrist feed in MoveIt Pro).
 
+**Clarifications (29 Oct 2026)** `[V][S141]` + `[INF]`:
+- **The brochure's "Camera (Depth)" and "Camera (RGB)" are one device.** An OAK-D contains a stereo pair (OV9282, depth) **and** a colour sensor (IMX378) in one housing. So the brochure lists **one body camera**, not two.
+- **Order of events:** OAK-D integrated in code **Dec 2025–Jan 2026** → **brochure Mar 2026** describes the OAK-D → Orbbec Gemini 335Le work **Mar–Jul 2026**, *after* the brochure. The brochure is the newest official spec sheet but **older than the camera switch**.
+- **RealSense D435i (wrist):** `add_realsense_d435i` is **UFACTORY's own built-in option** in `xarm_ros2` (default off) for its wrist-camera kit. Hivebotics only renamed the camera to `wrist_mounted`. The deck photo (Oct 2025) shows a **slim bar camera on the wrist**, consistent with UFACTORY's RealSense kit. Model on the real robot: likely D435i, not proven.
+- **Body camera location: not visible in any photo** (deck Oct 2025, brochure Mar 2026). The OAK-D's URDF link (`link_camera`) is defined, but its mount point sits in Hivebotics' **private** `hivebotics_description` package. It may sit behind a front window/panel or low on the base; brochure images are renders/composites. Unresolved.
+
 **New activity (Oct 2026):** `xarm_ros2` branch `fix-hold-pose-after-recover` by **Vishalsub** (23 Oct: "keep motion off and pose valid through e-stop so recover cannot servo zeros"); `test-in-sim-peera` (28 Oct, F/T payload compensation); new fork **`foxglove-ros-adapter`** (Dmitri Manajev, 28–29 Oct): **Foxglove** web visualisation/teleop for ROS (general knowledge).
 
 | YDLIDAR (2D) | Fork with no own commits | 2024 | Weak: older prototype? |
